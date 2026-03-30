@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.4",
-  "generated": "2026-03-30T21:11:55Z",
+  "data_version": "v2026.5",
+  "generated": "2026-03-30T22:52:08Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.4.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.5.",
   "files": {
     "rates_annual": {
       "version": "2026.3",
@@ -168,12 +168,13 @@
       "last_updated": "2026-03-23"
     },
     "va_compensation": {
-      "version": "2026.2",
+      "version": "2026.3",
       "effective_date": "2026-01-01",
       "update_frequency": "annual (December COLA)",
       "url": "federal/veterans-affairs/compensation.json",
-      "description": "VA disability compensation rates by rating with dependent additions, DIC rates, VA COLA",
-      "changelog_2026_1": "Extracted from rates-annual.json during schema 2.0 restructure. All values unchanged."
+      "description": "VA disability compensation rates by rating with dependent additions, DIC rates, VA COLA Added dependent parents additions (one/two parent) for ratings 30-100%.",
+      "changelog_2026_1": "Extracted from rates-annual.json during schema 2.0 restructure. All values unchanged.",
+      "last_updated": "2026-03-30"
     },
     "vgli": {
       "version": "2026",
