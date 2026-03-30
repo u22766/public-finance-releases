@@ -29,10 +29,6 @@
       "reflects": "TY2026",
       "last_entry_year": 2026
     },
-    "hsa_limits": {
-      "reflects": "TY2026",
-      "last_entry_year": 2026
-    },
     "obbba_tax_provisions": {
       "reflects": "TY2025",
       "rates_effective": "2025-07-04"
@@ -49,10 +45,6 @@
     "social_security_claiming": {
       "reflects": "CY2026",
       "rates_effective": "2026-01-01"
-    },
-    "cola_history": {
-      "reflects": "CY2026",
-      "last_entry_year": 2026
     },
     "_comment_contribution": "Contribution limits \u2014 Calendar Year (CY) convention",
     "tsp_limits": {
@@ -74,14 +66,6 @@
     },
     "fehb_plan_benefits": {
       "reflects": "PY2026",
-      "rates_effective": "2026-01-01"
-    },
-    "fehb_premium_history": {
-      "reflects": "PY2026",
-      "last_entry_year": 2026
-    },
-    "fehb_retirement_eligibility": {
-      "reflects": "2026",
       "rates_effective": "2026-01-01"
     },
     "fedvip_rates": {
@@ -110,23 +94,7 @@
       "rates_effective": "2026-01-01"
     },
     "_comment_pay": "Pay tables \u2014 Calendar Year (CY), effective January 1",
-    "pay_tables": {
-      "reflects": "CY2026",
-      "last_entry_year": 2026
-    },
-    "dcips_pay_tables": {
-      "reflects": "CY2026",
-      "rates_effective": "2026-01-01"
-    },
     "military_pay_tables": {
-      "reflects": "CY2026",
-      "last_entry_year": 2026
-    },
-    "fs_pay_tables": {
-      "reflects": "CY2026",
-      "last_entry_year": 2026
-    },
-    "federal_pay_raises": {
       "reflects": "CY2026",
       "last_entry_year": 2026
     },
@@ -147,29 +115,13 @@
       "reflects": "2026",
       "rates_effective": "2026-01-01"
     },
-    "fers_srs_rules": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
     "csrs_retirement_rules": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "fegli_rates": {
       "reflects": "2026",
       "rates_effective": "2026-01-01"
     },
     "tsp_roth_conversion": {
       "reflects": "2026",
       "rates_effective": "2026-01-28"
-    },
-    "foreign_service_retirement_rules": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "federal_retirement_systems_index": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
     },
     "_comment_reference": "Reference and actuarial data",
     "ssa_life_table": {
@@ -255,65 +207,13 @@
       "reflects": "2026",
       "rates_effective": "2026-01-01"
     },
-    "plan_combinations_fairfax": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "fcers_plans_fairfax": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "pors_plans_fairfax": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "urs_plans_fairfax": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "acers_plans_arlington": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "rrs_plans_richmond": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "fcpp_plans_falls_church": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
     "_comment_state_pensions_md": "Maryland pensions",
-    "mcerp_plans_montgomery": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
-    "md_srps_plans_maryland": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
     "_comment_state_pensions_ca": "California pensions",
-    "calpers_plans_california": {
-      "reflects": "2026",
-      "rates_effective": "2025-07-01"
-    },
-    "calstrs_plans_california": {
-      "reflects": "2026",
-      "rates_effective": "2025-07-01"
-    },
-    "sdcera_plans": {
-      "reflects": "2026",
-      "rates_effective": "2026-01-01"
-    },
     "lacera_plans_los_angeles": {
       "reflects": "2026",
       "rates_effective": "2026-04-01"
     },
     "_comment_state_pensions_other": "Other state pensions",
-    "copera_plans_colorado": {
-      "reflects": "FY2026",
-      "rates_effective": "2025-07-01"
-    },
     "frs_plans_florida": {
       "reflects": "FY2026",
       "rates_effective": "2025-07-01"
@@ -330,10 +230,6 @@
       "reflects": "FY2026",
       "rates_effective": "2025-09-01"
     },
-    "ers_plans_texas": {
-      "reflects": "FY2026",
-      "rates_effective": "2025-09-01"
-    },
     "strs_ohio_plans": {
       "reflects": "FY2026",
       "rates_effective": "2025-07-01"
@@ -341,10 +237,6 @@
     "opers_plans_ohio": {
       "reflects": "FY2026",
       "rates_effective": "2025-07-01"
-    },
-    "dcrb_plans_dc": {
-      "reflects": "FY2026",
-      "rates_effective": "2025-10-01"
     },
     "data_vintage": {
       "reflects": "2026",

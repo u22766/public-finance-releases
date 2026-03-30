@@ -1,10 +1,10 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.2",
-  "generated": "2026-03-30T03:14:15Z",
+  "data_version": "v2026.3",
+  "generated": "2026-03-30T04:14:45Z",
   "maintained_by": "finance-data repo owner",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.2.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.3.",
   "files": {
     "rates_annual": {
       "version": "2026.3",
