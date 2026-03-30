@@ -1,0 +1,684 @@
+{
+  "_metadata": {
+    "file": "tricare-rates.json",
+    "version": "2026.3",
+    "effective_date": "2026-01-01",
+    "source": "Defense Health Agency (DHA), TRICARE Health Plan",
+    "source_url": "https://tricare.mil/Costs/Compare",
+    "federal_register": "FR Doc. 2025-19819 (Nov 10, 2025)",
+    "last_verified": "2026-03-12",
+    "cola_basis": "CY 2026 retiree COLA: 2.8%",
+    "notes": "CY 2026 TRICARE costs. Group A = sponsor entered service before Jan 1, 2018. Group B = on/after Jan 1, 2018. Pharmacy costs added in v2026.2. TDP dental premiums, cost-shares, and plan maximums added in v2026.3."
+  },
+  "group_definitions": {
+    "group_a": "Sponsor's initial enlistment or appointment began BEFORE January 1, 2018",
+    "group_b": "Sponsor's initial enlistment or appointment began ON OR AFTER January 1, 2018"
+  },
+  "retiree_costs": {
+    "_note": "Costs for retirees, their family members, survivors, and others",
+    "group_a": {
+      "prime": {
+        "enrollment_fee_annual": {
+          "individual": 381.96,
+          "family": 765.0
+        },
+        "enrollment_fee_medically_retired": {
+          "individual": 0,
+          "family": 0,
+          "_note": "Frozen at rate when classified; see medically_retired_fee_schedule"
+        },
+        "deductible_annual": 0,
+        "catastrophic_cap_annual": 3000,
+        "copays_network": {
+          "primary_care": 26,
+          "specialty_care": 39,
+          "urgent_care": 39,
+          "emergency": 79,
+          "lab_xray": 0,
+          "ambulatory_surgery": 79,
+          "hospitalization_per_admission": 198,
+          "mental_health_inpatient_per_admission": 198,
+          "mental_health_outpatient": 39,
+          "dme_pct": 20,
+          "skilled_nursing_per_day": 39
+        }
+      },
+      "select": {
+        "enrollment_fee_annual": {
+          "individual": 186.96,
+          "family": 375.0
+        },
+        "enrollment_fee_medically_retired": {
+          "individual": 0,
+          "family": 0
+        },
+        "deductible_annual": {
+          "individual": 150,
+          "family": 300
+        },
+        "catastrophic_cap_annual": 4381,
+        "catastrophic_cap_medically_retired": 3000,
+        "copays_network": {
+          "primary_care": 38,
+          "specialty_care": 52,
+          "urgent_care": 38,
+          "emergency": 138,
+          "lab_xray": 0,
+          "ambulatory_surgery_pct": 20,
+          "hospitalization_per_day_max": 250,
+          "hospitalization_pct_max": 25,
+          "_hospitalization_note": "$250/day or up to 25% of hospital charges, whichever is less, plus 20% of separately billed services",
+          "mental_health_outpatient": 52,
+          "dme_pct": 20,
+          "ambulance_ground": 117
+        },
+        "cost_share_non_network_pct": 25
+      }
+    },
+    "group_b": {
+      "prime": {
+        "enrollment_fee_annual": {
+          "individual": 462.96,
+          "family": 927.0
+        },
+        "deductible_annual": 0,
+        "catastrophic_cap_annual": 4635,
+        "copays_network": {
+          "primary_care": 26,
+          "specialty_care": 39,
+          "urgent_care": 39,
+          "emergency": 79,
+          "lab_xray": 0,
+          "ambulatory_surgery": 79,
+          "hospitalization_per_admission": 198,
+          "mental_health_inpatient_per_admission": 198,
+          "mental_health_outpatient": 39,
+          "dme_pct": 20,
+          "skilled_nursing_per_day": 39
+        }
+      },
+      "select": {
+        "enrollment_fee_annual": {
+          "individual": 594.96,
+          "family": 1191.0
+        },
+        "deductible_annual": {
+          "individual_network": 198,
+          "individual_non_network": 397,
+          "family_network": 397,
+          "family_non_network": 794,
+          "_note": "Prescription costs also apply to deductible"
+        },
+        "catastrophic_cap_annual": 4635,
+        "copays_network": {
+          "primary_care": 33,
+          "specialty_care": 52,
+          "urgent_care": 52,
+          "emergency": 105,
+          "lab_xray": 0,
+          "ambulatory_surgery": 125,
+          "hospitalization_per_admission": 231,
+          "mental_health_inpatient_per_admission": 231,
+          "mental_health_outpatient": 52,
+          "dme_pct": 20,
+          "skilled_nursing_per_day": 66,
+          "ambulance_ground": 79
+        },
+        "cost_share_non_network_pct": 25
+      }
+    }
+  },
+  "active_duty_family_costs": {
+    "_note": "Active duty service members have $0 out-of-pocket. Costs below are for their family members and transitional survivors.",
+    "group_a": {
+      "prime": {
+        "enrollment_fee_annual": 0,
+        "deductible_annual": 0,
+        "catastrophic_cap_annual": 1000,
+        "all_network_copays": 0
+      },
+      "select": {
+        "enrollment_fee_annual": 0,
+        "deductible_annual": {
+          "e1_e4_individual": 50,
+          "e5_above": 0,
+          "_note": "E-1 to E-4: $50/individual, limited to $100/family"
+        },
+        "catastrophic_cap_annual": 1000,
+        "copays_network": {
+          "primary_care": 28,
+          "specialty_care": 39,
+          "urgent_care": 28,
+          "emergency": 103,
+          "lab_xray": 0,
+          "ambulatory_surgery": 25,
+          "hospitalization_per_day": 24.5,
+          "hospitalization_min_per_admission": 25
+        }
+      }
+    },
+    "group_b": {
+      "prime": {
+        "enrollment_fee_annual": 0,
+        "deductible_annual": 0,
+        "catastrophic_cap_annual": 1324,
+        "all_network_copays": 0
+      },
+      "select": {
+        "enrollment_fee_annual": 0,
+        "deductible_annual": {
+          "e1_e4_individual": 66,
+          "e1_e4_family": 132,
+          "e5_above_individual": 198,
+          "e5_above_family": 397
+        },
+        "catastrophic_cap_annual": 1324,
+        "copays_network": {
+          "primary_care": 19,
+          "specialty_care": 33,
+          "urgent_care": 26,
+          "emergency": 52,
+          "lab_xray": 0,
+          "ambulatory_surgery": 33,
+          "hospitalization_per_admission": 79,
+          "mental_health_inpatient_per_admission": 79,
+          "mental_health_outpatient": 33,
+          "dme_pct": 10
+        }
+      }
+    }
+  },
+  "pharmacy_costs": {
+    "_note": "CY 2026-2027 TRICARE Pharmacy Program costs. NDAA FY2018 Sec 702 established copay schedule through Dec 31, 2027. Copays vary by formulary status, pharmacy type, and beneficiary category.",
+    "source": "https://tricare.mil/Costs/PharmacyCosts",
+    "last_updated_on_source": "2025-02-13",
+    "formulary_categories": {
+      "generic_formulary": "Lowest cost tier. FDA-approved generic equivalent of brand-name drug on TRICARE formulary.",
+      "brand_name_formulary": "Brand-name drug on TRICARE formulary.",
+      "non_formulary": "Drug not on TRICARE formulary. Provider must establish medical necessity for coverage at formulary copay. Otherwise full non-formulary copay applies.",
+      "non_covered": "Drug not covered by TRICARE. Beneficiary pays full cost."
+    },
+    "pharmacy_types": {
+      "military": "Military hospital or clinic pharmacy. Up to 90-day supply.",
+      "home_delivery": "TRICARE Pharmacy Home Delivery (Express Scripts). Up to 90-day supply.",
+      "retail_network": "TRICARE retail network pharmacy. Up to 30-day supply.",
+      "non_network_domestic": "Non-network retail pharmacy in US and US territories.",
+      "non_network_overseas": "Non-network retail pharmacy outside US and US territories."
+    },
+    "active_duty_service_members": {
+      "_note": "ADSMs pay $0 for covered drugs at military pharmacies, home delivery, and retail network pharmacies. Non-formulary drugs require medical necessity. Non-network: pay full cost up front, file claim for reimbursement.",
+      "military": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary": 0
+      },
+      "home_delivery_90day": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary": 0
+      },
+      "retail_network_30day": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary": 0
+      }
+    },
+    "active_duty_family_prime_remote_us": {
+      "_note": "AD family members enrolled in TRICARE Prime Remote in the US. Effective Feb 28, 2026, $0 copays for covered drugs at military, home delivery, and retail network pharmacies. Non-formulary requires medical necessity.",
+      "effective_date": "2026-02-28",
+      "military": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary": 0
+      },
+      "home_delivery_90day": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary": 0
+      },
+      "retail_network_30day": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary": 0
+      }
+    },
+    "standard_beneficiaries": {
+      "_note": "All beneficiaries EXCEPT medically retired sponsors/dependents and survivors of ADSMs. Includes retirees, retiree family members, reserve/guard members, and dependents. NDAA FY2018 rates effective CY 2026-2027.",
+      "military": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary_note": "Generally not available without medical necessity"
+      },
+      "home_delivery_90day": {
+        "generic": 14,
+        "brand": 44,
+        "non_formulary": 85
+      },
+      "retail_network_30day": {
+        "generic": 16,
+        "brand": 48,
+        "non_formulary": 85
+      },
+      "non_network_domestic": {
+        "prime_enrollees": {
+          "cost_share_pct": 50,
+          "_note": "50% cost-share applies after meeting point-of-service annual deductible"
+        },
+        "all_other_beneficiaries": {
+          "formulary_minimum": 48,
+          "formulary_pct_of_total": 20,
+          "_note": "$48 or 20% of total cost, whichever is more, after annual deductible",
+          "non_formulary_minimum": 85,
+          "non_formulary_pct_of_total": 20,
+          "_note_nf": "$85 or 20% of total cost, whichever is more, after annual deductible"
+        }
+      },
+      "non_network_overseas": {
+        "adsm_adfm_prime_overseas": {
+          "cost": 0,
+          "_note": "May have to pay full cost up front and file claim for reimbursement"
+        },
+        "adfm_select_overseas_and_trs": {
+          "cost_share_pct": 20,
+          "_note": "20% cost-share after annual deductible"
+        },
+        "retirees_trr_all_others_select_overseas": {
+          "cost_share_pct": 25,
+          "_note": "25% cost-share after annual deductible"
+        }
+      }
+    },
+    "medically_retired_and_adsm_survivors": {
+      "_note": "NDAA FY2018 Sec 702 froze pharmacy copays at 2017 rates for: (1) medically retired service members and their family members, (2) survivors of active duty service members. These rates do NOT change with standard copay increases.",
+      "authority": "NDAA FY2018 Section 702",
+      "military": {
+        "generic": 0,
+        "brand": 0,
+        "non_formulary_note": "Generally not available without medical necessity"
+      },
+      "home_delivery_90day": {
+        "generic": 0,
+        "brand": 20,
+        "non_formulary": 49
+      },
+      "retail_network_30day": {
+        "generic": 10,
+        "brand": 24,
+        "non_formulary": 50
+      },
+      "non_network_domestic": {
+        "prime_enrollees": {
+          "cost_share_pct": 50,
+          "point_of_service_deductible_individual": 300,
+          "point_of_service_deductible_family": 600,
+          "_note": "50% cost-share after POS deductible ($300 individual / $600 family)"
+        },
+        "select_enrollees": {
+          "formulary_minimum": 24,
+          "formulary_pct_of_total": 20,
+          "_note": "$24 or 20% of total cost, whichever is more, after annual deductible"
+        }
+      },
+      "non_network_overseas": {
+        "select_overseas": {
+          "cost_share_pct": 25,
+          "_note": "25% cost-share after annual deductible"
+        }
+      }
+    },
+    "prior_year_copays_2025": {
+      "_note": "CY 2024-2025 standard beneficiary copays for year-over-year comparison. NDAA FY2018 rates. Medically retired/survivor rates unchanged.",
+      "home_delivery_90day": {
+        "generic": 13,
+        "brand": 38,
+        "non_formulary": 76
+      },
+      "retail_network_30day": {
+        "generic": 16,
+        "brand": 43,
+        "non_formulary": 76
+      }
+    },
+    "yoy_change_2025_to_2026": {
+      "home_delivery_generic_pct": 7.7,
+      "home_delivery_brand_pct": 15.8,
+      "home_delivery_non_formulary_pct": 11.8,
+      "retail_generic_pct": 0.0,
+      "retail_brand_pct": 11.6,
+      "retail_non_formulary_pct": 11.8,
+      "_note": "12% to 15.8% increase over 2024-2025 rates per Federal Register notice"
+    },
+    "ndaa_fy2018_copay_schedule_end": "2027-12-31",
+    "non_covered_drugs": "Beneficiary pays full cost. Not available at military pharmacies or home delivery."
+  },
+  "dental_costs": {
+    "_note": "TRICARE Dental Program (TDP) costs. Administered by United Concordia. Voluntary program for AD family members, NG/Reserve members, and their families. Retirees and their families get dental through FEDVIP, not TDP. Active duty service members receive dental care via the Active Duty Dental Program (ADDP) at no cost. Survivors of ADSMs pay no premiums.",
+    "source": "https://tricare.mil/Costs/DentalCosts/TDP/Premiums",
+    "source_cost_shares": "https://tricare.mil/Costs/DentalCosts/TDP/CostShares",
+    "source_maximums": "https://tricare.mil/Costs/DentalCosts/TDP/Maximums",
+    "contractor": "United Concordia",
+    "effective_period": {
+      "start": "2026-03-01",
+      "end": "2027-02-28",
+      "_note": "TDP rates are set annually March 1 through Feb 28/29 of the following year"
+    },
+    "eligibility": {
+      "active_duty_family_members": true,
+      "selected_reserve_members": true,
+      "selected_reserve_family_members": true,
+      "individual_ready_reserve_members": true,
+      "irr_family_members": true,
+      "adsm_survivors": "Eligible, no premium",
+      "retirees": "Not eligible for TDP \u2014 use FEDVIP instead",
+      "retiree_family_members": "Not eligible for TDP \u2014 use FEDVIP instead",
+      "enrollment_minimum_service_remaining": "12 months"
+    },
+    "monthly_premiums": {
+      "_note": "Pay-ahead program \u2014 each payment covers the NEXT month of coverage. Rates effective March 1, 2026 through Feb 28, 2027.",
+      "active_duty": {
+        "_note": "AD sponsors do not enroll (covered by ADDP). These premiums are for AD family members only.",
+        "single": {
+          "_note": "One family member, not the sponsor",
+          "e1_e4": 8.79,
+          "e5_and_above": 11.72
+        },
+        "family": {
+          "_note": "More than one family member, not the sponsor",
+          "e1_e4": 22.85,
+          "e5_and_above": 30.47
+        }
+      },
+      "selected_reserve_and_irr_mobilization": {
+        "sponsor_only": {
+          "e1_e4": 8.79,
+          "e5_and_above": 11.72
+        },
+        "single": 29.3,
+        "family": 76.18,
+        "sponsor_and_family": {
+          "e1_e4": 84.87,
+          "e5_and_above": 87.9
+        }
+      },
+      "irr_non_mobilization": {
+        "sponsor_only": 29.3,
+        "single": 29.3,
+        "family": 76.18,
+        "sponsor_and_family": 105.48
+      },
+      "adsm_survivors": {
+        "premium": 0,
+        "_note": "Survivors of active duty service members pay no TDP premiums"
+      }
+    },
+    "prior_year_premiums_2025": {
+      "_note": "March 1, 2025 through Feb 28, 2026 rates for YoY comparison. Source: TRICARE 2025 Costs and Fees fact sheet.",
+      "active_duty": {
+        "single": {
+          "e1_e4": 8.65,
+          "e5_and_above": 11.53
+        },
+        "family": {
+          "e1_e4": 22.48,
+          "e5_and_above": 29.98
+        }
+      }
+    },
+    "cost_shares": {
+      "_note": "Cost-share percentages for covered dental services. Vary by sponsor pay grade and CONUS/OCONUS location. OCONUS command-sponsored beneficiaries pay 0% for most services. SelRes/IRR members and families stationed OCONUS pay CONUS rates.",
+      "conus_e1_e4": {
+        "diagnostic": 0,
+        "preventive": 0,
+        "sealants": 0,
+        "consultation_office_visit": 20,
+        "post_surgical": 20,
+        "basic_restorative": 20,
+        "endodontic": 30,
+        "periodontic": 30,
+        "oral_surgery": 30,
+        "general_anesthesia": 40,
+        "intravenous_sedation": 50,
+        "miscellaneous_services": 50,
+        "other_restorative": 50,
+        "implant_services": 50,
+        "prosthodontic": 50,
+        "orthodontic": 50
+      },
+      "conus_e5_and_above": {
+        "diagnostic": 0,
+        "preventive": 0,
+        "sealants": 0,
+        "consultation_office_visit": 20,
+        "post_surgical": 20,
+        "basic_restorative": 20,
+        "endodontic": 40,
+        "periodontic": 40,
+        "oral_surgery": 40,
+        "general_anesthesia": 40,
+        "intravenous_sedation": 50,
+        "miscellaneous_services": 50,
+        "other_restorative": 50,
+        "implant_services": 50,
+        "prosthodontic": 50,
+        "orthodontic": 50
+      },
+      "oconus_command_sponsored": {
+        "_note": "0% for most services. Exceptions: other restorative, implants, prosthodontic, and orthodontic at 50%. Does NOT apply to SelRes/IRR members and families \u2014 they pay CONUS rates.",
+        "diagnostic": 0,
+        "preventive": 0,
+        "sealants": 0,
+        "consultation_office_visit": 0,
+        "post_surgical": 0,
+        "basic_restorative": 0,
+        "endodontic": 0,
+        "periodontic": 0,
+        "oral_surgery": 0,
+        "general_anesthesia": 0,
+        "intravenous_sedation": 0,
+        "miscellaneous_services": 0,
+        "other_restorative": 50,
+        "implant_services": 50,
+        "prosthodontic": 50,
+        "orthodontic": 50
+      },
+      "orthodontic_eligibility": {
+        "family_members": true,
+        "children_max_age": "21 or 23 based on student status",
+        "spouses_max_age": 23,
+        "ng_reserve_sponsors_max_age": 23
+      }
+    },
+    "plan_maximums": {
+      "annual_non_orthodontic": {
+        "per_person_per_contract_year": 1500,
+        "_note": "Payments for certain diagnostic and preventive services do not count against the annual maximum"
+      },
+      "lifetime_orthodontic": {
+        "per_person": 1750,
+        "_note": "Orthodontic diagnostic services count against the annual maximum, not the lifetime maximum"
+      },
+      "annual_accident_care": {
+        "per_person_per_contract_year": 1200,
+        "_note": "After meeting the accident care maximum, additional costs apply to the annual maximum"
+      }
+    }
+  },
+  "premium_based_plans": {
+    "_note": "Monthly premiums for premium-based TRICARE plans. These are separate from Prime/Select enrollment fees.",
+    "tricare_reserve_select": {
+      "monthly": {
+        "member_only": 57.88,
+        "member_and_family": 286.66
+      },
+      "2025_monthly": {
+        "member_only": 53.8,
+        "member_and_family": 274.48
+      },
+      "yoy_change_pct": {
+        "member_only": 7.6,
+        "member_and_family": 4.4
+      }
+    },
+    "tricare_retired_reserve": {
+      "monthly": {
+        "member_only": 645.9,
+        "member_and_family": 1548.3
+      },
+      "2025_monthly": {
+        "member_only": 631.26,
+        "member_and_family": 1513.04
+      }
+    },
+    "tricare_young_adult_prime": {
+      "monthly": 794.0,
+      "2025_monthly": 727.0,
+      "yoy_change_pct": 9.2,
+      "age_range": "21-26"
+    },
+    "tricare_young_adult_select": {
+      "monthly": 363.0,
+      "2025_monthly": 337.0,
+      "yoy_change_pct": 7.7,
+      "age_range": "21-26"
+    },
+    "chcbp_quarterly": {
+      "member_only": 2103.0,
+      "family": 5339.0,
+      "2025_quarterly": {
+        "member_only": 1849.0,
+        "family": 4621.0
+      },
+      "_note": "Continued Health Care Benefit Program; quarterly premiums"
+    }
+  },
+  "tricare_for_life": {
+    "_note": "For Medicare-eligible beneficiaries with TRICARE. Must have Medicare Parts A and B.",
+    "enrollment_fee": 0,
+    "deductible_annual": {
+      "individual": 150,
+      "family": 300,
+      "_note": "Only when TRICARE is the only payer"
+    },
+    "catastrophic_cap_annual": 3000,
+    "medicare_part_a_deductible": 1736,
+    "medicare_part_b_deductible_annual": 283,
+    "cost_sharing": {
+      "services_covered_by_both": "Medicare pays approved amount, TRICARE pays remainder, you pay $0",
+      "services_covered_by_medicare_only": "You pay Medicare deductible and cost-share",
+      "services_covered_by_tricare_only": "You pay TRICARE deductible and cost-share"
+    },
+    "hospital_stay": {
+      "days_1_60": {
+        "you_pay": 0,
+        "_note": "TRICARE pays $1,736 Part A deductible"
+      },
+      "days_61_90": {
+        "tricare_pays_per_day": 434
+      },
+      "days_91_150": {
+        "tricare_pays_per_day": 868,
+        "_note": "Lifetime reserve days"
+      },
+      "days_151_plus": "TRICARE is primary payer; you pay TRICARE cost-share"
+    },
+    "skilled_nursing": {
+      "days_1_20": {
+        "you_pay": 0
+      },
+      "days_21_100": {
+        "tricare_pays_per_day": 217
+      },
+      "days_101_plus": "TRICARE is primary payer with pre-authorization"
+    }
+  },
+  "medically_retired_fee_schedule": {
+    "_note": "TRICARE Prime enrollment fee freezes at the rate when classified in DEERS as medically retired or survivor. Frozen as long as no break in Prime enrollment.",
+    "schedule": [
+      {
+        "period": "Starting Jan 1, 2026",
+        "individual": 381.96,
+        "family": 765.0
+      },
+      {
+        "period": "Jan 1, 2024 - Dec 31, 2025",
+        "individual": 372.0,
+        "family": 744.0
+      },
+      {
+        "period": "Jan 1, 2023 - Dec 31, 2023",
+        "individual": 351.96,
+        "family": 703.92
+      },
+      {
+        "period": "Jan 1, 2022 - Dec 31, 2022",
+        "individual": 323.0,
+        "family": 647.0
+      },
+      {
+        "period": "Jan 1, 2021 - Dec 31, 2021",
+        "individual": 303.0,
+        "family": 606.0
+      },
+      {
+        "period": "Jan 1, 2020 - Dec 31, 2020",
+        "individual": 300.0,
+        "family": 600.0
+      },
+      {
+        "period": "Jan 1, 2019 - Dec 31, 2019",
+        "individual": 297.0,
+        "family": 594.0
+      },
+      {
+        "period": "Jan 1, 2018 - Dec 31, 2018",
+        "individual": 289.08,
+        "family": 578.16
+      },
+      {
+        "period": "Oct 1, 2015 - Dec 31, 2017",
+        "individual": 282.6,
+        "family": 565.2
+      },
+      {
+        "period": "Oct 1, 2014 - Sep 30, 2015",
+        "individual": 277.92,
+        "family": 555.84
+      },
+      {
+        "period": "Oct 1, 2013 - Sep 30, 2014",
+        "individual": 273.84,
+        "family": 547.68
+      },
+      {
+        "period": "Oct 1, 2012 - Sep 30, 2013",
+        "individual": 269.28,
+        "family": 538.56
+      },
+      {
+        "period": "Oct 1, 2011 - Sep 30, 2012",
+        "individual": 260.0,
+        "family": 520.0
+      },
+      {
+        "period": "Before Oct 1, 2011",
+        "individual": 230.0,
+        "family": 460.0
+      }
+    ]
+  },
+  "open_season": {
+    "period": "November 10 - December 9",
+    "applies_to": "TRICARE Prime and TRICARE Select plan changes",
+    "_note": "Changes effective January 1 of following year"
+  },
+  "data_sources": [
+    "https://tricare.mil/Costs/Compare",
+    "https://www.federalregister.gov/documents/2025/11/10/2025-19819/tricare-calendar-year-cy-2026-tricare-prime-and-tricare-select-out-of-pocket-expenses",
+    "https://www.federalregister.gov/documents/2025/10/28/2025-19672/tricare-notice-of-tricare-plan-program-changes-for-calendar-year-cy-2026",
+    "https://tricare.mil/Costs/PharmacyCosts",
+    "https://militaryrx.express-scripts.com/blog/changes-your-tricare-prescription-drug-copayments-2026",
+    "https://tricare.mil/Costs/DentalCosts/TDP/Premiums",
+    "https://tricare.mil/Costs/DentalCosts/TDP/CostShares",
+    "https://tricare.mil/Costs/DentalCosts/TDP/Maximums"
+  ]
+}

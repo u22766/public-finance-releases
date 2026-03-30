@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "name": "Military Retirement System Rules",
+    "description": "Comprehensive rules for all four military retirement systems (Final Pay, High-3, REDUX/CSB, BRS), Chapter 61 disability retirement, SBP, and concurrent receipt (CRDP/CRSC) with tax treatment and election logic. Covers all eight uniformed services including USPHS and NOAA Corps.",
+    "version": "2.1",
+    "last_updated": "2026-03-23",
+    "sources": [
+      "https://militarypay.defense.gov/Pay/Retirement/",
+      "https://www.dfas.mil/retiredmilitary/plan/",
+      "Congressional Research Service: Military Retirement (RL34751)",
+      "10 U.S.C. Chapter 71 \u2014 Retired Pay",
+      "10 U.S.C. Chapter 61 \u2014 Disability Retirement (\u00a7\u00a7 1201\u20131222)",
+      "10 U.S.C. \u00a7 1413a \u2014 Combat-Related Special Compensation (CRSC)",
+      "10 U.S.C. \u00a7 1414 \u2014 Concurrent Retirement and Disability Pay (CRDP)",
+      "26 U.S.C. \u00a7 104(a)(4) \u2014 Disability pay tax exclusion",
+      "FY2008 NDAA \u2014 Chapter 61 CRSC expansion",
+      "Congressional Research Service IF10594 (Concurrent Receipt primer)",
+      "DoD Financial Management Regulation, Volume 7B, Chapter 3",
+      "42 U.S.C. §212 — USPHS Commissioned Corps Retirement",
+      "33 U.S.C. §853 — NOAA Corps Retirement",
+      "10 U.S.C. §101(a)(4) — Definition of uniformed services (all eight)",
+      "FY2021 NDAA — Coast Guard inclusion in Military Retirement Fund"
+    ],
+    "notes": [
+      "Military retirement system is determined by date of initial entry into military service (DIEMS).",
+      "All systems require 20+ years of active duty service for immediate retirement (or 20 qualifying years for reserve retirement).",
+      "Disability retirement available with fewer than 20 years under different rules.",
+      "Military retired pay is taxable as ordinary income at the federal level.",
+      "Chapter 61 disability retirees may have different formulas, concurrent receipt eligibility, and TRICARE cost structures than longevity retirees.",
+      "These retirement systems apply to all eight uniformed services: Army, Marine Corps, Navy, Air Force, Space Force, Coast Guard, USPHS Commissioned Corps, and NOAA Commissioned Officer Corps.",
+      "USPHS and NOAA Corps officers use the same pay table (military-pay-tables.json) and the same retirement formulas as DoD service members.",
+      "USPHS (~6,000 active officers) and NOAA Corps (~350 active officers) retirement pay is processed by the U.S. Coast Guard Pay and Personnel Center (PPC).",
+      "Critical funding difference: DoD and Coast Guard retired pay comes from the Military Retirement Fund (protected during shutdowns). USPHS retired pay comes from HHS appropriations and NOAA from Commerce appropriations — both are vulnerable to payment disruption during government shutdowns (missed October 2025 payments).",
+      "BRS opt-in was available to all seven uniformed services (eight minus Space Force, which did not yet exist) from January 1 through December 31, 2018. All new USPHS accessions on or after January 1, 2018 are automatically enrolled in BRS."
+    ]
+  },
+  "retirement_systems": [
+    {
+      "system": "Final Pay",
+      "applies_to": "DIEMS before September 8, 1980",
+      "status": "Legacy \u2014 very few active members remain",
+      "formula": "final_basic_pay \u00d7 2.5% \u00d7 years_of_service",
+      "multiplier_per_year_pct": 2.5,
+      "pay_base": "Final basic pay at retirement",
+      "max_multiplier_pct": 75.0,
+      "max_years": 30,
+      "cola_rule": "Full CPI-W (same as Social Security COLA)",
+      "tsp_matching": false,
+      "continuation_pay": false,
+      "example": {
+        "years": 20,
+        "multiplier_pct": 50.0,
+        "description": "20 years \u00d7 2.5% = 50% of final basic pay"
+      }
+    },
+    {
+      "system": "High-3",
+      "applies_to": "DIEMS on or after September 8, 1980 and before January 1, 2018 (who did not opt into BRS)",
+      "status": "Active \u2014 most current retirees",
+      "formula": "high_3_average \u00d7 2.5% \u00d7 years_of_service",
+      "multiplier_per_year_pct": 2.5,
+      "pay_base": "Average of highest 36 months of basic pay",
+      "max_multiplier_pct": 75.0,
+      "max_years": 30,
+      "cola_rule": "Full CPI-W (same as Social Security COLA)",
+      "tsp_matching": false,
+      "continuation_pay": false,
+      "example": {
+        "years": 20,
+        "multiplier_pct": 50.0,
+        "description": "20 years \u00d7 2.5% = 50% of high-3 average basic pay"
+      }
+    },
+    {
+      "system": "REDUX / Career Status Bonus (CSB)",
+      "applies_to": "DIEMS on or after August 1, 1986 and before January 1, 2018. Must have elected CSB at 15 years of service.",
+      "status": "Legacy \u2014 option eliminated for those entering after 2018",
+      "formula": "high_3_average \u00d7 (2.5% - 1% reduction for each year under 30) \u00d7 years_of_service",
+      "multiplier_per_year_pct": 2.0,
+      "multiplier_note": "Effective 2.0% per year at 20 years due to REDUX formula, but catches up to 2.5% at 30 years",
+      "pay_base": "Average of highest 36 months of basic pay",
+      "max_multiplier_pct": 75.0,
+      "cola_rule": "CPI-W minus 1% (partial COLA \u2014 purchasing power erodes over time)",
+      "cola_catchup": "One-time recomputation to full CPI at age 62, then COLA-1% resumes",
+      "csb_bonus": 30000,
+      "csb_note": "$30,000 Career Status Bonus paid at 15 years in exchange for accepting REDUX formula",
+      "tsp_matching": false,
+      "continuation_pay": false,
+      "example": {
+        "years": 20,
+        "multiplier_pct": 40.0,
+        "description": "20 years \u00d7 2.0% effective = 40% of high-3 (vs 50% under High-3 system)"
+      }
+    },
+    {
+      "system": "Blended Retirement System (BRS)",
+      "applies_to": "DIEMS on or after January 1, 2018. Optional opt-in was available in 2018 for those with fewer than 12 years of service.",
+      "status": "Active \u2014 all new accessions",
+      "formula": "high_3_average \u00d7 2.0% \u00d7 years_of_service",
+      "multiplier_per_year_pct": 2.0,
+      "pay_base": "Average of highest 36 months of basic pay",
+      "max_multiplier_pct": 60.0,
+      "max_years": 30,
+      "cola_rule": "Full CPI-W (same as Social Security COLA)",
+      "tsp_matching": true,
+      "tsp_match_details": {
+        "automatic_contribution_pct": 1.0,
+        "automatic_contribution_note": "DoD contributes 1% of basic pay regardless of member contribution",
+        "matching_schedule": [
+          {
+            "member_contribution_pct": 0,
+            "dod_match_pct": 0,
+            "total_dod_pct": 1.0
+          },
+          {
+            "member_contribution_pct": 1,
+            "dod_match_pct": 1,
+            "total_dod_pct": 2.0
+          },
+          {
+            "member_contribution_pct": 2,
+            "dod_match_pct": 2,
+            "total_dod_pct": 3.0
+          },
+          {
+            "member_contribution_pct": 3,
+            "dod_match_pct": 3,
+            "total_dod_pct": 4.0
+          },
+          {
+            "member_contribution_pct": 4,
+            "dod_match_pct": 3.5,
+            "total_dod_pct": 4.5
+          },
+          {
+            "member_contribution_pct": 5,
+            "dod_match_pct": 4.0,
+            "total_dod_pct": 5.0
+          }
+        ],
+        "vesting": "2 years of service for automatic 1%; matching vests immediately",
+        "notes": "Maximum DoD contribution is 5% of basic pay (1% auto + 4% match on 5% member contribution)"
+      },
+      "continuation_pay": true,
+      "continuation_pay_details": {
+        "eligibility": "Between 8 and 12 years of service",
+        "amount": "2.5x to 13x monthly basic pay (service-specific)",
+        "service_obligation": "3-4 additional years",
+        "notes": "Amount varies by service branch and occupational specialty"
+      },
+      "lump_sum_option": {
+        "available": true,
+        "options": [
+          "25% lump sum",
+          "50% lump sum"
+        ],
+        "discount_rate": "Based on DoD prescribed rate",
+        "notes": "Member can elect to receive 25% or 50% of retired pay as lump sum at retirement, with reduced monthly annuity until age 67 (SS FRA), then full amount resumes"
+      },
+      "example": {
+        "years": 20,
+        "multiplier_pct": 40.0,
+        "description": "20 years \u00d7 2.0% = 40% of high-3 average (lower than High-3 system, but offset by TSP matching)"
+      }
+    }
+  ],
+  "reserve_retirement": {
+    "eligibility": "20 qualifying years of service (must have 50+ retirement points per year)",
+    "pay_start_age": 60,
+    "early_pay_provision": "Age reduced by 90 days for each 90 days of active duty in a fiscal year after January 28, 2008 (earliest age 50)",
+    "formula": "high_3_average \u00d7 (retirement_points / 360) \u00d7 2.5%",
+    "notes": "Reserve/Guard retirement pay begins at age 60 (or earlier per early pay provision). Points-based system."
+  },
+  "survivor_benefit_plan": {
+    "description": "SBP provides up to 55% of retired pay to eligible survivors",
+    "coverage_options": [
+      "Spouse only",
+      "Spouse and children",
+      "Children only",
+      "Former spouse",
+      "Insurable interest"
+    ],
+    "base_amount_options": "Full retired pay or any lesser amount (minimum $300/month)",
+    "premium_pct_of_base": 6.5,
+    "benefit_pct_of_base": 55,
+    "social_security_offset": "Eliminated by NDAA FY2023 \u2014 SBP-DIC offset fully repealed as of 2023",
+    "paid_up_provision": "Premiums stop after 360 months of payments AND reaching age 70"
+  },
+  "concurrent_receipt": {
+    "overview": "Prior to 2004, military retirees had retired pay reduced dollar-for-dollar by VA disability compensation amount. CRDP and CRSC partially restore this.",
+    "va_offset_rule": {
+      "description": "Default rule: military retired pay is reduced by VA disability compensation amount",
+      "formula": "net_retired_pay = gross_retired_pay - va_compensation_amount",
+      "applies_to": "All military retirees receiving VA disability compensation, unless CRDP or CRSC applies",
+      "tax_effect": "The offset portion becomes tax-free (replaced by tax-free VA comp). Remaining retired pay is taxable."
+    },
+    "crdp": {
+      "name": "Concurrent Retirement and Disability Pay",
+      "eligibility": {
+        "years_of_service": "20+ years (longevity retirement or Chapter 61 with 20+ years)",
+        "va_disability_rating_min_pct": 50,
+        "reserve_eligible": true,
+        "reserve_note": "Age 60+ (or earlier per early pay provision) with 20 qualifying years"
+      },
+      "not_eligible": [
+        "Chapter 61 retirees with fewer than 20 years of service",
+        "Longevity retirees with VA rating of 40% or less (non-combat)"
+      ],
+      "effect": "Full military retired pay restored \u2014 no VA offset. Retiree receives BOTH full retired pay and full VA compensation.",
+      "computation": {
+        "restored_amount": "Amount that was previously offset (the lesser of retired pay and VA comp amount)",
+        "chapter_61_cap": "For Chapter 61 with 20+ years: CRDP only restores up to the longevity-based retired pay amount. Any disability-based retired pay above the longevity amount remains subject to offset.",
+        "chapter_61_formula": "crdp_amount = min(va_offset, longevity_retired_pay)"
+      },
+      "tax_treatment": {
+        "retired_pay": "Taxable as ordinary income (full amount restored)",
+        "va_compensation": "Tax-free (unchanged)",
+        "crdp_payment": "Taxable \u2014 CRDP is considered restored retired pay, not VA compensation",
+        "net_effect": "Higher gross income but also higher tax liability than CRSC"
+      },
+      "application_required": false,
+      "application_note": "DFAS determines CRDP automatically. No application needed."
+    },
+    "crsc": {
+      "name": "Combat-Related Special Compensation",
+      "eligibility": {
+        "years_of_service": "Any (including Chapter 61 with fewer than 20 years, per 2008 NDAA)",
+        "va_disability_rating_min_pct": 0,
+        "disability_must_be": "Combat-related (actual combat, hazardous duty, simulating war, instrumentality of war)",
+        "reserve_eligible": true,
+        "tera_eligible": true
+      },
+      "combat_related_categories": [
+        {
+          "code": "DC",
+          "description": "Direct Combat \u2014 injuries from enemy action or hostile fire"
+        },
+        {
+          "code": "HD",
+          "description": "Hazardous Duty \u2014 injuries during inherently dangerous military duties"
+        },
+        {
+          "code": "SW",
+          "description": "Simulating War \u2014 injuries during training exercises simulating combat conditions"
+        },
+        {
+          "code": "IN",
+          "description": "Instrumentality of War \u2014 injuries caused by military vehicles, weapons, equipment, or munitions"
+        }
+      ],
+      "effect": "Tax-free payment replaces some or all of the VA offset to retired pay",
+      "computation": {
+        "standard_formula": "crsc_amount = min(va_comp_for_combat_disabilities, retired_pay_offset_amount)",
+        "description": "CRSC equals the VA compensation rate for combat-related disabilities only, capped at the retired pay offset amount",
+        "chapter_61_special_rule": {
+          "description": "For Chapter 61 retirees: CRSC is reduced by the difference between disability-based retired pay and longevity-based retired pay",
+          "formula": "crsc_amount = min(va_comp_for_combat_disabilities, retired_pay_offset) - max(0, disability_retired_pay - longevity_retired_pay)",
+          "notes": "This prevents Chapter 61 retirees from receiving more than they would have earned through longevity alone"
+        },
+        "partial_combat_note": "If only some disabilities are combat-related, CRSC is based on the VA compensation rate for the combat-related portion only, not the total VA rating"
+      },
+      "tax_treatment": {
+        "crsc_payment": "Tax-free (special compensation, not retired pay)",
+        "remaining_retired_pay": "Taxable",
+        "va_compensation": "Tax-free (unchanged)",
+        "net_effect": "Lower gross income but lower tax liability \u2014 may result in higher net income than CRDP depending on marginal tax rate"
+      },
+      "application_required": true,
+      "application_form": "DD Form 2860",
+      "application_to": "Service branch (not VA or DFAS)"
+    },
+    "crdp_vs_crsc_election": {
+      "description": "Retirees eligible for both CRDP and CRSC must choose one \u2014 cannot receive both simultaneously",
+      "election_mechanism": "Annual open season administered by DFAS",
+      "decision_factors": [
+        {
+          "factor": "Tax bracket",
+          "guidance": "Higher marginal tax rate favors CRSC (tax-free) over CRDP (taxable)"
+        },
+        {
+          "factor": "Combat-related rating vs total VA rating",
+          "guidance": "If combat-related rating equals total VA rating, CRSC and CRDP may be similar amounts. If combat-related rating is lower than total, CRDP likely pays more gross."
+        },
+        {
+          "factor": "Filing status and other income",
+          "guidance": "MFJ with high household income may favor CRSC. Single filer with lower income may favor CRDP."
+        },
+        {
+          "factor": "State income tax",
+          "guidance": "In states that tax military retired pay, CRSC advantage increases (since CRSC is also state-tax-free)"
+        },
+        {
+          "factor": "Means-tested benefits",
+          "guidance": "CRSC does not count as income for means-tested programs (ACA subsidies, Medicaid, etc.). CRDP does."
+        }
+      ],
+      "auto_selection": "If CRSC is more beneficial than CRDP, DFAS will automatically elect CRSC for the retiree"
+    },
+    "no_concurrent_receipt_group": {
+      "description": "Retirees who still face full dollar-for-dollar offset with no CRDP or CRSC relief",
+      "group_1": {
+        "description": "Longevity retirees (20+ years) with VA rating of 40% or less and NO combat-related disabilities",
+        "count_estimate": "Significant population \u2014 often called the 'forgotten veterans'",
+        "legislative_status": "Multiple bills introduced to close this gap (e.g., Major Richard Star Act for Chapter 61)"
+      },
+      "group_2": {
+        "description": "Chapter 61 retirees (<20 years) with non-combat disabilities",
+        "notes": "Eligible for CRSC only if disabilities are combat-related. No CRDP eligibility regardless."
+      }
+    },
+    "tax_exclusion_for_disability_retired_pay": {
+      "description": "Separate from CRDP/CRSC: military disability retired pay itself may be partially or fully tax-exempt under IRS rules",
+      "irs_rule": "Under 26 U.S.C. \u00a7 104(a)(4) and \u00a7 104(b)(3), disability retired pay is tax-free to the extent of the VA disability rating percentage",
+      "formula": "tax_free_portion = gross_retired_pay \u00d7 (va_disability_rating_pct / 100)",
+      "applies_to": "Chapter 61 disability retirees and retirees who receive disability retired pay",
+      "combat_injured_exclusion": "Members who received disability retired pay and were in a combat zone may exclude the entire amount",
+      "interaction_with_crdp_crsc": "This exclusion applies independently. A retiree receiving CRDP may still have a portion of their base retired pay excluded if they qualify under \u00a7 104."
+    }
+  },
+  "disability_retirement": {
+    "chapter": "10 U.S.C. Chapter 61",
+    "eligibility": "Member with permanent, stable medical condition rated 30%+ by service branch Physical Evaluation Board (PEB)",
+    "temporary_disability_retired_list": {
+      "description": "TDRL \u2014 placed on temporary list if condition not stable; re-evaluated every 18 months for up to 5 years",
+      "max_duration_years": 5,
+      "re_evaluation_interval_months": 18,
+      "outcomes": [
+        "Permanent retirement (condition stabilized at 30%+)",
+        "Separation with severance (condition improved below 30%)",
+        "Return to active duty (condition resolved)"
+      ]
+    },
+    "permanent_disability_retired_list": {
+      "description": "PDRL \u2014 permanent retirement when condition is stable and rated 30%+"
+    },
+    "formula": {
+      "description": "Retired pay is the GREATER of the two methods below",
+      "method_1_disability": {
+        "name": "Disability percentage method",
+        "formula": "disability_rating_pct \u00d7 pay_base",
+        "pay_base_rules": {
+          "diems_before_1980_09_08": "Final basic pay",
+          "diems_on_or_after_1980_09_08": "High-3 average basic pay"
+        },
+        "max_pct": 75,
+        "notes": "DoD disability rating (not VA rating) is used for this calculation"
+      },
+      "method_2_longevity": {
+        "name": "Longevity method (years of service)",
+        "formula": "2.5% \u00d7 years_of_service \u00d7 pay_base",
+        "pay_base_rules": {
+          "diems_before_1980_09_08": "Final basic pay",
+          "diems_on_or_after_1980_09_08": "High-3 average basic pay"
+        },
+        "max_pct": 75,
+        "notes": "Same formula as standard 20-year retirement, but applied at fewer years"
+      }
+    },
+    "minimum_retired_pay_floor": {
+      "description": "If rated 30%+, minimum retired pay cannot be less than 30% \u00d7 pay base (for those with very few years of service)",
+      "min_pct": 30
+    },
+    "severance_alternative": {
+      "description": "Members rated below 30% by PEB receive disability severance pay (lump sum), not retired pay",
+      "formula": "2 \u00d7 basic_pay \u00d7 years_of_service",
+      "max_years": 19,
+      "taxability": "Tax-free if disability is combat-related; taxable otherwise",
+      "notes": "Not eligible for military retired pay, SBP, or TRICARE retiree coverage"
+    },
+    "cola_rule": "Same as the member's underlying retirement system (based on DIEMS)",
+    "tricare_eligibility": "TRICARE retiree coverage applies (Prime or Select). Medically retired members receive frozen enrollment fees \u2014 see tricare-rates.json medically_retired_fee_schedule",
+    "sbp_eligibility": "Eligible for Survivor Benefit Plan on same terms as longevity retirees"
+  }
+}

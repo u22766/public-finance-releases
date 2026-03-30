@@ -1,0 +1,382 @@
+{
+  "schema_version": "2.2",
+  "schema_min_compatible": "2.2",
+  "data_version": "v2026.1",
+  "generated": "2026-03-30T02:38:31Z",
+  "maintained_by": "finance-data repo owner",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.1.",
+  "files": {
+    "rates_annual": {
+      "version": "2026.3",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (January)",
+      "url": "federal/rates-annual.json",
+      "description": "TSP limits, IRMAA tiers, IRA limits, SS bend points, pay cap, FERS parameters, federal tax brackets, planning assumption defaults",
+      "changelog_2026_2": "Restructure: removed va and vgli sections (moved to federal/veterans-affairs/). No data values changed.",
+      "last_updated": "2026-03-15"
+    },
+    "static_refs": {
+      "version": "1.0.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "rarely",
+      "url": "reference/static-refs.json",
+      "description": "SS Full Retirement Age table, IRS RMD Uniform Lifetime Table, OPM locality area codes",
+      "last_updated": "2026-03-12"
+    },
+    "ssa_life_table": {
+      "version": "1.0",
+      "effective_date": "2025-03-01",
+      "update_frequency": "annual (March/April with Trustees Report)",
+      "url": "reference/ssa-life-table.json",
+      "description": "SSA actuarial period life table: death probabilities, survivor counts, and life expectancy by age (0-119) and sex. 2022 data from 2025 Trustees Report. Includes retirement planning reference ages.",
+      "source": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "changelog_1_0": "Initial release. Full 120-age period life table with retirement planning reference."
+    },
+    "federal_tax_brackets": {
+      "version": "1.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/federal-tax-brackets.json",
+      "description": "Federal income tax bracket history 2001-2026: rates and thresholds by filing status (EGTRRA/JGTRRA/ATRA/TCJA eras)",
+      "source": "IRS Revenue Procedures, Tax Foundation",
+      "last_updated": "2026-03-12",
+      "changelog_1_2": "v1.2: Added cross-reference to filing-status-thresholds.json. Updated 2026 notes for OBBBA."
+    },
+    "state_benefits": {
+      "version": "2.10",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as needed",
+      "url": "states/state-benefits.json",
+      "description": "State and territory income tax treatment, veteran property tax benefits, and vehicle personal property tax exemptions for 56 jurisdictions (50 states + DC + 5 US territories: AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY)",
+      "last_updated": "2026-03-23",
+      "changelog": [
+        "v2.1: Added 5 US territories (AS, GU, MP, PR, VI) \u2014 territory expansion with income tax, real estate, and vehicle property tax separation"
+      ],
+      "changelog_2_9": "v2.9: Legislation watch refresh (all 8 bills checked 2026-03-15). MN HF194 author Rasmusson added. MD HB 857 MACo opposition noted. No bills advanced since Session 39.",
+      "changelog_2_10": "v2.10: Session 56 legislation watch refresh. All 8 tracked bills checked. No bills advanced. MD HB 761 (Keep Our Heroes Home Act) added as companion to HB 857. MD session context added (sine die 4/13, $1.4B deficit). All last_checked dates refreshed to 2026-03-23."
+    },
+    "standard_deduction_history": {
+      "version": "1.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/standard-deduction-history.json",
+      "description": "Standard deduction history 2001-2026 by filing status with age 65+ additional amounts",
+      "last_updated": "2026-03-13",
+      "changelog_1_2": "v1.2: Added cross-reference to filing-status-thresholds.json."
+    },
+    "medicare_rates": {
+      "version": "2026.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/healthcare/medicare-rates.json",
+      "description": "Medicare Parts A, B, D premiums, IRMAA brackets, deductibles, coinsurance, premium history. Includes 26-year Part B premium and Part A deductible history (2001-2026).",
+      "source": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "changelog_2026_1": "Initial release. Complete 2026 CMS data with all IRMAA filing status brackets."
+    },
+    "estate_gift_tax": {
+      "version": "1.0.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/estate-gift-tax.json",
+      "description": "Estate tax exemption, top rate, gift annual exclusion, and lifetime exemption history 2001-2026",
+      "last_updated": "2026-03-13"
+    },
+    "capital_gains_rates": {
+      "version": "1.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/capital-gains-rates.json",
+      "description": "Long-term capital gains tax rate history 2001-2026 with NIIT thresholds",
+      "last_updated": "2026-03-13",
+      "changelog_1_2": "v1.2: Fixed 2026 capital gains thresholds per Rev. Proc. 2025-32. Added HoH and MFS filing statuses. Cross-reference added."
+    },
+    "rmd_rules_history": {
+      "version": "1.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as enacted",
+      "url": "reference/rmd-rules-history.json",
+      "description": "RMD age thresholds (70.5/72/73/75), SECURE Act rule changes, inherited IRA 10-year rule, penalty history",
+      "last_updated": "2026-03-12"
+    },
+    "obbba_tax_provisions": {
+      "url": "reference/obbba-tax-provisions.json",
+      "version": "1.0",
+      "description": "One Big Beautiful Bill Act (P.L. 119-21) tax provisions relevant to retirement and financial planning",
+      "last_updated": "2026-03-13",
+      "effective_date": "2025-07-04",
+      "update_frequency": "as_needed"
+    },
+    "fers_contribution_rates": {
+      "version": "1.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as enacted",
+      "url": "federal/fers-contribution-rates.json",
+      "description": "FERS employee contribution rates by hire-date cohort (FERS 0.8%, RAE 3.1%, FRAE 4.4%), CSRS reference, benefit formula",
+      "last_updated": "2026-03-12"
+    },
+    "fers_computation_rules": {
+      "url": "federal/fers-computation-rules.json",
+      "description": "FERS annuity computation formulas: standard, enhanced, special category (SC), MRA+10 age reduction, disability retirement (first 12 months/after/recomputation at 62), CSRS-to-FERS transfer dual component, and congressional employee rules.",
+      "version": "2026.1",
+      "last_updated": "2026-03-20",
+      "update_cycle": "as enacted"
+    },
+    "fers_eligibility_rules": {
+      "url": "federal/fers-eligibility-rules.json",
+      "description": "FERS retirement eligibility: MRA schedule by birth year (13 bands, 55-57), all immediate retirement pathways (MRA+30, 60+20, 62+5, MRA+10), special category (LEO/FF/ATC), VERA/VSIP early retirement, deferred and disability eligibility, FEHB 5-year rule.",
+      "version": "1.0",
+      "last_updated": "2026-03-23",
+      "update_cycle": "as enacted"
+    },
+    "fers_service_credit_rules": {
+      "url": "federal/fers-service-credit-rules.json",
+      "description": "Federal retirement service credit: civilian deposit and redeposit (FERS/CSRS), military service buyback, sick leave conversion formula with OPM 2087-hour reference table, and 42 years of Treasury interest rate history (1985-2026).",
+      "version": "1.0",
+      "last_updated": "2026-03-23",
+      "update_cycle": "annual (interest rate)"
+    },
+    "leo_premium_pay": {
+      "url": "federal/leo-premium-pay.json",
+      "description": "LEO premium pay rules: LEAP (25% availability pay for criminal investigators) and AUO (10-25% administratively uncontrollable overtime). Includes eligible series, rate tiers, retirement treatment, and position-to-premium mapping.",
+      "version": "2026.1",
+      "last_updated": "2026-03-20",
+      "update_cycle": "as enacted"
+    },
+    "csrs_retirement_rules": {
+      "version": "1.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as enacted",
+      "url": "reference/csrs-retirement-rules.json",
+      "description": "CSRS retirement system rules: tiered formula (1.5%/1.75%/2.0%), eligibility, 80% cap, sick leave credit, survivor annuity (55%), CSRS Offset, voluntary contributions, special category (LEO/FF), COLA (full CPI)",
+      "last_updated": "2026-03-15"
+    },
+    "military_pay_tables": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (January, after NDAA pay raise)",
+      "url": "federal/military-pay-tables.json",
+      "description": "Monthly military basic pay by grade and YOS, 2016-2026. Supports High-3 average calculation for military retirement.",
+      "last_updated": "2026-03-13"
+    },
+    "military_retirement_rules": {
+      "version": "2.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as enacted",
+      "url": "reference/military-retirement-rules.json",
+      "description": "Military retirement systems (Final Pay, High-3, REDUX, BRS), Chapter 61 disability retirement, SBP, concurrent receipt (CRDP/CRSC) with tax treatment and election logic. Covers all eight uniformed services including USPHS and NOAA Corps.",
+      "last_updated": "2026-03-23"
+    },
+    "va_compensation": {
+      "version": "2026.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (December COLA)",
+      "url": "federal/veterans-affairs/compensation.json",
+      "description": "VA disability compensation rates by rating with dependent additions, DIC rates, VA COLA",
+      "changelog_2026_1": "Extracted from rates-annual.json during schema 2.0 restructure. All values unchanged."
+    },
+    "vgli": {
+      "version": "2026",
+      "effective_date": "2025-07-01",
+      "update_frequency": "as published by VA",
+      "url": "federal/veterans-affairs/vgli.json",
+      "description": "Veterans Group Life Insurance age-banded premium table",
+      "changelog_2026": "Extracted from rates-annual.json during schema 2.0 restructure. All values unchanged."
+    },
+    "ss_bend_points": {
+      "version": "1.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (October)",
+      "url": "federal/ss-bend-points.json",
+      "description": "Social Security PIA bend points history 1979-2026: first and second bend points, PIA replacement factors",
+      "source": "https://www.ssa.gov/oact/COLA/bendpoints.html",
+      "changelog_1_0": "Initial release. 48 years of bend point history."
+    },
+    "ss_taxable_max": {
+      "version": "1.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (October)",
+      "url": "federal/ss-taxable-max.json",
+      "description": "Social Security taxable maximum history 1937-2026: wage base, OASDI rates, max employee tax",
+      "source": "https://www.ssa.gov/oact/COLA/cbb.html",
+      "changelog_1_0": "Initial release. 90 years of taxable maximum history."
+    },
+    "social_security_claiming": {
+      "version": "1.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as enacted",
+      "url": "reference/social-security-claiming.json",
+      "description": "SS FRA schedule, early filing reductions, delayed retirement credits, earnings test, WEP/GPO repeal status",
+      "last_updated": "2026-03-15"
+    },
+    "fehb_rates": {
+      "version": "2026.3",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (October)",
+      "url": "federal/healthcare/fehb-rates.json",
+      "description": "FEHB premium rates \u2014 complete 132-plan dataset (19 nationwide FFS + 459 regional HMO entries) from OPM Excel files",
+      "last_updated": "2026-03-11"
+    },
+    "fehb_plan_benefits": {
+      "version": "2026.1",
+      "description": "FEHB plan benefits \u2014 deductibles, OOP max, copays, pharmacy tiers, Medicare coordination for all 132 plans (in-network + out-of-network)",
+      "last_updated": "2026-03-11",
+      "url": "federal/healthcare/fehb-plan-benefits.json",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual"
+    },
+    "tricare_rates": {
+      "version": "2026.3",
+      "description": "TRICARE premium, cost-share, pharmacy copay, and dental program schedule \u2014 Prime, Select, TFL, TDP, Reserve Select, Retired Reserve, TYA, CHCBP",
+      "last_updated": "2026-03-12",
+      "url": "federal/healthcare/tricare-rates.json",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual"
+    },
+    "fedvip_rates": {
+      "version": "2026.1",
+      "description": "FEDVIP dental and vision premium rates \u2014 11 dental carriers by rating region, 5 vision carriers nationwide",
+      "last_updated": "2026-03-11",
+      "url": "federal/healthcare/fedvip-rates.json",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual"
+    },
+    "tsp_limits": {
+      "version": "1.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/tsp-limits.json",
+      "description": "TSP contribution limits history 1987-2026: elective deferral, catch-up, super catch-up (60-63), annual additions limit",
+      "source": "https://www.tsp.gov/plan-participation/eligibility/contribution-limits/",
+      "changelog_1_0": "Initial release. 40 years of TSP/401k limit history."
+    },
+    "ira_limits": {
+      "version": "2.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (November)",
+      "url": "federal/ira-limits.json",
+      "description": "IRA contribution limits history 1975-2026: contribution limits, catch-up, Roth income phase-outs by filing status (single, married joint, married separate)",
+      "source": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits",
+      "changelog_2_0": "v2.0: Added Roth income phase-out thresholds by filing status for all years since 1998.",
+      "changelog_2_1": "v2.1: Added cross-reference to filing-status-thresholds.json."
+    },
+    "tsp_roth_conversion": {
+      "version": "1.0",
+      "effective_date": "2026-01-28",
+      "update_frequency": "as enacted",
+      "url": "reference/tsp-roth-conversion.json",
+      "description": "TSP Roth in-plan conversion rules: eligibility, mechanics (min $500, max 26/yr), tax treatment, five-year rules, mandatory Roth catch-up, planning interactions (IRMAA, SRS, ladder strategy)",
+      "last_updated": "2026-03-15"
+    },
+    "filing_status_thresholds": {
+      "version": "2026.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (January, after IRS Rev. Proc. published)",
+      "url": "federal/filing-status-thresholds.json",
+      "description": "Consolidated filing-status-dependent thresholds for all five IRS filing statuses. Tax brackets, standard deductions, IRMAA, IRA limits, SS taxation, SALT caps. Includes 10-year history (2016-2025).",
+      "source": "IRS Rev. Proc. 2025-32, CMS CMS-8089-N, SSA, IRS Notice 2025-67, OBBBA P.L. 119-21",
+      "last_updated": "2026-03-16",
+      "changelog_2026_2": "v2026.2: Fixed 2026 HoH bracket thresholds per Rev. Proc. 2025-32 Table 2."
+    },
+    "vrs_plans": {
+      "version": "2026.2",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as needed",
+      "url": "states/virginia/vrs-plans.json",
+      "description": "Virginia Retirement System (VRS) \u2014 Plan 1, Plan 2, Hybrid DB+DC, SPORS, VaLORS, enhanced hazardous duty, COLA formulas, health insurance credit, hazardous duty supplement",
+      "changelog_2_0_0": "Split from plan-library.json during schema 2.0 restructure. VRS plans only. All values unchanged.",
+      "last_updated": "2026-03-14"
+    },
+    "lacera_plans_los_angeles": {
+      "version": "2026.3",
+      "effective_date": "2026-04-01",
+      "update_frequency": "annual (COLA in April, actuarial valuation)",
+      "url": "states/california/los-angeles-county/lacera-plans.json",
+      "description": "LACERA (Los Angeles County) retirement plan data \u2014 9 plans covering general (A/B/C/D/E/G) and safety (A/B/C) members",
+      "last_updated": "2026-03-23"
+    },
+    "trs_plans_texas": {
+      "description": "Teacher Retirement System of Texas (TRS) \u2014 ~2M members, 6 tiers by enrollment/grandfathered status. Non-SS-covered. Formula: 2.3% x service x FAS. No automatic COLA \u2014 legislative only. Member+employer each 8.25%.",
+      "url": "states/texas/trs-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "texas",
+      "scope": "statewide",
+      "version": "2026.1",
+      "last_updated": "2026-03-24"
+    },
+    "frs_plans_florida": {
+      "description": "Florida Retirement System (FRS) Pension Plan \u2014 ~1.1M members. SS-covered. 2 tiers (pre/post July 2011). 5 membership classes (Regular 1.6%, Special Risk 3.0%, Senior Mgmt 2.0%, EOC Judges 3-1/3%, EOC Other 3.0%). FY2025-26 and FY2024-25 employer contribution rates by class with UAL breakdown. Compensation caps. Early retirement reduction benchmarks by class. Tier 1 COLA prorated 3%; Tier 2 no COLA. DROP, HIS supplement.",
+      "url": "states/florida/frs-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "florida",
+      "scope": "statewide",
+      "version": "2026.2",
+      "last_updated": "2026-03-25"
+    },
+    "strs_ohio_plans": {
+      "description": "State Teachers Retirement System of Ohio (STRS Ohio) \u2014 ~543K members. Non-SS-covered. Formula: 2.2% x service x 5-yr FAS. Board-approved COLA via SBP (1.5% FY2026, 1.6% FY2027). 14% member+employer. 3 plan types (DB/DC/Combined).",
+      "url": "states/ohio/strs-ohio-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "ohio",
+      "scope": "statewide",
+      "version": "2026.1",
+      "last_updated": "2026-03-24"
+    },
+    "nyslrs_plans_new_york": {
+      "description": "New York State and Local Retirement System (NYSLRS) \u2014 ERS (6 tiers) and PFRS (5 tiers, no T4). 1.2M members. SS-covered. COLA: 50% CPI, 1-3%, first $18K. Tier 6 income-based contributions 3-6%. 2024 law: FAE changed from 5 to 3 years for Tier 6.",
+      "url": "states/new-york/nyslrs-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "new-york",
+      "scope": "statewide",
+      "version": "2026.1",
+      "last_updated": "2026-03-24"
+    },
+    "nystrs_plans_new_york": {
+      "description": "New York State Teachers Retirement System (NYSTRS) \u2014 460K members, educator-only. SS-covered. 6 tiers; Tier 4 largest (59%), Tier 6 36% growing. COLA: 50% CPI 1-3% first $18K (same law as NYSLRS). Tier 6 FAS = 5 years (NYSTRS did NOT get the 2024 3-year FAE law). 101.5% funded.",
+      "url": "states/new-york/nystrs-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "new-york",
+      "scope": "statewide",
+      "version": "2026.1",
+      "last_updated": "2026-03-24"
+    },
+    "opers_plans_ohio": {
+      "description": "Ohio Public Employees Retirement System (OPERS) \u2014 1M+ members. Non-SS-covered. Traditional Pension Plan Groups A/B/C (2.2%/2.5% formula). Member-Directed (DC) and Combined (closed Jan 2022). LE/PS separate tiers. CPI-W COLA cap 3%.",
+      "url": "states/ohio/opers-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "ohio",
+      "scope": "statewide",
+      "version": "2026.1",
+      "last_updated": "2026-03-24"
+    },
+    "other_db_template": {
+      "version": "1.0.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "rarely",
+      "url": "reference/other-db-template.json",
+      "description": "Generic defined benefit plan template for user-entered pension parameters"
+    },
+    "erfc_plans_fairfax": {
+      "version": "2.0.0",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as needed",
+      "url": "states/virginia/fairfax-county/erfc-plans.json",
+      "description": "ERFC supplemental pension parameters: Legacy, 2001 Tier 1, 2001 Tier 2. Fairfax County (FCPS) only. County-level plan under states/virginia/fairfax-county/.",
+      "changelog_2_0_0": "Split from plan-library.json during schema 2.0 restructure. ERFC plans only. Added jurisdiction metadata. All values unchanged."
+    },
+    "data_vintage": {
+      "description": "Data vintage labels for all files in finance-data. Maps each manifest key to the year/date of rates or rules it reflects (e.g., TY2026, FY2025-26, CY2026). Distinguishes 'data vintage' (what year the data represents) from 'last_updated' (when the file was last edited).",
+      "url": "data_vintage.json",
+      "category": "reference",
+      "subcategory": "metadata",
+      "scope": "repo_wide",
+      "version": "1.0",
+      "last_updated": "2026-03-25"
+    }
+  }
+}
