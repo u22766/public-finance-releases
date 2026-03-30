@@ -1,0 +1,22 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches: [main]
+permissions:
+  pages: write
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare site
+        run: |
+          mkdir -p _site
+          cp manifest.json _site/ 2>/dev/null || true
+          cp latest.json _site/ 2>/dev/null || true
+          cp -r data/ _site/data/ 2>/dev/null || true
+      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/deploy-pages@v4
