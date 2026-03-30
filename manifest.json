@@ -1,10 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.3",
-  "generated": "2026-03-30T15:04:36Z",
+  "data_version": "v2026.4",
+  "generated": "2026-03-30T21:11:55Z",
   "maintained_by": "finance-data repo owner",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.3.",
+  "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.4.",
   "files": {
     "rates_annual": {
       "version": "2026.3",
@@ -43,12 +44,12 @@
       "changelog_1_2": "v1.2: Added cross-reference to filing-status-thresholds.json. Updated 2026 notes for OBBBA."
     },
     "state_benefits": {
-      "version": "2.10",
+      "version": "2.12",
       "effective_date": "2026-01-01",
       "update_frequency": "as needed",
       "url": "states/state-benefits.json",
       "description": "State and territory income tax treatment, veteran property tax benefits, and vehicle personal property tax exemptions for 56 jurisdictions (50 states + DC + 5 US territories: AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY)",
-      "last_updated": "2026-03-23",
+      "last_updated": "2026-03-24",
       "changelog": [
         "v2.1: Added 5 US territories (AS, GU, MP, PR, VI) \u2014 territory expansion with income tax, real estate, and vehicle property tax separation"
       ],
@@ -321,8 +322,8 @@
       "subcategory": "state_pension",
       "state": "ohio",
       "scope": "statewide",
-      "version": "2026.1",
-      "last_updated": "2026-03-24"
+      "version": "2026.2",
+      "last_updated": "2026-03-25"
     },
     "nyslrs_plans_new_york": {
       "description": "New York State and Local Retirement System (NYSLRS) \u2014 ERS (6 tiers) and PFRS (5 tiers, no T4). 1.2M members. SS-covered. COLA: 50% CPI, 1-3%, first $18K. Tier 6 income-based contributions 3-6%. 2024 law: FAE changed from 5 to 3 years for Tier 6.",
@@ -362,12 +363,13 @@
       "description": "Generic defined benefit plan template for user-entered pension parameters"
     },
     "erfc_plans_fairfax": {
-      "version": "2.0.0",
+      "version": "2026.1",
       "effective_date": "2026-01-01",
       "update_frequency": "as needed",
       "url": "states/virginia/fairfax-county/erfc-plans.json",
       "description": "ERFC supplemental pension parameters: Legacy, 2001 Tier 1, 2001 Tier 2. Fairfax County (FCPS) only. County-level plan under states/virginia/fairfax-county/.",
-      "changelog_2_0_0": "Split from plan-library.json during schema 2.0 restructure. ERFC plans only. Added jurisdiction metadata. All values unchanged."
+      "changelog_2_0_0": "Split from plan-library.json during schema 2.0 restructure. ERFC plans only. Added jurisdiction metadata. All values unchanged.",
+      "last_updated": "2026-03-25"
     },
     "data_vintage": {
       "description": "Data vintage labels for all files in finance-data. Maps each manifest key to the year/date of rates or rules it reflects (e.g., TY2026, FY2025-26, CY2026). Distinguishes 'data vintage' (what year the data represents) from 'last_updated' (when the file was last edited).",
