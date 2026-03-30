@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>public-finance-releases</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fff; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .links { margin-bottom: 1.5rem; }
+    .links a { margin-right: 1.5rem; font-size: 0.95rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th { text-align: left; border-bottom: 2px solid #ddd; padding: 0.4rem 0.6rem; }
+    td { border-bottom: 1px solid #eee; padding: 0.4rem 0.6rem; vertical-align: top; }
+    tr:hover td { background: #f9f9f9; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 2rem; color: #999; font-size: 0.8rem; border-top: 1px solid #eee; padding-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>public-finance-releases</h1>
+  <p class="meta">Release <strong>v2026.3</strong> &mdash; 2026-03-30 &mdash; 56 files &mdash; Consumer-agnostic U.S. public finance reference data</p>
+  <div class="links">
+    <a href="latest.json">latest.json</a>
+    <a href="manifest.json">manifest.json</a>
+    <a href="data/data_vintage.json">data_vintage.json</a>
+  </div>
+  <table>
+    <thead><tr><th>Key</th><th>Version</th><th>Description</th></tr></thead>
+    <tbody><tr><td><a href="data/federal/capital-gains-rates.json">capital_gains_rates</a></td><td>1.2</td><td>Long-term capital gains tax rate history 2001-2026 with NIIT thresholds</td></tr>
+<tr><td><a href="data/states/arizona/county-property-tax.json">county_property_tax_az</a></td><td>1.1</td><td>County-level property tax rates and veteran exemption details: Maricopa County (AZ).</td></tr>
+<tr><td><a href="data/states/california/county-property-tax.json">county_property_tax_california</a></td><td>1.0</td><td>County-level property tax rates and veteran exemptions for California (Prop 13 constrained)</td></tr>
+<tr><td><a href="data/states/colorado/county-property-tax.json">county_property_tax_co</a></td><td>1.2</td><td>County-level property tax rates and veteran exemption details: El Paso County (CO).</td></tr>
+<tr><td><a href="data/states/florida/county-property-tax.json">county_property_tax_fl</a></td><td>1.3</td><td>County-level property tax rates, veteran exemptions, and application info for top retirement and mil</td></tr>
+<tr><td><a href="data/states/georgia/county-property-tax.json">county_property_tax_ga</a></td><td>1.1</td><td>County-level property tax rates, veteran exemptions, and application info for top retirement and mil</td></tr>
+<tr><td><a href="data/states/maryland/county-property-tax.json">county_property_tax_md</a></td><td>1.2</td><td>County-level property tax rates and veteran exemption details: Prince George's County (MD).</td></tr>
+<tr><td><a href="data/states/north-carolina/county-property-tax.json">county_property_tax_nc</a></td><td>1.3</td><td>County-level property tax rates and veteran exemption details: Cumberland County (NC).</td></tr>
+<tr><td><a href="data/states/nevada/county-property-tax.json">county_property_tax_nv</a></td><td>1.1</td><td>County-level property tax rates and veteran exemption details: Clark County (NV).</td></tr>
+<tr><td><a href="data/states/south-carolina/county-property-tax.json">county_property_tax_sc</a></td><td>1.0</td><td>County-level property tax rates, veteran exemptions, and application info for top retirement countie</td></tr>
+<tr><td><a href="data/states/tennessee/county-property-tax.json">county_property_tax_tn</a></td><td>1.0</td><td>County-level property tax rates, veteran exemptions, and application info for top retirement countie</td></tr>
+<tr><td><a href="data/states/texas/county-property-tax.json">county_property_tax_tx</a></td><td>1.3</td><td>County-level property tax rates and veteran exemption details: Bexar County (TX).</td></tr>
+<tr><td><a href="data/states/virginia/county-property-tax.json">county_property_tax_va</a></td><td>1.3</td><td>County-level property tax rates and veteran exemption details: Fairfax County, Virginia Beach (VA).</td></tr>
+<tr><td><a href="data/states/washington/county-property-tax.json">county_property_tax_wa</a></td><td>1.2</td><td>County-level property tax rates and veteran exemption details: Pierce County (WA).</td></tr>
+<tr><td><a href="data/reference/csrs-retirement-rules.json">csrs_retirement_rules</a></td><td>1.0</td><td>CSRS retirement system rules: tiered formula (1.5%/1.75%/2.0%), eligibility, 80% cap, sick leave cre</td></tr>
+<tr><td><a href="data/data_vintage.json">data_vintage</a></td><td>1.0</td><td>Data vintage labels for all files in finance-data. Maps each manifest key to the year/date of rates </td></tr>
+<tr><td><a href="data/states/virginia/fairfax-county/erfc-plans.json">erfc_plans_fairfax</a></td><td>2.0.0</td><td>ERFC supplemental pension parameters: Legacy, 2001 Tier 1, 2001 Tier 2. Fairfax County (FCPS) only. </td></tr>
+<tr><td><a href="data/federal/estate-gift-tax.json">estate_gift_tax</a></td><td>1.0.1</td><td>Estate tax exemption, top rate, gift annual exclusion, and lifetime exemption history 2001-2026</td></tr>
+<tr><td><a href="data/federal/federal-tax-brackets.json">federal_tax_brackets</a></td><td>1.2</td><td>Federal income tax bracket history 2001-2026: rates and thresholds by filing status (EGTRRA/JGTRRA/A</td></tr>
+<tr><td><a href="data/federal/healthcare/fedvip-rates.json">fedvip_rates</a></td><td>2026.1</td><td>FEDVIP dental and vision premium rates — 11 dental carriers by rating region, 5 vision carriers nati</td></tr>
+<tr><td><a href="data/federal/healthcare/fehb-plan-benefits.json">fehb_plan_benefits</a></td><td>2026.1</td><td>FEHB plan benefits — deductibles, OOP max, copays, pharmacy tiers, Medicare coordination for all 132</td></tr>
+<tr><td><a href="data/federal/healthcare/fehb-rates.json">fehb_rates</a></td><td>2026.3</td><td>FEHB premium rates — complete 132-plan dataset (19 nationwide FFS + 459 regional HMO entries) from O</td></tr>
+<tr><td><a href="data/federal/fers-computation-rules.json">fers_computation_rules</a></td><td>2026.1</td><td>FERS annuity computation formulas: standard, enhanced, special category (SC), MRA+10 age reduction, </td></tr>
+<tr><td><a href="data/federal/fers-contribution-rates.json">fers_contribution_rates</a></td><td>1.0</td><td>FERS employee contribution rates by hire-date cohort (FERS 0.8%, RAE 3.1%, FRAE 4.4%), CSRS referenc</td></tr>
+<tr><td><a href="data/federal/fers-eligibility-rules.json">fers_eligibility_rules</a></td><td>1.0</td><td>FERS retirement eligibility: MRA schedule by birth year (13 bands, 55-57), all immediate retirement </td></tr>
+<tr><td><a href="data/federal/fers-service-credit-rules.json">fers_service_credit_rules</a></td><td>1.0</td><td>Federal retirement service credit: civilian deposit and redeposit (FERS/CSRS), military service buyb</td></tr>
+<tr><td><a href="data/federal/filing-status-thresholds.json">filing_status_thresholds</a></td><td>2026.2</td><td>Consolidated filing-status-dependent thresholds for all five IRS filing statuses. Tax brackets, stan</td></tr>
+<tr><td><a href="data/states/florida/frs-plans.json">frs_plans_florida</a></td><td>2026.2</td><td>Florida Retirement System (FRS) Pension Plan — ~1.1M members. SS-covered. 2 tiers (pre/post July 201</td></tr>
+<tr><td><a href="data/federal/ira-limits.json">ira_limits</a></td><td>2.1</td><td>IRA contribution limits history 1975-2026: contribution limits, catch-up, Roth income phase-outs by </td></tr>
+<tr><td><a href="data/states/california/los-angeles-county/lacera-plans.json">lacera_plans_los_angeles</a></td><td>2026.3</td><td>LACERA (Los Angeles County) retirement plan data — 9 plans covering general (A/B/C/D/E/G) and safety</td></tr>
+<tr><td><a href="data/federal/leo-premium-pay.json">leo_premium_pay</a></td><td>2026.1</td><td>LEO premium pay rules: LEAP (25% availability pay for criminal investigators) and AUO (10-25% admini</td></tr>
+<tr><td><a href="data/federal/healthcare/medicare-rates.json">medicare_rates</a></td><td>2026.2</td><td>Medicare Parts A, B, D premiums, IRMAA brackets, deductibles, coinsurance, premium history. Includes</td></tr>
+<tr><td><a href="data/federal/military-pay-tables.json">military_pay_tables</a></td><td>2026.1</td><td>Monthly military basic pay by grade and YOS, 2016-2026. Supports High-3 average calculation for mili</td></tr>
+<tr><td><a href="data/reference/military-retirement-rules.json">military_retirement_rules</a></td><td>2.1</td><td>Military retirement systems (Final Pay, High-3, REDUX, BRS), Chapter 61 disability retirement, SBP, </td></tr>
+<tr><td><a href="data/states/new-york/nyslrs-plans.json">nyslrs_plans_new_york</a></td><td>2026.1</td><td>New York State and Local Retirement System (NYSLRS) — ERS (6 tiers) and PFRS (5 tiers, no T4). 1.2M </td></tr>
+<tr><td><a href="data/states/new-york/nystrs-plans.json">nystrs_plans_new_york</a></td><td>2026.1</td><td>New York State Teachers Retirement System (NYSTRS) — 460K members, educator-only. SS-covered. 6 tier</td></tr>
+<tr><td><a href="data/reference/obbba-tax-provisions.json">obbba_tax_provisions</a></td><td>1.0</td><td>One Big Beautiful Bill Act (P.L. 119-21) tax provisions relevant to retirement and financial plannin</td></tr>
+<tr><td><a href="data/states/ohio/opers-plans.json">opers_plans_ohio</a></td><td>2026.1</td><td>Ohio Public Employees Retirement System (OPERS) — 1M+ members. Non-SS-covered. Traditional Pension P</td></tr>
+<tr><td><a href="data/reference/other-db-template.json">other_db_template</a></td><td>1.0.0</td><td>Generic defined benefit plan template for user-entered pension parameters</td></tr>
+<tr><td><a href="data/federal/rates-annual.json">rates_annual</a></td><td>2026.3</td><td>TSP limits, IRMAA tiers, IRA limits, SS bend points, pay cap, FERS parameters, federal tax brackets,</td></tr>
+<tr><td><a href="data/reference/rmd-rules-history.json">rmd_rules_history</a></td><td>1.0</td><td>RMD age thresholds (70.5/72/73/75), SECURE Act rule changes, inherited IRA 10-year rule, penalty his</td></tr>
+<tr><td><a href="data/reference/social-security-claiming.json">social_security_claiming</a></td><td>1.2</td><td>SS FRA schedule, early filing reductions, delayed retirement credits, earnings test, WEP/GPO repeal </td></tr>
+<tr><td><a href="data/federal/ss-bend-points.json">ss_bend_points</a></td><td>1.0</td><td>Social Security PIA bend points history 1979-2026: first and second bend points, PIA replacement fac</td></tr>
+<tr><td><a href="data/federal/ss-taxable-max.json">ss_taxable_max</a></td><td>1.0</td><td>Social Security taxable maximum history 1937-2026: wage base, OASDI rates, max employee tax</td></tr>
+<tr><td><a href="data/reference/ssa-life-table.json">ssa_life_table</a></td><td>1.0</td><td>SSA actuarial period life table: death probabilities, survivor counts, and life expectancy by age (0</td></tr>
+<tr><td><a href="data/federal/standard-deduction-history.json">standard_deduction_history</a></td><td>1.2</td><td>Standard deduction history 2001-2026 by filing status with age 65+ additional amounts</td></tr>
+<tr><td><a href="data/states/state-benefits.json">state_benefits</a></td><td>2.10</td><td>State and territory income tax treatment, veteran property tax benefits, and vehicle personal proper</td></tr>
+<tr><td><a href="data/reference/static-refs.json">static_refs</a></td><td>1.0.2</td><td>SS Full Retirement Age table, IRS RMD Uniform Lifetime Table, OPM locality area codes</td></tr>
+<tr><td><a href="data/states/ohio/strs-ohio-plans.json">strs_ohio_plans</a></td><td>2026.1</td><td>State Teachers Retirement System of Ohio (STRS Ohio) — ~543K members. Non-SS-covered. Formula: 2.2% </td></tr>
+<tr><td><a href="data/federal/healthcare/tricare-rates.json">tricare_rates</a></td><td>2026.3</td><td>TRICARE premium, cost-share, pharmacy copay, and dental program schedule — Prime, Select, TFL, TDP, </td></tr>
+<tr><td><a href="data/states/texas/trs-plans.json">trs_plans_texas</a></td><td>2026.1</td><td>Teacher Retirement System of Texas (TRS) — ~2M members, 6 tiers by enrollment/grandfathered status. </td></tr>
+<tr><td><a href="data/federal/tsp-limits.json">tsp_limits</a></td><td>1.0</td><td>TSP contribution limits history 1987-2026: elective deferral, catch-up, super catch-up (60-63), annu</td></tr>
+<tr><td><a href="data/reference/tsp-roth-conversion.json">tsp_roth_conversion</a></td><td>1.0</td><td>TSP Roth in-plan conversion rules: eligibility, mechanics (min $500, max 26/yr), tax treatment, five</td></tr>
+<tr><td><a href="data/federal/veterans-affairs/compensation.json">va_compensation</a></td><td>2026.2</td><td>VA disability compensation rates by rating with dependent additions, DIC rates, VA COLA</td></tr>
+<tr><td><a href="data/federal/veterans-affairs/vgli.json">vgli</a></td><td>2026</td><td>Veterans Group Life Insurance age-banded premium table</td></tr>
+<tr><td><a href="data/states/virginia/vrs-plans.json">vrs_plans</a></td><td>2026.2</td><td>Virginia Retirement System (VRS) — Plan 1, Plan 2, Hybrid DB+DC, SPORS, VaLORS, enhanced hazardous d</td></tr>
+</tbody>
+  </table>
+  <footer>Source: government agencies and public records. No PII. No financial advice.</footer>
+</body>
+</html>
