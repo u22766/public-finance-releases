@@ -18,5 +18,72 @@ jobs:
           cp manifest.json _site/ 2>/dev/null || true
           cp latest.json _site/ 2>/dev/null || true
           cp -r data/ _site/data/ 2>/dev/null || true
+
+          # Generate index.html
+          python3 << 'EOF'
+          import json, datetime
+
+          with open('latest.json') as f:
+              latest = json.load(f)
+          with open('manifest.json') as f:
+              manifest = json.load(f)
+
+          tag = latest.get('tag', 'unknown')
+          date = latest.get('date', 'unknown')
+          file_count = latest.get('file_count', 0)
+
+          files_by_category = {}
+          for key, entry in manifest.get('files', {}).items():
+              cat = entry.get('category', 'other')
+              files_by_category.setdefault(cat, []).append((key, entry))
+
+          rows = ''
+          for cat in sorted(files_by_category):
+              for key, entry in sorted(files_by_category[cat]):
+                  url = entry.get('url', '')
+                  version = entry.get('version', '')
+                  desc = entry.get('description', '')[:80]
+                  full_url = f'data/{url}'
+                  rows += f'<tr><td><a href="{full_url}">{key}</a></td><td>{cat}</td><td>{version}</td><td>{desc}</td></tr>\n'
+
+          html = f"""<!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>public-finance-releases</title>
+            <style>
+              body {{ font-family: system-ui, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #222; }}
+              h1 {{ font-size: 1.4rem; margin-bottom: 0.25rem; }}
+              .meta {{ color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }}
+              .links {{ margin-bottom: 1.5rem; }}
+              .links a {{ margin-right: 1.5rem; font-size: 0.95rem; }}
+              table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
+              th {{ text-align: left; border-bottom: 2px solid #ddd; padding: 0.4rem 0.6rem; }}
+              td {{ border-bottom: 1px solid #eee; padding: 0.4rem 0.6rem; vertical-align: top; }}
+              tr:hover td {{ background: #f9f9f9; }}
+              a {{ color: #0066cc; }}
+            </style>
+          </head>
+          <body>
+            <h1>public-finance-releases</h1>
+            <p class="meta">Release <strong>{tag}</strong> &mdash; {date} &mdash; {file_count} files &mdash; Consumer-agnostic U.S. public finance reference data</p>
+            <div class="links">
+              <a href="latest.json">latest.json</a>
+              <a href="manifest.json">manifest.json</a>
+              <a href="data/data_vintage.json">data_vintage.json</a>
+            </div>
+            <table>
+              <thead><tr><th>Key</th><th>Category</th><th>Version</th><th>Description</th></tr></thead>
+              <tbody>{rows}</tbody>
+            </table>
+          </body>
+          </html>"""
+
+          with open('_site/index.html', 'w') as f:
+              f.write(html)
+
+          print('index.html generated')
+          EOF
       - uses: actions/upload-pages-artifact@v3
       - uses: actions/deploy-pages@v4
