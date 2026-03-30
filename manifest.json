@@ -2,7 +2,7 @@
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
   "data_version": "v2026.3",
-  "generated": "2026-03-30T04:14:45Z",
+  "generated": "2026-03-30T15:04:36Z",
   "maintained_by": "finance-data repo owner",
   "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.3.",
   "files": {
