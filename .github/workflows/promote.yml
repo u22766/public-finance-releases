@@ -1,0 +1,122 @@
+name: Promote from finance-data
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v2026.1)'
+        required: true
+        default: 'v2026.1'
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout public-finance-releases
+        uses: actions/checkout@v4
+
+      - name: Clone finance-data
+        run: |
+          git clone https://x-access-token:${{ secrets.FINANCE_DATA_TOKEN }}@github.com/u22766/finance-data.git source
+
+      - name: Copy promoted files
+        run: |
+          python3 << 'EOF'
+          import json, os, shutil
+
+          KEYS = [
+            'rates_annual','static_refs','ssa_life_table','federal_tax_brackets',
+            'state_benefits','standard_deduction_history','medicare_rates',
+            'estate_gift_tax','capital_gains_rates','rmd_rules_history','obbba_tax_provisions',
+            'fers_contribution_rates','fers_computation_rules','fers_eligibility_rules',
+            'fers_service_credit_rules','leo_premium_pay','csrs_retirement_rules',
+            'military_pay_tables','military_retirement_rules','va_compensation','vgli',
+            'ss_bend_points','ss_taxable_max','social_security_claiming',
+            'fehb_rates','fehb_plan_benefits','tricare_rates','fedvip_rates',
+            'tsp_limits','ira_limits','tsp_roth_conversion','filing_status_thresholds',
+            'vrs_plans','lacera_plans_los_angeles','trs_plans_texas','frs_plans_florida',
+            'strs_ohio_plans','nyslrs_plans_new_york','nystrs_plans_new_york',
+            'opers_plans_ohio','other_db_template','erfc_plans_fairfax','data_vintage'
+          ]
+
+          with open('source/manifest.json') as f:
+              manifest = json.load(f)
+
+          copied = 0
+          for key in KEYS:
+              entry = manifest['files'].get(key)
+              if not entry:
+                  print(f'MISSING: {key}')
+                  continue
+              url = entry['url']
+              src = os.path.join('source', url)
+              dst = os.path.join('data', url)
+              os.makedirs(os.path.dirname(dst), exist_ok=True)
+              shutil.copy2(src, dst)
+              copied += 1
+              print(f'Copied: {key} -> data/{url}')
+
+          print(f'\nTotal: {copied} files copied')
+          EOF
+
+      - name: Write manifest.json and latest.json
+        run: |
+          python3 << 'EOF'
+          import json, datetime
+
+          KEYS = [
+            'rates_annual','static_refs','ssa_life_table','federal_tax_brackets',
+            'state_benefits','standard_deduction_history','medicare_rates',
+            'estate_gift_tax','capital_gains_rates','rmd_rules_history','obbba_tax_provisions',
+            'fers_contribution_rates','fers_computation_rules','fers_eligibility_rules',
+            'fers_service_credit_rules','leo_premium_pay','csrs_retirement_rules',
+            'military_pay_tables','military_retirement_rules','va_compensation','vgli',
+            'ss_bend_points','ss_taxable_max','social_security_claiming',
+            'fehb_rates','fehb_plan_benefits','tricare_rates','fedvip_rates',
+            'tsp_limits','ira_limits','tsp_roth_conversion','filing_status_thresholds',
+            'vrs_plans','lacera_plans_los_angeles','trs_plans_texas','frs_plans_florida',
+            'strs_ohio_plans','nyslrs_plans_new_york','nystrs_plans_new_york',
+            'opers_plans_ohio','other_db_template','erfc_plans_fairfax','data_vintage'
+          ]
+
+          tag = '${{ github.event.inputs.tag }}'
+
+          with open('source/manifest.json') as f:
+              src_manifest = json.load(f)
+
+          curated = {
+            'schema_version': src_manifest.get('schema_version', '2.2'),
+            'schema_min_compatible': src_manifest.get('schema_min_compatible', '2.0'),
+            'data_version': tag,
+            'generated': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'maintained_by': 'finance-data repo owner',
+            'description': f'Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release {tag}.',
+            'files': {k: src_manifest['files'][k] for k in KEYS if k in src_manifest['files']}
+          }
+
+          with open('manifest.json', 'w') as f:
+              json.dump(curated, f, indent=2)
+
+          latest = {
+            'tag': tag,
+            'date': datetime.datetime.utcnow().strftime('%Y-%m-%d'),
+            'file_count': len(curated['files']),
+            'description': f'Release {tag}'
+          }
+
+          with open('latest.json', 'w') as f:
+              json.dump(latest, f, indent=2)
+
+          print(f'manifest.json and latest.json written for {tag}')
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          git commit -m "Promote ${{ github.event.inputs.tag }} from finance-data"
+          git push
