@@ -3,8 +3,8 @@
     "title": "County Property Tax Rates and Veteran Exemptions \u2014 NV",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties.",
     "state_code": "NV",
-    "version": "1.1",
-    "last_updated": "2026-03-13",
+    "version": "1.2",
+    "last_updated": "2026-03-31",
     "sources": [
       "County tax assessor/collector offices",
       "County appraisal district offices",
@@ -55,6 +55,16 @@
           "eligibility": "Wartime veteran with 60%+ service-connected disability; NV resident",
           "surviving_spouse": true,
           "_note": "NV does NOT offer full exemption. Maximum is $25,000 off assessed value."
+        },
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_assessed_value": 35400,
+          "eligibility": "60%+ permanent service-connected disability; honorable discharge; NV resident",
+          "applies_to": "Primary residence, manufactured home, or vehicle registration",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "note": "NV does not offer full exemption. At 100% rating: $35,400 assessed value deduction (FY2025/2026, CPI-indexed). For Clark County median home (~$385,000) at 1.0% effective rate: ~$354/yr savings.",
+          "source": "https://tax.nv.gov/FAQs/Veteran_Exemption_Information_FAQs/"
         }
       },
       "application": {

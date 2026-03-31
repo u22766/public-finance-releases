@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.5",
-  "generated": "2026-03-30T22:52:08Z",
+  "data_version": "v2026.6",
+  "generated": "2026-03-31T22:22:14Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.5.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.6.",
   "files": {
     "rates_annual": {
       "version": "2026.3",
@@ -44,17 +44,18 @@
       "changelog_1_2": "v1.2: Added cross-reference to filing-status-thresholds.json. Updated 2026 notes for OBBBA."
     },
     "state_benefits": {
-      "version": "2.12",
+      "version": "2.13",
       "effective_date": "2026-01-01",
       "update_frequency": "as needed",
       "url": "states/state-benefits.json",
       "description": "State and territory income tax treatment, veteran property tax benefits, and vehicle personal property tax exemptions for 56 jurisdictions (50 states + DC + 5 US territories: AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY)",
-      "last_updated": "2026-03-24",
+      "last_updated": "2026-03-31",
       "changelog": [
         "v2.1: Added 5 US territories (AS, GU, MP, PR, VI) \u2014 territory expansion with income tax, real estate, and vehicle property tax separation"
       ],
       "changelog_2_9": "v2.9: Legislation watch refresh (all 8 bills checked 2026-03-15). MN HF194 author Rasmusson added. MD HB 857 MACo opposition noted. No bills advanced since Session 39.",
-      "changelog_2_10": "v2.10: Session 56 legislation watch refresh. All 8 tracked bills checked. No bills advanced. MD HB 761 (Keep Our Heroes Home Act) added as companion to HB 857. MD session context added (sine die 4/13, $1.4B deficit). All last_checked dates refreshed to 2026-03-23."
+      "changelog_2_10": "v2.10: Session 56 legislation watch refresh. All 8 tracked bills checked. No bills advanced. MD HB 761 (Keep Our Heroes Home Act) added as companion to HB 857. MD session context added (sine die 4/13, $1.4B deficit). All last_checked dates refreshed to 2026-03-23.",
+      "changelog_2_13": "Added disabled_veteran_100pct_property_tax standardized block to all 56 jurisdictions."
     },
     "standard_deduction_history": {
       "version": "1.2",
@@ -382,13 +383,14 @@
       "last_updated": "2026-03-25"
     },
     "county_property_tax_az": {
-      "version": "1.1",
+      "version": "2026.2",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/arizona/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Maricopa County (AZ).",
-      "last_updated": "2026-03-13",
-      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
+      "last_updated": "2026-03-31",
+      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
+      "changelog_2026_2": "Added disabled_veteran_100_pct to Maricopa County veteran_exemptions."
     },
     "county_property_tax_california": {
       "url": "states/california/county-property-tax.json",
@@ -397,13 +399,14 @@
       "last_updated": "2026-03-21"
     },
     "county_property_tax_co": {
-      "version": "1.2",
+      "version": "2026.2",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/colorado/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: El Paso County (CO).",
-      "last_updated": "2026-03-21",
-      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
+      "last_updated": "2026-03-31",
+      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
+      "changelog_2026_2": "Added disabled_veteran_100_pct to El Paso and Douglas County veteran_exemptions."
     },
     "county_property_tax_fl": {
       "version": "1.3",
@@ -440,13 +443,14 @@
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
     },
     "county_property_tax_nv": {
-      "version": "1.1",
+      "version": "2026.2",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/nevada/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Clark County (NV).",
-      "last_updated": "2026-03-13",
-      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
+      "last_updated": "2026-03-31",
+      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
+      "changelog_2026_2": "Added disabled_veteran_100_pct to Clark County veteran_exemptions."
     },
     "county_property_tax_sc": {
       "url": "states/south-carolina/county-property-tax.json",
@@ -481,13 +485,14 @@
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
     },
     "county_property_tax_wa": {
-      "version": "1.2",
+      "version": "2026.2",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/washington/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Pierce County (WA).",
-      "last_updated": "2026-03-21",
-      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
+      "last_updated": "2026-03-31",
+      "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
+      "changelog_2026_2": "Added disabled_veteran_100_pct to Pierce and Kitsap County veteran_exemptions."
     }
   }
 }
