@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 PA",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in Pennsylvania.",
+    "state_code": "PA",
+    "version": "2026.1",
+    "last_updated": "2026-03-31",
+    "sources": [
+      "Pennsylvania Department of Community and Economic Development",
+      "SmartAsset Pennsylvania Property Tax Calculator",
+      "PA DMVA Disabled Veterans' Real Estate Tax Exemption",
+      "County assessment offices"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of assessed value.",
+      "assessment_note": "Pennsylvania counties assess at varying percentages of market value. Rates shown are effective rates applied to market value.",
+      "veteran_exemption_note": "PA Act 77 (2021): Full property tax exemption for 100% P&T veterans who demonstrate financial need. Presumptive income threshold $114,637 (2025). Locally administered through county assessment offices.",
+      "update_cycle": "Tax rates set annually by county, school district, and municipal authorities."
+    }
+  },
+  "counties": [
+    {
+      "county": "Philadelphia County",
+      "state_code": "PA",
+      "fips": "42101",
+      "military_installations": [
+        "Naval Support Activity Philadelphia",
+        "Defense Personnel Center"
+      ],
+      "estimated_veteran_population": 55000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.3998,
+        "total_effective_rate_per_100": 1.3998,
+        "median_home_value": 280000,
+        "assessment_ratio": 1.0,
+        "notes": "Philadelphia's effective rate is lower than surrounding suburbs. Uniform treatment under Act 60 assessment."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": false,
+          "estimated_annual_savings": 3920,
+          "savings_basis": "Philadelphia County median home $280,000 \u00d7 1.40% effective rate",
+          "note": "Full exemption under PA Act 77 (2021). Apply through Philadelphia OPA. Income-tested: presumptive need level $114,637 for 2025 \u2014 verify current threshold at PA DMVA before applying.",
+          "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
+        }
+      },
+      "senior_disability_relief": {
+        "program": "Pennsylvania Property Tax/Rent Rebate",
+        "max_rebate": 1000,
+        "income_limit": 45000,
+        "note": "Age 65+ or disabled; income \u2264$45,000"
+      },
+      "application": {
+        "office": "Philadelphia Office of Property Assessment",
+        "url": "https://www.phila.gov/departments/office-of-property-assessment/",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "Proof of residency",
+          "Income documentation"
+        ]
+      },
+      "source": "https://www.phila.gov/departments/office-of-property-assessment/"
+    },
+    {
+      "county": "Allegheny County",
+      "state_code": "PA",
+      "fips": "42003",
+      "military_installations": [
+        "Pittsburgh MEPS",
+        "911th Airlift Wing (Pittsburgh IAP)"
+      ],
+      "estimated_veteran_population": 65000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.39,
+        "total_effective_rate_per_100": 1.39,
+        "median_home_value": 220000,
+        "assessment_ratio": 1.0,
+        "notes": "Allegheny County (Pittsburgh area). Countywide reassessment in 2012; values held since then."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": false,
+          "estimated_annual_savings": 3058,
+          "savings_basis": "Allegheny County median home $220,000 \u00d7 1.39% effective rate",
+          "note": "Full exemption under PA Act 77 (2021). Income-tested at county assessment office.",
+          "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
+        }
+      },
+      "application": {
+        "office": "Allegheny County Office of Property Assessments",
+        "url": "https://www.alleghenycounty.us/real-estate/assessment.aspx",
+        "documentation": [
+          "VA Summary of Benefits Letter",
+          "Proof of PA residency",
+          "Income documentation"
+        ]
+      },
+      "source": "https://www.alleghenycounty.us/real-estate/assessment.aspx"
+    },
+    {
+      "county": "Cumberland County",
+      "state_code": "PA",
+      "fips": "42041",
+      "military_installations": [
+        "Carlisle Barracks (US Army War College)",
+        "Defense Distribution Center Susquehanna"
+      ],
+      "estimated_veteran_population": 28000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.15,
+        "total_effective_rate_per_100": 1.15,
+        "median_home_value": 295000,
+        "assessment_ratio": 1.0,
+        "notes": "Cumberland County (Carlisle/Mechanicsburg area). High veteran population due to Carlisle Barracks."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": false,
+          "estimated_annual_savings": 3393,
+          "savings_basis": "Cumberland County median home $295,000 \u00d7 1.15% effective rate",
+          "note": "Full exemption under PA Act 77 (2021). Carlisle Barracks retiree community makes this a high-priority county.",
+          "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
+        }
+      },
+      "application": {
+        "office": "Cumberland County Assessment Office",
+        "url": "https://www.cumberlandcountypa.gov/222/Assessment",
+        "documentation": [
+          "VA Summary of Benefits Letter",
+          "Proof of PA residency",
+          "Income documentation"
+        ]
+      },
+      "source": "https://www.cumberlandcountypa.gov/222/Assessment"
+    },
+    {
+      "county": "York County",
+      "state_code": "PA",
+      "fips": "42133",
+      "military_installations": [
+        "York MEPS"
+      ],
+      "estimated_veteran_population": 34000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.3,
+        "total_effective_rate_per_100": 1.3,
+        "median_home_value": 250000,
+        "assessment_ratio": 1.0,
+        "notes": "York County, south-central PA. Large veteran population."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": false,
+          "estimated_annual_savings": 3250,
+          "savings_basis": "York County median home $250,000 \u00d7 1.30% effective rate",
+          "note": "Full exemption under PA Act 77 (2021). Apply through York County Assessment Office.",
+          "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
+        }
+      },
+      "application": {
+        "office": "York County Assessment Office",
+        "url": "https://www.yorkcountypa.gov/government/departments-a-m/assessment.html",
+        "documentation": [
+          "VA Summary of Benefits Letter",
+          "Proof of PA residency",
+          "Income documentation"
+        ]
+      },
+      "source": "https://www.yorkcountypa.gov/government/departments-a-m/assessment.html"
+    }
+  ]
+}

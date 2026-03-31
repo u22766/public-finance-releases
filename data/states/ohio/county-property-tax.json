@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 OH",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in Ohio.",
+    "state_code": "OH",
+    "version": "2026.1",
+    "last_updated": "2026-03-31",
+    "sources": [
+      "Ohio Department of Taxation",
+      "County auditor offices",
+      "SmartAsset Ohio Property Tax Calculator",
+      "ORC Sec. 323.152 veteran exemption"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of assessed value (applied to market value).",
+      "assessment_note": "Ohio assesses residential property at 35% of market value. Effective rates shown are market-value-based (millage \u00d7 35%).",
+      "veteran_exemption_note": "Ohio ORC Sec. 323.152: Full property tax exemption on primary residence for 100% P&T disabled veterans. No income limit. Apply through county auditor.",
+      "update_cycle": "Tax rates set annually by county auditors."
+    }
+  },
+  "counties": [
+    {
+      "county": "Cuyahoga County",
+      "state_code": "OH",
+      "fips": "39035",
+      "military_installations": [
+        "DFAS Cleveland",
+        "NASA Glenn Research Center"
+      ],
+      "estimated_veteran_population": 52000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.8,
+        "total_effective_rate_per_100": 1.8,
+        "median_home_value": 195000,
+        "assessment_ratio": 0.35,
+        "notes": "Cuyahoga County (Cleveland area) has the highest effective property tax rate in Ohio."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%; OH resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 3510,
+          "savings_basis": "Cuyahoga County median home $195,000 \u00d7 1.80% effective rate",
+          "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with county auditor's office. Surviving unremarried spouse retains the exemption.",
+          "source": "https://www.tax.ohio.gov/"
+        }
+      },
+      "application": {
+        "office": "Cuyahoga County Fiscal Office (County Auditor)",
+        "url": "https://fiscal.cuyahogacounty.gov/",
+        "deadline": "December 31 for following tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "Proof of OH residency and ownership"
+        ]
+      },
+      "source": "https://fiscal.cuyahogacounty.gov/"
+    },
+    {
+      "county": "Franklin County",
+      "state_code": "OH",
+      "fips": "39049",
+      "military_installations": [
+        "Defense Supply Center Columbus",
+        "Rickenbacker ANG Base"
+      ],
+      "estimated_veteran_population": 60000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.4,
+        "total_effective_rate_per_100": 1.4,
+        "median_home_value": 250000,
+        "assessment_ratio": 0.35,
+        "notes": "Franklin County (Columbus area). Contains Rickenbacker ANG Base and Defense Supply Center Columbus."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%; OH resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 3500,
+          "savings_basis": "Franklin County median home $250,000 \u00d7 1.40% effective rate",
+          "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with Franklin County Auditor.",
+          "source": "https://www.tax.ohio.gov/"
+        }
+      },
+      "application": {
+        "office": "Franklin County Auditor",
+        "url": "https://www.franklincountyauditor.com/",
+        "deadline": "December 31 for following tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "Proof of OH residency and ownership"
+        ]
+      },
+      "source": "https://www.franklincountyauditor.com/"
+    },
+    {
+      "county": "Hamilton County",
+      "state_code": "OH",
+      "fips": "39061",
+      "military_installations": [
+        "Wright-Patterson AFB (proximity)",
+        "Cincinnati MEPS"
+      ],
+      "estimated_veteran_population": 45000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.44,
+        "total_effective_rate_per_100": 1.44,
+        "median_home_value": 245000,
+        "assessment_ratio": 0.35,
+        "notes": "Hamilton County (Cincinnati area)."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%; OH resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 3528,
+          "savings_basis": "Hamilton County median home $245,000 \u00d7 1.44% effective rate",
+          "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with Hamilton County Auditor.",
+          "source": "https://www.tax.ohio.gov/"
+        }
+      },
+      "application": {
+        "office": "Hamilton County Auditor",
+        "url": "https://www.hamiltoncountyauditor.org/",
+        "deadline": "December 31 for following tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "Proof of OH residency and ownership"
+        ]
+      },
+      "source": "https://www.hamiltoncountyauditor.org/"
+    },
+    {
+      "county": "Montgomery County",
+      "state_code": "OH",
+      "fips": "39113",
+      "military_installations": [
+        "Wright-Patterson AFB"
+      ],
+      "estimated_veteran_population": 48000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.55,
+        "total_effective_rate_per_100": 1.55,
+        "median_home_value": 175000,
+        "assessment_ratio": 0.35,
+        "notes": "Montgomery County (Dayton area). Home of Wright-Patterson AFB \u2014 very high veteran and active-duty population."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%; OH resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 2713,
+          "savings_basis": "Montgomery County median home $175,000 \u00d7 1.55% effective rate",
+          "note": "Full exemption under ORC Sec. 323.152. Wright-Patterson AFB retirees: this exemption is particularly valuable in this county. Apply with Montgomery County Auditor.",
+          "source": "https://www.tax.ohio.gov/"
+        }
+      },
+      "application": {
+        "office": "Montgomery County Auditor",
+        "url": "https://www.mcauditor.org/",
+        "deadline": "December 31 for following tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "Proof of OH residency and ownership"
+        ]
+      },
+      "source": "https://www.mcauditor.org/"
+    }
+  ]
+}

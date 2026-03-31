@@ -242,6 +242,21 @@
     "data_vintage": {
       "reflects": "2026",
       "last_entry_year": 2026
+    },
+    "county_property_tax_pa": {
+      "reflects": "TY2026",
+      "rates_effective": "2026-01-01",
+      "last_entry_year": 2026
+    },
+    "county_property_tax_oh": {
+      "reflects": "TY2026",
+      "rates_effective": "2026-01-01",
+      "last_entry_year": 2026
+    },
+    "county_property_tax_il": {
+      "reflects": "TY2026",
+      "rates_effective": "2026-01-01",
+      "last_entry_year": 2026
     }
   }
 }

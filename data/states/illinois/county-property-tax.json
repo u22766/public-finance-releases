@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 IL",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in Illinois.",
+    "state_code": "IL",
+    "version": "2026.1",
+    "last_updated": "2026-03-31",
+    "sources": [
+      "Illinois Department of Revenue",
+      "County assessor offices",
+      "35 ILCS 200/15-165 Disabled Veterans Standard Homestead Exemption",
+      "SmartAsset Illinois Property Tax Calculator"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of assessed value (applied to market value).",
+      "assessment_note": "Illinois assesses residential property at 33.33% of market value (EAV). Effective rates shown are market-value-based.",
+      "veteran_exemption_note": "Illinois 35 ILCS 200/15-165: Exemption on up to $100,000 of equalized assessed value (EAV) for 100% disabled veterans. EAV = ~33% of market value. Effectively full exemption for homes with market value \u2264~$300,000. Partial benefit for higher-value properties.",
+      "update_cycle": "Tax rates set annually by county and municipal authorities."
+    }
+  },
+  "counties": [
+    {
+      "county": "Cook County",
+      "state_code": "IL",
+      "fips": "17031",
+      "military_installations": [
+        "Naval Station Great Lakes (proximity)",
+        "Fort Sheridan (historic/reserve)",
+        "O'Hare ANG"
+      ],
+      "estimated_veteran_population": 140000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 2.08,
+        "total_effective_rate_per_100": 2.08,
+        "median_home_value": 320000,
+        "assessment_ratio": 0.3333,
+        "notes": "Cook County (Chicago area). IL's highest effective property tax rate. Assessment is 10% of market for residential."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_eav": 100000,
+          "exemption_market_value_equivalent": 300000,
+          "eligibility": "100% disabled veteran or IU at 100%; IL resident; primary residence",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 2080,
+          "savings_basis": "$100,000 EAV exemption \u00d7 2.08% Cook County effective rate. For homes \u2264~$300K market value, full exemption. For $320K median home: ~$2,080 savings.",
+          "note": "Exemption on up to $100,000 of EAV (35 ILCS 200/15-165). Cook County EAV \u2248 10% of market value (not 33%) due to local assessment rules. A $320K home has ~$32,000 EAV \u2014 fully exempted. Savings = full tax bill for most Cook County homes.",
+          "source": "https://www.cookcountyassessor.com/exemptions"
+        }
+      },
+      "application": {
+        "office": "Cook County Assessor's Office",
+        "url": "https://www.cookcountyassessor.com/exemptions",
+        "deadline": "Varies by township; typically February-March",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "Proof of IL residency and ownership"
+        ]
+      },
+      "source": "https://www.cookcountyassessor.com/"
+    },
+    {
+      "county": "Lake County",
+      "state_code": "IL",
+      "fips": "17097",
+      "military_installations": [
+        "Naval Station Great Lakes",
+        "Navy Recruit Training Command"
+      ],
+      "estimated_veteran_population": 38000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 2.65,
+        "total_effective_rate_per_100": 2.65,
+        "median_home_value": 310000,
+        "assessment_ratio": 0.3333,
+        "notes": "Lake County (northern IL, home of Naval Station Great Lakes). High property tax rate."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_eav": 100000,
+          "exemption_market_value_equivalent": 300000,
+          "eligibility": "100% disabled veteran or IU at 100%; IL resident; primary residence",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 2650,
+          "savings_basis": "$100,000 EAV exemption \u00d7 2.65% effective rate. Homes \u2264~$300K market value receive full exemption.",
+          "note": "Naval Station Great Lakes retirees: Lake County has one of the highest rates in IL. $100,000 EAV exemption (35 ILCS 200/15-165) covers full EAV for most local homes. Apply with Lake County Assessor.",
+          "source": "https://tax.illinois.gov/"
+        }
+      },
+      "application": {
+        "office": "Lake County Assessor's Office",
+        "url": "https://www.lakecountyil.gov/assessor",
+        "documentation": [
+          "VA Rating Decision or Summary of Benefits Letter",
+          "Proof of IL residency and ownership"
+        ]
+      },
+      "source": "https://www.lakecountyil.gov/assessor"
+    },
+    {
+      "county": "St. Clair County",
+      "state_code": "IL",
+      "fips": "17163",
+      "military_installations": [
+        "Scott AFB",
+        "MidAmerica St. Louis Airport (Scott co-located)"
+      ],
+      "estimated_veteran_population": 32000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 2.15,
+        "total_effective_rate_per_100": 2.15,
+        "median_home_value": 170000,
+        "assessment_ratio": 0.3333,
+        "notes": "St. Clair County (Metro East, IL). Home of Scott AFB \u2014 very high veteran population relative to county size."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_eav": 100000,
+          "exemption_market_value_equivalent": 300000,
+          "eligibility": "100% disabled veteran or IU at 100%; IL resident; primary residence",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 3655,
+          "savings_basis": "Median home $170,000 \u00d7 2.15% = $3,655. Full exemption as EAV (~$56,700) is well below $100,000 EAV cap.",
+          "note": "Scott AFB area: Most homes are below the $300K threshold where the $100,000 EAV exemption provides full relief. Effectively a full exemption for the majority of Scott AFB veterans and retirees in this county.",
+          "source": "https://tax.illinois.gov/"
+        }
+      },
+      "application": {
+        "office": "St. Clair County Supervisor of Assessments",
+        "url": "https://www.co.st-clair.il.us/departments/supervisor-of-assessments",
+        "documentation": [
+          "VA Rating Decision or Summary of Benefits Letter",
+          "Proof of IL residency and ownership"
+        ]
+      },
+      "source": "https://www.co.st-clair.il.us/departments/supervisor-of-assessments"
+    },
+    {
+      "county": "Sangamon County",
+      "state_code": "IL",
+      "fips": "17167",
+      "military_installations": [
+        "Springfield ANG (Capital Airport)",
+        "Illinois Military Museum"
+      ],
+      "estimated_veteran_population": 18000,
+      "tax_year": 2026,
+      "property_tax": {
+        "rate_per_100": 1.9,
+        "total_effective_rate_per_100": 1.9,
+        "median_home_value": 175000,
+        "assessment_ratio": 0.3333,
+        "notes": "Sangamon County (Springfield, IL state capital area)."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_eav": 100000,
+          "exemption_market_value_equivalent": 300000,
+          "eligibility": "100% disabled veteran or IU at 100%; IL resident; primary residence",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 3325,
+          "savings_basis": "Median home $175,000 \u00d7 1.90% = $3,325. Full exemption as EAV (~$58,300) is well below $100,000 EAV cap.",
+          "note": "Effectively a full exemption for most Sangamon County homes (EAV well below $100,000 cap). Apply with Sangamon County Assessor.",
+          "source": "https://tax.illinois.gov/"
+        }
+      },
+      "application": {
+        "office": "Sangamon County Supervisor of Assessments",
+        "url": "https://www.co.sangamon.il.us/departments/a-through-e/assessments",
+        "documentation": [
+          "VA Rating Decision or Summary of Benefits Letter",
+          "Proof of IL residency and ownership"
+        ]
+      },
+      "source": "https://www.co.sangamon.il.us/departments/a-through-e/assessments"
+    }
+  ]
+}

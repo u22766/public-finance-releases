@@ -2,7 +2,7 @@
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
   "data_version": "v2026.6",
-  "generated": "2026-03-31T22:22:14Z",
+  "generated": "2026-03-31T22:35:59Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
   "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.6.",
@@ -493,6 +493,30 @@
       "last_updated": "2026-03-31",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to Pierce and Kitsap County veteran_exemptions."
+    },
+    "county_property_tax_pa": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (after county rate-setting)",
+      "url": "states/pennsylvania/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemption details: Philadelphia, Allegheny, Cumberland, York Counties (PA).",
+      "last_updated": "2026-03-31"
+    },
+    "county_property_tax_oh": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (after county rate-setting)",
+      "url": "states/ohio/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemption details: Cuyahoga, Franklin, Hamilton, Montgomery Counties (OH).",
+      "last_updated": "2026-03-31"
+    },
+    "county_property_tax_il": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (after county rate-setting)",
+      "url": "states/illinois/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemption details: Cook, Lake, St. Clair, Sangamon Counties (IL).",
+      "last_updated": "2026-03-31"
     }
   }
 }
