@@ -1,7 +1,7 @@
 {
   "_comment": "Annual Rate Constants \u2014 2026. Federal civilian retirement, tax, and benefits data. All values are government-published public data. No PII. Update annually each January from OPM, IRS, SSA, and CMS sources. VA compensation and VGLI data moved to federal/veterans-affairs/.",
   "_corrected": "2026-03-08: 32+ corrections applied (IRA, IRMAA, deductions, TSP threshold, DIC). Tax bracket middle cutoffs (12%/22%/24%/32%/35%) corrected per IRS Rev. Proc. 2025-32 Tables 1 and 3. All values verified against IRS Notice 2025-67, CMS CMS-8089-N, TSP Bulletin 25-3, VA.gov.",
-  "version": "2026.3",
+  "version": "2026.4",
   "effective_date": "2026-01-01",
   "sources": {
     "tsp": "https://www.tsp.gov/bulletins/25-3/",
@@ -247,8 +247,11 @@
     "fers_cola_default": 0.01,
     "ss_cola_default": 0.025,
     "va_cola_default": 0.02,
-    "inflation_rate_default": 0.03,
-    "_cola_note": "FERS 1.0%, SS 2.5%, VA 2.0%. Inflation default 3.0%."
+    "inflation_rate_default": 0.025,
+    "_cola_note": "FERS 1.0%, SS 2.5%, VA 2.0%, Healthcare 5.0%. Inflation default 2.5%.",
+    "healthcare_inflation_default": 0.05,
+    "_healthcare_note": "Medicare Part B premiums have grown ~5.8% annually over 25 years. 5.0% is a conservative planning baseline.",
+    "_inflation_note": "2.5% aligns with SSA Trustees intermediate assumption. Prior value was 3.0%."
   },
   "tax": {
     "_comment": "Federal income tax constants for projection engines \u2014 2026. Source: IRS Rev. Proc. 2025-32 (includes OBBBA adjustments signed July 4, 2025).",
@@ -355,5 +358,6 @@
       }
     ],
     "_brackets_mfj_note": "Verified against IRS Rev. Proc. 2025-32 Table 3 (Section 4.01). All cutoffs confirmed."
-  }
+  },
+  "last_updated": "2026-04-03"
 }
