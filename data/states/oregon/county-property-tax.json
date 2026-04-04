@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 OR",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in Oregon.",
+    "state": "Oregon",
+    "state_code": "OR",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County assessor offices",
+      "Oregon Department of Revenue"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "assessment_method": "Oregon Measure 50 (1997): assessed value \u2260 market value. AV grows max 3%/yr.",
+      "veteran_exemption": "OR provides full property tax exemption on homestead for 100% disabled veterans under ORS 307.250-.270."
+    }
+  },
+  "counties": [
+    {
+      "county": "Multnomah County",
+      "state_code": "OR",
+      "fips": "41051",
+      "military_installations": [],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0108,
+        "median_home_value": 480000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.08,
+        "assessment_ratio": 1.0,
+        "_note": "Effective rate on market value. Measure 50 assessed value is typically lower."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "ORS 307.250",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Multnomah County Assessment & Taxation",
+        "url": "https://www.multco.us/assessment-taxation"
+      }
+    },
+    {
+      "county": "Lane County",
+      "state_code": "OR",
+      "fips": "41039",
+      "military_installations": [],
+      "estimated_veteran_population": 18000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0092,
+        "median_home_value": 370000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.92,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "ORS 307.250",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Lane County Assessment & Taxation",
+        "url": "https://www.lanecounty.org/government/county_departments/assessment_and_taxation"
+      }
+    },
+    {
+      "county": "Clackamas County",
+      "state_code": "OR",
+      "fips": "41005",
+      "military_installations": [],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0088,
+        "median_home_value": 500000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.88,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "ORS 307.250",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Clackamas County Assessment & Taxation",
+        "url": "https://www.clackamas.us/at"
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 AR",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in Arkansas.",
+    "state": "Arkansas",
+    "state_code": "AR",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County assessor offices",
+      "Arkansas Assessment Coordination Department"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "assessment_method": "Arkansas assesses residential at 20% of market value.",
+      "veteran_exemption": "AR provides full property tax exemption on homestead for 100% disabled veterans under Ark. Const. Amend. 79 \u00a72."
+    }
+  },
+  "counties": [
+    {
+      "county": "Pulaski County",
+      "state_code": "AR",
+      "fips": "05119",
+      "military_installations": [
+        "Little Rock Air Force Base"
+      ],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0082,
+        "median_home_value": 195000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.82,
+        "assessment_ratio": 0.2
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected disability",
+          "statutory_source": "Ark. Const. Amend. 79 \u00a72",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Pulaski County Assessor",
+        "url": "https://www.pulaskicountyassessor.net"
+      }
+    },
+    {
+      "county": "Sebastian County",
+      "state_code": "AR",
+      "fips": "05131",
+      "military_installations": [
+        "Fort Chaffee (training center)"
+      ],
+      "estimated_veteran_population": 10000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0065,
+        "median_home_value": 160000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.65,
+        "assessment_ratio": 0.2
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected disability",
+          "statutory_source": "Ark. Const. Amend. 79 \u00a72",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Sebastian County Assessor",
+        "url": "https://www.sebastiancountyar.gov/assessor"
+      }
+    }
+  ]
+}

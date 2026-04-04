@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.9",
-  "generated": "2026-04-04T18:06:30Z",
+  "data_version": "v2026.10",
+  "generated": "2026-04-04T18:28:30Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.9.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.10.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -403,6 +403,11 @@
       "description": "Alabama county property tax rates and veteran exemptions",
       "category": "state_county"
     },
+    "county_property_tax_ar": {
+      "version": "2026.1",
+      "url": "states/arkansas/county-property-tax.json",
+      "description": "Arkansas county property tax rates and veteran exemptions"
+    },
     "county_property_tax_az": {
       "version": "2026.2",
       "effective_date": "2025-01-01",
@@ -453,6 +458,21 @@
       "description": "County-level property tax rates and veteran exemption details: Cook, Lake, St. Clair, Sangamon Counties (IL).",
       "last_updated": "2026-03-31"
     },
+    "county_property_tax_in": {
+      "version": "2026.1",
+      "url": "states/indiana/county-property-tax.json",
+      "description": "Indiana county property tax rates and veteran exemptions"
+    },
+    "county_property_tax_ky": {
+      "version": "2026.1",
+      "url": "states/kentucky/county-property-tax.json",
+      "description": "Kentucky county property tax rates and veteran exemptions"
+    },
+    "county_property_tax_la": {
+      "version": "2026.1",
+      "url": "states/louisiana/county-property-tax.json",
+      "description": "Louisiana parish property tax rates and veteran exemptions"
+    },
     "county_property_tax_md": {
       "version": "1.2",
       "effective_date": "2025-01-01",
@@ -472,6 +492,16 @@
       "url": "states/minnesota/county-property-tax.json",
       "description": "Minnesota county property tax rates and veteran exemptions (Hennepin, Ramsey, Anoka)"
     },
+    "county_property_tax_mo": {
+      "version": "2026.1",
+      "url": "states/missouri/county-property-tax.json",
+      "description": "Missouri county property tax rates and veteran exemptions"
+    },
+    "county_property_tax_ms": {
+      "version": "2026.1",
+      "url": "states/mississippi/county-property-tax.json",
+      "description": "Mississippi county property tax rates and veteran exemptions"
+    },
     "county_property_tax_nc": {
       "version": "1.3",
       "effective_date": "2025-01-01",
@@ -480,6 +510,11 @@
       "description": "County-level property tax rates and veteran exemption details: Cumberland County (NC).",
       "last_updated": "2026-03-21",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
+    },
+    "county_property_tax_nj": {
+      "version": "2026.1",
+      "url": "states/new-jersey/county-property-tax.json",
+      "description": "New Jersey county property tax rates and veteran exemptions"
     },
     "county_property_tax_nv": {
       "version": "2026.2",
@@ -491,6 +526,11 @@
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to Clark County veteran_exemptions."
     },
+    "county_property_tax_ny": {
+      "version": "2026.1",
+      "url": "states/new-york/county-property-tax.json",
+      "description": "New York county property tax rates and veteran exemptions"
+    },
     "county_property_tax_oh": {
       "version": "2026.1",
       "effective_date": "2026-01-01",
@@ -498,6 +538,16 @@
       "url": "states/ohio/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Cuyahoga, Franklin, Hamilton, Montgomery Counties (OH).",
       "last_updated": "2026-03-31"
+    },
+    "county_property_tax_ok": {
+      "version": "2026.1",
+      "url": "states/oklahoma/county-property-tax.json",
+      "description": "Oklahoma county property tax rates and veteran exemptions"
+    },
+    "county_property_tax_or": {
+      "version": "2026.1",
+      "url": "states/oregon/county-property-tax.json",
+      "description": "Oregon county property tax rates and veteran exemptions"
     },
     "county_property_tax_pa": {
       "version": "2026.1",
@@ -548,6 +598,11 @@
       "last_updated": "2026-03-31",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to Pierce and Kitsap County veteran_exemptions."
+    },
+    "county_property_tax_wi": {
+      "version": "2026.1",
+      "url": "states/wisconsin/county-property-tax.json",
+      "description": "Wisconsin county property tax rates and veteran exemptions"
     }
   }
 }

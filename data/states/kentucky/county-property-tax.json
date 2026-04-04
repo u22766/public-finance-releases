@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 KY",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in Kentucky.",
+    "state": "Kentucky",
+    "state_code": "KY",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County PVA offices",
+      "Kentucky Department of Revenue"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "assessment_method": "Kentucky assesses at 100% fair cash value.",
+      "veteran_exemption": "KY provides partial property tax exemption of $49,100 (2025) for totally disabled veterans under KRS 132.810."
+    }
+  },
+  "counties": [
+    {
+      "county": "Jefferson County",
+      "state_code": "KY",
+      "fips": "21111",
+      "military_installations": [
+        "Fort Knox (adjacent)"
+      ],
+      "estimated_veteran_population": 35000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0098,
+        "median_home_value": 210000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.98,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "Totally disabled veteran",
+          "exemption_amount": 49100,
+          "statutory_source": "KRS 132.810",
+          "surviving_spouse": false,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Jefferson County PVA",
+        "url": "https://jeffersonpva.ky.gov"
+      }
+    },
+    {
+      "county": "Fayette County",
+      "state_code": "KY",
+      "fips": "21067",
+      "military_installations": [
+        "Blue Grass Army Depot"
+      ],
+      "estimated_veteran_population": 15000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0092,
+        "median_home_value": 260000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.92,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "Totally disabled veteran",
+          "exemption_amount": 49100,
+          "statutory_source": "KRS 132.810",
+          "surviving_spouse": false,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Fayette County PVA",
+        "url": "https://fayettepva.com"
+      }
+    },
+    {
+      "county": "Hardin County",
+      "state_code": "KY",
+      "fips": "21093",
+      "military_installations": [
+        "Fort Knox"
+      ],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0078,
+        "median_home_value": 190000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.78,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "Totally disabled veteran",
+          "exemption_amount": 49100,
+          "statutory_source": "KRS 132.810",
+          "surviving_spouse": false,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Hardin County PVA",
+        "url": "https://www.hardincountypva.com"
+      }
+    },
+    {
+      "county": "Christian County",
+      "state_code": "KY",
+      "fips": "21047",
+      "military_installations": [
+        "Fort Campbell (KY side)"
+      ],
+      "estimated_veteran_population": 18000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0072,
+        "median_home_value": 155000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.72,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "Totally disabled veteran",
+          "exemption_amount": 49100,
+          "statutory_source": "KRS 132.810",
+          "surviving_spouse": false,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Christian County PVA",
+        "url": "https://christiancountypva.com"
+      }
+    }
+  ]
+}

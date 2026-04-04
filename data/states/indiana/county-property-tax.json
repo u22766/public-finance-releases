@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 IN",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in Indiana.",
+    "state": "Indiana",
+    "state_code": "IN",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County assessor offices",
+      "Indiana Department of Local Government Finance"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "assessment_method": "Indiana assesses at 100% market value with circuit breaker caps (1% homestead, 2% rental, 3% other).",
+      "veteran_exemption": "IN provides partial property tax deduction of $14,000 for 100% disabled veterans under IC 6-1.1-12-13. Not a full exemption."
+    }
+  },
+  "counties": [
+    {
+      "county": "Marion County",
+      "state_code": "IN",
+      "fips": "18097",
+      "military_installations": [],
+      "estimated_veteran_population": 40000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0102,
+        "median_home_value": 200000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.02,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability",
+          "exemption_amount": 14000,
+          "statutory_source": "IC 6-1.1-12-13",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Marion County Assessor",
+        "url": "https://www.indy.gov/agency/county-assessor"
+      }
+    },
+    {
+      "county": "Allen County",
+      "state_code": "IN",
+      "fips": "18003",
+      "military_installations": [],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0089,
+        "median_home_value": 200000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.89,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability",
+          "exemption_amount": 14000,
+          "statutory_source": "IC 6-1.1-12-13",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Allen County Assessor",
+        "url": "https://www.allencounty.us/assessor"
+      }
+    },
+    {
+      "county": "Lake County",
+      "state_code": "IN",
+      "fips": "18089",
+      "military_installations": [],
+      "estimated_veteran_population": 22000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0098,
+        "median_home_value": 185000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.98,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability",
+          "exemption_amount": 14000,
+          "statutory_source": "IC 6-1.1-12-13",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Lake County Assessor",
+        "url": "https://www.lakecountyin.org/departments/assessor"
+      }
+    }
+  ]
+}

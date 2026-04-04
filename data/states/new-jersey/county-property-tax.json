@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 NJ",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in New Jersey.",
+    "state": "New Jersey",
+    "state_code": "NJ",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County tax assessor offices",
+      "NJ Division of Taxation"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "scope": "Military/veteran-dense counties in central and southern NJ.",
+      "veteran_exemption": "NJ provides full property tax exemption for 100% P&T disabled veterans under N.J.S.A. 54:4-3.30. Automatic, no income test."
+    }
+  },
+  "counties": [
+    {
+      "county": "Ocean County",
+      "state_code": "NJ",
+      "fips": "34029",
+      "military_installations": [
+        "Joint Base McGuire-Dix-Lakehurst (adjacent)"
+      ],
+      "estimated_veteran_population": 45000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0192,
+        "median_home_value": 420000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.92,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "N.J.S.A. 54:4-3.30",
+          "surviving_spouse": true,
+          "surviving_spouse_conditions": "Unremarried surviving spouse retains exemption",
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Ocean County Tax Board",
+        "url": "https://www.co.ocean.nj.us/OC/TaxBoard"
+      }
+    },
+    {
+      "county": "Monmouth County",
+      "state_code": "NJ",
+      "fips": "34025",
+      "military_installations": [
+        "Fort Monmouth (closed, VA campus remains)"
+      ],
+      "estimated_veteran_population": 30000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0186,
+        "median_home_value": 520000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.86,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "N.J.S.A. 54:4-3.30",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Monmouth County Tax Board",
+        "url": "https://www.co.monmouth.nj.us/page.aspx?ID=2562"
+      }
+    },
+    {
+      "county": "Burlington County",
+      "state_code": "NJ",
+      "fips": "34005",
+      "military_installations": [
+        "Joint Base McGuire-Dix-Lakehurst"
+      ],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0208,
+        "median_home_value": 340000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 2.08,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "N.J.S.A. 54:4-3.30",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Burlington County Tax Board",
+        "url": "https://www.co.burlington.nj.us/135/Tax-Board"
+      }
+    },
+    {
+      "county": "Camden County",
+      "state_code": "NJ",
+      "fips": "34007",
+      "military_installations": [],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.022,
+        "median_home_value": 230000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 2.2,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "N.J.S.A. 54:4-3.30",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Camden County Tax Board",
+        "url": "https://www.camdencounty.com/service/taxes/"
+      }
+    }
+  ]
+}

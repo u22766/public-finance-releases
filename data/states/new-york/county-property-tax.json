@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 NY",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in New York.",
+    "state": "New York",
+    "state_code": "NY",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County tax assessor offices",
+      "NYS Department of Taxation and Finance"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "scope": "Long Island + upstate veteran-dense counties.",
+      "assessment_method": "NY varies by jurisdiction. STAR program provides basic and enhanced exemptions.",
+      "veteran_exemption": "NY Real Property Tax Law \u00a7458-a provides tiered exemptions for veterans. 100% disabled veterans may qualify for full exemption under \u00a7458-a(5). Varies by municipality adoption."
+    }
+  },
+  "counties": [
+    {
+      "county": "Suffolk County",
+      "state_code": "NY",
+      "fips": "36103",
+      "military_installations": [],
+      "estimated_veteran_population": 65000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0182,
+        "median_home_value": 530000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.82,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "varies_locally",
+          "eligibility": "100% service-connected disability. Municipality must have adopted \u00a7458-a. Exemption amount varies by locality.",
+          "statutory_source": "NY RPTL \u00a7458-a",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Suffolk County Assessor",
+        "url": "https://www.suffolkcountyny.gov/departments/county-clerk/real-property"
+      }
+    },
+    {
+      "county": "Nassau County",
+      "state_code": "NY",
+      "fips": "36059",
+      "military_installations": [],
+      "estimated_veteran_population": 50000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0195,
+        "median_home_value": 600000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.95,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "varies_locally",
+          "eligibility": "100% service-connected disability. Municipality must have adopted \u00a7458-a.",
+          "statutory_source": "NY RPTL \u00a7458-a",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Nassau County Assessor",
+        "url": "https://www.nassaucountyny.gov/490/Assessment"
+      }
+    },
+    {
+      "county": "Erie County",
+      "state_code": "NY",
+      "fips": "36029",
+      "military_installations": [
+        "Niagara Falls Air Reserve Station (adjacent)"
+      ],
+      "estimated_veteran_population": 40000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0228,
+        "median_home_value": 210000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 2.28,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "varies_locally",
+          "eligibility": "100% service-connected disability. Municipality must have adopted \u00a7458-a.",
+          "statutory_source": "NY RPTL \u00a7458-a",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Erie County Real Property Tax Services",
+        "url": "https://www3.erie.gov/rpts/"
+      }
+    },
+    {
+      "county": "Westchester County",
+      "state_code": "NY",
+      "fips": "36119",
+      "military_installations": [],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0175,
+        "median_home_value": 680000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.75,
+        "assessment_ratio": 1.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "varies_locally",
+          "eligibility": "100% service-connected disability. Municipality must have adopted \u00a7458-a.",
+          "statutory_source": "NY RPTL \u00a7458-a",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Westchester County Finance",
+        "url": "https://www.westchestergov.com/finance"
+      }
+    }
+  ]
+}

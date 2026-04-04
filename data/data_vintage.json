@@ -277,6 +277,50 @@
     "county_property_tax_mn": {
       "reflects": "TY2025",
       "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_ny": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_nj": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_in": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_mo": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_ok": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_or": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_la": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_ky": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_ar": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_wi": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_ms": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
     }
   }
 }

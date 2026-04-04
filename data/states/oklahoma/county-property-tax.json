@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 OK",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in Oklahoma.",
+    "state": "Oklahoma",
+    "state_code": "OK",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County assessor offices",
+      "Oklahoma Tax Commission"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "assessment_method": "Oklahoma assesses at 11-13.5% of market value depending on county.",
+      "veteran_exemption": "OK provides full property tax exemption on homestead for 100% P&T disabled veterans under 68 O.S. \u00a72890."
+    }
+  },
+  "counties": [
+    {
+      "county": "Oklahoma County",
+      "state_code": "OK",
+      "fips": "40109",
+      "military_installations": [
+        "Tinker Air Force Base"
+      ],
+      "estimated_veteran_population": 45000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0098,
+        "median_home_value": 210000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.98,
+        "assessment_ratio": 0.11
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "68 O.S. \u00a72890",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Oklahoma County Assessor",
+        "url": "https://www.oklahomacounty.org/assessor/"
+      }
+    },
+    {
+      "county": "Tulsa County",
+      "state_code": "OK",
+      "fips": "40143",
+      "military_installations": [],
+      "estimated_veteran_population": 30000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0102,
+        "median_home_value": 200000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 1.02,
+        "assessment_ratio": 0.11
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "68 O.S. \u00a72890",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Tulsa County Assessor",
+        "url": "https://assessor.tulsacounty.org"
+      }
+    },
+    {
+      "county": "Comanche County",
+      "state_code": "OK",
+      "fips": "40031",
+      "military_installations": [
+        "Fort Sill"
+      ],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0085,
+        "median_home_value": 150000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.85,
+        "assessment_ratio": 0.11
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "68 O.S. \u00a72890",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Comanche County Assessor",
+        "url": "https://www.comanchecounty.us/assessor.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 MS",
+    "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in Mississippi.",
+    "state": "Mississippi",
+    "state_code": "MS",
+    "version": "2026.1",
+    "last_updated": "2026-04-04",
+    "sources": [
+      "County tax assessor-collector offices",
+      "Mississippi State Tax Commission"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "assessment_method": "Mississippi assesses residential at 10% of market value.",
+      "veteran_exemption": "MS provides full property tax exemption on homestead for 100% P&T disabled veterans under Miss. Code \u00a727-33-67."
+    }
+  },
+  "counties": [
+    {
+      "county": "Harrison County",
+      "state_code": "MS",
+      "fips": "28047",
+      "military_installations": [
+        "Keesler Air Force Base",
+        "Stennis Space Center (shared with NASA)"
+      ],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0078,
+        "median_home_value": 175000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.78,
+        "assessment_ratio": 0.1
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "Miss. Code \u00a727-33-67",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Harrison County Tax Assessor",
+        "url": "https://www.co.harrison.ms.us/elected-officials/tax-assessor-collector"
+      }
+    },
+    {
+      "county": "Hinds County",
+      "state_code": "MS",
+      "fips": "28049",
+      "military_installations": [],
+      "estimated_veteran_population": 12000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0092,
+        "median_home_value": 140000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.92,
+        "assessment_ratio": 0.1
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "Miss. Code \u00a727-33-67",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Hinds County Tax Assessor",
+        "url": "https://www.co.hinds.ms.us/pgs/apps/dirindex.asp?did=15"
+      }
+    },
+    {
+      "county": "DeSoto County",
+      "state_code": "MS",
+      "fips": "28033",
+      "military_installations": [],
+      "estimated_veteran_population": 12000,
+      "tax_year": 2025,
+      "_computed": {
+        "effective_rate": 0.0068,
+        "median_home_value": 230000
+      },
+      "property_tax": {
+        "total_effective_rate_per_100": 0.68,
+        "assessment_ratio": 0.1
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "statutory_source": "Miss. Code \u00a727-33-67",
+          "surviving_spouse": true,
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "DeSoto County Tax Assessor",
+        "url": "https://www.desotocountyms.gov/197/Tax-Assessor"
+      }
+    }
+  ]
+}
