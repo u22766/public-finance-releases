@@ -1,16 +1,16 @@
 {
-  "_comment": "Teacher Retirement System of Texas (TRS) — Defined Benefit Plan. Consumer-agnostic data only.",
+  "_comment": "Teacher Retirement System of Texas (TRS) \u2014 Defined Benefit Plan. Consumer-agnostic data only.",
   "systemName": "Teacher Retirement System of Texas",
   "systemAbbreviation": "TRS",
-  "version": "2026.1",
-  "last_updated": "2026-03-24",
+  "version": "2026.2",
+  "last_updated": "2026-04-03",
   "jurisdiction": {
     "level": "state",
     "name": "Texas",
     "state": "TX",
     "type": "statewide_educator_pension"
   },
-  "administeredBy": "TRS — governed by a 9-member Board of Trustees appointed by the Governor with Senate approval",
+  "administeredBy": "TRS \u2014 governed by a 9-member Board of Trustees appointed by the Governor with Senate approval",
   "established": 1936,
   "totalMembers": {
     "approximate": 2000000,
@@ -19,7 +19,7 @@
   },
   "coverage": {
     "populations": [
-      "Public school employees (preK–12)",
+      "Public school employees (preK\u201312)",
       "Higher education employees (universities, community colleges)",
       "Other Texas public education employees"
     ],
@@ -28,7 +28,7 @@
   },
   "socialSecurity": {
     "covered": false,
-    "note": "TRS members do not contribute to or receive Social Security from TRS-covered employment. Texas public educators are not covered under Social Security. The Social Security Fairness Act (H.R. 82, signed Jan 5 2025) eliminated WEP and GPO — may affect some members who have SS-covered employment outside TRS.",
+    "note": "TRS members do not contribute to or receive Social Security from TRS-covered employment. Texas public educators are not covered under Social Security. The Social Security Fairness Act (H.R. 82, signed Jan 5 2025) eliminated WEP and GPO \u2014 may affect some members who have SS-covered employment outside TRS.",
     "source": "https://www.trs.texas.gov/pension-benefits/know-benefits/understand-benefits"
   },
   "formula": {
@@ -56,7 +56,7 @@
   },
   "tiers": {
     "overview": "TRS has 6 membership tiers based on when a member first joined (or rejoined) the system, grandfathered status, and service credit as of August 31, 2014. All tiers use the same 2.3% benefit multiplier. Differences are in the Rule of 80 minimum age requirement, Final Average Salary period, and early-retirement reduction formula.",
-    "universalNormalRetirement": "Age 65 with 5+ years of service credit — applies to ALL tiers",
+    "universalNormalRetirement": "Age 65 with 5+ years of service credit \u2014 applies to ALL tiers",
     "tier_1": {
       "tierName": "Tier 1",
       "description": "Grandfathered members: Active TRS member on Aug 31, 2005 who was at least age 50, OR met the Rule of 70 (age + service = 70), OR had at least 25 years of service credit",
@@ -66,33 +66,73 @@
         "method": "highest_3_consecutive_annual_salaries"
       },
       "normalRetirement": [
-        {"rule": "age_65", "minimumAge": 65, "minimumService": 5, "ageMinimumForRule80": null},
-        {"rule": "rule_of_80", "minimumService": 5, "minimumAge": null, "note": "No minimum age requirement — any age plus service totaling 80"}
+        {
+          "rule": "age_65",
+          "minimumAge": 65,
+          "minimumService": 5,
+          "ageMinimumForRule80": null
+        },
+        {
+          "rule": "rule_of_80",
+          "minimumService": 5,
+          "minimumAge": null,
+          "note": "No minimum age requirement \u2014 any age plus service totaling 80"
+        }
       ],
       "earlyRetirement": [
-        {"rule": "age_55_5yrs", "minimumAge": 55, "minimumService": 5, "condition": "does not meet Rule of 80"},
-        {"rule": "30yrs_any_age", "minimumService": 30, "minimumAge": null, "condition": "does not meet Rule of 80"}
+        {
+          "rule": "age_55_5yrs",
+          "minimumAge": 55,
+          "minimumService": 5,
+          "condition": "does not meet Rule of 80"
+        },
+        {
+          "rule": "30yrs_any_age",
+          "minimumService": 30,
+          "minimumAge": null,
+          "condition": "does not meet Rule of 80"
+        }
       ],
-      "earlyReductionNote": "Actuarial reduction per TRS Rule 29.12. Age 55–64 with 5–19 yrs: up to 53% reduction. Age 55–59 with 20–24 yrs: up to 10% reduction. 30+ yrs but not Rule of 80: 2% per year below age 50.",
+      "earlyReductionNote": "Actuarial reduction per TRS Rule 29.12. Age 55\u201364 with 5\u201319 yrs: up to 53% reduction. Age 55\u201359 with 20\u201324 yrs: up to 10% reduction. 30+ yrs but not Rule of 80: 2% per year below age 50.",
       "plsoEligibility": "Unreduced benefits required"
     },
     "tier_2": {
       "tierName": "Tier 2",
       "description": "Members who first joined or returned to TRS between Sept 1, 2005 and Aug 31, 2007 (not grandfathered, or grandfathered but returned in this window)",
-      "membershipCriteria": "First membership or return to membership Sept 1 2005 – Aug 31 2007",
+      "membershipCriteria": "First membership or return to membership Sept 1 2005 \u2013 Aug 31 2007",
       "finalAverageSalary": {
         "years": 5,
         "method": "highest_5_annual_salaries"
       },
       "normalRetirement": [
-        {"rule": "age_65", "minimumAge": 65, "minimumService": 5, "ageMinimumForRule80": null},
-        {"rule": "rule_of_80", "minimumService": 5, "minimumAge": null, "note": "No minimum age — any age plus service totaling 80"}
+        {
+          "rule": "age_65",
+          "minimumAge": 65,
+          "minimumService": 5,
+          "ageMinimumForRule80": null
+        },
+        {
+          "rule": "rule_of_80",
+          "minimumService": 5,
+          "minimumAge": null,
+          "note": "No minimum age \u2014 any age plus service totaling 80"
+        }
       ],
       "earlyRetirement": [
-        {"rule": "age_55_5yrs", "minimumAge": 55, "minimumService": 5, "condition": "does not meet Rule of 80"},
-        {"rule": "30yrs_any_age", "minimumService": 30, "minimumAge": null, "condition": "does not meet Rule of 80"}
+        {
+          "rule": "age_55_5yrs",
+          "minimumAge": 55,
+          "minimumService": 5,
+          "condition": "does not meet Rule of 80"
+        },
+        {
+          "rule": "30yrs_any_age",
+          "minimumService": 30,
+          "minimumAge": null,
+          "condition": "does not meet Rule of 80"
+        }
       ],
-      "earlyReductionNote": "Actuarial reduction per TRS Rule 29.11. Age 55–64 with 5+ yrs but not Rule of 80: up to 53% reduction. 30+ yrs but not Rule of 80: 2% per year below age 50.",
+      "earlyReductionNote": "Actuarial reduction per TRS Rule 29.11. Age 55\u201364 with 5+ yrs but not Rule of 80: up to 53% reduction. 30+ yrs but not Rule of 80: 2% per year below age 50.",
       "plsoEligibility": "Age plus service must total at least 90 and must meet standard or early-age retirement requirements"
     },
     "tier_3": {
@@ -104,13 +144,38 @@
         "method": "highest_5_annual_salaries"
       },
       "normalRetirement": [
-        {"rule": "age_65", "minimumAge": 65, "minimumService": 5, "ageMinimumForRule80": null},
-        {"rule": "rule_of_80_age60", "minimumService": 5, "minimumAge": 60, "note": "Must be at least age 60 AND meet Rule of 80"}
+        {
+          "rule": "age_65",
+          "minimumAge": 65,
+          "minimumService": 5,
+          "ageMinimumForRule80": null
+        },
+        {
+          "rule": "rule_of_80_age60",
+          "minimumService": 5,
+          "minimumAge": 60,
+          "note": "Must be at least age 60 AND meet Rule of 80"
+        }
       ],
       "earlyRetirement": [
-        {"rule": "age_55_5yrs", "minimumAge": 55, "minimumService": 5, "condition": "does not meet Rule of 80"},
-        {"rule": "30yrs_under_60", "minimumService": 30, "minimumAge": null, "condition": "does not meet Rule of 80 and is less than age 60"},
-        {"rule": "rule_of_80_under_60", "minimumAge": null, "minimumService": 5, "condition": "meets Rule of 80 but is less than age 60"}
+        {
+          "rule": "age_55_5yrs",
+          "minimumAge": 55,
+          "minimumService": 5,
+          "condition": "does not meet Rule of 80"
+        },
+        {
+          "rule": "30yrs_under_60",
+          "minimumService": 30,
+          "minimumAge": null,
+          "condition": "does not meet Rule of 80 and is less than age 60"
+        },
+        {
+          "rule": "rule_of_80_under_60",
+          "minimumAge": null,
+          "minimumService": 5,
+          "condition": "meets Rule of 80 but is less than age 60"
+        }
       ],
       "earlyReductionNote": "5% reduction per year under age 60 for members who meet Rule of 80 but are under 60. Standard actuarial reductions per TRS rule tables for other early retirement.",
       "plsoEligibility": "Age plus service must total at least 90"
@@ -124,13 +189,38 @@
         "method": "highest_3_consecutive_annual_salaries"
       },
       "normalRetirement": [
-        {"rule": "age_65", "minimumAge": 65, "minimumService": 5, "ageMinimumForRule80": null},
-        {"rule": "rule_of_80_age60", "minimumService": 5, "minimumAge": 60, "note": "Must be at least age 60 AND meet Rule of 80"},
-        {"rule": "rule_of_80_age55_20yrs", "minimumAge": 55, "minimumService": 20, "note": "Age 55+ with 20+ yrs and Rule of 80 — unreduced (grandfathered special provision)"}
+        {
+          "rule": "age_65",
+          "minimumAge": 65,
+          "minimumService": 5,
+          "ageMinimumForRule80": null
+        },
+        {
+          "rule": "rule_of_80_age60",
+          "minimumService": 5,
+          "minimumAge": 60,
+          "note": "Must be at least age 60 AND meet Rule of 80"
+        },
+        {
+          "rule": "rule_of_80_age55_20yrs",
+          "minimumAge": 55,
+          "minimumService": 20,
+          "note": "Age 55+ with 20+ yrs and Rule of 80 \u2014 unreduced (grandfathered special provision)"
+        }
       ],
       "earlyRetirement": [
-        {"rule": "age_55_5yrs", "minimumAge": 55, "minimumService": 5, "condition": "does not meet Rule of 80"},
-        {"rule": "30yrs_under_60", "minimumService": 30, "minimumAge": null, "condition": "does not meet Rule of 80 and is less than age 60"}
+        {
+          "rule": "age_55_5yrs",
+          "minimumAge": 55,
+          "minimumService": 5,
+          "condition": "does not meet Rule of 80"
+        },
+        {
+          "rule": "30yrs_under_60",
+          "minimumService": 30,
+          "minimumAge": null,
+          "condition": "does not meet Rule of 80 and is less than age 60"
+        }
       ],
       "earlyReductionNote": "5% reduction per year under age 60 for certain scenarios. Standard actuarial tables for others.",
       "plsoEligibility": "Unreduced benefits required"
@@ -144,13 +234,38 @@
         "method": "highest_5_annual_salaries"
       },
       "normalRetirement": [
-        {"rule": "age_65", "minimumAge": 65, "minimumService": 5, "ageMinimumForRule80": null},
-        {"rule": "rule_of_80_age62", "minimumService": 5, "minimumAge": 62, "note": "Must be at least age 62 AND meet Rule of 80"}
+        {
+          "rule": "age_65",
+          "minimumAge": 65,
+          "minimumService": 5,
+          "ageMinimumForRule80": null
+        },
+        {
+          "rule": "rule_of_80_age62",
+          "minimumService": 5,
+          "minimumAge": 62,
+          "note": "Must be at least age 62 AND meet Rule of 80"
+        }
       ],
       "earlyRetirement": [
-        {"rule": "age_55_5yrs", "minimumAge": 55, "minimumService": 5, "condition": "does not meet Rule of 80"},
-        {"rule": "30yrs_under_62", "minimumService": 30, "minimumAge": null, "condition": "does not meet Rule of 80 and is less than age 62"},
-        {"rule": "rule_of_80_under_62", "minimumAge": null, "minimumService": 5, "condition": "meets Rule of 80 but is less than age 62"}
+        {
+          "rule": "age_55_5yrs",
+          "minimumAge": 55,
+          "minimumService": 5,
+          "condition": "does not meet Rule of 80"
+        },
+        {
+          "rule": "30yrs_under_62",
+          "minimumService": 30,
+          "minimumAge": null,
+          "condition": "does not meet Rule of 80 and is less than age 62"
+        },
+        {
+          "rule": "rule_of_80_under_62",
+          "minimumAge": null,
+          "minimumService": 5,
+          "condition": "meets Rule of 80 but is less than age 62"
+        }
       ],
       "earlyReductionNote": "5% reduction per year under age 62 for members who meet Rule of 80 but are under 62, or who have 30+ years but don't meet Rule of 80.",
       "plsoEligibility": "Age plus service must total at least 90"
@@ -164,13 +279,38 @@
         "method": "highest_3_consecutive_annual_salaries"
       },
       "normalRetirement": [
-        {"rule": "age_65", "minimumAge": 65, "minimumService": 5, "ageMinimumForRule80": null},
-        {"rule": "rule_of_80_age62", "minimumService": 5, "minimumAge": 62, "note": "Must be at least age 62 AND meet Rule of 80"},
-        {"rule": "rule_of_80_age55_20yrs", "minimumAge": 55, "minimumService": 20, "note": "Age 55–61 with 20+ years and Rule of 80 — special grandfathered provision"}
+        {
+          "rule": "age_65",
+          "minimumAge": 65,
+          "minimumService": 5,
+          "ageMinimumForRule80": null
+        },
+        {
+          "rule": "rule_of_80_age62",
+          "minimumService": 5,
+          "minimumAge": 62,
+          "note": "Must be at least age 62 AND meet Rule of 80"
+        },
+        {
+          "rule": "rule_of_80_age55_20yrs",
+          "minimumAge": 55,
+          "minimumService": 20,
+          "note": "Age 55\u201361 with 20+ years and Rule of 80 \u2014 special grandfathered provision"
+        }
       ],
       "earlyRetirement": [
-        {"rule": "age_55_5yrs", "minimumAge": 55, "minimumService": 5, "condition": "does not meet Rule of 80"},
-        {"rule": "30yrs_under_62", "minimumService": 30, "minimumAge": null, "condition": "does not meet Rule of 80 and is less than age 62"}
+        {
+          "rule": "age_55_5yrs",
+          "minimumAge": 55,
+          "minimumService": 5,
+          "condition": "does not meet Rule of 80"
+        },
+        {
+          "rule": "30yrs_under_62",
+          "minimumService": 30,
+          "minimumAge": null,
+          "condition": "does not meet Rule of 80 and is less than age 62"
+        }
       ],
       "earlyReductionNote": "5% reduction per year under age 62 for certain scenarios. Standard actuarial tables for others.",
       "plsoEligibility": "Unreduced benefits required"
@@ -179,7 +319,7 @@
   "contributions": {
     "member": {
       "rate_fy2026": 0.0825,
-      "note": "8.25% of eligible earnings, pre-tax. Rate set by Texas Legislature. Applies FY2026 (Sept 1 2025 – Aug 31 2026). Both member and employer contribute same rate.",
+      "note": "8.25% of eligible earnings, pre-tax. Rate set by Texas Legislature. Applies FY2026 (Sept 1 2025 \u2013 Aug 31 2026). Both member and employer contribute same rate.",
       "source": "https://www.trs.texas.gov/pension-benefits/know-benefits/understand-benefits/member-contributions"
     },
     "employer": {
@@ -192,7 +332,7 @@
       "memberRate": 0.0065,
       "stateRate": 0.0125,
       "schoolDistrictRate": 0.0075,
-      "note": "Separate TRS-Care (retiree health insurance) fund contributions — not part of pension trust fund.",
+      "note": "Separate TRS-Care (retiree health insurance) fund contributions \u2014 not part of pension trust fund.",
       "source": "https://www.tcta.org/professional-resources/publications/survival-guide/trs-survival-guide"
     },
     "authority": "Texas Government Code 825.402; Texas Constitution Article 16, Section 67"
@@ -206,7 +346,7 @@
         "year": 2024,
         "type": "permanent_cola",
         "rate": "2% to 6% depending on length of retirement",
-        "authority": "SB 10 / HJR 2 (88th Legislature, 2023) — required voter approval Nov 2023",
+        "authority": "SB 10 / HJR 2 (88th Legislature, 2023) \u2014 required voter approval Nov 2023",
         "eligibility": "400,000+ eligible annuitants; tiered by how long retired",
         "note": "Voter-approved constitutional amendment. First permanent COLA since 2001."
       },
@@ -233,21 +373,58 @@
         "authority": "SB 1458, 83rd Legislature"
       }
     ],
-    "legislativeConstraint": "Texas Government Code 821.006 — benefit improvements prohibited if they would increase amortization period beyond 31 years, or if period already exceeds 31 years",
+    "legislativeConstraint": "Texas Government Code 821.006 \u2014 benefit improvements prohibited if they would increase amortization period beyond 31 years, or if period already exceeds 31 years",
     "source": "https://en.wikipedia.org/wiki/Teacher_Retirement_System_of_Texas; https://www.trs.texas.gov"
   },
   "partialLumpSumOption": {
     "available": true,
-    "description": "Member may elect to receive a lump sum at retirement in exchange for a reduced ongoing monthly annuity. Lump sum is 12, 24, or 36 months of the standard annuity amount.",
+    "description": "Member may elect to receive a lump sum at retirement in exchange for a permanently reduced ongoing monthly annuity. Lump sum is 12, 24, or 36 months of the standard annuity amount.",
+    "options": [
+      {
+        "months": 12,
+        "description": "Lump sum equal to 12 months of standard annuity"
+      },
+      {
+        "months": 24,
+        "description": "Lump sum equal to 24 months of standard annuity"
+      },
+      {
+        "months": 36,
+        "description": "Lump sum equal to 36 months of standard annuity"
+      }
+    ],
+    "payment_schedule": "12-month: single payment. 24-month: two annual payments. 36-month: three annual payments.",
+    "reduction_note": "Monthly annuity is permanently reduced by an actuarial factor based on age at retirement and PLSO months elected. Reduction factors are in TRS Rule 29.11 option factor tables.",
+    "rollover_eligible": true,
+    "rollover_note": "PLSO can be rolled over to IRA or eligible retirement plan. 20% federal tax withheld if paid directly to member.",
+    "election_deadline": "Must be elected before first monthly annuity payment is issued. Cannot be changed after.",
     "eligibilityByTier": {
-      "tier_1": "Must be eligible for unreduced benefits",
-      "tier_2": "Age plus service must total at least 90; must meet standard or early-age retirement",
-      "tier_3": "Age plus service must total at least 90",
-      "tier_4": "Must be eligible for unreduced benefits",
-      "tier_5": "Age plus service must total at least 90",
-      "tier_6": "Must be eligible for unreduced benefits"
+      "tier_1": {
+        "requirement": "unreduced_annuity",
+        "description": "Must be eligible for unreduced service retirement annuity and not in DROP"
+      },
+      "tier_2": {
+        "requirement": "rule_of_90",
+        "description": "Age plus service must total at least 90 and not retiring under Proportionate Retirement"
+      },
+      "tier_3": {
+        "requirement": "rule_of_90",
+        "description": "Age plus service must total at least 90 and not retiring under Proportionate Retirement"
+      },
+      "tier_4": {
+        "requirement": "unreduced_annuity",
+        "description": "Must be eligible for unreduced service retirement annuity and not retiring under Proportionate Retirement"
+      },
+      "tier_5": {
+        "requirement": "rule_of_90",
+        "description": "Age plus service must total at least 90 and not retiring under Proportionate Retirement"
+      },
+      "tier_6": {
+        "requirement": "unreduced_annuity",
+        "description": "Must be eligible for unreduced service retirement annuity and not retiring under Proportionate Retirement"
+      }
     },
-    "source": "https://www.tcta.org/professional-resources/publications/survival-guide/trs-survival-guide"
+    "_source": "https://www.trs.texas.gov/pension-benefits/active-member-resources/plan-retirement/resources/plso"
   },
   "disabilityRetirement": {
     "available": true,
@@ -288,9 +465,214 @@
     "https://legalclarity.org/how-does-texas-teacher-retirement-work-trs-explained/"
   ],
   "researchGaps": [
-    "Full actuarial early-retirement reduction tables by tier (TRS Rules 29.11, 29.12 — available at trs.texas.gov)",
+    "Full actuarial early-retirement reduction tables by tier (TRS Rules 29.11, 29.12 \u2014 available at trs.texas.gov)",
     "Exact tier-by-tier PLSO monthly benefit reduction amounts",
     "Proportionate Retirement Program details (service credit combining with ERS and other TX systems)",
-    "TRS-ActiveCare (active employee health) details — separate from pension"
+    "TRS-ActiveCare (active employee health) details \u2014 separate from pension"
+  ],
+  "earlyRetirementReductions": {
+    "_comment": "Early-age retirement reduction rules by tier. Source: TRS Benefit Tier Guide (official PDF). Grandfathered tiers (1,4,6) use Rule 29.12 tables (more favorable for 20+ yrs). Non-grandfathered tiers (2,3,5) use Rule 29.11 tables.",
+    "_source": "https://www.trs.texas.gov/sites/default/files/migrated/benefits-tier-guide.pdf",
+    "_actuarial_tables_source": "TRS Rule 29.11 (34 TAC \u00a729.11) and Rule 29.12 (34 TAC \u00a729.12)",
+    "tier_1": {
+      "rule_reference": "29.12",
+      "grandfathered": true,
+      "salary_average": "highest_3_years",
+      "scenarios": [
+        {
+          "condition": "age 55-64, 5-19 years service, no Rule of 80",
+          "reduction": "actuarial, up to 53%",
+          "max_reduction_pct": 53
+        },
+        {
+          "condition": "age 55-59, 20-24 years service, no Rule of 80",
+          "reduction": "actuarial, up to 10%",
+          "max_reduction_pct": 10,
+          "_note": "More favorable factors for grandfathered members with 20+ years"
+        },
+        {
+          "condition": "30+ years service, no Rule of 80",
+          "reduction": "2% per year below age 50",
+          "reduction_per_year_pct": 2,
+          "reference_age": 50
+        }
+      ]
+    },
+    "tier_2": {
+      "rule_reference": "29.11",
+      "grandfathered": false,
+      "salary_average": "highest_5_years",
+      "scenarios": [
+        {
+          "condition": "age 55-64, 5+ years service, no Rule of 80",
+          "reduction": "actuarial, up to 53%",
+          "max_reduction_pct": 53
+        },
+        {
+          "condition": "30+ years service, no Rule of 80",
+          "reduction": "2% per year below age 50",
+          "reduction_per_year_pct": 2,
+          "reference_age": 50
+        }
+      ]
+    },
+    "tier_3": {
+      "rule_reference": "29.11",
+      "grandfathered": false,
+      "salary_average": "highest_5_years",
+      "normal_age_min": 60,
+      "scenarios": [
+        {
+          "condition": "age 55-64, 5+ years service, no Rule of 80",
+          "reduction": "actuarial, up to 53%",
+          "max_reduction_pct": 53
+        },
+        {
+          "condition": "30+ years service, no Rule of 80, under age 60",
+          "reduction": "5% per year below age 60",
+          "reduction_per_year_pct": 5,
+          "reference_age": 60
+        },
+        {
+          "condition": "meets Rule of 80, under age 60",
+          "reduction": "5% per year below age 60",
+          "reduction_per_year_pct": 5,
+          "reference_age": 60
+        }
+      ]
+    },
+    "tier_4": {
+      "rule_reference": "29.12",
+      "grandfathered": true,
+      "salary_average": "highest_3_years",
+      "normal_age_min": 60,
+      "scenarios": [
+        {
+          "condition": "age 55-64, 5-19 years service, no Rule of 80",
+          "reduction": "actuarial, up to 53%",
+          "max_reduction_pct": 53
+        },
+        {
+          "condition": "age 55-59, 20-24 years service, no Rule of 80",
+          "reduction": "actuarial, up to 10%",
+          "max_reduction_pct": 10
+        },
+        {
+          "condition": "30+ years service, no Rule of 80, under age 60",
+          "reduction": "5% per year below age 60",
+          "reduction_per_year_pct": 5,
+          "reference_age": 60
+        },
+        {
+          "condition": "under age 55, meets Rule of 80",
+          "reduction": "5% per year below age 60",
+          "reduction_per_year_pct": 5,
+          "reference_age": 60
+        },
+        {
+          "condition": "age 55-59, 20+ years service, meets Rule of 80",
+          "reduction": "none",
+          "reduction_per_year_pct": 0,
+          "_note": "Grandfathered special provision \u2014 not reduced despite being under 60"
+        }
+      ]
+    },
+    "tier_5": {
+      "rule_reference": "29.11",
+      "grandfathered": false,
+      "salary_average": "highest_5_years",
+      "normal_age_min": 62,
+      "scenarios": [
+        {
+          "condition": "age 55-64, 5+ years service, no Rule of 80",
+          "reduction": "actuarial, up to 53%",
+          "max_reduction_pct": 53
+        },
+        {
+          "condition": "30+ years service, no Rule of 80, under age 62",
+          "reduction": "5% per year below age 62",
+          "reduction_per_year_pct": 5,
+          "reference_age": 62
+        },
+        {
+          "condition": "meets Rule of 80, under age 62",
+          "reduction": "5% per year below age 62",
+          "reduction_per_year_pct": 5,
+          "reference_age": 62
+        }
+      ]
+    },
+    "tier_6": {
+      "rule_reference": "29.12",
+      "grandfathered": true,
+      "salary_average": "highest_3_years",
+      "normal_age_min": 62,
+      "scenarios": [
+        {
+          "condition": "age 55-64, 5-19 years service, no Rule of 80",
+          "reduction": "actuarial, up to 53%",
+          "max_reduction_pct": 53
+        },
+        {
+          "condition": "age 55-59, 20-24 years service, no Rule of 80",
+          "reduction": "actuarial, up to 10%",
+          "max_reduction_pct": 10
+        },
+        {
+          "condition": "30+ years service, no Rule of 80, under age 62",
+          "reduction": "5% per year below age 62",
+          "reduction_per_year_pct": 5,
+          "reference_age": 62
+        },
+        {
+          "condition": "under age 55, meets Rule of 80",
+          "reduction": "5% per year below age 62",
+          "reduction_per_year_pct": 5,
+          "reference_age": 62
+        },
+        {
+          "condition": "age 55-61, 20+ years service, meets Rule of 80",
+          "reduction": "none",
+          "reduction_per_year_pct": 0,
+          "_note": "Grandfathered special provision \u2014 not reduced despite being under 62"
+        },
+        {
+          "condition": "age 61, meets Rule of 80, 19 years service",
+          "reduction": "5%",
+          "reduction_per_year_pct": 5,
+          "reference_age": 62,
+          "_note": "Special case: 19 yrs does not qualify for grandfathered 20+ yr exception"
+        }
+      ]
+    }
+  },
+  "proportionateRetirement": {
+    "_comment": "Allows members to combine service credit across participating Texas public retirement systems for retirement eligibility only. Benefit amounts based solely on service credit within each system.",
+    "available": true,
+    "description": "Members with service credit in multiple participating Texas public retirement systems may combine service credit to meet retirement eligibility. Each system pays separately based on its own service credit.",
+    "participating_systems": [
+      "Teacher Retirement System of Texas (TRS)",
+      "Employees Retirement System of Texas (ERS)",
+      "Texas County & District Retirement System (TCDRS)",
+      "Texas Municipal Retirement System (TMRS)",
+      "City of Austin Employees' Retirement System (COAERS)",
+      "Judicial Retirement System of Texas (JRS)"
+    ],
+    "key_rules": [
+      "Only service credit is combined \u2014 payments and accounts are never combined",
+      "Each system pays its own annuity based on service credit earned in that system",
+      "Member must meet retirement eligibility in each system (using combined service) before drawing payments",
+      "Combined service cannot be used for disability retirement, death benefits, or TRS-Care eligibility",
+      "Cannot elect PLSO when retiring under Proportionate Retirement",
+      "All service purchases must be completed before applying for retirement",
+      "Service credit withdrawn from another system may not count unless reinstated"
+    ],
+    "early_age_reduction_note": "For retirements after Sept. 1, 2016, combined service credit may also be used to determine early-age retirement eligibility.",
+    "tier_5_6_interaction": "TRS members with service credit in another participating system may combine years to meet the 5-year service credit requirement for Tier 5/6 placement (as of Aug. 31, 2014).",
+    "_source": "https://www.trs.texas.gov/pension-benefits/active-member-resources/service-credit/proportionate-retirement"
+  },
+  "_research_gaps": [
+    "Full actuarial factor tables from TRS Rule 29.11 and 29.12 (per-age per-month reduction factors \u2014 in PDF attachment to administrative code, not publicly accessible as structured data)",
+    "PLSO actuarial reduction factors by age (permanent annuity reduction percentages for 12/24/36 month PLSO elections)"
   ]
 }
