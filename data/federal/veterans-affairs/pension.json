@@ -1,0 +1,114 @@
+{
+  "_comment": "VA Pension (needs-based) and Survivors Pension MAPR rates. This is NOT disability compensation \u2014 see compensation.json for service-connected benefits. VA Pension is for wartime veterans (or surviving spouses) with limited income. Tax-free. Update annually each December when VA publishes new COLA rates.",
+  "version": "2026.1",
+  "effective_date": "2025-12-01",
+  "effective_through": "2026-11-30",
+  "sources": {
+    "va_pension_rates": "https://www.va.gov/pension/veterans-pension-rates/",
+    "survivors_pension_rates": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/survivors-pension/rates/",
+    "aid_and_attendance_info": "https://www.va.gov/pension/aid-attendance-housebound/",
+    "cfr_pension_rates": "https://www.ecfr.gov/cgi-bin/text-idx?SID=ad275643432556b9dda942343fb89296&mc=true&node=pt38.1.3&rgn=div58#se38.1.3_123"
+  },
+  "cola_applied": 0.028,
+  "_cola_note": "2.8% COLA effective December 1, 2025. VA Pension COLA matches Social Security COLA annually.",
+  "eligibility": {
+    "_comment": "Summary of eligibility requirements. Not exhaustive \u2014 see VA.gov for full criteria.",
+    "veteran_pension": {
+      "wartime_service_required": true,
+      "age_or_disability": "Age 65+ OR permanently and totally disabled",
+      "discharge_requirement": "Other than dishonorable",
+      "minimum_service": "90 days active duty with at least 1 day during wartime period (24 months for post-9/11 era)"
+    },
+    "survivors_pension": {
+      "relationship": "Unremarried surviving spouse (remarriage after age 57 permitted) OR unmarried dependent child",
+      "veteran_wartime_service_required": true,
+      "marriage_duration": "Married to veteran for at least 1 year before death, OR had a child together"
+    },
+    "wartime_periods": [
+      {
+        "name": "World War II",
+        "start": "1941-12-07",
+        "end": "1946-12-31"
+      },
+      {
+        "name": "Korean War",
+        "start": "1950-06-27",
+        "end": "1955-01-31"
+      },
+      {
+        "name": "Vietnam Era",
+        "start": "1961-02-28",
+        "end": "1975-05-07",
+        "_note": "Aug 5, 1964 for non-Vietnam theater"
+      },
+      {
+        "name": "Gulf War",
+        "start": "1990-08-02",
+        "end": null,
+        "_note": "End date TBD by Presidential proclamation or law"
+      }
+    ]
+  },
+  "net_worth_limit": 163699,
+  "_net_worth_note": "Effective Dec 1, 2025 through Nov 30, 2026. Net worth = assets + annual income. Primary residence and one vehicle excluded.",
+  "lookback_period_years": 3,
+  "_lookback_note": "VA reviews asset transfers in 3 years before claim. Transfers below fair market value may trigger penalty period of up to 5 years.",
+  "penalty_period_rate_monthly": 2874,
+  "child_earned_income_exclusion": 16100,
+  "additional_dependent_add_annual": 2984,
+  "_additional_dependent_note": "Add $2,984 to MAPR for each dependent beyond the first.",
+  "medical_expense_deduction_threshold_pct": 0.05,
+  "_medical_expense_note": "Only unreimbursed medical expenses above 5% of applicable MAPR may be deducted from countable income.",
+  "veteran_pension_mapr": {
+    "_comment": "Maximum Annual Pension Rate (MAPR) for veterans. Pension = MAPR minus countable income. All values annual USD.",
+    "no_dependents": {
+      "basic": 17441,
+      "housebound": 21313,
+      "aid_and_attendance": 29093,
+      "medical_deduction_floor": 872
+    },
+    "with_one_dependent": {
+      "basic": 22839,
+      "housebound": 26710,
+      "aid_and_attendance": 34488,
+      "medical_deduction_floor": 1141
+    },
+    "two_veterans_married": {
+      "_comment": "Both spouses are qualified veterans married to each other.",
+      "neither_qualifies": 22839,
+      "one_housebound": 26710,
+      "both_housebound": 30580,
+      "one_aid_and_attendance": 34488,
+      "one_housebound_one_aa": 38350,
+      "both_aid_and_attendance": 46143,
+      "medical_deduction_floor": 1141
+    }
+  },
+  "survivors_pension_mapr": {
+    "_comment": "Maximum Annual Pension Rate (MAPR) for surviving spouses and children. All values annual USD.",
+    "no_dependents": {
+      "basic": 11699,
+      "housebound": 14298,
+      "aid_and_attendance": 18697,
+      "aid_and_attendance_saw": 19453,
+      "medical_deduction_floor": 584
+    },
+    "with_one_dependent_child": {
+      "basic": 15311,
+      "housebound": 17902,
+      "aid_and_attendance": 22304,
+      "aid_and_attendance_saw": 22979,
+      "medical_deduction_floor": 765
+    },
+    "surviving_child_only": {
+      "annual": 2984,
+      "_note": "Qualified surviving child with no surviving parent."
+    },
+    "sbp_miw_limitation": 11699,
+    "_sbp_miw_note": "Survivor Benefit Plan / Minimum Income Widow limitation amount."
+  },
+  "_how_pension_calculated": "Annual Pension = MAPR - Countable Income. Countable income includes earnings, SS, retirement payments, investment income (veteran + dependents). Reduced by unreimbursed medical expenses above 5% of MAPR. If countable income >= MAPR, no pension payable. If zero income, pension = full MAPR.",
+  "_tax_treatment": "VA Pension is completely tax-free. Does not count as income for federal or state income tax purposes.",
+  "_medicaid_interaction_note": "Basic Pension counts toward Medicaid income limits in most states. A&A and Housebound portions are exempt in most states. Nursing Home Medicaid beneficiaries may have pension reduced to $90/month. Medicaid requires applicants to apply for VA pension if eligible.",
+  "last_updated": "2026-04-03"
+}

@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "state": "Alabama",
+    "state_code": "AL",
+    "version": "2026.1",
+    "last_updated": "2026-03-31",
+    "schema_version": "1.0",
+    "_comment": "Alabama county property tax data. Assessment ratio is 10% of market value for Class III (owner-occupied residential). Rates shown per $100 of ASSESSED value. Effective rate on market value is ~1/10th of stated rate.",
+    "assessment_ratio_homestead": 0.1,
+    "state_millage": 6.5,
+    "source": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/",
+    "title": "County Property Tax Rates and Veteran Exemptions — AL",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties. Alabama uses 10% assessment ratio for residential homesteads.",
+    "sources": [
+      "County tax assessor/collector offices",
+      "Alabama Department of Revenue — Property Tax Division",
+      "County appraisal district offices"
+    ],
+    "notes": {
+      "tax_rate_format": "Rate per $100 of ASSESSED value (10% of market value for Class III residential homestead).",
+      "scope": "Covers counties with major military installations — Redstone Arsenal (Madison), Coast Guard/Austal (Mobile).",
+      "update_cycle": "Tax rates typically set annually by county commissions. Alabama reappraises on 4-year cycle.",
+      "assessment_ratio": "Alabama assessed value = 10% of market value. Effective rate on market value is approximately 1/10th of the stated per-$100-assessed rate."
+    }
+  },
+  "counties": [
+    {
+      "county": "Madison County",
+      "state_code": "AL",
+      "fips": "01089",
+      "military_installations": [
+        "Redstone Arsenal (US Army / NASA Marshall Space Flight Center / MDA)"
+      ],
+      "estimated_veteran_population": 60000,
+      "tax_year": 2025,
+      "property_tax": {
+        "approximate_total_rate_per_100_assessed": 5.8,
+        "effective_rate_on_market_value_pct": 0.58,
+        "rate_breakdown_per_100_assessed": {
+          "state": 0.65,
+          "county": 1.3,
+          "city_huntsville": 0.5,
+          "huntsville_city_schools": 2.9,
+          "special_district": 0.45
+        },
+        "assessment_ratio": 0.1,
+        "homestead_exemption": "State portion (6.5 mills) exempted for all homestead owners. Full exemption from ALL ad valorem taxes for P&T disabled or age 65+.",
+        "_note": "Rate shown is for City of Huntsville. Madison City rate is $6.95/100 assessed. Unincorporated county is $3.35-$3.65/100. AL assessed value = 10% of market value."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "Permanently and totally disabled (100% P&T). No income limit.",
+          "applies_to": "Homestead and up to 160 adjacent acres — ALL state, county, city, and school ad valorem taxes",
+          "surviving_spouse": true,
+          "surviving_spouse_must_not_remarry": true,
+          "source_statute": "Ala. Code §40-9-21"
+        },
+        "va_adapted_housing": {
+          "type": "full_exemption",
+          "eligibility": "Home acquired through VA Specially Adapted Housing Grant",
+          "applies_to": "Full value of home — ALL ad valorem taxes regardless of value",
+          "surviving_spouse": true
+        },
+        "disabled_veteran_partial": {
+          "type": "none",
+          "note": "Alabama does not have a partial disabled veteran property tax exemption based on rating percentage. The exemption is all-or-nothing: P&T disabled = full exemption."
+        }
+      },
+      "payment_plans": {
+        "due_date": "October 1",
+        "delinquent_after": "December 31",
+        "installment": false,
+        "_note": "Alabama does not offer quarterly payment plans. Taxes due in full by Dec 31."
+      },
+      "application": {
+        "office": "Madison County Tax Assessor",
+        "address": "1918 Memorial Parkway NW, Huntsville, AL 35801",
+        "phone": "256-532-3350",
+        "url": "https://www.madisoncountyal.gov/departments/tax-assessor",
+        "deadline": "Apply through county Tax Assessor. No specific deadline."
+      },
+      "source": "https://www.madisoncountyal.gov/departments/tax-collector/frequently-asked-questions"
+    },
+    {
+      "county": "Mobile County",
+      "state_code": "AL",
+      "fips": "01097",
+      "military_installations": [
+        "Coast Guard Aviation Training Center Mobile",
+        "Austal USA (naval vessel shipbuilding)"
+      ],
+      "estimated_veteran_population": 30000,
+      "tax_year": 2025,
+      "property_tax": {
+        "approximate_total_rate_per_100_assessed": 6.15,
+        "effective_rate_on_market_value_pct": 0.62,
+        "rate_breakdown_per_100_assessed": {
+          "state": 0.65,
+          "county": 1.35,
+          "city_mobile": 1.25,
+          "mobile_county_schools": 2.4,
+          "special_district": 0.5
+        },
+        "assessment_ratio": 0.1,
+        "homestead_exemption": "State portion (6.5 mills) exempted for all homestead owners. Full exemption from ALL ad valorem taxes for P&T disabled or age 65+.",
+        "_note": "Rate shown is for City of Mobile. Unincorporated areas have lower rates. AL assessed value = 10% of market value."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "Permanently and totally disabled (100% P&T). No income limit.",
+          "applies_to": "Homestead and up to 160 adjacent acres — ALL state, county, city, and school ad valorem taxes",
+          "surviving_spouse": true,
+          "surviving_spouse_must_not_remarry": true,
+          "source_statute": "Ala. Code §40-9-21"
+        },
+        "va_adapted_housing": {
+          "type": "full_exemption",
+          "eligibility": "Home acquired through VA Specially Adapted Housing Grant",
+          "applies_to": "Full value of home — ALL ad valorem taxes regardless of value",
+          "surviving_spouse": true
+        },
+        "disabled_veteran_partial": {
+          "type": "none",
+          "note": "Alabama does not have a partial disabled veteran property tax exemption based on rating percentage. The exemption is all-or-nothing: P&T disabled = full exemption."
+        }
+      },
+      "payment_plans": {
+        "due_date": "October 1",
+        "delinquent_after": "December 31",
+        "installment": false,
+        "_note": "Alabama does not offer quarterly payment plans. Taxes due in full by Dec 31."
+      },
+      "application": {
+        "office": "Mobile County Revenue Commission",
+        "address": "3925 Michael Blvd, Suite G, Mobile, AL 36609",
+        "phone": "251-574-8530",
+        "url": "https://www.mobilecountyal.gov/government/revenue-commission/",
+        "deadline": "Apply through county Revenue Commission. No specific deadline."
+      },
+      "source": "https://www.mobilecountyal.gov/government/revenue-commission/"
+    }
+  ]
+}

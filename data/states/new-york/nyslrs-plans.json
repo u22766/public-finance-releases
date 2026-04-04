@@ -2,8 +2,8 @@
   "_comment": "New York State and Local Retirement System (NYSLRS) — ERS and PFRS. Consumer-agnostic data only.",
   "systemName": "New York State and Local Retirement System",
   "systemAbbreviation": "NYSLRS",
-  "version": "2026.1",
-  "last_updated": "2026-03-24",
+  "version": "2026.2",
+  "last_updated": "2026-03-31",
   "jurisdiction": {
     "level": "state",
     "name": "New York",
@@ -62,11 +62,30 @@
   "tier6_contribution_brackets": {
     "note": "Tier 6 (ERS and PFRS) member contribution rates are income-based, recalculated annually on April 1 using earnings from 2 State fiscal years prior. New members: rate based on projected annualized wage for first 3 SFYs.",
     "brackets": [
-      {"earningsUpTo": 45000, "rate": 0.03},
-      {"earningsFrom": 45000, "earningsUpTo": 55000, "rate": 0.035},
-      {"earningsFrom": 55000, "earningsUpTo": 75000, "rate": 0.045},
-      {"earningsFrom": 75000, "earningsUpTo": 100000, "rate": 0.0575},
-      {"earningsOver": 100000, "rate": 0.06, "note": "Up to NY Governor's salary cap (~$250,000)"}
+      {
+        "earningsUpTo": 45000,
+        "rate": 0.03
+      },
+      {
+        "earningsFrom": 45000,
+        "earningsUpTo": 55000,
+        "rate": 0.035
+      },
+      {
+        "earningsFrom": 55000,
+        "earningsUpTo": 75000,
+        "rate": 0.045
+      },
+      {
+        "earningsFrom": 75000,
+        "earningsUpTo": 100000,
+        "rate": 0.0575
+      },
+      {
+        "earningsOver": 100000,
+        "rate": 0.06,
+        "note": "Up to NY Governor's salary cap (~$250,000)"
+      }
     ],
     "minimum": 0.03,
     "maximum": 0.06,
@@ -80,22 +99,86 @@
       "tier_1": {
         "tierName": "ERS Tier 1",
         "membershipDates": "Before July 27, 1976",
-        "note": "Legacy tier — very few active members. Most benefits mirror Tier 2.",
-        "vesting": {"years": 5, "schedule": "cliff"},
-        "memberContributions": {"rate": null, "note": "Tier 1 members generally not required to contribute; may make voluntary contributions."}
+        "note": "Legacy tier — very few active members remain. Most members in this tier are already retired.",
+        "vesting": {
+          "years": 5,
+          "schedule": "After 5 years of credited member service"
+        },
+        "memberContributions": {
+          "rate": "Non-contributory (if employer offers a non-contributory plan)",
+          "voluntaryContributions": "May make voluntary contributions of 1-10% of gross earnings with 5% interest",
+          "note": "Most Tier 1 members do not contribute"
+        },
+        "retirementAge": {
+          "fullBenefits": 55,
+          "earlyRetirement": "N/A — Tier 1 members can retire at age 55 with NO benefit reduction",
+          "note": "Tier 1 is the only tier with no early retirement reduction at age 55"
+        },
+        "finalAverageEarnings": {
+          "years": 3,
+          "method": "Average of highest 3 consecutive years of earnings in NY public employment",
+          "limitation": "Earnings in any year cannot exceed the average of the previous two years by more than 20%"
+        },
+        "benefitFormula": {
+          "article15_coordinated": {
+            "under20years": "1.66% of FAS per year of service",
+            "at20years": "2% of FAS per year of service (40% at 20 years)",
+            "beyond30years": "1.5% of FAS per additional year beyond 30",
+            "maximum": "75% of FAS"
+          }
+        },
+        "maximumBenefit": "75% of FAS",
+        "source": "https://www.osc.ny.gov/retirement/publications/1515/eligibility-benefit-and-filing"
       },
       "tier_2": {
         "tierName": "ERS Tier 2",
-        "membershipDates": "July 27, 1976 through August 31, 1983 (Note: Tier 3 spans July 27, 1976 – August 31, 1983 for ERS; see Tier 3 for overlap)",
+        "membershipDates": "July 27, 1976 through August 31, 1983 (Note: Tier 3 spans July 27, 1976 – August 31, 1983 for ERS; some members in this date range are Tier 3 under Article 14)",
         "note": "Legacy tier. Most members are in plans covered under Articles 14 or 15.",
-        "vesting": {"years": 5, "schedule": "cliff"},
-        "memberContributions": {"rate": null, "note": "Tier 2 ERS members generally not required to contribute; may make voluntary contributions."}
+        "vesting": {
+          "years": 5,
+          "schedule": "After 5 years of credited member service after July 1, 1973"
+        },
+        "memberContributions": {
+          "rate": "Non-contributory (if employer offers a non-contributory plan)",
+          "voluntaryContributions": "May make voluntary contributions of 1-10% of gross earnings with 5% interest",
+          "section383f": "Members who elected Section 383-f plan contribute 1.5% of earnings"
+        },
+        "retirementAge": {
+          "fullBenefits": 62,
+          "earlyRetirementFrom": 55,
+          "exception_30_years": "Members with 30+ years of service credit may retire between 55-62 with NO reduction"
+        },
+        "earlyRetirementReduction": {
+          "table": "table_A",
+          "fullRetirementAge": 62,
+          "at55": "27% permanent reduction (with less than 30 years of service)",
+          "exception_30_years": "Members with 30+ years of service credit: NO reduction between ages 55-62",
+          "prorated_by_month": true,
+          "source": "https://www.osc.ny.gov/retirement/members/about-benefit-reductions"
+        },
+        "finalAverageEarnings": {
+          "years": 3,
+          "method": "Average of highest 3 consecutive years of earnings in NY public employment",
+          "limitation": "Earnings in any year cannot exceed the average of the previous two years by more than 20%"
+        },
+        "benefitFormula": {
+          "article15_coordinated": {
+            "under20years": "1.66% of FAS per year of service",
+            "at20years": "2% of FAS per year of service (40% at 20 years)",
+            "beyond30years": "1.5% of FAS per additional year beyond 30"
+          }
+        },
+        "maximumBenefit": "Benefit payable upon completion of 32 years of service",
+        "source": "https://www.osc.ny.gov/retirement/employers/comparison-ers-benefits"
       },
       "tier_3_and_4": {
         "tierName": "ERS Tiers 3 & 4",
         "tier3MembershipDates": "July 27, 1976 through August 31, 1983",
         "tier4MembershipDates": "September 1, 1983 through December 31, 2009",
-        "vesting": {"years": 5, "schedule": "cliff"},
+        "vesting": {
+          "years": 5,
+          "schedule": "cliff"
+        },
         "memberContributions": {
           "rate": 0.03,
           "duration": "Until 10 years of membership OR 10 years of credited service — whichever occurs first",
@@ -107,8 +190,13 @@
           "noReductionWith30YearsService": true
         },
         "earlyRetirementReduction": {
+          "table": "table_A",
+          "fullRetirementAge": 62,
           "at55": "27% permanent reduction (with less than 30 years of service)",
-          "note": "See full reduction chart at osc.ny.gov. Reduction is prorated by exact age."
+          "exception_30_years": "Members with 30+ years of service credit may retire between ages 55-62 with NO reduction",
+          "prorated_by_month": true,
+          "example": "At age 58.5, permanent reduction of 16.5%",
+          "source": "https://www.osc.ny.gov/retirement/members/about-benefit-reductions"
         },
         "finalAverageEarnings": {
           "years": 3,
@@ -117,9 +205,17 @@
         },
         "benefitFormula": {
           "article15_coordinated": {
-            "under20years": {"multiplier": 0.0166, "structure": "1.66% x FAE x years of service"},
-            "20to30years": {"multiplier": 0.02, "structure": "2% x FAE x years of service"},
-            "over30years": {"structure": "2% x FAE x 30 years + 1.5% x FAE x years beyond 30"},
+            "under20years": {
+              "multiplier": 0.0166,
+              "structure": "1.66% x FAE x years of service"
+            },
+            "20to30years": {
+              "multiplier": 0.02,
+              "structure": "2% x FAE x years of service"
+            },
+            "over30years": {
+              "structure": "2% x FAE x 30 years + 1.5% x FAE x years beyond 30"
+            },
             "exampleAt30yrs": "2% x 30 = 60% of FAE",
             "exampleAt35yrs": "(2% x 30) + (1.5% x 5) = 67.5% of FAE"
           },
@@ -130,7 +226,10 @@
       "tier_5": {
         "tierName": "ERS Tier 5",
         "membershipDates": "January 1, 2010 through March 31, 2012",
-        "vesting": {"years": 5, "schedule": "cliff"},
+        "vesting": {
+          "years": 5,
+          "schedule": "cliff"
+        },
         "memberContributions": {
           "rate": 0.03,
           "duration": "For entire career",
@@ -142,8 +241,13 @@
           "noReductionException": "UCPOs with at least 30 years of service"
         },
         "earlyRetirementReduction": {
-          "at55": "38.33% permanent reduction (unless UCPO exception)",
-          "note": "See full reduction chart at osc.ny.gov."
+          "table": "table_B",
+          "fullRetirementAge": 62,
+          "at55": "38.33% permanent reduction",
+          "exception_30_years": "NO 30-year exception (unlike Tiers 2-4). Exception only for Uniformed Court Officers and Peace Officers (Unified Court System) with 30+ years.",
+          "prorated_by_month": true,
+          "example": "At age 58.5, permanent reduction of 20.83%",
+          "source": "https://www.osc.ny.gov/retirement/members/about-benefit-reductions"
         },
         "finalAverageEarnings": {
           "years": 3,
@@ -153,9 +257,17 @@
         },
         "benefitFormula": {
           "article15_coordinated": {
-            "under20years": {"multiplier": 0.0166, "structure": "1.66% x FAE x years of service"},
-            "20to30years": {"multiplier": 0.02, "structure": "2% x FAE x years of service"},
-            "over30years": {"structure": "2% x FAE x 30 years + 1.5% x FAE x years beyond 30"},
+            "under20years": {
+              "multiplier": 0.0166,
+              "structure": "1.66% x FAE x years of service"
+            },
+            "20to30years": {
+              "multiplier": 0.02,
+              "structure": "2% x FAE x years of service"
+            },
+            "over30years": {
+              "structure": "2% x FAE x 30 years + 1.5% x FAE x years beyond 30"
+            },
             "note": "Same formula as Tiers 3 & 4"
           }
         },
@@ -164,7 +276,11 @@
       "tier_6": {
         "tierName": "ERS Tier 6",
         "membershipDates": "April 1, 2012 and after",
-        "vesting": {"years": 5, "schedule": "cliff", "note": "Vesting at 5 years established April 9, 2022 law (previously 10 years)."},
+        "vesting": {
+          "years": 5,
+          "schedule": "cliff",
+          "note": "Vesting at 5 years established April 9, 2022 law (previously 10 years)."
+        },
         "memberContributions": {
           "type": "income_based",
           "brackets": "See tier6_contribution_brackets at top level",
@@ -177,8 +293,13 @@
           "vestedMemberNote": "Vested members who left payroll before retirement eligible at 55; full benefit at 63."
         },
         "earlyRetirementReduction": {
+          "table": "table_C",
+          "fullRetirementAge": 63,
           "at55": "52% permanent reduction",
-          "note": "See full reduction chart at osc.ny.gov. Significantly steeper than earlier tiers."
+          "exception_30_years": "NO 30-year exception. Reduction applies regardless of service credit.",
+          "prorated_by_month": true,
+          "example": "At age 58.5, permanent reduction of 29.25%",
+          "source": "https://www.osc.ny.gov/retirement/members/about-benefit-reductions"
         },
         "finalAverageEarnings": {
           "years": 3,
@@ -190,9 +311,16 @@
         },
         "benefitFormula": {
           "article15_coordinated": {
-            "under20years": {"multiplier": 0.0166, "structure": "1.66% x FAE x years of service"},
-            "exactly20years": {"structure": "1.75% x FAE x 20 years = 35% of FAE"},
-            "over20years": {"structure": "1.75% x FAE x 20 years + 2% x FAE x years beyond 20"},
+            "under20years": {
+              "multiplier": 0.0166,
+              "structure": "1.66% x FAE x years of service"
+            },
+            "exactly20years": {
+              "structure": "1.75% x FAE x 20 years = 35% of FAE"
+            },
+            "over20years": {
+              "structure": "1.75% x FAE x 20 years + 2% x FAE x years beyond 20"
+            },
             "exampleAt35yrs": "(1.75% x 20) + (2% x 15) = 35% + 30% = 65% of FAE",
             "note": "Tier 6 uses 1.75% multiplier for first 20 years (slightly above 1.66% of other tiers) but no 2% multiplier until 20+ years is reached."
           }
@@ -221,7 +349,10 @@
         "tierName": "PFRS Tiers 1 & 2",
         "tier1MembershipDates": "Before July 31, 1973",
         "tier2MembershipDates": "July 31, 1973 through June 30, 2009",
-        "vesting": {"years": 5, "schedule": "cliff"},
+        "vesting": {
+          "years": 5,
+          "schedule": "cliff"
+        },
         "memberContributions": {
           "note": "Tier 2: None if employer offers a non-contributory plan. Tier 1: not required to contribute. Both may make voluntary contributions."
         },
@@ -239,25 +370,57 @@
       "tier_3": {
         "tierName": "PFRS Tier 3",
         "membershipDates": "July 1, 2009 through January 8, 2010",
-        "note": "Very small tier (6-month window). Covered by Article 11 or Article 14 of RSSL.",
-        "vesting": {"years": 5, "schedule": "cliff"},
-        "memberContributions": {
-          "article11": "None if employer offers non-contributory plan",
-          "article14": "3% for 25 years or until retirement, whichever is earlier"
+        "note": "Very small tier (6-month window). Members are covered by either Article 11 or Article 14 of RSSL. Article determines contributions, FAE rules, retirement eligibility, and plan access.",
+        "vesting": {
+          "years": 5,
+          "schedule": "After 5 years of credited member service"
         },
-        "finalAverageEarnings": {
-          "years": 3,
-          "limitation": {
-            "article11": "Earnings in any year cannot exceed average of previous 2 years by more than 20%",
-            "article14": "Earnings in any year cannot exceed average of previous 2 years by more than 10%"
-          }
+        "article_11": {
+          "name": "Article 11 Coverage",
+          "memberContributions": "Non-contributory (if employer offers a non-contributory plan). Voluntary contributions allowed (1-10% at 5% interest).",
+          "retirementAge": {
+            "specialPlan": "After completing minimum service requirement, regardless of age (if in a 20 or 25-year plan)",
+            "regularPlan": "Full benefits at 62; early retirement from 55 with reduction"
+          },
+          "earlyRetirementReduction": {
+            "table": "table_A",
+            "fullRetirementAge": 62,
+            "at55": "27% permanent reduction",
+            "prorated_by_month": true
+          },
+          "specialPlanAccess": true,
+          "finalAverageEarnings": {
+            "years": 3,
+            "limitation": "Earnings in any year cannot exceed the average of the previous two years by more than 20%"
+          },
+          "loanEligibility": "At least $33.35 on deposit (lower threshold than Article 14)"
         },
+        "article_14": {
+          "name": "Article 14 Coverage",
+          "memberContributions": "3% of earnings for 25 years or until retirement, whichever is earlier",
+          "retirementAge": {
+            "normalRetirement": "22 years of service",
+            "earlyRetirement": "20 years of service",
+            "note": "No age requirement for service retirement with sufficient service credit"
+          },
+          "specialPlanAccess": false,
+          "specialPlanNote": "Article 14 members are NOT covered by special 20- and 25-year retirement plans (Sections 384, 384-d, 384-e)",
+          "finalAverageEarnings": {
+            "years": 3,
+            "limitation": "Earnings in any year cannot exceed the average of the previous two years by more than 10% (stricter than Article 11's 20%)"
+          },
+          "loanEligibility": "At least $1,334 on deposit"
+        },
+        "key_differences_summary": "Article 11: non-contributory, 20% FAE limit, access to special 20/25-year plans. Article 14: 3% contribution, 10% FAE limit, normal retirement at 22 years, NO special plan access.",
         "source": "https://www.osc.ny.gov/retirement/employers/comparison-pfrs-benefits"
       },
       "tier_5": {
         "tierName": "PFRS Tier 5",
         "membershipDates": "January 9, 2010 through March 31, 2012",
-        "vesting": {"years": 5, "schedule": "cliff"},
+        "vesting": {
+          "years": 5,
+          "schedule": "cliff"
+        },
         "memberContributions": {
           "rate": 0.03,
           "duration": "Until retirement, unless plan limits creditable service to 20, 25, or 32 years (then contributions stop at the maximum)",
@@ -278,7 +441,11 @@
         "tierName": "PFRS Tier 6",
         "membershipDates": "April 1, 2012 and after",
         "note": "~45% of PFRS members as of 2023. Fastest-growing tier.",
-        "vesting": {"years": 5, "schedule": "cliff", "note": "5-year vesting established by 2022 law."},
+        "vesting": {
+          "years": 5,
+          "schedule": "cliff",
+          "note": "5-year vesting established by 2022 law."
+        },
         "memberContributions": {
           "type": "income_based",
           "brackets": "See tier6_contribution_brackets at top level — same brackets as ERS Tier 6",
@@ -331,10 +498,207 @@
     "https://www.osc.ny.gov/press/releases/2024/09/dinapoli-nyslrs-announces-employer-contribution-rates-2025-26"
   ],
   "researchGaps": [
-    "Full early retirement reduction tables by tier and age (available at osc.ny.gov/retirement/members/about-benefit-reductions)",
-    "Special plan details for specific job titles (correction officers, sheriffs, court officers — different formulas)",
-    "Tier 1 and 2 ERS detailed benefit structure (legacy, minimal active members)",
-    "PFRS Tier 3 Article 11 vs Article 14 detailed formula differences",
-    "Proportionate retirement and reciprocal service rules with NYC retirement systems"
-  ]
+    "Tier 3 Correction Officer/SHTA specific reduction table (published in VO1526 booklet but not available as structured data online)",
+    "Proportionate retirement detailed calculation methodology between NYSLRS and NYC systems (complex, member-specific)"
+  ],
+  "earlyRetirementReductionTables": {
+    "_comment": "Official early retirement reduction tables from osc.ny.gov/retirement/members/about-benefit-reductions. Reductions are permanent and prorated by month between whole ages.",
+    "source": "https://www.osc.ny.gov/retirement/members/about-benefit-reductions",
+    "table_A": {
+      "name": "Standard Reduction (ERS Tiers 2/3/4, PFRS Tiers 2, 3-Article 11, 5, 6)",
+      "fullRetirementAge": 62,
+      "earliestRetirementAge": 55,
+      "applies_to": [
+        "ERS Tier 2 (with <30 years service)",
+        "ERS Tier 3 (with <30 years service)",
+        "ERS Tier 4 (with <30 years service)",
+        "PFRS Tier 2 (regular plan only)",
+        "PFRS Tier 3 Article 11 (regular plan only)",
+        "PFRS Tier 5 (regular plan only)",
+        "PFRS Tier 6 (regular plan only)"
+      ],
+      "exception_no_reduction": "ERS Tier 2, 3, 4 members with 30+ years of service credit retire with NO reduction between ages 55-62. Also: Tier 5 Uniformed Court Officers and Peace Officers (Unified Court System) with 30+ years.",
+      "reductions": [
+        {
+          "age": 62,
+          "reduction_pct": 0.0
+        },
+        {
+          "age": 61,
+          "reduction_pct": 6.0
+        },
+        {
+          "age": 60,
+          "reduction_pct": 12.0
+        },
+        {
+          "age": 59,
+          "reduction_pct": 15.0
+        },
+        {
+          "age": 58,
+          "reduction_pct": 18.0
+        },
+        {
+          "age": 57,
+          "reduction_pct": 21.0
+        },
+        {
+          "age": 56,
+          "reduction_pct": 24.0
+        },
+        {
+          "age": 55,
+          "reduction_pct": 27.0
+        }
+      ]
+    },
+    "table_B": {
+      "name": "ERS Tier 5 Reduction",
+      "fullRetirementAge": 62,
+      "earliestRetirementAge": 55,
+      "applies_to": [
+        "ERS Tier 5 (all members except Uniformed Court Officers/Peace Officers with 30+ years)"
+      ],
+      "note": "No 30-year exception for Tier 5 (unlike Tiers 2-4). Reduction applies even with 30+ years of service, except for Uniformed Court Officers and Peace Officers employed by the Unified Court System.",
+      "reductions": [
+        {
+          "age": 62,
+          "reduction_pct": 0.0
+        },
+        {
+          "age": 61,
+          "reduction_pct": 6.67
+        },
+        {
+          "age": 60,
+          "reduction_pct": 13.33
+        },
+        {
+          "age": 59,
+          "reduction_pct": 18.33
+        },
+        {
+          "age": 58,
+          "reduction_pct": 23.33
+        },
+        {
+          "age": 57,
+          "reduction_pct": 28.33
+        },
+        {
+          "age": 56,
+          "reduction_pct": 33.33
+        },
+        {
+          "age": 55,
+          "reduction_pct": 38.33
+        }
+      ]
+    },
+    "table_C": {
+      "name": "ERS Tier 6 Reduction",
+      "fullRetirementAge": 63,
+      "earliestRetirementAge": 55,
+      "applies_to": [
+        "ERS Tier 6 (all members)"
+      ],
+      "note": "No 30-year exception. FRA is 63 (not 62 like other tiers). Reduction applies regardless of years of service. Vested PFRS Tier 6 members receiving a vested benefit also have FRA 63.",
+      "reductions": [
+        {
+          "age": 63,
+          "reduction_pct": 0.0
+        },
+        {
+          "age": 62,
+          "reduction_pct": 6.5
+        },
+        {
+          "age": 61,
+          "reduction_pct": 13.0
+        },
+        {
+          "age": 60,
+          "reduction_pct": 19.5
+        },
+        {
+          "age": 59,
+          "reduction_pct": 26.0
+        },
+        {
+          "age": 58,
+          "reduction_pct": 32.5
+        },
+        {
+          "age": 57,
+          "reduction_pct": 39.0
+        },
+        {
+          "age": 56,
+          "reduction_pct": 45.5
+        },
+        {
+          "age": 55,
+          "reduction_pct": 52.0
+        }
+      ]
+    },
+    "correction_officers_shta": {
+      "note": "Tier 3 State Correction Officers and Security Hospital Treatment Assistants (SHTAs) have different reduction percentages. See NYSLRS publication VO1526 for Tier 3, 5, and 6 Correction Officers/SHTAs.",
+      "source": "https://www.osc.ny.gov/retirement/publications/1526/message-comptroller-thomas-p-dinapoli"
+    }
+  },
+  "ersSpecialPlans": {
+    "_comment": "ERS special plans allow retirement after 20 or 25 years regardless of age. About 7% of ERS members are in special plans.",
+    "overview": "NYSLRS manages 300+ retirement plan combinations. Special plans allow retirement at any age after completing minimum service. No age requirement. Most special plan members are correction officers, sheriffs, or court officers.",
+    "correctionOfficers_SHTAs": {
+      "name": "State Correction Officers and Security Hospital Treatment Assistants (SHTAs)",
+      "plan_type": "25-year",
+      "sections": "Sections 89-a through 89-p and 603 subsections",
+      "benefit_at_25_years": "50% of FAE (2% x 25 years)",
+      "additional_beyond_25": "1.66% of FAE per additional year",
+      "maximum": "Cannot exceed benefit payable at 32 years of service",
+      "note": "No Tier 4 for State Correction Officers. Tier 3 Correction Officers/SHTAs have different early retirement reduction tables — see VO1526.",
+      "source": "https://www.osc.ny.gov/retirement/publications/1526/message-comptroller-thomas-p-dinapoli"
+    },
+    "sheriffs_deputies": {
+      "name": "Sheriffs, Undersheriffs, Deputy Sheriffs",
+      "plan_types": {
+        "20_year_plan": {
+          "sections": "Article 14B, Sections 551, 552, 553",
+          "benefit_at_20_years": "50% of FAE (2.5% x 20 years)",
+          "additional_beyond_20": "1.66% of FAE per additional year",
+          "maximum": "Cannot exceed benefit payable at 32 years of service",
+          "applies_to": "ERS Tier 3, 4, 5, 6 sheriffs, undersheriffs, deputy sheriffs"
+        },
+        "25_year_plan": {
+          "sections": "Sections 89-h, 89-i, 89-p and 603 subsections (county-specific)",
+          "benefit_at_25_years": "50% of FAE (2% x 25 years)",
+          "additional_beyond_25": "1.66% of FAE per additional year",
+          "maximum": "Cannot exceed benefit payable at 32 years of service",
+          "note": "County must have adopted this plan. Varies by county."
+        }
+      },
+      "source": "https://www.osc.ny.gov/retirement/publications/1841/20-year-retirement-benefit"
+    },
+    "uniformedCourtOfficers": {
+      "name": "Uniformed Court Officers and Peace Officers (Unified Court System)",
+      "note": "Tier 5 members in these titles with 30+ years of service credit can retire between 55-62 with no early retirement reduction. Not in a separate special plan but have a distinct reduction exception.",
+      "source": "https://www.osc.ny.gov/retirement/members/about-benefit-reductions"
+    },
+    "source": "https://nyretirementnews.com/nyslrs-special-retirement-plans/"
+  },
+  "proportionateRetirement": {
+    "overview": "New York State allows proportionate (combined) service credit between NYSLRS and NYC retirement systems for vesting and retirement eligibility purposes. The specific NYC systems include NYCERS, TRS-NYC, NYC Police Pension Fund, NYC Fire Pension Fund, and NYC Board of Education Retirement System.",
+    "keyPrinciples": [
+      "Service credit from multiple NY public retirement systems can be combined to meet vesting requirements",
+      "Each system calculates and pays its own portion of the benefit based on the member's service in that system",
+      "The member must meet minimum service requirements in each system where they claim credit",
+      "Transfer of membership between NYSLRS ERS and PFRS is possible via Application for Internal Transfer (RS5535)",
+      "Transfer out of NYSLRS to another NY public system via Application for Transfer (RS5534)"
+    ],
+    "note": "Proportionate retirement rules are complex and member-specific. NYSLRS recommends contacting their office for individual determinations.",
+    "residualGap": "Full proportionate retirement calculation methodology and inter-system service credit rules are not publicly documented in sufficient detail for automated calculation. Members should use Retirement Online or contact NYSLRS.",
+    "source": "https://www.osc.ny.gov/retirement/publications/life-changes-membership-nutshell"
+  }
 }

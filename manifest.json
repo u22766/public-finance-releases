@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.6",
-  "generated": "2026-03-31T22:35:59Z",
+  "data_version": "v2026.7",
+  "generated": "2026-04-04T00:57:23Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.6.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.7.",
   "files": {
     "rates_annual": {
       "version": "2026.3",
@@ -169,13 +169,18 @@
       "last_updated": "2026-03-23"
     },
     "va_compensation": {
-      "version": "2026.3",
+      "version": "2026.4",
       "effective_date": "2026-01-01",
       "update_frequency": "annual (December COLA)",
       "url": "federal/veterans-affairs/compensation.json",
       "description": "VA disability compensation rates by rating with dependent additions, DIC rates, VA COLA Added dependent parents additions (one/two parent) for ratings 30-100%.",
       "changelog_2026_1": "Extracted from rates-annual.json during schema 2.0 restructure. All values unchanged.",
       "last_updated": "2026-03-30"
+    },
+    "va_pension": {
+      "version": "2026.1",
+      "url": "federal/veterans-affairs/pension.json",
+      "description": "VA Pension and Survivors Pension MAPR rates (needs-based, wartime veterans and surviving spouses)"
     },
     "vgli": {
       "version": "2026",
@@ -334,7 +339,7 @@
       "subcategory": "state_pension",
       "state": "new-york",
       "scope": "statewide",
-      "version": "2026.1",
+      "version": "2026.2",
       "last_updated": "2026-03-24"
     },
     "nystrs_plans_new_york": {
@@ -467,7 +472,7 @@
       "update_cycle": "annual"
     },
     "county_property_tax_tx": {
-      "version": "1.3",
+      "version": "1.4",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/texas/county-property-tax.json",
@@ -517,6 +522,12 @@
       "url": "states/illinois/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Cook, Lake, St. Clair, Sangamon Counties (IL).",
       "last_updated": "2026-03-31"
+    },
+    "county_property_tax_al": {
+      "url": "states/alabama/county-property-tax.json",
+      "version": "2026.1",
+      "description": "Alabama county property tax rates and veteran exemptions",
+      "category": "state_county"
     }
   }
 }

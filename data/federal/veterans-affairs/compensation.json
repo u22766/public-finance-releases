@@ -1,10 +1,11 @@
 {
   "_comment": "VA disability compensation and DIC rates. VA compensation is NOT income, NOT earned income. Never in income totals, IRMAA, or SS provisional income. Update annually each December when VA publishes new COLA rates.",
-  "version": "2026.3",
+  "version": "2026.4",
   "effective_date": "2026-01-01",
   "sources": {
     "va_comp": "https://www.va.gov/disability/compensation-rates/veteran-rates/",
-    "va_dic": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/dependency-indemnity-compensation/survivor-rates/"
+    "va_dic": "https://www.va.gov/family-and-caregiver-benefits/survivor-compensation/dependency-indemnity-compensation/survivor-rates/",
+    "va_smc": "https://www.va.gov/disability/compensation-rates/special-monthly-compensation-rates/"
   },
   "compensation": {
     "_comment": "Atomized VA disability compensation by rating. Engine computes total monthly comp from base + spouse + child additions. Projections reduce comp as children age out (18 or 23 if student).",
@@ -24,7 +25,8 @@
         "additional_child_under_18": 32.0,
         "additional_child_school": 105.0,
         "one_parent_addition": 52.0,
-        "two_parent_addition": 104.0
+        "two_parent_addition": 104.0,
+        "spouse_aid_and_attendance": 61.0
       },
       "40": {
         "base_rate": 795.84,
@@ -34,7 +36,8 @@
         "additional_child_under_18": 43.0,
         "additional_child_school": 140.0,
         "one_parent_addition": 70.0,
-        "two_parent_addition": 140.0
+        "two_parent_addition": 140.0,
+        "spouse_aid_and_attendance": 81.0
       },
       "50": {
         "base_rate": 1132.9,
@@ -44,7 +47,8 @@
         "additional_child_under_18": 54.0,
         "additional_child_school": 176.0,
         "one_parent_addition": 88.0,
-        "two_parent_addition": 176.0
+        "two_parent_addition": 176.0,
+        "spouse_aid_and_attendance": 101.0
       },
       "60": {
         "base_rate": 1435.02,
@@ -54,7 +58,8 @@
         "additional_child_under_18": 65.0,
         "additional_child_school": 211.0,
         "one_parent_addition": 105.0,
-        "two_parent_addition": 210.0
+        "two_parent_addition": 210.0,
+        "spouse_aid_and_attendance": 121.0
       },
       "70": {
         "base_rate": 1808.45,
@@ -64,7 +69,8 @@
         "additional_child_under_18": 76.0,
         "additional_child_school": 246.0,
         "one_parent_addition": 123.0,
-        "two_parent_addition": 246.0
+        "two_parent_addition": 246.0,
+        "spouse_aid_and_attendance": 141.0
       },
       "80": {
         "base_rate": 2102.15,
@@ -74,7 +80,8 @@
         "additional_child_under_18": 87.0,
         "additional_child_school": 281.0,
         "one_parent_addition": 140.0,
-        "two_parent_addition": 280.0
+        "two_parent_addition": 280.0,
+        "spouse_aid_and_attendance": 161.0
       },
       "90": {
         "base_rate": 2362.3,
@@ -84,7 +91,8 @@
         "additional_child_under_18": 98.0,
         "additional_child_school": 317.0,
         "one_parent_addition": 158.0,
-        "two_parent_addition": 316.0
+        "two_parent_addition": 316.0,
+        "spouse_aid_and_attendance": 181.0
       },
       "100": {
         "base_rate": 3938.58,
@@ -94,7 +102,8 @@
         "additional_child_under_18": 109.11,
         "additional_child_school": 352.45,
         "one_parent_addition": 176.24,
-        "two_parent_addition": 352.48
+        "two_parent_addition": 352.48,
+        "spouse_aid_and_attendance": 201.41
       }
     },
     "_aging_out_rules": {
@@ -102,13 +111,16 @@
       "child_school_18_23": "Full-time student stays on at school rate until age 23 or graduation",
       "child_transition_18": "At 18 if student: remains as dependent. If not student: removed entirely."
     },
-    "_parent_addition_note": "one_parent_addition and two_parent_addition are monthly increments added to base_rate for veterans with one or two dependent parents (applies to ratings 30%+). Parent must receive more than 50% of financial support from the veteran. These additions are flat increments regardless of other dependent status (spouse/children). Source: VA.gov disability compensation rates, effective December 1, 2025."
+    "_parent_addition_note": "one_parent_addition and two_parent_addition are monthly increments added to base_rate for veterans with one or two dependent parents (applies to ratings 30%+). Parent must receive more than 50% of financial support from the veteran. These additions are flat increments regardless of other dependent status (spouse/children). Source: VA.gov disability compensation rates, effective December 1, 2025.",
+    "_spouse_aa_note": "spouse_aid_and_attendance is an additional monthly amount added when the veteran's spouse receives Aid and Attendance benefits. Added to total comp on top of base_rate and all other dependent additions. Applies to ratings 30%+ and all SMC levels. Source: VA.gov disability compensation rates, Added amounts table, effective December 1, 2025.",
+    "smc_spouse_aid_and_attendance": 201.41,
+    "_smc_spouse_aa_note": "Flat $201.41/mo added for spouse receiving A&A across all SMC letter designations (L through R). Source: VA.gov special monthly compensation rates, Added amounts table, effective December 1, 2025."
   },
   "dic": {
     "_comment": "Dependency and Indemnity Compensation \u2014 paid to surviving spouse. Tax-free, permanent.",
     "base_rate_monthly": 1699.36,
     "eight_year_provision_monthly": 360.85,
-    "transitional_benefit_monthly": 359.8,
+    "transitional_benefit_monthly": 359.0,
     "transitional_benefit_duration_months": 24,
     "per_child_under_18": 421.0,
     "helpless_child_over_18": 421.0,
@@ -116,7 +128,9 @@
     "_source": "VA.gov effective December 1, 2025 \u2014 2.8% COLA applied",
     "_eight_year_note": "Added if veteran was 100% rated for 8+ consecutive years AND married to same spouse for those 8 years",
     "_transitional_note": "Added for first 24 months if surviving spouse has children under 18 at time of veteran's death",
-    "_ten_year_note": "If veteran held 100% P&T for 10+ continuous years before death, cause of death is presumed service-connected \u2014 DIC eligibility is automatic"
+    "_ten_year_note": "If veteran held 100% P&T for 10+ continuous years before death, cause of death is presumed service-connected \u2014 DIC eligibility is automatic",
+    "housebound_monthly": 197.22,
+    "_housebound_note": "Added if surviving spouse can't leave home due to disability. Source: VA.gov DIC survivor rates, effective December 1, 2025."
   },
   "cola_2026_actual": 0.028,
   "_cola_actual_note": "Actual 2026 COLA = 2.8% (applied Dec 1, 2025). This is the rate that WAS applied to current year tables.",
@@ -323,5 +337,5 @@
     }
   ],
   "_rate_history_note": "Historical base rates (veteran alone, no dependents) for all disability ratings 2016-2026. All values are monthly amounts in USD. Derived from 2026 official VA.gov rates back-calculated using published VA COLA percentages. VA COLA matches Social Security COLA annually.",
-  "last_updated": "2026-03-30"
+  "last_updated": "2026-04-03"
 }

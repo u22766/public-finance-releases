@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions \u2014 TX",
+    "title": "County Property Tax Rates and Veteran Exemptions — TX",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population and retirement-destination counties in Texas.",
     "state_code": "TX",
-    "version": "1.3",
+    "version": "1.4",
     "last_updated": "2026-03-21",
     "sources": [
       "County tax assessor/collector offices",
@@ -42,8 +42,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
-          "applies_to": "Residence homestead \u2014 total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
+          "applies_to": "Residence homestead — total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -113,8 +113,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
-          "applies_to": "Residence homestead \u2014 total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
+          "applies_to": "Residence homestead — total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -176,7 +176,7 @@
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
           "eligibility": "100% P&T service-connected disability",
-          "applies_to": "Primary residence \u2014 total exemption from all property taxes",
+          "applies_to": "Primary residence — total exemption from all property taxes",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "surviving_spouse_conditions": "Must not remarry and must remain in the home"
@@ -236,7 +236,7 @@
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
           "eligibility": "100% P&T service-connected disability",
-          "applies_to": "Primary residence \u2014 total exemption from all property taxes",
+          "applies_to": "Primary residence — total exemption from all property taxes",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "surviving_spouse_conditions": "Must not remarry and must remain in the home"
@@ -272,6 +272,285 @@
         "url": "https://www.epcad.org/"
       },
       "source": "https://www.epcad.org/"
+    },
+    {
+      "county": "Harris County",
+      "state_code": "TX",
+      "fips": "48201",
+      "military_installations": [
+        "Ellington Field JRB (TX ANG 147th Attack Wing)"
+      ],
+      "estimated_veteran_population": 300000,
+      "tax_year": 2025,
+      "property_tax": {
+        "approximate_total_rate_per_100": 2.03,
+        "rate_breakdown": {
+          "county": 0.385,
+          "city_houston": 0.519,
+          "houston_isd": 0.878,
+          "harris_health": 0.156,
+          "flood_control": 0.036,
+          "port_authority": 0.014,
+          "hcde": 0.005
+        },
+        "homestead_exemption_school": 140000,
+        "_note": "No state property tax. Total varies by taxing jurisdiction overlap. MUDs can add $0.25–$1.00+/100. Houston ISD rate includes disaster pennies from Hurricane Beryl (2024)."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
+          "applies_to": "Residence homestead — total appraised value",
+          "surviving_spouse": true,
+          "surviving_spouse_transfers_to_new_homestead": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "tiers": [
+            {
+              "rating_min": 10,
+              "rating_max": 29,
+              "amount": 5000
+            },
+            {
+              "rating_min": 30,
+              "rating_max": 49,
+              "amount": 7500
+            },
+            {
+              "rating_min": 50,
+              "rating_max": 69,
+              "amount": 10000
+            },
+            {
+              "rating_min": 70,
+              "rating_max": 100,
+              "amount": 12000
+            }
+          ],
+          "applies_to": "Any one property (not limited to homestead)",
+          "age_65_plus_with_10_pct": 12000
+        }
+      },
+      "payment_plans": {
+        "quarterly": true,
+        "installment_over_65_disabled_veteran": true
+      },
+      "application": {
+        "office": "Harris Central Appraisal District (HCAD)",
+        "address": "13013 Northwest Freeway, Houston, TX 77040",
+        "phone": "713-957-7800",
+        "url": "https://www.hcad.org/",
+        "deadline": "April 30 (late filing up to 5 years for veteran exemptions)"
+      },
+      "source": "https://www.hctax.net/property/TaxRates.cshtml"
+    },
+    {
+      "county": "Dallas County",
+      "state_code": "TX",
+      "fips": "48113",
+      "military_installations": [],
+      "estimated_veteran_population": 120000,
+      "tax_year": 2025,
+      "property_tax": {
+        "approximate_total_rate_per_100": 2.22,
+        "rate_breakdown": {
+          "county": 0.227,
+          "city_dallas": 0.744,
+          "dallas_isd": 0.98,
+          "parkland_hospital": 0.226,
+          "dallas_college": 0.045
+        },
+        "homestead_exemption_school": 140000,
+        "_note": "No state property tax. Total varies by taxing jurisdiction overlap. Dallas ISD subject to state recapture (Robin Hood). Effective rate ~1.74% after exemptions."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
+          "applies_to": "Residence homestead — total appraised value",
+          "surviving_spouse": true,
+          "surviving_spouse_transfers_to_new_homestead": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "tiers": [
+            {
+              "rating_min": 10,
+              "rating_max": 29,
+              "amount": 5000
+            },
+            {
+              "rating_min": 30,
+              "rating_max": 49,
+              "amount": 7500
+            },
+            {
+              "rating_min": 50,
+              "rating_max": 69,
+              "amount": 10000
+            },
+            {
+              "rating_min": 70,
+              "rating_max": 100,
+              "amount": 12000
+            }
+          ],
+          "applies_to": "Any one property (not limited to homestead)",
+          "age_65_plus_with_10_pct": 12000
+        }
+      },
+      "payment_plans": {
+        "quarterly": true,
+        "installment_over_65_disabled_veteran": true
+      },
+      "application": {
+        "office": "Dallas Central Appraisal District (DCAD)",
+        "address": "2949 N Stemmons Freeway, Dallas, TX 75247",
+        "phone": "214-631-0910",
+        "url": "https://www.dallascad.org/",
+        "deadline": "April 30 (late filing up to 5 years for veteran exemptions)"
+      },
+      "source": "https://www.dallascad.org/taxrates.aspx"
+    },
+    {
+      "county": "Tarrant County",
+      "state_code": "TX",
+      "fips": "48439",
+      "military_installations": [
+        "NAS JRB Fort Worth (Naval Air Station Joint Reserve Base)"
+      ],
+      "estimated_veteran_population": 115000,
+      "tax_year": 2025,
+      "property_tax": {
+        "approximate_total_rate_per_100": 2.2,
+        "rate_breakdown": {
+          "county": 0.224,
+          "city_fort_worth": 0.682,
+          "fort_worth_isd": 1.068,
+          "tarrant_county_college": 0.13,
+          "jps_health_network": 0.222
+        },
+        "homestead_exemption_school": 140000,
+        "_note": "No state property tax. Total varies by taxing jurisdiction overlap. Rate shown is typical for City of Fort Worth area."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
+          "applies_to": "Residence homestead — total appraised value",
+          "surviving_spouse": true,
+          "surviving_spouse_transfers_to_new_homestead": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "tiers": [
+            {
+              "rating_min": 10,
+              "rating_max": 29,
+              "amount": 5000
+            },
+            {
+              "rating_min": 30,
+              "rating_max": 49,
+              "amount": 7500
+            },
+            {
+              "rating_min": 50,
+              "rating_max": 69,
+              "amount": 10000
+            },
+            {
+              "rating_min": 70,
+              "rating_max": 100,
+              "amount": 12000
+            }
+          ],
+          "applies_to": "Any one property (not limited to homestead)",
+          "age_65_plus_with_10_pct": 12000
+        }
+      },
+      "payment_plans": {
+        "quarterly": true,
+        "installment_over_65_disabled_veteran": true
+      },
+      "application": {
+        "office": "Tarrant Appraisal District (TAD)",
+        "address": "2500 Handley-Ederville Rd, Fort Worth, TX 76118",
+        "phone": "817-284-0024",
+        "url": "https://www.tad.org/",
+        "deadline": "April 30 (late filing up to 5 years for veteran exemptions)"
+      },
+      "source": "https://www.tarrantcountytx.gov/en/tax/property-tax/2025-tax-rate-calculation-worksheets.html"
+    },
+    {
+      "county": "McLennan County",
+      "state_code": "TX",
+      "fips": "48309",
+      "military_installations": [
+        "TSTC Waco Airport (former James Connally AFB)"
+      ],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2025,
+      "property_tax": {
+        "approximate_total_rate_per_100": 2.1,
+        "rate_breakdown": {
+          "county": 0.395,
+          "city_waco": 0.667,
+          "waco_isd": 0.848,
+          "mclennan_community_college": 0.179
+        },
+        "homestead_exemption_school": 140000,
+        "_note": "No state property tax. Total varies by taxing jurisdiction overlap. Adjacent to Bell County (Fort Cavazos). Effective rate ~1.93% in Waco after exemptions."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
+          "applies_to": "Residence homestead — total appraised value",
+          "surviving_spouse": true,
+          "surviving_spouse_transfers_to_new_homestead": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "tiers": [
+            {
+              "rating_min": 10,
+              "rating_max": 29,
+              "amount": 5000
+            },
+            {
+              "rating_min": 30,
+              "rating_max": 49,
+              "amount": 7500
+            },
+            {
+              "rating_min": 50,
+              "rating_max": 69,
+              "amount": 10000
+            },
+            {
+              "rating_min": 70,
+              "rating_max": 100,
+              "amount": 12000
+            }
+          ],
+          "applies_to": "Any one property (not limited to homestead)",
+          "age_65_plus_with_10_pct": 12000
+        }
+      },
+      "payment_plans": {
+        "quarterly": true,
+        "installment_over_65_disabled_veteran": true
+      },
+      "application": {
+        "office": "McLennan Central Appraisal District (MCAD)",
+        "address": "315 S 26th St, Waco, TX 76710",
+        "phone": "254-752-9864",
+        "url": "https://mclennancad.org/",
+        "deadline": "April 30 (late filing up to 5 years for veteran exemptions)"
+      },
+      "source": "https://www.mclennan.gov/224/Tax-Rates"
     }
   ]
 }
