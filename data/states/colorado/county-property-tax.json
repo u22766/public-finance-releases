@@ -20,6 +20,10 @@
     {
       "county": "El Paso County",
       "state_code": "CO",
+      "_computed": {
+        "effective_rate": 0.00523,
+        "median_home_value": 420000
+      },
       "fips": "08041",
       "military_installations": [
         "Fort Carson",
@@ -63,6 +67,10 @@
     {
       "county": "Douglas County",
       "state_code": "CO",
+      "_computed": {
+        "effective_rate": 0.00281,
+        "median_home_value": 640000
+      },
       "fips": "08035",
       "military_installations": [],
       "estimated_veteran_population": 18000,

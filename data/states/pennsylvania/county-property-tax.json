@@ -22,6 +22,10 @@
     {
       "county": "Philadelphia County",
       "state_code": "PA",
+      "_computed": {
+        "effective_rate": 0.014,
+        "median_home_value": 280000
+      },
       "fips": "42101",
       "military_installations": [
         "Naval Support Activity Philadelphia",
@@ -69,6 +73,10 @@
     {
       "county": "Allegheny County",
       "state_code": "PA",
+      "_computed": {
+        "effective_rate": 0.0139,
+        "median_home_value": 220000
+      },
       "fips": "42003",
       "military_installations": [
         "Pittsburgh MEPS",
@@ -110,6 +118,10 @@
     {
       "county": "Cumberland County",
       "state_code": "PA",
+      "_computed": {
+        "effective_rate": 0.0115,
+        "median_home_value": 295000
+      },
       "fips": "42041",
       "military_installations": [
         "Carlisle Barracks (US Army War College)",
@@ -151,6 +163,10 @@
     {
       "county": "York County",
       "state_code": "PA",
+      "_computed": {
+        "effective_rate": 0.013,
+        "median_home_value": 250000
+      },
       "fips": "42133",
       "military_installations": [
         "York MEPS"

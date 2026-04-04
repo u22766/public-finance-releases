@@ -20,6 +20,10 @@
     {
       "county": "Clark County",
       "state_code": "NV",
+      "_computed": {
+        "effective_rate": 0.01001,
+        "median_home_value": 420000
+      },
       "fips": "32003",
       "military_installations": [
         "Nellis AFB",

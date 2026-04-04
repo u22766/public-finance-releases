@@ -20,6 +20,10 @@
     {
       "county": "Cumberland County",
       "state_code": "NC",
+      "_computed": {
+        "effective_rate": 0.00735,
+        "median_home_value": 200000
+      },
       "fips": "37051",
       "military_installations": [
         "Fort Liberty"
@@ -48,6 +52,10 @@
     {
       "county": "Wake County",
       "state_code": "NC",
+      "_computed": {
+        "effective_rate": 0.00657,
+        "median_home_value": 440000
+      },
       "fips": "37183",
       "military_installations": [],
       "estimated_veteran_population": 45000,
@@ -74,6 +82,10 @@
     {
       "county": "Onslow County",
       "state_code": "NC",
+      "_computed": {
+        "effective_rate": 0.0065,
+        "median_home_value": 225000
+      },
       "fips": "37133",
       "military_installations": [
         "Camp Lejeune",

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions — TN",
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 TN",
     "description": "County-level property tax rates for top retirement destination counties in Tennessee.",
     "state_code": "TN",
     "version": "1.0",
@@ -14,7 +14,7 @@
       "tax_rate_format": "TN uses rates per $100 of assessed value. Assessment ratio is 25% for residential.",
       "assessment_ratio": "Residential property assessed at 25% of appraised value statewide.",
       "income_tax": "TN has no state income tax (Hall Tax on investment income repealed 2021).",
-      "scope": "v1.0: Top retirement counties — Williamson (Franklin), Davidson (Nashville metro), Knox (Knoxville), Hamilton (Chattanooga).",
+      "scope": "v1.0: Top retirement counties \u2014 Williamson (Franklin), Davidson (Nashville metro), Knox (Knoxville), Hamilton (Chattanooga).",
       "update_cycle": "Rates set annually by county legislative bodies. Reappraisals every 4-6 years."
     }
   },
@@ -22,9 +22,18 @@
     {
       "county": "Williamson County",
       "state_code": "TN",
+      "_computed": {
+        "effective_rate": 0.00098,
+        "median_home_value": 700000
+      },
       "fips": "47187",
       "retirement_destination": true,
-      "major_cities": ["Franklin", "Brentwood", "Nolensville", "Spring Hill"],
+      "major_cities": [
+        "Franklin",
+        "Brentwood",
+        "Nolensville",
+        "Spring Hill"
+      ],
       "tax_year": 2025,
       "property_tax": {
         "county_rate_per_100": 0.39,
@@ -61,9 +70,16 @@
     {
       "county": "Knox County",
       "state_code": "TN",
+      "_computed": {
+        "effective_rate": 0.0053,
+        "median_home_value": 310000
+      },
       "fips": "47093",
       "retirement_destination": true,
-      "major_cities": ["Knoxville", "Farragut"],
+      "major_cities": [
+        "Knoxville",
+        "Farragut"
+      ],
       "tax_year": 2025,
       "property_tax": {
         "county_rate_per_100": 2.12,
@@ -92,9 +108,17 @@
     {
       "county": "Hamilton County",
       "state_code": "TN",
+      "_computed": {
+        "effective_rate": 0.00551,
+        "median_home_value": 290000
+      },
       "fips": "47065",
       "retirement_destination": true,
-      "major_cities": ["Chattanooga", "Signal Mountain", "Lookout Mountain"],
+      "major_cities": [
+        "Chattanooga",
+        "Signal Mountain",
+        "Lookout Mountain"
+      ],
       "tax_year": 2025,
       "property_tax": {
         "county_rate_per_100": 2.205,

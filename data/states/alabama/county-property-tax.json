@@ -9,16 +9,16 @@
     "assessment_ratio_homestead": 0.1,
     "state_millage": 6.5,
     "source": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/",
-    "title": "County Property Tax Rates and Veteran Exemptions — AL",
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 AL",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties. Alabama uses 10% assessment ratio for residential homesteads.",
     "sources": [
       "County tax assessor/collector offices",
-      "Alabama Department of Revenue — Property Tax Division",
+      "Alabama Department of Revenue \u2014 Property Tax Division",
       "County appraisal district offices"
     ],
     "notes": {
       "tax_rate_format": "Rate per $100 of ASSESSED value (10% of market value for Class III residential homestead).",
-      "scope": "Covers counties with major military installations — Redstone Arsenal (Madison), Coast Guard/Austal (Mobile).",
+      "scope": "Covers counties with major military installations \u2014 Redstone Arsenal (Madison), Coast Guard/Austal (Mobile).",
       "update_cycle": "Tax rates typically set annually by county commissions. Alabama reappraises on 4-year cycle.",
       "assessment_ratio": "Alabama assessed value = 10% of market value. Effective rate on market value is approximately 1/10th of the stated per-$100-assessed rate."
     }
@@ -27,6 +27,10 @@
     {
       "county": "Madison County",
       "state_code": "AL",
+      "_computed": {
+        "effective_rate": 0.0058,
+        "median_home_value": 280000
+      },
       "fips": "01089",
       "military_installations": [
         "Redstone Arsenal (US Army / NASA Marshall Space Flight Center / MDA)"
@@ -51,15 +55,15 @@
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
           "eligibility": "Permanently and totally disabled (100% P&T). No income limit.",
-          "applies_to": "Homestead and up to 160 adjacent acres — ALL state, county, city, and school ad valorem taxes",
+          "applies_to": "Homestead and up to 160 adjacent acres \u2014 ALL state, county, city, and school ad valorem taxes",
           "surviving_spouse": true,
           "surviving_spouse_must_not_remarry": true,
-          "source_statute": "Ala. Code §40-9-21"
+          "source_statute": "Ala. Code \u00a740-9-21"
         },
         "va_adapted_housing": {
           "type": "full_exemption",
           "eligibility": "Home acquired through VA Specially Adapted Housing Grant",
-          "applies_to": "Full value of home — ALL ad valorem taxes regardless of value",
+          "applies_to": "Full value of home \u2014 ALL ad valorem taxes regardless of value",
           "surviving_spouse": true
         },
         "disabled_veteran_partial": {
@@ -85,6 +89,10 @@
     {
       "county": "Mobile County",
       "state_code": "AL",
+      "_computed": {
+        "effective_rate": 0.0062,
+        "median_home_value": 175000
+      },
       "fips": "01097",
       "military_installations": [
         "Coast Guard Aviation Training Center Mobile",
@@ -110,15 +118,15 @@
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
           "eligibility": "Permanently and totally disabled (100% P&T). No income limit.",
-          "applies_to": "Homestead and up to 160 adjacent acres — ALL state, county, city, and school ad valorem taxes",
+          "applies_to": "Homestead and up to 160 adjacent acres \u2014 ALL state, county, city, and school ad valorem taxes",
           "surviving_spouse": true,
           "surviving_spouse_must_not_remarry": true,
-          "source_statute": "Ala. Code §40-9-21"
+          "source_statute": "Ala. Code \u00a740-9-21"
         },
         "va_adapted_housing": {
           "type": "full_exemption",
           "eligibility": "Home acquired through VA Specially Adapted Housing Grant",
-          "applies_to": "Full value of home — ALL ad valorem taxes regardless of value",
+          "applies_to": "Full value of home \u2014 ALL ad valorem taxes regardless of value",
           "surviving_spouse": true
         },
         "disabled_veteran_partial": {

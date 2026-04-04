@@ -22,6 +22,10 @@
     {
       "county": "Cuyahoga County",
       "state_code": "OH",
+      "_computed": {
+        "effective_rate": 0.0063,
+        "median_home_value": 195000
+      },
       "fips": "39035",
       "military_installations": [
         "DFAS Cleveland",
@@ -64,6 +68,10 @@
     {
       "county": "Franklin County",
       "state_code": "OH",
+      "_computed": {
+        "effective_rate": 0.0049,
+        "median_home_value": 250000
+      },
       "fips": "39049",
       "military_installations": [
         "Defense Supply Center Columbus",
@@ -106,6 +114,10 @@
     {
       "county": "Hamilton County",
       "state_code": "OH",
+      "_computed": {
+        "effective_rate": 0.00504,
+        "median_home_value": 245000
+      },
       "fips": "39061",
       "military_installations": [
         "Wright-Patterson AFB (proximity)",
@@ -148,6 +160,10 @@
     {
       "county": "Montgomery County",
       "state_code": "OH",
+      "_computed": {
+        "effective_rate": 0.00543,
+        "median_home_value": 175000
+      },
       "fips": "39113",
       "military_installations": [
         "Wright-Patterson AFB"

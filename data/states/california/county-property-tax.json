@@ -41,6 +41,10 @@
     {
       "county": "San Diego County",
       "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.01,
+        "median_home_value": 850000
+      },
       "fips": "06073",
       "military_installations": [
         "Camp Pendleton",
@@ -91,6 +95,10 @@
     {
       "county": "Sacramento County",
       "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.01,
+        "median_home_value": 520000
+      },
       "fips": "06067",
       "military_installations": [
         "McClellan Park",
@@ -138,6 +146,10 @@
     {
       "county": "Riverside County",
       "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.01,
+        "median_home_value": 530000
+      },
       "fips": "06065",
       "military_installations": [
         "March Air Reserve Base"
@@ -184,6 +196,10 @@
     {
       "county": "Los Angeles County",
       "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.01,
+        "median_home_value": 900000
+      },
       "fips": "06037",
       "military_installations": [
         "Los Angeles Air Force Base",
@@ -227,6 +243,162 @@
         "url": "https://assessor.lacounty.gov/exemptions/disabled-veterans"
       },
       "source": "https://assessor.lacounty.gov/"
+    },
+    {
+      "county": "San Bernardino County",
+      "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.0067,
+        "median_home_value": 546000
+      },
+      "fips": "06071",
+      "military_installations": [
+        "Fort Irwin National Training Center",
+        "Marine Corps Logistics Base Barstow"
+      ],
+      "estimated_veteran_population": 120000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 0.67,
+        "mean_residential_assessment": 546000,
+        "assessment_ratio": 1.0,
+        "_note": "CA Prop 13: assessed at purchase price, max 2%/yr increase. Effective rate ~0.67%."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability or rated by VA as individually unemployable",
+          "exemption_amount_basic": 180671,
+          "exemption_amount_low_income": 271009,
+          "income_limit_low_income": 76921,
+          "applies_to": "Principal place of residence",
+          "statutory_source": "CA Revenue & Taxation Code \u00a7205.5",
+          "inflation_indexed": true,
+          "surviving_spouse": true,
+          "_note": "CA exemption is partial (assessed value reduction), not full. Amounts indexed annually."
+        }
+      },
+      "application": {
+        "office": "San Bernardino County Assessor-Recorder-Clerk",
+        "url": "https://www.sbcounty.gov/assessor",
+        "deadline": "No fixed deadline but must file annually"
+      }
+    },
+    {
+      "county": "Contra Costa County",
+      "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.0093,
+        "median_home_value": 790000
+      },
+      "fips": "06013",
+      "military_installations": [],
+      "estimated_veteran_population": 50000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 0.93,
+        "mean_residential_assessment": 790000,
+        "assessment_ratio": 1.0,
+        "_note": "CA Prop 13. Effective rate ~0.93%. East Bay area."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability or rated by VA as individually unemployable",
+          "exemption_amount_basic": 180671,
+          "exemption_amount_low_income": 271009,
+          "income_limit_low_income": 76921,
+          "applies_to": "Principal place of residence",
+          "statutory_source": "CA Revenue & Taxation Code \u00a7205.5",
+          "inflation_indexed": true,
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Contra Costa County Assessor",
+        "url": "https://www.contracosta.ca.gov/191/Assessor",
+        "deadline": "No fixed deadline but must file annually"
+      }
+    },
+    {
+      "county": "Ventura County",
+      "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.0072,
+        "median_home_value": 800000
+      },
+      "fips": "06111",
+      "military_installations": [
+        "Naval Base Ventura County (Port Hueneme)",
+        "Naval Air Weapons Station Point Mugu"
+      ],
+      "estimated_veteran_population": 45000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 0.72,
+        "mean_residential_assessment": 800000,
+        "assessment_ratio": 1.0,
+        "_note": "CA Prop 13. Effective rate ~0.72%. Home to NBVC \u2014 major Navy installation."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability or rated by VA as individually unemployable",
+          "exemption_amount_basic": 180671,
+          "exemption_amount_low_income": 271009,
+          "income_limit_low_income": 76921,
+          "applies_to": "Principal place of residence",
+          "statutory_source": "CA Revenue & Taxation Code \u00a7205.5",
+          "inflation_indexed": true,
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Ventura County Assessor",
+        "url": "https://assessor.countyofventura.org",
+        "deadline": "No fixed deadline but must file annually"
+      }
+    },
+    {
+      "county": "Kern County",
+      "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.0092,
+        "median_home_value": 335000
+      },
+      "fips": "06029",
+      "military_installations": [
+        "Edwards Air Force Base",
+        "Naval Air Weapons Station China Lake"
+      ],
+      "estimated_veteran_population": 55000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 0.92,
+        "mean_residential_assessment": 335000,
+        "assessment_ratio": 1.0,
+        "_note": "CA Prop 13. Effective rate ~0.92%. Two major military R&D installations."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_assessed_value",
+          "eligibility": "100% service-connected disability or rated by VA as individually unemployable",
+          "exemption_amount_basic": 180671,
+          "exemption_amount_low_income": 271009,
+          "income_limit_low_income": 76921,
+          "applies_to": "Principal place of residence",
+          "statutory_source": "CA Revenue & Taxation Code \u00a7205.5",
+          "inflation_indexed": true,
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Kern County Assessor-Recorder",
+        "url": "https://www.kerncounty.com/government/assessor-recorder",
+        "deadline": "No fixed deadline but must file annually"
+      }
     }
-  ]
+  ],
+  "version": "1.1",
+  "last_updated": "2026-04-03"
 }

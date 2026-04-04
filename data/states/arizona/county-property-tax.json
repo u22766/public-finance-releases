@@ -20,6 +20,10 @@
     {
       "county": "Maricopa County",
       "state_code": "AZ",
+      "_computed": {
+        "effective_rate": 0.00126,
+        "median_home_value": 430000
+      },
       "fips": "04013",
       "military_installations": [
         "Luke AFB"

@@ -21,6 +21,10 @@
     {
       "county": "Chatham County",
       "state_code": "GA",
+      "_computed": {
+        "effective_rate": 0.0136,
+        "median_home_value": 280000
+      },
       "fips": "13051",
       "retirement_destination": true,
       "major_cities": [
@@ -66,6 +70,10 @@
     {
       "county": "Cobb County",
       "state_code": "GA",
+      "_computed": {
+        "effective_rate": 0.0116,
+        "median_home_value": 400000
+      },
       "fips": "13067",
       "retirement_destination": true,
       "major_cities": [
@@ -109,6 +117,10 @@
     {
       "county": "Liberty County",
       "state_code": "GA",
+      "_computed": {
+        "effective_rate": 0.01202,
+        "median_home_value": 190000
+      },
       "fips": "13179",
       "major_cities": [
         "Hinesville",
@@ -150,6 +162,10 @@
     {
       "county": "Muscogee County",
       "state_code": "GA",
+      "_computed": {
+        "effective_rate": 0.0115,
+        "median_home_value": 155000
+      },
       "fips": "13215",
       "military_installations": [
         "Fort Moore"

@@ -20,6 +20,10 @@
     {
       "county": "Pierce County",
       "state_code": "WA",
+      "_computed": {
+        "effective_rate": 0.0105,
+        "median_home_value": 470000
+      },
       "fips": "53053",
       "military_installations": [
         "Joint Base Lewis-McChord"
@@ -70,6 +74,10 @@
     {
       "county": "Kitsap County",
       "state_code": "WA",
+      "_computed": {
+        "effective_rate": 0.0105,
+        "median_home_value": 460000
+      },
       "fips": "53035",
       "military_installations": [
         "Naval Base Kitsap",

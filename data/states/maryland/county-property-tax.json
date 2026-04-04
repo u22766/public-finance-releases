@@ -20,6 +20,10 @@
     {
       "county": "Prince George's County",
       "state_code": "MD",
+      "_computed": {
+        "effective_rate": 0.01289,
+        "median_home_value": 370000
+      },
       "fips": "24033",
       "military_installations": [
         "Joint Base Andrews"
@@ -47,6 +51,10 @@
     {
       "county": "Anne Arundel County",
       "state_code": "MD",
+      "_computed": {
+        "effective_rate": 0.00977,
+        "median_home_value": 440000
+      },
       "fips": "24003",
       "military_installations": [
         "Fort Meade",
@@ -83,6 +91,10 @@
     {
       "county": "Howard County",
       "state_code": "MD",
+      "_computed": {
+        "effective_rate": 0.01362,
+        "median_home_value": 550000
+      },
       "fips": "24027",
       "military_installations": [],
       "estimated_veteran_population": 15000,

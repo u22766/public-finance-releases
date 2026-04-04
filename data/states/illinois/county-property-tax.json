@@ -22,6 +22,10 @@
     {
       "county": "Cook County",
       "state_code": "IL",
+      "_computed": {
+        "effective_rate": 0.00693,
+        "median_home_value": 320000
+      },
       "fips": "17031",
       "military_installations": [
         "Naval Station Great Lakes (proximity)",
@@ -67,6 +71,10 @@
     {
       "county": "Lake County",
       "state_code": "IL",
+      "_computed": {
+        "effective_rate": 0.00883,
+        "median_home_value": 310000
+      },
       "fips": "17097",
       "military_installations": [
         "Naval Station Great Lakes",
@@ -110,6 +118,10 @@
     {
       "county": "St. Clair County",
       "state_code": "IL",
+      "_computed": {
+        "effective_rate": 0.00717,
+        "median_home_value": 170000
+      },
       "fips": "17163",
       "military_installations": [
         "Scott AFB",
@@ -153,6 +165,10 @@
     {
       "county": "Sangamon County",
       "state_code": "IL",
+      "_computed": {
+        "effective_rate": 0.00633,
+        "median_home_value": 175000
+      },
       "fips": "17167",
       "military_installations": [
         "Springfield ANG (Capital Airport)",

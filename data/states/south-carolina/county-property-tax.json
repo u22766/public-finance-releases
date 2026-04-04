@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions — SC",
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 SC",
     "description": "County-level property tax rates for top retirement destination counties in South Carolina.",
     "state_code": "SC",
     "version": "1.0",
@@ -13,7 +13,7 @@
     "notes": {
       "tax_rate_format": "SC uses millage rates. Rate per $100 provided for cross-state consistency.",
       "assessment_ratio": "SC assesses primary residences at 4% of market value (legal residence). Other residential at 6%.",
-      "scope": "v1.0: Top retirement counties — Beaufort (Hilton Head), Charleston, Horry (Myrtle Beach), Greenville.",
+      "scope": "v1.0: Top retirement counties \u2014 Beaufort (Hilton Head), Charleston, Horry (Myrtle Beach), Greenville.",
       "update_cycle": "Millage rates set annually by county councils."
     }
   },
@@ -21,10 +21,21 @@
     {
       "county": "Beaufort County",
       "state_code": "SC",
+      "_computed": {
+        "effective_rate": 0.00576,
+        "median_home_value": 380000
+      },
       "fips": "45013",
       "retirement_destination": true,
-      "major_cities": ["Hilton Head Island", "Bluffton", "Beaufort"],
-      "military_installations": ["Marine Corps Air Station Beaufort", "Parris Island MCRD"],
+      "major_cities": [
+        "Hilton Head Island",
+        "Bluffton",
+        "Beaufort"
+      ],
+      "military_installations": [
+        "Marine Corps Air Station Beaufort",
+        "Parris Island MCRD"
+      ],
       "estimated_veteran_population": 24000,
       "tax_year": 2025,
       "property_tax": {
@@ -33,7 +44,7 @@
         "effective_rate_primary_pct": 0.576,
         "rate_per_100": 0.576,
         "homestead_exemption": 50000,
-        "_note": "SC assesses primary homes at 4% of market value. 144 mills × 4% = 0.576% effective rate. $50K exemption for 65+ or disabled."
+        "_note": "SC assesses primary homes at 4% of market value. 144 mills \u00d7 4% = 0.576% effective rate. $50K exemption for 65+ or disabled."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -58,10 +69,20 @@
     {
       "county": "Charleston County",
       "state_code": "SC",
+      "_computed": {
+        "effective_rate": 0.00872,
+        "median_home_value": 420000
+      },
       "fips": "45019",
       "retirement_destination": true,
-      "major_cities": ["Charleston", "Mount Pleasant", "Summerville"],
-      "military_installations": ["Joint Base Charleston"],
+      "major_cities": [
+        "Charleston",
+        "Mount Pleasant",
+        "Summerville"
+      ],
+      "military_installations": [
+        "Joint Base Charleston"
+      ],
       "estimated_veteran_population": 35000,
       "tax_year": 2025,
       "property_tax": {
@@ -89,9 +110,17 @@
     {
       "county": "Horry County",
       "state_code": "SC",
+      "_computed": {
+        "effective_rate": 0.0078,
+        "median_home_value": 290000
+      },
       "fips": "45051",
       "retirement_destination": true,
-      "major_cities": ["Myrtle Beach", "Conway", "North Myrtle Beach"],
+      "major_cities": [
+        "Myrtle Beach",
+        "Conway",
+        "North Myrtle Beach"
+      ],
       "tax_year": 2025,
       "property_tax": {
         "total_millage_rate": 195.0,
@@ -118,9 +147,17 @@
     {
       "county": "Greenville County",
       "state_code": "SC",
+      "_computed": {
+        "effective_rate": 0.01192,
+        "median_home_value": 285000
+      },
       "fips": "45045",
       "retirement_destination": true,
-      "major_cities": ["Greenville", "Simpsonville", "Travelers Rest"],
+      "major_cities": [
+        "Greenville",
+        "Simpsonville",
+        "Travelers Rest"
+      ],
       "tax_year": 2025,
       "property_tax": {
         "total_millage_rate": 298.0,

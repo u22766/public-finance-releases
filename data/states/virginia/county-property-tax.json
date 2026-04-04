@@ -20,6 +20,10 @@
     {
       "county": "Fairfax County",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.01128,
+        "median_home_value": 794234
+      },
       "fips": "51059",
       "military_installations": [
         "Fort Belvoir",
@@ -84,6 +88,10 @@
     {
       "county": "Virginia Beach",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0099,
+        "median_home_value": 330000
+      },
       "fips": "51810",
       "military_installations": [
         "NAS Oceana",
@@ -113,6 +121,10 @@
     {
       "county": "Loudoun County",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0087,
+        "median_home_value": 680000
+      },
       "fips": "51107",
       "military_installations": [],
       "estimated_veteran_population": 22000,
@@ -147,6 +159,10 @@
     {
       "county": "Arlington County",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.01013,
+        "median_home_value": 760000
+      },
       "fips": "51013",
       "military_installations": [
         "The Pentagon",
@@ -184,6 +200,10 @@
     {
       "county": "Prince William County",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.00978,
+        "median_home_value": 520000
+      },
       "fips": "51153",
       "military_installations": [
         "Quantico Marine Corps Base"
@@ -230,6 +250,10 @@
     {
       "county": "Henrico County",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0083,
+        "median_home_value": 340000
+      },
       "fips": "51087",
       "military_installations": [
         "Defense Supply Center Richmond",
@@ -286,6 +310,10 @@
     {
       "county": "Chesterfield County",
       "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0089,
+        "median_home_value": 360000
+      },
       "fips": "51041",
       "military_installations": [
         "Fort Gregg-Adams"
@@ -323,6 +351,148 @@
         "url": "https://www.chesterfield.gov/1143/Real-Estate-Tax-Relief-and-Exemptions"
       },
       "source": "https://www.chesterfield.gov/823/Real-Estate-Assessments"
+    },
+    {
+      "county": "Chesapeake",
+      "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0105,
+        "median_home_value": 340000
+      },
+      "fips": "51550",
+      "military_installations": [
+        "Naval Support Activity Hampton Roads",
+        "NMCP Portsmouth (adjacent)"
+      ],
+      "estimated_veteran_population": 35000,
+      "tax_year": 2026,
+      "property_tax": {
+        "real_estate_rate_per_100": 1.05,
+        "mean_residential_assessment": 340000,
+        "assessment_ratio": 1.0,
+        "_note": "VA independent city. Rate per $100 of assessed value."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%",
+          "applies_to": "Primary residence + up to 1 acre",
+          "statutory_source": "VA Code \u00a758.1-3219.5",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true
+        }
+      },
+      "application": {
+        "office": "Chesapeake Commissioner of Revenue",
+        "url": "https://www.cityofchesapeake.net/government/departments/commissioner-of-the-revenue"
+      }
+    },
+    {
+      "county": "Hampton",
+      "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0124,
+        "median_home_value": 220000
+      },
+      "fips": "51650",
+      "military_installations": [
+        "Joint Base Langley-Eustis (Langley AFB)",
+        "NASA Langley Research Center",
+        "Fort Monroe National Monument"
+      ],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2026,
+      "property_tax": {
+        "real_estate_rate_per_100": 1.24,
+        "mean_residential_assessment": 220000,
+        "assessment_ratio": 1.0,
+        "_note": "VA independent city. Home to JBLE Langley side and NASA Langley."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%",
+          "applies_to": "Primary residence + up to 1 acre",
+          "statutory_source": "VA Code \u00a758.1-3219.5",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true
+        }
+      },
+      "application": {
+        "office": "Hampton Commissioner of Revenue",
+        "url": "https://hampton.gov/530/Commissioner-of-the-Revenue"
+      }
+    },
+    {
+      "county": "Newport News",
+      "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0122,
+        "median_home_value": 230000
+      },
+      "fips": "51700",
+      "military_installations": [
+        "Joint Base Langley-Eustis (Fort Eustis)",
+        "Newport News Shipbuilding (HII)"
+      ],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2026,
+      "property_tax": {
+        "real_estate_rate_per_100": 1.22,
+        "mean_residential_assessment": 230000,
+        "assessment_ratio": 1.0,
+        "_note": "VA independent city. Home to largest military shipyard in US (HII/NNS) and JBLE Fort Eustis."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%",
+          "applies_to": "Primary residence + up to 1 acre",
+          "statutory_source": "VA Code \u00a758.1-3219.5",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true
+        }
+      },
+      "application": {
+        "office": "Newport News Commissioner of Revenue",
+        "url": "https://www.nnva.gov/218/Commissioner-of-the-Revenue"
+      }
+    },
+    {
+      "county": "Suffolk",
+      "state_code": "VA",
+      "_computed": {
+        "effective_rate": 0.0107,
+        "median_home_value": 310000
+      },
+      "fips": "51800",
+      "military_installations": [
+        "Joint Expeditionary Base Little Creek-Fort Story (training areas)"
+      ],
+      "estimated_veteran_population": 15000,
+      "tax_year": 2026,
+      "property_tax": {
+        "real_estate_rate_per_100": 1.07,
+        "mean_residential_assessment": 310000,
+        "assessment_ratio": 1.0,
+        "_note": "VA independent city. Growing military-connected community in Hampton Roads corridor."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%",
+          "applies_to": "Primary residence + up to 1 acre",
+          "statutory_source": "VA Code \u00a758.1-3219.5",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true
+        }
+      },
+      "application": {
+        "office": "Suffolk Commissioner of Revenue",
+        "url": "https://www.suffolkva.us/349/Commissioner-of-the-Revenue"
+      }
     }
-  ]
+  ],
+  "version": "1.1",
+  "last_updated": "2026-04-03"
 }

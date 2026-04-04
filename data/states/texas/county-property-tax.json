@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions — TX",
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 TX",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population and retirement-destination counties in Texas.",
     "state_code": "TX",
     "version": "1.4",
@@ -20,6 +20,10 @@
     {
       "county": "Bexar County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.0231,
+        "median_home_value": 250000
+      },
       "fips": "48029",
       "military_installations": [
         "JBSA (Fort Sam Houston, Lackland AFB, Randolph AFB)"
@@ -42,8 +46,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
-          "applies_to": "Residence homestead — total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
+          "applies_to": "Residence homestead \u2014 total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -91,6 +95,10 @@
     {
       "county": "Travis County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.0182,
+        "median_home_value": 480000
+      },
       "fips": "48453",
       "military_installations": [
         "Camp Mabry"
@@ -113,8 +121,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
-          "applies_to": "Residence homestead — total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
+          "applies_to": "Residence homestead \u2014 total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -155,6 +163,10 @@
     {
       "county": "Bell County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.0198,
+        "median_home_value": 230000
+      },
       "fips": "48027",
       "military_installations": [
         "Fort Cavazos"
@@ -176,7 +188,7 @@
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
           "eligibility": "100% P&T service-connected disability",
-          "applies_to": "Primary residence — total exemption from all property taxes",
+          "applies_to": "Primary residence \u2014 total exemption from all property taxes",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "surviving_spouse_conditions": "Must not remarry and must remain in the home"
@@ -216,6 +228,10 @@
     {
       "county": "El Paso County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.0235,
+        "median_home_value": 210000
+      },
       "fips": "48141",
       "military_installations": [
         "Fort Bliss"
@@ -236,7 +252,7 @@
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
           "eligibility": "100% P&T service-connected disability",
-          "applies_to": "Primary residence — total exemption from all property taxes",
+          "applies_to": "Primary residence \u2014 total exemption from all property taxes",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "surviving_spouse_conditions": "Must not remarry and must remain in the home"
@@ -276,6 +292,10 @@
     {
       "county": "Harris County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.0203,
+        "median_home_value": 260000
+      },
       "fips": "48201",
       "military_installations": [
         "Ellington Field JRB (TX ANG 147th Attack Wing)"
@@ -294,13 +314,13 @@
           "hcde": 0.005
         },
         "homestead_exemption_school": 140000,
-        "_note": "No state property tax. Total varies by taxing jurisdiction overlap. MUDs can add $0.25–$1.00+/100. Houston ISD rate includes disaster pennies from Hurricane Beryl (2024)."
+        "_note": "No state property tax. Total varies by taxing jurisdiction overlap. MUDs can add $0.25\u2013$1.00+/100. Houston ISD rate includes disaster pennies from Hurricane Beryl (2024)."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
-          "applies_to": "Residence homestead — total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
+          "applies_to": "Residence homestead \u2014 total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -348,6 +368,10 @@
     {
       "county": "Dallas County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.0222,
+        "median_home_value": 310000
+      },
       "fips": "48113",
       "military_installations": [],
       "estimated_veteran_population": 120000,
@@ -367,8 +391,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
-          "applies_to": "Residence homestead — total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
+          "applies_to": "Residence homestead \u2014 total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -416,6 +440,10 @@
     {
       "county": "Tarrant County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.022,
+        "median_home_value": 310000
+      },
       "fips": "48439",
       "military_installations": [
         "NAS JRB Fort Worth (Naval Air Station Joint Reserve Base)"
@@ -437,8 +465,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
-          "applies_to": "Residence homestead — total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
+          "applies_to": "Residence homestead \u2014 total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
@@ -486,6 +514,10 @@
     {
       "county": "McLennan County",
       "state_code": "TX",
+      "_computed": {
+        "effective_rate": 0.021,
+        "median_home_value": 200000
+      },
       "fips": "48309",
       "military_installations": [
         "TSTC Waco Airport (former James Connally AFB)"
@@ -506,8 +538,8 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% service-connected or IU per TX Tax Code §11.131",
-          "applies_to": "Residence homestead — total appraised value",
+          "eligibility": "100% service-connected or IU per TX Tax Code \u00a711.131",
+          "applies_to": "Residence homestead \u2014 total appraised value",
           "surviving_spouse": true,
           "surviving_spouse_transfers_to_new_homestead": true
         },
