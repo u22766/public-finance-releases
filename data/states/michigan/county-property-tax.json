@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 MI",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in metro Detroit.",
+    "state": "Michigan",
+    "state_code": "MI",
+    "version": "2026.1",
+    "last_updated": "2026-04-03",
+    "sources": [
+      "County equalization offices",
+      "Local city/township assessors",
+      "Michigan Department of Treasury"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of MARKET value. Michigan assesses at 50% SEV.",
+      "scope": "Metro Detroit tri-county area \u2014 Wayne, Oakland, Macomb (Selfridge ANGB).",
+      "update_cycle": "Assessed values set annually by local assessors. Rates set by local jurisdictions.",
+      "assessment_method": "50% of true cash (market) value = State Equalized Value (SEV). Taxable value capped at lesser of SEV or prior year + 5%/CPI."
+    },
+    "_comment": "Michigan county property tax data for Culminari for Veterans. Michigan assesses at 50% of market value (State Equalized Value / SEV). 100% P&T disabled veterans receive full property tax exemption under MCL 211.7b.",
+    "assessment_ratio_homestead": 0.5,
+    "veteran_exemption_state_law": {
+      "statute": "MCL 211.7b",
+      "type": "full_exemption",
+      "description": "Full property tax exemption on principal residence for 100% P&T disabled veterans. No income test. No reapplication required once granted (as of 2025 law change).",
+      "surviving_spouse": true,
+      "surviving_spouse_conditions": "Unremarried surviving spouse of eligible veteran retains exemption"
+    }
+  },
+  "counties": [
+    {
+      "county": "Wayne County",
+      "state_code": "MI",
+      "_computed": {
+        "effective_rate": 0.0173,
+        "median_home_value": 165000
+      },
+      "fips": "26163",
+      "military_installations": [],
+      "estimated_veteran_population": 95000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 1.73,
+        "mean_residential_assessment": 82000,
+        "mean_residential_market_value": 165000,
+        "assessment_ratio": 0.5,
+        "_note": "Effective rate ~1.73% of market value. Highest in MI. Includes Detroit and surrounding suburbs. Assessment = 50% of market value."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "applies_to": "Principal residence",
+          "statutory_source": "MCL 211.7b",
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Wayne County Assessor / Local City Assessor",
+        "deadline": "No fixed deadline \u2014 file with local assessor",
+        "url": "https://www.waynecounty.com/departments/mb/equalization.aspx"
+      }
+    },
+    {
+      "county": "Oakland County",
+      "state_code": "MI",
+      "_computed": {
+        "effective_rate": 0.0136,
+        "median_home_value": 310000
+      },
+      "fips": "26125",
+      "military_installations": [],
+      "estimated_veteran_population": 60000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 1.36,
+        "mean_residential_assessment": 155000,
+        "mean_residential_market_value": 310000,
+        "assessment_ratio": 0.5,
+        "_note": "Effective rate ~1.36% of market value. Affluent suburban county north of Detroit."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "applies_to": "Principal residence",
+          "statutory_source": "MCL 211.7b",
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Oakland County Equalization / Local City Assessor",
+        "deadline": "No fixed deadline \u2014 file with local assessor",
+        "url": "https://www.oakgov.com/equalization"
+      }
+    },
+    {
+      "county": "Macomb County",
+      "state_code": "MI",
+      "_computed": {
+        "effective_rate": 0.0147,
+        "median_home_value": 230000
+      },
+      "fips": "26099",
+      "military_installations": [
+        "Selfridge Air National Guard Base"
+      ],
+      "estimated_veteran_population": 45000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 1.47,
+        "mean_residential_assessment": 115000,
+        "mean_residential_market_value": 230000,
+        "assessment_ratio": 0.5,
+        "_note": "Effective rate ~1.47% of market value. Home to Selfridge ANGB \u2014 127th Wing, MI Air National Guard."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability",
+          "applies_to": "Principal residence",
+          "statutory_source": "MCL 211.7b",
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Macomb County Equalization / Local City Assessor",
+        "url": "https://equalization.macombgov.org",
+        "deadline": "No fixed deadline \u2014 file with local assessor"
+      }
+    }
+  ]
+}

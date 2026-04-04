@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 MN",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for Twin Cities metro area counties.",
+    "state": "Minnesota",
+    "state_code": "MN",
+    "version": "2026.1",
+    "last_updated": "2026-04-03",
+    "sources": [
+      "County assessor offices",
+      "Minnesota Department of Revenue \u2014 Property Tax Division"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate per $100 of market value.",
+      "scope": "Twin Cities metro \u2014 Hennepin, Ramsey, Anoka counties.",
+      "update_cycle": "Assessed values set annually. Levies set by counties, cities, school districts.",
+      "assessment_method": "Market value \u00d7 class rate (1.0% first $500K homestead, 1.25% above) = tax capacity. Tax = tax capacity \u00d7 local levy rate.",
+      "veteran_exclusion": "$300,000 market value exclusion for 100% P&T disabled veterans \u2014 effectively full exemption for most homes."
+    },
+    "_comment": "Minnesota county property tax data for Culminari for Veterans. MN uses market value exclusion for disabled veterans \u2014 not a full exemption but significant ($300K exclusion for 100% P&T).",
+    "veteran_exemption_state_law": {
+      "statute": "Minn. Stat. \u00a7273.13 subd. 34",
+      "type": "partial_market_value",
+      "description": "$300,000 market value exclusion for 100% P&T or IU disabled veterans on homestead property. Effectively full exemption for homes valued at $300K or less.",
+      "exclusion_amount": 300000,
+      "surviving_spouse": true,
+      "surviving_spouse_conditions": "Unremarried surviving spouse retains exclusion"
+    }
+  },
+  "counties": [
+    {
+      "county": "Hennepin County",
+      "state_code": "MN",
+      "_computed": {
+        "effective_rate": 0.0118,
+        "median_home_value": 380000
+      },
+      "fips": "27053",
+      "military_installations": [],
+      "estimated_veteran_population": 35000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 1.18,
+        "mean_residential_assessment": 380000,
+        "assessment_ratio": 1.0,
+        "_note": "Effective rate ~1.18% of market value. Minneapolis metro. For homes above $300K, the veteran exclusion covers the first $300K \u2014 remainder is taxable."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_market_value",
+          "eligibility": "100% P&T or IU service-connected disability",
+          "exclusion_amount": 300000,
+          "applies_to": "Homestead property",
+          "statutory_source": "Minn. Stat. \u00a7273.13 subd. 34",
+          "surviving_spouse": true,
+          "_note": "For a $380K home at 1.18% rate: exemption saves ~$3,540/yr. Remaining $80K taxed at ~$944/yr."
+        }
+      },
+      "application": {
+        "office": "Hennepin County Assessor",
+        "url": "https://www.hennepin.us/residents/property/property-tax",
+        "deadline": "Apply by December 31 for following year"
+      }
+    },
+    {
+      "county": "Ramsey County",
+      "state_code": "MN",
+      "_computed": {
+        "effective_rate": 0.0125,
+        "median_home_value": 290000
+      },
+      "fips": "27123",
+      "military_installations": [
+        "Fort Snelling VA Medical Center Campus",
+        "Minnesota National Guard HQ (Camp Ripley admin)"
+      ],
+      "estimated_veteran_population": 15000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 1.25,
+        "mean_residential_assessment": 290000,
+        "assessment_ratio": 1.0,
+        "_note": "Effective rate ~1.25% of market value. St. Paul metro. For homes at or below $300K, veteran exclusion covers full value."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_market_value",
+          "eligibility": "100% P&T or IU service-connected disability",
+          "exclusion_amount": 300000,
+          "applies_to": "Homestead property",
+          "statutory_source": "Minn. Stat. \u00a7273.13 subd. 34",
+          "surviving_spouse": true,
+          "_note": "For median $290K home: full exemption (below $300K threshold). Saves ~$3,625/yr."
+        }
+      },
+      "application": {
+        "office": "Ramsey County Assessor",
+        "url": "https://www.ramseycounty.us/residents/property-home/property-taxes",
+        "deadline": "Apply by December 31 for following year"
+      }
+    },
+    {
+      "county": "Anoka County",
+      "state_code": "MN",
+      "_computed": {
+        "effective_rate": 0.0094,
+        "median_home_value": 330000
+      },
+      "fips": "27003",
+      "military_installations": [],
+      "estimated_veteran_population": 18000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 0.94,
+        "mean_residential_assessment": 330000,
+        "assessment_ratio": 1.0,
+        "_note": "Effective rate ~0.94% of market value. North metro suburb. Lowest effective rate among metro MN counties."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_market_value",
+          "eligibility": "100% P&T or IU service-connected disability",
+          "exclusion_amount": 300000,
+          "applies_to": "Homestead property",
+          "statutory_source": "Minn. Stat. \u00a7273.13 subd. 34",
+          "surviving_spouse": true,
+          "_note": "For $330K home: $300K excluded, $30K taxable. Saves ~$2,820/yr of $3,102 total."
+        }
+      },
+      "application": {
+        "office": "Anoka County Assessor",
+        "url": "https://www.anokacounty.us/481/Assessor",
+        "deadline": "Apply by December 31 for following year"
+      }
+    }
+  ]
+}

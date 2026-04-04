@@ -210,6 +210,10 @@
     },
     "_comment_state_pensions_md": "Maryland pensions",
     "_comment_state_pensions_ca": "California pensions",
+    "calstrs_plans_california": {
+      "reflects": "2026",
+      "rates_effective": "2025-07-01"
+    },
     "lacera_plans_los_angeles": {
       "reflects": "2026",
       "rates_effective": "2026-04-01"
@@ -265,6 +269,14 @@
     "va_pension": {
       "reflects": "FY2026",
       "rates_effective": "2025-12-01"
+    },
+    "county_property_tax_mi": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_mn": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
     }
   }
 }

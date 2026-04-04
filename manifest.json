@@ -2,7 +2,7 @@
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
   "data_version": "v2026.8",
-  "generated": "2026-04-04T15:49:41Z",
+  "generated": "2026-04-04T15:59:18Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
   "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.8.",
@@ -322,6 +322,16 @@
       "version": "2026.2",
       "last_updated": "2026-03-25"
     },
+    "calstrs_plans_california": {
+      "description": "California State Teachers Retirement System (CalSTRS) DB Program \u2014 990K members, educator-only pension, 2 tiers (2%@60 Classic/2%@62 PEPRA). Non-SS-covered. 2% simple COLA + SBMA 85% purchasing power floor.",
+      "url": "states/california/calstrs-plans.json",
+      "category": "state_local_pension",
+      "subcategory": "state_pension",
+      "state": "california",
+      "scope": "statewide",
+      "version": "2026.2",
+      "last_updated": "2026-03-24"
+    },
     "strs_ohio_plans": {
       "description": "State Teachers Retirement System of Ohio (STRS Ohio) \u2014 ~543K members. Non-SS-covered. Formula: 2.2% x service x 5-yr FAS. Board-approved COLA via SBP (1.5% FY2026, 1.6% FY2027). 14% member+employer. 3 plan types (DB/DC/Combined).",
       "url": "states/ohio/strs-ohio-plans.json",
@@ -387,6 +397,12 @@
       "version": "1.0",
       "last_updated": "2026-03-25"
     },
+    "county_property_tax_al": {
+      "url": "states/alabama/county-property-tax.json",
+      "version": "2026.1",
+      "description": "Alabama county property tax rates and veteran exemptions",
+      "category": "state_county"
+    },
     "county_property_tax_az": {
       "version": "2026.2",
       "effective_date": "2025-01-01",
@@ -429,6 +445,14 @@
       "last_updated": "2026-03-21",
       "update_cycle": "annual"
     },
+    "county_property_tax_il": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (after county rate-setting)",
+      "url": "states/illinois/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemption details: Cook, Lake, St. Clair, Sangamon Counties (IL).",
+      "last_updated": "2026-03-31"
+    },
     "county_property_tax_md": {
       "version": "1.2",
       "effective_date": "2025-01-01",
@@ -437,6 +461,16 @@
       "description": "County-level property tax rates and veteran exemption details: Prince George's County (MD).",
       "last_updated": "2026-03-21",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
+    },
+    "county_property_tax_mi": {
+      "version": "2026.1",
+      "url": "states/michigan/county-property-tax.json",
+      "description": "Michigan county property tax rates and veteran exemptions (Wayne, Oakland, Macomb)"
+    },
+    "county_property_tax_mn": {
+      "version": "2026.1",
+      "url": "states/minnesota/county-property-tax.json",
+      "description": "Minnesota county property tax rates and veteran exemptions (Hennepin, Ramsey, Anoka)"
     },
     "county_property_tax_nc": {
       "version": "1.3",
@@ -456,6 +490,22 @@
       "last_updated": "2026-03-31",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to Clark County veteran_exemptions."
+    },
+    "county_property_tax_oh": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (after county rate-setting)",
+      "url": "states/ohio/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemption details: Cuyahoga, Franklin, Hamilton, Montgomery Counties (OH).",
+      "last_updated": "2026-03-31"
+    },
+    "county_property_tax_pa": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "annual (after county rate-setting)",
+      "url": "states/pennsylvania/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemption details: Philadelphia, Allegheny, Cumberland, York Counties (PA).",
+      "last_updated": "2026-03-31"
     },
     "county_property_tax_sc": {
       "url": "states/south-carolina/county-property-tax.json",
@@ -498,36 +548,6 @@
       "last_updated": "2026-03-31",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to Pierce and Kitsap County veteran_exemptions."
-    },
-    "county_property_tax_pa": {
-      "version": "2026.1",
-      "effective_date": "2026-01-01",
-      "update_frequency": "annual (after county rate-setting)",
-      "url": "states/pennsylvania/county-property-tax.json",
-      "description": "County-level property tax rates and veteran exemption details: Philadelphia, Allegheny, Cumberland, York Counties (PA).",
-      "last_updated": "2026-03-31"
-    },
-    "county_property_tax_oh": {
-      "version": "2026.1",
-      "effective_date": "2026-01-01",
-      "update_frequency": "annual (after county rate-setting)",
-      "url": "states/ohio/county-property-tax.json",
-      "description": "County-level property tax rates and veteran exemption details: Cuyahoga, Franklin, Hamilton, Montgomery Counties (OH).",
-      "last_updated": "2026-03-31"
-    },
-    "county_property_tax_il": {
-      "version": "2026.1",
-      "effective_date": "2026-01-01",
-      "update_frequency": "annual (after county rate-setting)",
-      "url": "states/illinois/county-property-tax.json",
-      "description": "County-level property tax rates and veteran exemption details: Cook, Lake, St. Clair, Sangamon Counties (IL).",
-      "last_updated": "2026-03-31"
-    },
-    "county_property_tax_al": {
-      "url": "states/alabama/county-property-tax.json",
-      "version": "2026.1",
-      "description": "Alabama county property tax rates and veteran exemptions",
-      "category": "state_county"
     }
   }
 }
