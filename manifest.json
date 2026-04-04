@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.10",
-  "generated": "2026-04-04T18:28:30Z",
+  "data_version": "v2026.11",
+  "generated": "2026-04-04T22:25:52Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.10.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.11.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -121,28 +121,32 @@
       "description": "FERS annuity computation formulas: standard, enhanced, special category (SC), MRA+10 age reduction, disability retirement (first 12 months/after/recomputation at 62), CSRS-to-FERS transfer dual component, and congressional employee rules.",
       "version": "2026.1",
       "last_updated": "2026-03-20",
-      "update_cycle": "as enacted"
+      "update_cycle": "as enacted",
+      "update_frequency": "legislative"
     },
     "fers_eligibility_rules": {
       "url": "federal/fers-eligibility-rules.json",
       "description": "FERS retirement eligibility: MRA schedule by birth year (13 bands, 55-57), all immediate retirement pathways (MRA+30, 60+20, 62+5, MRA+10), special category (LEO/FF/ATC), VERA/VSIP early retirement, deferred and disability eligibility, FEHB 5-year rule.",
       "version": "1.0",
       "last_updated": "2026-03-23",
-      "update_cycle": "as enacted"
+      "update_cycle": "as enacted",
+      "update_frequency": "legislative"
     },
     "fers_service_credit_rules": {
       "url": "federal/fers-service-credit-rules.json",
       "description": "Federal retirement service credit: civilian deposit and redeposit (FERS/CSRS), military service buyback, sick leave conversion formula with OPM 2087-hour reference table, and 42 years of Treasury interest rate history (1985-2026).",
       "version": "1.0",
       "last_updated": "2026-03-23",
-      "update_cycle": "annual (interest rate)"
+      "update_cycle": "annual (interest rate)",
+      "update_frequency": "legislative"
     },
     "leo_premium_pay": {
       "url": "federal/leo-premium-pay.json",
       "description": "LEO premium pay rules: LEAP (25% availability pay for criminal investigators) and AUO (10-25% administratively uncontrollable overtime). Includes eligible series, rate tiers, retirement treatment, and position-to-premium mapping.",
       "version": "2026.1",
       "last_updated": "2026-03-20",
-      "update_cycle": "as enacted"
+      "update_cycle": "as enacted",
+      "update_frequency": "annual"
     },
     "csrs_retirement_rules": {
       "version": "1.0",
@@ -180,7 +184,8 @@
     "va_pension": {
       "version": "2026.1",
       "url": "federal/veterans-affairs/pension.json",
-      "description": "VA Pension and Survivors Pension MAPR rates (needs-based, wartime veterans and surviving spouses)"
+      "description": "VA Pension and Survivors Pension MAPR rates (needs-based, wartime veterans and surviving spouses)",
+      "update_frequency": "annual"
     },
     "vgli": {
       "version": "2026",
@@ -310,7 +315,8 @@
       "state": "texas",
       "scope": "statewide",
       "version": "2026.2",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-24",
+      "update_frequency": "annual"
     },
     "frs_plans_florida": {
       "description": "Florida Retirement System (FRS) Pension Plan \u2014 ~1.1M members. SS-covered. 2 tiers (pre/post July 2011). 5 membership classes (Regular 1.6%, Special Risk 3.0%, Senior Mgmt 2.0%, EOC Judges 3-1/3%, EOC Other 3.0%). FY2025-26 and FY2024-25 employer contribution rates by class with UAL breakdown. Compensation caps. Early retirement reduction benchmarks by class. Tier 1 COLA prorated 3%; Tier 2 no COLA. DROP, HIS supplement.",
@@ -320,7 +326,8 @@
       "state": "florida",
       "scope": "statewide",
       "version": "2026.2",
-      "last_updated": "2026-03-25"
+      "last_updated": "2026-03-25",
+      "update_frequency": "annual"
     },
     "calstrs_plans_california": {
       "description": "California State Teachers Retirement System (CalSTRS) DB Program \u2014 990K members, educator-only pension, 2 tiers (2%@60 Classic/2%@62 PEPRA). Non-SS-covered. 2% simple COLA + SBMA 85% purchasing power floor.",
@@ -330,7 +337,8 @@
       "state": "california",
       "scope": "statewide",
       "version": "2026.2",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-24",
+      "update_frequency": "annual"
     },
     "strs_ohio_plans": {
       "description": "State Teachers Retirement System of Ohio (STRS Ohio) \u2014 ~543K members. Non-SS-covered. Formula: 2.2% x service x 5-yr FAS. Board-approved COLA via SBP (1.5% FY2026, 1.6% FY2027). 14% member+employer. 3 plan types (DB/DC/Combined).",
@@ -340,7 +348,8 @@
       "state": "ohio",
       "scope": "statewide",
       "version": "2026.2",
-      "last_updated": "2026-03-25"
+      "last_updated": "2026-03-25",
+      "update_frequency": "annual"
     },
     "nyslrs_plans_new_york": {
       "description": "New York State and Local Retirement System (NYSLRS) \u2014 ERS (6 tiers) and PFRS (5 tiers, no T4). 1.2M members. SS-covered. COLA: 50% CPI, 1-3%, first $18K. Tier 6 income-based contributions 3-6%. 2024 law: FAE changed from 5 to 3 years for Tier 6.",
@@ -350,7 +359,8 @@
       "state": "new-york",
       "scope": "statewide",
       "version": "2026.2",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-24",
+      "update_frequency": "annual"
     },
     "nystrs_plans_new_york": {
       "description": "New York State Teachers Retirement System (NYSTRS) \u2014 460K members, educator-only. SS-covered. 6 tiers; Tier 4 largest (59%), Tier 6 36% growing. COLA: 50% CPI 1-3% first $18K (same law as NYSLRS). Tier 6 FAS = 5 years (NYSTRS did NOT get the 2024 3-year FAE law). 101.5% funded.",
@@ -360,7 +370,8 @@
       "state": "new-york",
       "scope": "statewide",
       "version": "2026.1",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-24",
+      "update_frequency": "annual"
     },
     "opers_plans_ohio": {
       "description": "Ohio Public Employees Retirement System (OPERS) \u2014 1M+ members. Non-SS-covered. Traditional Pension Plan Groups A/B/C (2.2%/2.5% formula). Member-Directed (DC) and Combined (closed Jan 2022). LE/PS separate tiers. CPI-W COLA cap 3%.",
@@ -370,7 +381,8 @@
       "state": "ohio",
       "scope": "statewide",
       "version": "2026.1",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-24",
+      "update_frequency": "annual"
     },
     "other_db_template": {
       "version": "1.0.0",
@@ -395,18 +407,21 @@
       "subcategory": "metadata",
       "scope": "repo_wide",
       "version": "1.0",
-      "last_updated": "2026-03-25"
+      "last_updated": "2026-03-25",
+      "update_frequency": "per_release"
     },
     "county_property_tax_al": {
       "url": "states/alabama/county-property-tax.json",
       "version": "2026.1",
       "description": "Alabama county property tax rates and veteran exemptions",
-      "category": "state_county"
+      "category": "state_county",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_ar": {
       "version": "2026.1",
       "url": "states/arkansas/county-property-tax.json",
-      "description": "Arkansas county property tax rates and veteran exemptions"
+      "description": "Arkansas county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_az": {
       "version": "2026.2",
@@ -422,7 +437,8 @@
       "url": "states/california/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemptions for California (Prop 13 constrained)",
       "version": "1.1",
-      "last_updated": "2026-03-21"
+      "last_updated": "2026-03-21",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_co": {
       "version": "2026.2",
@@ -448,7 +464,8 @@
       "description": "County-level property tax rates, veteran exemptions, and application info for top retirement and military counties in Georgia (Chatham, Cobb, Liberty).",
       "version": "1.1",
       "last_updated": "2026-03-21",
-      "update_cycle": "annual"
+      "update_cycle": "annual",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_il": {
       "version": "2026.1",
@@ -461,17 +478,20 @@
     "county_property_tax_in": {
       "version": "2026.1",
       "url": "states/indiana/county-property-tax.json",
-      "description": "Indiana county property tax rates and veteran exemptions"
+      "description": "Indiana county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_ky": {
       "version": "2026.1",
       "url": "states/kentucky/county-property-tax.json",
-      "description": "Kentucky county property tax rates and veteran exemptions"
+      "description": "Kentucky county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_la": {
       "version": "2026.1",
       "url": "states/louisiana/county-property-tax.json",
-      "description": "Louisiana parish property tax rates and veteran exemptions"
+      "description": "Louisiana parish property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_md": {
       "version": "1.2",
@@ -485,22 +505,26 @@
     "county_property_tax_mi": {
       "version": "2026.1",
       "url": "states/michigan/county-property-tax.json",
-      "description": "Michigan county property tax rates and veteran exemptions (Wayne, Oakland, Macomb)"
+      "description": "Michigan county property tax rates and veteran exemptions (Wayne, Oakland, Macomb)",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_mn": {
       "version": "2026.1",
       "url": "states/minnesota/county-property-tax.json",
-      "description": "Minnesota county property tax rates and veteran exemptions (Hennepin, Ramsey, Anoka)"
+      "description": "Minnesota county property tax rates and veteran exemptions (Hennepin, Ramsey, Anoka)",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_mo": {
       "version": "2026.1",
       "url": "states/missouri/county-property-tax.json",
-      "description": "Missouri county property tax rates and veteran exemptions"
+      "description": "Missouri county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_ms": {
       "version": "2026.1",
       "url": "states/mississippi/county-property-tax.json",
-      "description": "Mississippi county property tax rates and veteran exemptions"
+      "description": "Mississippi county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_nc": {
       "version": "1.3",
@@ -514,7 +538,8 @@
     "county_property_tax_nj": {
       "version": "2026.1",
       "url": "states/new-jersey/county-property-tax.json",
-      "description": "New Jersey county property tax rates and veteran exemptions"
+      "description": "New Jersey county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_nv": {
       "version": "2026.2",
@@ -529,7 +554,8 @@
     "county_property_tax_ny": {
       "version": "2026.1",
       "url": "states/new-york/county-property-tax.json",
-      "description": "New York county property tax rates and veteran exemptions"
+      "description": "New York county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_oh": {
       "version": "2026.1",
@@ -542,12 +568,14 @@
     "county_property_tax_ok": {
       "version": "2026.1",
       "url": "states/oklahoma/county-property-tax.json",
-      "description": "Oklahoma county property tax rates and veteran exemptions"
+      "description": "Oklahoma county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_or": {
       "version": "2026.1",
       "url": "states/oregon/county-property-tax.json",
-      "description": "Oregon county property tax rates and veteran exemptions"
+      "description": "Oregon county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_pa": {
       "version": "2026.1",
@@ -562,14 +590,16 @@
       "description": "County-level property tax rates, veteran exemptions, and application info for top retirement counties in South Carolina (Beaufort, Charleston, Horry, Greenville).",
       "version": "1.0",
       "last_updated": "2026-03-17",
-      "update_cycle": "annual"
+      "update_cycle": "annual",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_tn": {
       "url": "states/tennessee/county-property-tax.json",
       "description": "County-level property tax rates, veteran exemptions, and application info for top retirement counties in Tennessee (Williamson, Knox, Hamilton).",
       "version": "1.0",
       "last_updated": "2026-03-17",
-      "update_cycle": "annual"
+      "update_cycle": "annual",
+      "update_frequency": "as_needed"
     },
     "county_property_tax_tx": {
       "version": "1.4",
@@ -602,7 +632,8 @@
     "county_property_tax_wi": {
       "version": "2026.1",
       "url": "states/wisconsin/county-property-tax.json",
-      "description": "Wisconsin county property tax rates and veteran exemptions"
+      "description": "Wisconsin county property tax rates and veteran exemptions",
+      "update_frequency": "as_needed"
     }
   }
 }
