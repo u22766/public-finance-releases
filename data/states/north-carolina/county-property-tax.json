@@ -114,6 +114,75 @@
         "url": "https://www.onslowcountync.gov/278/Tax-Rates"
       },
       "source": "https://www.ncdor.gov/2025-2026-county-tax-rates-finalpdf/open"
+    },
+    {
+      "county": "Durham County",
+      "state_code": "NC",
+      "_computed": {
+        "effective_rate": 0.0093,
+        "median_home_value": 311300
+      },
+      "fips": "37063",
+      "va_facilities": [
+        "Durham VAMC",
+        "Durham VA Clinic"
+      ],
+      "estimated_veteran_population": 22000,
+      "tax_year": 2025,
+      "property_tax": {
+        "real_estate_rate_per_100": 0.9913,
+        "assessment_ratio": 1.0,
+        "_note": "Combined City of Durham + County rate. County-only rate is lower outside city limits."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_amount": 45000,
+          "eligibility": "100% P&T service-connected disability",
+          "applies_to": "Permanent residence",
+          "_note": "NC does not offer full exemption; $45,000 exclusion from appraised value"
+        }
+      },
+      "application": {
+        "office": "Durham County Tax Administration",
+        "url": "https://dconc.gov/government/departments-a-e/tax-administration"
+      },
+      "source": "https://www.ncdor.gov/taxes-forms/property-tax/property-tax-exemptions-exclusions"
+    },
+    {
+      "county": "Mecklenburg County",
+      "state_code": "NC",
+      "_computed": {
+        "effective_rate": 0.008,
+        "median_home_value": 370000
+      },
+      "fips": "37119",
+      "va_facilities": [
+        "Charlotte VA Clinic (Salisbury VAMC catchment)",
+        "Charlotte Health Care Center"
+      ],
+      "estimated_veteran_population": 48000,
+      "tax_year": 2025,
+      "property_tax": {
+        "real_estate_rate_per_100": 0.8,
+        "assessment_ratio": 1.0,
+        "_note": "Charlotte city rate + county rate. Salisbury VAMC is primary referral center."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_amount": 45000,
+          "eligibility": "100% P&T service-connected disability",
+          "applies_to": "Permanent residence",
+          "_note": "NC does not offer full exemption; $45,000 exclusion from appraised value"
+        }
+      },
+      "application": {
+        "office": "Mecklenburg County Assessor's Office",
+        "url": "https://www.mecknc.gov/taxes"
+      },
+      "source": "https://www.ncdor.gov/taxes-forms/property-tax/property-tax-exemptions-exclusions"
     }
-  ]
+  ],
+  "version": "1.4"
 }

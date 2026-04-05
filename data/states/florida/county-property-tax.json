@@ -370,8 +370,136 @@
         "url": "https://www.okaloosapa.com",
         "deadline": "March 1 of tax year"
       }
+    },
+    {
+      "county": "Miami-Dade County",
+      "state_code": "FL",
+      "_computed": {
+        "effective_rate": 0.0076,
+        "median_home_value": 450000
+      },
+      "fips": "12086",
+      "va_facilities": [
+        "Bruce W. Carter VAMC (Miami)",
+        "Miami VA Clinic",
+        "Homestead VA Clinic"
+      ],
+      "estimated_veteran_population": 80000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_millage_rate": 20.03,
+        "rate_per_100": 2.003,
+        "homestead_exemption": 50000,
+        "_note": "Highest property tax county in FL. Millage varies significantly by municipality."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; FL resident",
+          "applies_to": "Homestead property",
+          "surviving_spouse": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "exemption_amount": 5000,
+          "eligibility": "10%+ service-connected disability; FL resident",
+          "applies_to": "Homestead property"
+        },
+        "combat_disabled_65_plus": {
+          "type": "additional_discount",
+          "discount_percentage": "varies by disability rating",
+          "eligibility": "Combat-related disability, age 65+, FL resident"
+        }
+      },
+      "application": {
+        "office": "Miami-Dade County Property Appraiser",
+        "url": "https://www.miamidadepa.gov/"
+      },
+      "source": "https://www.miamidadepa.gov/pa/millage_tables.asp"
+    },
+    {
+      "county": "Pinellas County",
+      "state_code": "FL",
+      "_computed": {
+        "effective_rate": 0.0067,
+        "median_home_value": 319000
+      },
+      "fips": "12103",
+      "va_facilities": [
+        "Bay Pines VAMC (C.W. Bill Young)",
+        "St. Petersburg VA Clinic"
+      ],
+      "estimated_veteran_population": 65000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_millage_rate": 19.8,
+        "rate_per_100": 1.98,
+        "homestead_exemption": 50000,
+        "_note": "Bay Pines VAMC is one of the largest VA medical centers in the Southeast."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; FL resident",
+          "applies_to": "Homestead property",
+          "surviving_spouse": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "exemption_amount": 5000,
+          "eligibility": "10%+ service-connected disability; FL resident",
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Pinellas County Property Appraiser",
+        "url": "https://www.pcpao.gov/"
+      },
+      "source": "https://pinellas.gov/tax-rate-chart/"
+    },
+    {
+      "county": "Orange County",
+      "state_code": "FL",
+      "_computed": {
+        "effective_rate": 0.0075,
+        "median_home_value": 358000
+      },
+      "fips": "12095",
+      "va_facilities": [
+        "Orlando VAMC",
+        "Lake Baldwin VA Clinic",
+        "Kissimmee VA Clinic",
+        "Clermont VA Clinic"
+      ],
+      "estimated_veteran_population": 72000,
+      "tax_year": 2025,
+      "property_tax": {
+        "county_millage_rate": 4.4347,
+        "rate_per_100": 0.44,
+        "homestead_exemption": 50000,
+        "_note": "County millage only; total varies by municipality. Orlando city millage adds 6.65."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; FL resident",
+          "applies_to": "Homestead property",
+          "surviving_spouse": true
+        },
+        "disabled_veteran_partial": {
+          "type": "partial_exemption",
+          "exemption_amount": 5000,
+          "eligibility": "10%+ service-connected disability; FL resident",
+          "applies_to": "Homestead property"
+        }
+      },
+      "application": {
+        "office": "Orange County Property Appraiser",
+        "url": "https://www.ocpafl.org/"
+      },
+      "source": "https://www.ocpafl.org/"
     }
   ],
-  "version": "1.1",
+  "version": "1.5",
   "last_updated": "2026-04-03"
 }

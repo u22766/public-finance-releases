@@ -129,6 +129,62 @@
         "url": "https://www.kitsapgov.com/assessor/"
       },
       "source": "https://www.kitsapgov.com/assessor/"
+    },
+    {
+      "county": "King County",
+      "state_code": "WA",
+      "_computed": {
+        "effective_rate": 0.0084,
+        "median_home_value": 811200
+      },
+      "fips": "53033",
+      "va_facilities": [
+        "VA Puget Sound HCS \u2014 Seattle Division",
+        "Seattle VA Clinic",
+        "Bellevue VA Clinic",
+        "Federal Way VA Clinic"
+      ],
+      "estimated_veteran_population": 75000,
+      "tax_year": 2025,
+      "property_tax": {
+        "average_rate_per_1000": 9.19,
+        "rate_per_100": 0.919,
+        "_note": "Levy rate varies by tax code area. Seattle levy rate ~9.19/1000. WA Constitution caps at $10/1000."
+      },
+      "veteran_exemptions": {
+        "income_based_exemption": {
+          "type": "reduction",
+          "income_thresholds": [
+            {
+              "max_income": 35373,
+              "benefit": "Exempt from excess levies + frozen value + reduced rate"
+            },
+            {
+              "max_income": 45708,
+              "benefit": "Exempt from excess levies + frozen value"
+            },
+            {
+              "max_income": 58423,
+              "benefit": "Exempt from excess levies"
+            }
+          ],
+          "eligibility": "100% P&T disabled veteran of any age, or age 61+ with disability",
+          "_note": "Thresholds adjusted annually by CPI"
+        },
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T or IU disabled veteran; WA resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "_note": "Full exemption on first $235,988 of assessed value (2024 threshold, adjusts annually)"
+        }
+      },
+      "application": {
+        "office": "King County Assessor",
+        "url": "https://kingcounty.gov/en/dept/assessor"
+      },
+      "source": "https://kingcounty.gov/en/dept/assessor/buildings-and-property/property-taxes"
     }
-  ]
+  ],
+  "version": "2026.3"
 }
