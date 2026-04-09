@@ -42,7 +42,7 @@
       "county": "San Diego County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.01,
+        "effective_rate": 0.0116,
         "median_home_value": 850000
       },
       "fips": "06073",
@@ -96,7 +96,7 @@
       "county": "Sacramento County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.01,
+        "effective_rate": 0.012,
         "median_home_value": 520000
       },
       "fips": "06067",
@@ -147,7 +147,7 @@
       "county": "Riverside County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.01,
+        "effective_rate": 0.0125,
         "median_home_value": 530000
       },
       "fips": "06065",
@@ -197,7 +197,7 @@
       "county": "Los Angeles County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.01,
+        "effective_rate": 0.012,
         "median_home_value": 900000
       },
       "fips": "06037",
