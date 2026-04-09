@@ -268,8 +268,9 @@
       "county": "Palm Beach County",
       "state_code": "FL",
       "_computed": {
-        "effective_rate": 0.0083,
-        "median_home_value": 510000
+        "effective_rate": 0.0164,
+        "median_home_value": 510000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12099",
       "military_installations": [
@@ -278,10 +279,12 @@
       "estimated_veteran_population": 85000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.83,
         "mean_residential_assessment": 510000,
         "assessment_ratio": 1.0,
-        "_note": "FL assesses at just/market value. Effective rate ~0.83% per SmartAsset. Actual millage varies by municipality (17-19 mills typical)."
+        "_note": "FL assesses at just/market value. Effective rate ~0.83% per SmartAsset. Actual millage varies by municipality (17-19 mills typical).",
+        "community_avg_effective_rate_per_100": 0.83,
+        "total_millage_rate": 16.42,
+        "rate_per_100": 1.642
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -303,8 +306,9 @@
       "county": "Brevard County",
       "state_code": "FL",
       "_computed": {
-        "effective_rate": 0.0085,
-        "median_home_value": 290000
+        "effective_rate": 0.015,
+        "median_home_value": 290000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12009",
       "military_installations": [
@@ -314,10 +318,12 @@
       "estimated_veteran_population": 75000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.85,
         "mean_residential_assessment": 290000,
         "assessment_ratio": 1.0,
-        "_note": "FL assesses at just/market value. Effective rate ~0.85%. Major military/space workforce county."
+        "_note": "FL assesses at just/market value. Effective rate ~0.85%. Major military/space workforce county.",
+        "community_avg_effective_rate_per_100": 0.85,
+        "total_millage_rate": 15.0,
+        "rate_per_100": 1.5
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -339,8 +345,9 @@
       "county": "Okaloosa County",
       "state_code": "FL",
       "_computed": {
-        "effective_rate": 0.0065,
-        "median_home_value": 320000
+        "effective_rate": 0.014,
+        "median_home_value": 320000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12091",
       "military_installations": [
@@ -350,10 +357,12 @@
       "estimated_veteran_population": 45000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.65,
         "mean_residential_assessment": 320000,
         "assessment_ratio": 1.0,
-        "_note": "FL assesses at just/market value. Effective rate ~0.65%. NW FL military corridor \u2014 highest military-to-civilian ratio in FL."
+        "_note": "FL assesses at just/market value. Effective rate ~0.65%. NW FL military corridor \u2014 highest military-to-civilian ratio in FL.",
+        "community_avg_effective_rate_per_100": 0.65,
+        "total_millage_rate": 14.0,
+        "rate_per_100": 1.4
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -375,8 +384,9 @@
       "county": "Miami-Dade County",
       "state_code": "FL",
       "_computed": {
-        "effective_rate": 0.0076,
-        "median_home_value": 450000
+        "effective_rate": 0.02003,
+        "median_home_value": 450000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12086",
       "va_facilities": [
@@ -421,8 +431,9 @@
       "county": "Pinellas County",
       "state_code": "FL",
       "_computed": {
-        "effective_rate": 0.0067,
-        "median_home_value": 319000
+        "effective_rate": 0.0198,
+        "median_home_value": 319000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12103",
       "va_facilities": [
@@ -461,8 +472,9 @@
       "county": "Orange County",
       "state_code": "FL",
       "_computed": {
-        "effective_rate": 0.0075,
-        "median_home_value": 358000
+        "effective_rate": 0.0161,
+        "median_home_value": 358000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12095",
       "va_facilities": [
@@ -475,9 +487,10 @@
       "tax_year": 2025,
       "property_tax": {
         "county_millage_rate": 4.4347,
-        "rate_per_100": 0.44,
+        "rate_per_100": 1.614,
         "homestead_exemption": 50000,
-        "_note": "County millage only; total varies by municipality. Orlando city millage adds 6.65."
+        "_note": "County millage only; total varies by municipality. Orlando city millage adds 6.65.",
+        "total_millage_rate": 16.14
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {

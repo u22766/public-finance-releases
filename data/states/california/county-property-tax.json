@@ -43,7 +43,8 @@
       "state_code": "CA",
       "_computed": {
         "effective_rate": 0.0116,
-        "median_home_value": 850000
+        "median_home_value": 850000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06073",
       "military_installations": [
@@ -97,7 +98,8 @@
       "state_code": "CA",
       "_computed": {
         "effective_rate": 0.012,
-        "median_home_value": 520000
+        "median_home_value": 520000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06067",
       "military_installations": [
@@ -148,7 +150,8 @@
       "state_code": "CA",
       "_computed": {
         "effective_rate": 0.0125,
-        "median_home_value": 530000
+        "median_home_value": 530000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06065",
       "military_installations": [
@@ -198,7 +201,8 @@
       "state_code": "CA",
       "_computed": {
         "effective_rate": 0.012,
-        "median_home_value": 900000
+        "median_home_value": 900000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06037",
       "military_installations": [
@@ -248,8 +252,9 @@
       "county": "San Bernardino County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.0067,
-        "median_home_value": 546000
+        "effective_rate": 0.011,
+        "median_home_value": 546000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06071",
       "military_installations": [
@@ -259,10 +264,12 @@
       "estimated_veteran_population": 120000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.67,
         "mean_residential_assessment": 546000,
         "assessment_ratio": 1.0,
-        "_note": "CA Prop 13: assessed at purchase price, max 2%/yr increase. Effective rate ~0.67%."
+        "_note": "CA Prop 13: assessed at purchase price, max 2%/yr increase. Effective rate ~0.67%.",
+        "community_avg_effective_rate_per_100": 0.67,
+        "typical_effective_rate_per_100": 1.1,
+        "rate_per_100": 1.0
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -288,18 +295,21 @@
       "county": "Contra Costa County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.0093,
-        "median_home_value": 790000
+        "effective_rate": 0.012,
+        "median_home_value": 790000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06013",
       "military_installations": [],
       "estimated_veteran_population": 50000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.93,
         "mean_residential_assessment": 790000,
         "assessment_ratio": 1.0,
-        "_note": "CA Prop 13. Effective rate ~0.93%. East Bay area."
+        "_note": "CA Prop 13. Effective rate ~0.93%. East Bay area.",
+        "community_avg_effective_rate_per_100": 0.93,
+        "typical_effective_rate_per_100": 1.2,
+        "rate_per_100": 1.0
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -324,8 +334,9 @@
       "county": "Ventura County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.0072,
-        "median_home_value": 800000
+        "effective_rate": 0.011,
+        "median_home_value": 800000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06111",
       "military_installations": [
@@ -335,10 +346,12 @@
       "estimated_veteran_population": 45000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.72,
         "mean_residential_assessment": 800000,
         "assessment_ratio": 1.0,
-        "_note": "CA Prop 13. Effective rate ~0.72%. Home to NBVC \u2014 major Navy installation."
+        "_note": "CA Prop 13. Effective rate ~0.72%. Home to NBVC \u2014 major Navy installation.",
+        "community_avg_effective_rate_per_100": 0.72,
+        "typical_effective_rate_per_100": 1.1,
+        "rate_per_100": 1.0
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -363,8 +376,9 @@
       "county": "Kern County",
       "state_code": "CA",
       "_computed": {
-        "effective_rate": 0.0092,
-        "median_home_value": 335000
+        "effective_rate": 0.011,
+        "median_home_value": 335000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "06029",
       "military_installations": [
@@ -374,10 +388,12 @@
       "estimated_veteran_population": 55000,
       "tax_year": 2025,
       "property_tax": {
-        "total_effective_rate_per_100": 0.92,
         "mean_residential_assessment": 335000,
         "assessment_ratio": 1.0,
-        "_note": "CA Prop 13. Effective rate ~0.92%. Two major military R&D installations."
+        "_note": "CA Prop 13. Effective rate ~0.92%. Two major military R&D installations.",
+        "community_avg_effective_rate_per_100": 0.92,
+        "typical_effective_rate_per_100": 1.1,
+        "rate_per_100": 1.0
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
