@@ -4,7 +4,7 @@
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in metro Detroit.",
     "state": "Michigan",
     "state_code": "MI",
-    "version": "2026.2",
+    "version": "2026.3",
     "last_updated": "2026-04-09",
     "sources": [
       "County equalization offices",
@@ -134,7 +134,43 @@
         "url": "https://equalization.macombgov.org",
         "deadline": "No fixed deadline \u2014 file with local assessor"
       }
+    },
+    {
+      "county": "Washtenaw County",
+      "state_code": "MI",
+      "_computed": {
+        "effective_rate": 0.018,
+        "median_home_value": 365000,
+        "_rate_basis": "new_buyer"
+      },
+      "fips": "26161",
+      "va_facilities": [
+        "Lt. Col. Charles S. Kettles VAMC (Ann Arbor)",
+        "Ann Arbor VA Clinic"
+      ],
+      "estimated_veteran_population": 15000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_effective_rate_per_100": 1.8,
+        "assessment_ratio": 0.5,
+        "_note": "Highest property tax bills in MI ($5,505 median). Home to University of Michigan. Under Proposal A, TV uncaps to SEV (50% of market) on sale.",
+        "_proposal_a_note": "Under MI Proposal A, taxable value uncaps to SEV (50% of market) on sale. Rates reflect new-buyer effective rate against market value \u2014 higher than community average due to uncapping."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T disabled veteran",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "_note": "MI Disabled Veterans Exemption Act (PA 161 of 2013) provides full exemption from property tax."
+        }
+      },
+      "application": {
+        "office": "Washtenaw County Equalization",
+        "url": "https://www.washtenaw.org/297/Equalization"
+      },
+      "source": "https://smartasset.com/taxes/michigan-property-tax-calculator"
     }
   ],
-  "version": "2026.2"
+  "version": "2026.3"
 }

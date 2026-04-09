@@ -3,8 +3,8 @@
     "title": "County Property Tax Rates and Veteran Exemptions \u2014 CA",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-military-population counties in California.",
     "state_code": "CA",
-    "version": "1.0",
-    "last_updated": "2026-03-21",
+    "version": "2026.3",
+    "last_updated": "2026-04-09",
     "sources": [
       "County assessor offices",
       "California State Board of Equalization",
@@ -413,8 +413,79 @@
         "url": "https://www.kerncounty.com/government/assessor-recorder",
         "deadline": "No fixed deadline but must file annually"
       }
+    },
+    {
+      "county": "Fresno County",
+      "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.0115,
+        "median_home_value": 370000,
+        "_rate_basis": "new_buyer"
+      },
+      "fips": "06019",
+      "va_facilities": [
+        "Fresno VAMC",
+        "Fresno VA Clinic"
+      ],
+      "estimated_veteran_population": 40000,
+      "tax_year": 2025,
+      "property_tax": {
+        "rate_per_100": 1.0,
+        "typical_effective_rate_per_100": 1.15,
+        "_note": "Prop 13 base 1% + voter-approved bonds. Central Valley hub. New-buyer assessed at purchase price."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; CA resident",
+          "exemption_amount": 254656,
+          "applies_to": "Primary residence up to exemption amount",
+          "_note": "CA disabled veteran exemption: up to $254,656 (2025, adjusts annually by CPI) for 100% disabled. Full exemption if home value below threshold."
+        }
+      },
+      "application": {
+        "office": "Fresno County Assessor-Recorder",
+        "url": "https://www.co.fresno.ca.us/departments/assessor"
+      },
+      "source": "https://smartasset.com/taxes/california-property-tax-calculator"
+    },
+    {
+      "county": "San Francisco County",
+      "state_code": "CA",
+      "_computed": {
+        "effective_rate": 0.0118,
+        "median_home_value": 1400000,
+        "_rate_basis": "new_buyer"
+      },
+      "fips": "06075",
+      "va_facilities": [
+        "San Francisco VAMC",
+        "San Francisco VA Clinic",
+        "San Bruno VA Clinic"
+      ],
+      "estimated_veteran_population": 25000,
+      "tax_year": 2025,
+      "property_tax": {
+        "rate_per_100": 1.0,
+        "typical_effective_rate_per_100": 1.18,
+        "_note": "Prop 13 base 1% + voter-approved bonds (~0.18%). SF is a consolidated city-county. Highest median home values in the US."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; CA resident",
+          "exemption_amount": 254656,
+          "applies_to": "Primary residence up to exemption amount",
+          "_note": "CA disabled veteran exemption: up to $254,656 (2025). Given SF home values, exemption covers only a fraction of typical home value."
+        }
+      },
+      "application": {
+        "office": "SF Assessor-Recorder",
+        "url": "https://sfassessor.org/"
+      },
+      "source": "https://www.ll-cre.com/reports-and-resources/2024/1/sfpropertytaxrates2024"
     }
   ],
-  "version": "1.1",
+  "version": "2026.3",
   "last_updated": "2026-04-03"
 }

@@ -4,8 +4,8 @@
     "description": "County-level property tax rates and veteran exemptions for high-veteran-population counties in New York.",
     "state": "New York",
     "state_code": "NY",
-    "version": "2026.1",
-    "last_updated": "2026-04-04",
+    "version": "1.2",
+    "last_updated": "2026-04-09",
     "sources": [
       "County tax assessor offices",
       "NYS Department of Taxation and Finance"
@@ -135,6 +135,41 @@
         "office": "Westchester County Finance",
         "url": "https://www.westchestergov.com/finance"
       }
+    },
+    {
+      "county": "Bronx County",
+      "state_code": "NY",
+      "_computed": {
+        "effective_rate": 0.0095,
+        "median_home_value": 580000
+      },
+      "fips": "36005",
+      "va_facilities": [
+        "James J. Peters VAMC (Bronx)",
+        "Thomas P. Noonan Jr. VA OPC"
+      ],
+      "estimated_veteran_population": 20000,
+      "tax_year": 2025,
+      "property_tax": {
+        "nyc_class_1_rate_pct": 20.085,
+        "nyc_class_1_assessment_ratio": 0.06,
+        "_note": "NYC Class 1 (1-3 family homes): 20.085% of assessed value. Assessment ratio 6% of market. Effective new-buyer rate ~1.2% but community avg lower due to assessment caps (6%/yr, 20%/5yr)."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_amount": "up to 50% of assessed value for combat zone service",
+          "eligibility": "Wartime veteran with service-connected disability",
+          "applies_to": "Primary residence",
+          "_note": "NY veteran exemptions vary by locality. NYC offers Alternative Veterans Exemption: up to 15% (wartime) + 10% (combat zone) + additional for disability. STAR credit also available."
+        }
+      },
+      "application": {
+        "office": "NYC Department of Finance",
+        "url": "https://www.nyc.gov/site/finance/property/property-tax-rates.page"
+      },
+      "source": "https://smartasset.com/taxes/new-york-property-tax-calculator"
     }
-  ]
+  ],
+  "version": "1.2"
 }

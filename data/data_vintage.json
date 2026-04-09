@@ -152,8 +152,8 @@
       "rates_effective": "2025-01-01"
     },
     "county_property_tax_california": {
-      "reflects": "TY2026",
-      "rates_effective": "2025-07-01"
+      "reflects": "TY2025-2026",
+      "rates_effective": "2025-01-01"
     },
     "county_property_tax_co": {
       "reflects": "TY2025-2026",
@@ -279,7 +279,7 @@
       "rates_effective": "2025-01-01"
     },
     "county_property_tax_ny": {
-      "reflects": "TY2025",
+      "reflects": "TY2025-2026",
       "rates_effective": "2025-01-01"
     },
     "county_property_tax_nj": {

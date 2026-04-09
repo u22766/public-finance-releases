@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.15",
-  "generated": "2026-04-09T01:29:00Z",
+  "data_version": "v2026.16",
+  "generated": "2026-04-09T03:00:12Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.15.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.16.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -436,8 +436,8 @@
     "county_property_tax_california": {
       "url": "states/california/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemptions for California (Prop 13 constrained)",
-      "version": "1.1",
-      "last_updated": "2026-03-21",
+      "version": "2026.3",
+      "last_updated": "2026-04-09",
       "update_frequency": "as_needed"
     },
     "county_property_tax_co": {
@@ -499,11 +499,11 @@
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/maryland/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Prince George's County (MD).",
-      "last_updated": "2026-03-21",
+      "last_updated": "2026-04-09",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
     },
     "county_property_tax_mi": {
-      "version": "2026.2",
+      "version": "2026.3",
       "url": "states/michigan/county-property-tax.json",
       "description": "Michigan county property tax rates and veteran exemptions (Wayne, Oakland, Macomb)",
       "update_frequency": "as_needed",
@@ -553,10 +553,11 @@
       "changelog_2026_2": "Added disabled_veteran_100_pct to Clark County veteran_exemptions."
     },
     "county_property_tax_ny": {
-      "version": "2026.1",
+      "version": "1.2",
       "url": "states/new-york/county-property-tax.json",
       "description": "New York county property tax rates and veteran exemptions",
-      "update_frequency": "as_needed"
+      "update_frequency": "as_needed",
+      "last_updated": "2026-04-09"
     },
     "county_property_tax_oh": {
       "version": "2026.1",
@@ -612,12 +613,12 @@
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
     },
     "county_property_tax_va": {
-      "version": "1.4",
+      "version": "2026.4",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/virginia/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Fairfax County, Virginia Beach (VA).",
-      "last_updated": "2026-03-21",
+      "last_updated": "2026-04-09",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
     },
     "county_property_tax_wa": {
