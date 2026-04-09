@@ -3,8 +3,8 @@
     "title": "County Property Tax Rates and Veteran Exemptions \u2014 AZ",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties.",
     "state_code": "AZ",
-    "version": "1.2",
-    "last_updated": "2026-03-31",
+    "version": "2026.2",
+    "last_updated": "2026-04-09",
     "sources": [
       "County tax assessor/collector offices",
       "County appraisal district offices",
@@ -21,8 +21,9 @@
       "county": "Maricopa County",
       "state_code": "AZ",
       "_computed": {
-        "effective_rate": 0.00126,
-        "median_home_value": 430000
+        "effective_rate": 0.0055,
+        "median_home_value": 482000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "04013",
       "military_installations": [
@@ -33,7 +34,10 @@
       "property_tax": {
         "primary_rate_per_100": 0.47,
         "secondary_rate_per_100": 0.79,
-        "assessment_ratio_residential_pct": 10
+        "assessment_ratio_residential_pct": 10,
+        "_note": "County rates only 1.26/100 assessed. Total includes city, school, special districts (8-12/100 assessed varies by location). Effective rate = total rate \u00d7 10% assessment ratio. Prior value 0.126% was county-only, double-counted assessment ratio.",
+        "_fix_session": "S77 \u2014 corrected per URGENT assessment-capped states doc",
+        "typical_total_mills": 85.0
       },
       "veteran_exemptions": {
         "disabled_veteran_partial": {
@@ -58,7 +62,52 @@
         "office": "Maricopa County Assessor",
         "url": "https://mcassessor.maricopa.gov/"
       },
-      "source": "https://azdor.gov/forms/property-tax-forms"
+      "source": "https://azdor.gov/forms/property-tax-forms",
+      "va_facilities": [
+        "Carl T. Hayden VAMC (Phoenix)",
+        "Phoenix Midtown VA Clinic",
+        "Southeast VA Clinic (Gilbert)"
+      ]
+    },
+    {
+      "county": "Pima County",
+      "state_code": "AZ",
+      "_computed": {
+        "effective_rate": 0.0075,
+        "median_home_value": 285000,
+        "_rate_basis": "new_buyer"
+      },
+      "fips": "04019",
+      "va_facilities": [
+        "Tucson VAMC",
+        "Southern Arizona VA HCS",
+        "Northwest Tucson VA Clinic",
+        "Southeast Tucson VA Clinic",
+        "Green Valley VA Clinic",
+        "Sierra Vista VA Clinic"
+      ],
+      "estimated_veteran_population": 65000,
+      "tax_year": 2025,
+      "property_tax": {
+        "assessment_ratio_residential_pct": 10,
+        "_note": "Pima County has higher total levy rates than Maricopa due to Tucson city and school district levies. New-buyer LPV = full cash value.",
+        "typical_total_mills": 125.0
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T disabled veteran; AZ resident",
+          "exemption_amount": 235988,
+          "applies_to": "Primary residence up to exemption amount",
+          "_note": "Exemption threshold adjusts annually"
+        }
+      },
+      "application": {
+        "office": "Pima County Assessor",
+        "url": "https://asr.pima.gov/"
+      },
+      "source": "https://smartasset.com/taxes/arizona-property-tax-calculator"
     }
-  ]
+  ],
+  "version": "2026.2"
 }

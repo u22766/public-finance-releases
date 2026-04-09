@@ -24,7 +24,8 @@
       "state_code": "FL",
       "_computed": {
         "effective_rate": 0.01956,
-        "median_home_value": 340000
+        "median_home_value": 340000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12057",
       "military_installations": [
@@ -62,7 +63,8 @@
       "state_code": "FL",
       "_computed": {
         "effective_rate": 0.01147,
-        "median_home_value": 420000
+        "median_home_value": 420000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12115",
       "retirement_destination": true,
@@ -100,7 +102,8 @@
       "state_code": "FL",
       "_computed": {
         "effective_rate": 0.0175,
-        "median_home_value": 350000
+        "median_home_value": 350000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12071",
       "retirement_destination": true,
@@ -142,7 +145,8 @@
       "state_code": "FL",
       "_computed": {
         "effective_rate": 0.0123,
-        "median_home_value": 550000
+        "median_home_value": 550000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12021",
       "retirement_destination": true,
@@ -183,7 +187,8 @@
       "state_code": "FL",
       "_computed": {
         "effective_rate": 0.01775,
-        "median_home_value": 230000
+        "median_home_value": 230000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12033",
       "military_installations": [
@@ -226,7 +231,8 @@
       "state_code": "FL",
       "_computed": {
         "effective_rate": 0.0181,
-        "median_home_value": 280000
+        "median_home_value": 280000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "12031",
       "military_installations": [

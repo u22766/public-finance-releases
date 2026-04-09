@@ -3,8 +3,8 @@
     "title": "County Property Tax Rates and Veteran Exemptions \u2014 GA",
     "description": "County-level property tax rates for top retirement destination and military counties in Georgia.",
     "state_code": "GA",
-    "version": "1.1",
-    "last_updated": "2026-03-21",
+    "version": "1.2",
+    "last_updated": "2026-04-09",
     "sources": [
       "County tax assessor/commissioner offices",
       "GA Department of Revenue",
@@ -202,6 +202,77 @@
         "url": "https://www.columbusga.gov/taxassessor/"
       },
       "source": "https://www.columbusga.gov/taxassessor/"
+    },
+    {
+      "county": "DeKalb County",
+      "state_code": "GA",
+      "_computed": {
+        "effective_rate": 0.0096,
+        "median_home_value": 375000
+      },
+      "fips": "13089",
+      "va_facilities": [
+        "Atlanta VAMC (Decatur)",
+        "Henderson Mill VA Clinic",
+        "North DeKalb County VA Clinic (Brookhaven)"
+      ],
+      "estimated_veteran_population": 35000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_millage_rate": 20.81,
+        "assessment_ratio": 0.4,
+        "_note": "GA assesses at 40% of fair market value. Total millage 20.81 unchanged since 2015. EHOST sales tax provides 100% credit on General/Hospital Fund for homesteaded properties."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected disability or loss of use of two+ limbs",
+          "exemption_amount": "up to $109,986 of assessed value",
+          "applies_to": "Homestead property",
+          "surviving_spouse": true,
+          "_note": "GA exemption amount adjusts annually; surviving spouse retains exemption"
+        }
+      },
+      "application": {
+        "office": "DeKalb County Tax Commissioner",
+        "url": "https://www.dekalbcountyga.gov/tax-commissioner"
+      },
+      "source": "https://smartasset.com/taxes/dekalb-county-georgia-property-tax-calculator"
+    },
+    {
+      "county": "Richmond County",
+      "state_code": "GA",
+      "_computed": {
+        "effective_rate": 0.0115,
+        "median_home_value": 165000
+      },
+      "fips": "13245",
+      "va_facilities": [
+        "Charlie Norwood VAMC (Augusta) \u2014 Uptown Division",
+        "Charlie Norwood VAMC (Augusta) \u2014 Downtown Division"
+      ],
+      "estimated_veteran_population": 30000,
+      "tax_year": 2025,
+      "property_tax": {
+        "total_millage_rate": 28.849,
+        "assessment_ratio": 0.4,
+        "_note": "Augusta-Richmond County consolidated government. Millage 28.849 for 2024. Effective rate = 28.849 \u00d7 40% / 1000 = 1.154%."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% service-connected disability or loss of use of two+ limbs",
+          "exemption_amount": "up to $109,986 of assessed value",
+          "applies_to": "Homestead property",
+          "surviving_spouse": true
+        }
+      },
+      "application": {
+        "office": "Augusta-Richmond County Board of Assessors",
+        "url": "https://augustarichmondtaxassessor.com/"
+      },
+      "source": "https://augustaeda.org/locate-expand/finance-taxes/"
     }
-  ]
+  ],
+  "version": "1.2"
 }

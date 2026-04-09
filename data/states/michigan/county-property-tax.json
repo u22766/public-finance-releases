@@ -4,8 +4,8 @@
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in metro Detroit.",
     "state": "Michigan",
     "state_code": "MI",
-    "version": "2026.1",
-    "last_updated": "2026-04-03",
+    "version": "2026.2",
+    "last_updated": "2026-04-09",
     "sources": [
       "County equalization offices",
       "Local city/township assessors",
@@ -33,7 +33,8 @@
       "state_code": "MI",
       "_computed": {
         "effective_rate": 0.0173,
-        "median_home_value": 165000
+        "median_home_value": 165000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "26163",
       "military_installations": [],
@@ -44,7 +45,8 @@
         "mean_residential_assessment": 82000,
         "mean_residential_market_value": 165000,
         "assessment_ratio": 0.5,
-        "_note": "Effective rate ~1.73% of market value. Highest in MI. Includes Detroit and surrounding suburbs. Assessment = 50% of market value."
+        "_note": "Effective rate ~1.73% of market value. Highest in MI. Includes Detroit and surrounding suburbs. Assessment = 50% of market value.",
+        "_proposal_a_note": "Under MI Proposal A, taxable value uncaps to SEV (50% of market) on sale. Rates reflect new-buyer effective rate against market value \u2014 higher than community average due to uncapping."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -66,7 +68,8 @@
       "state_code": "MI",
       "_computed": {
         "effective_rate": 0.0136,
-        "median_home_value": 310000
+        "median_home_value": 310000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "26125",
       "military_installations": [],
@@ -77,7 +80,8 @@
         "mean_residential_assessment": 155000,
         "mean_residential_market_value": 310000,
         "assessment_ratio": 0.5,
-        "_note": "Effective rate ~1.36% of market value. Affluent suburban county north of Detroit."
+        "_note": "Effective rate ~1.36% of market value. Affluent suburban county north of Detroit.",
+        "_proposal_a_note": "Under MI Proposal A, taxable value uncaps to SEV (50% of market) on sale. Rates reflect new-buyer effective rate against market value \u2014 higher than community average due to uncapping."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -99,7 +103,8 @@
       "state_code": "MI",
       "_computed": {
         "effective_rate": 0.0147,
-        "median_home_value": 230000
+        "median_home_value": 230000,
+        "_rate_basis": "new_buyer"
       },
       "fips": "26099",
       "military_installations": [
@@ -112,7 +117,8 @@
         "mean_residential_assessment": 115000,
         "mean_residential_market_value": 230000,
         "assessment_ratio": 0.5,
-        "_note": "Effective rate ~1.47% of market value. Home to Selfridge ANGB \u2014 127th Wing, MI Air National Guard."
+        "_note": "Effective rate ~1.47% of market value. Home to Selfridge ANGB \u2014 127th Wing, MI Air National Guard.",
+        "_proposal_a_note": "Under MI Proposal A, taxable value uncaps to SEV (50% of market) on sale. Rates reflect new-buyer effective rate against market value \u2014 higher than community average due to uncapping."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -129,5 +135,6 @@
         "deadline": "No fixed deadline \u2014 file with local assessor"
       }
     }
-  ]
+  ],
+  "version": "2026.2"
 }

@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": " v2026.14",
-  "generated": "2026-04-09T00:35:25Z",
+  "data_version": "v2026.15",
+  "generated": "2026-04-09T01:29:00Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release  v2026.14.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.15.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -429,7 +429,7 @@
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/arizona/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Maricopa County (AZ).",
-      "last_updated": "2026-03-31",
+      "last_updated": "2026-04-09",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to Maricopa County veteran_exemptions."
     },
@@ -441,12 +441,12 @@
       "update_frequency": "as_needed"
     },
     "county_property_tax_co": {
-      "version": "2026.2",
+      "version": "1.2",
       "effective_date": "2025-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/colorado/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: El Paso County (CO).",
-      "last_updated": "2026-03-31",
+      "last_updated": "2026-04-09",
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only.",
       "changelog_2026_2": "Added disabled_veteran_100_pct to El Paso and Douglas County veteran_exemptions."
     },
@@ -462,8 +462,8 @@
     "county_property_tax_ga": {
       "url": "states/georgia/county-property-tax.json",
       "description": "County-level property tax rates, veteran exemptions, and application info for top retirement and military counties in Georgia (Chatham, Cobb, Liberty).",
-      "version": "1.1",
-      "last_updated": "2026-03-21",
+      "version": "1.2",
+      "last_updated": "2026-04-09",
       "update_cycle": "annual",
       "update_frequency": "as_needed"
     },
@@ -503,10 +503,11 @@
       "changelog_1_1": "Restructured from flat states/counties/ into per-state directories. No data changes \u2014 structural reorganization only."
     },
     "county_property_tax_mi": {
-      "version": "2026.1",
+      "version": "2026.2",
       "url": "states/michigan/county-property-tax.json",
       "description": "Michigan county property tax rates and veteran exemptions (Wayne, Oakland, Macomb)",
-      "update_frequency": "as_needed"
+      "update_frequency": "as_needed",
+      "last_updated": "2026-04-09"
     },
     "county_property_tax_mn": {
       "version": "2026.1",
@@ -596,8 +597,8 @@
     "county_property_tax_tn": {
       "url": "states/tennessee/county-property-tax.json",
       "description": "County-level property tax rates, veteran exemptions, and application info for top retirement counties in Tennessee (Williamson, Knox, Hamilton).",
-      "version": "1.0",
-      "last_updated": "2026-03-17",
+      "version": "1.2",
+      "last_updated": "2026-04-09",
       "update_cycle": "annual",
       "update_frequency": "as_needed"
     },

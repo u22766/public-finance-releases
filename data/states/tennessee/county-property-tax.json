@@ -3,8 +3,8 @@
     "title": "County Property Tax Rates and Veteran Exemptions \u2014 TN",
     "description": "County-level property tax rates for top retirement destination counties in Tennessee.",
     "state_code": "TN",
-    "version": "1.0",
-    "last_updated": "2026-03-17",
+    "version": "1.2",
+    "last_updated": "2026-04-09",
     "sources": [
       "County trustee/assessor offices",
       "TN Comptroller of the Treasury",
@@ -143,6 +143,77 @@
         "url": "https://trustee.hamiltontn.gov/"
       },
       "source": "https://trustee.hamiltontn.gov/"
+    },
+    {
+      "county": "Davidson County",
+      "state_code": "TN",
+      "_computed": {
+        "effective_rate": 0.0057,
+        "median_home_value": 420000
+      },
+      "fips": "47037",
+      "va_facilities": [
+        "Tennessee Valley HCS \u2014 Nashville Campus",
+        "Nashville VA Clinic"
+      ],
+      "estimated_veteran_population": 38000,
+      "tax_year": 2025,
+      "property_tax": {
+        "assessment_ratio": 0.25,
+        "combined_rate_per_100_assessed": 2.922,
+        "_note": "TN residential assessed at 25% of appraised value. Nashville/Davidson consolidated metro government. Effective rate = 2.922 \u00d7 25% / 100 = 0.73%. SmartAsset community avg 0.57% reflects exemptions."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_amount": 175000,
+          "eligibility": "100% P&T service-connected disability or unemployability",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "_note": "TN exempts first $175,000 of market value from property tax. Surviving spouse retains."
+        }
+      },
+      "application": {
+        "office": "Metropolitan Nashville Trustee",
+        "url": "https://www.nashville.gov/departments/trustee"
+      },
+      "source": "https://smartasset.com/taxes/tennessee-property-tax-calculator"
+    },
+    {
+      "county": "Shelby County",
+      "state_code": "TN",
+      "_computed": {
+        "effective_rate": 0.0091,
+        "median_home_value": 220000
+      },
+      "fips": "47157",
+      "va_facilities": [
+        "Memphis VAMC",
+        "Memphis VA Clinic"
+      ],
+      "estimated_veteran_population": 42000,
+      "tax_year": 2025,
+      "property_tax": {
+        "assessment_ratio": 0.25,
+        "combined_rate_per_100_assessed": 3.39,
+        "_note": "Highest property tax rate in TN. Shelby County rate $3.39 per $100 assessed. Memphis city adds additional levy. Effective rate = combined \u00d7 25% / 100."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "partial_exemption",
+          "exemption_amount": 175000,
+          "eligibility": "100% P&T service-connected disability or unemployability",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "_note": "TN exempts first $175,000 of market value from property tax."
+        }
+      },
+      "application": {
+        "office": "Shelby County Trustee",
+        "url": "https://www.shelbycountytrustee.com/"
+      },
+      "source": "https://smartasset.com/taxes/tennessee-property-tax-calculator"
     }
-  ]
+  ],
+  "version": "1.2"
 }
