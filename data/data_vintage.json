@@ -321,6 +321,10 @@
     "county_property_tax_ms": {
       "reflects": "TY2025",
       "rates_effective": "2025-01-01"
+    },
+    "va_smc": {
+      "reflects": "FY2026",
+      "rates_effective": "2025-12-01"
     }
   }
 }

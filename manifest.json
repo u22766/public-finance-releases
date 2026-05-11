@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.16",
-  "generated": "2026-04-09T03:00:12Z",
+  "data_version": "v2026.17",
+  "generated": "2026-05-11T21:12:15Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.16.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.17.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -186,6 +186,13 @@
       "url": "federal/veterans-affairs/pension.json",
       "description": "VA Pension and Survivors Pension MAPR rates (needs-based, wartime veterans and surviving spouses)",
       "update_frequency": "annual"
+    },
+    "va_smc": {
+      "url": "federal/veterans-affairs/smc-rates.json",
+      "version": "2026.1",
+      "category": "va",
+      "update_frequency": "annual",
+      "description": "Special Monthly Compensation (SMC) rates by letter designation"
     },
     "vgli": {
       "version": "2026",
