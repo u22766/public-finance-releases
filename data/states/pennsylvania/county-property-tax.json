@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions \u2014 PA",
+    "title": "County Property Tax Rates and Veteran Exemptions — PA",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in Pennsylvania.",
     "state_code": "PA",
     "version": "2026.1",
@@ -43,13 +43,13 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "eligibility": "100% P&T service-connected disability; financial need (income ≤$114,637 presumptive threshold, 2025); PA resident",
           "applies_to": "Primary residence",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "estimated_annual_savings": 3920,
-          "savings_basis": "Philadelphia County median home $280,000 \u00d7 1.40% effective rate",
-          "note": "Full exemption under PA Act 77 (2021). Apply through Philadelphia OPA. Income-tested: presumptive need level $114,637 for 2025 \u2014 verify current threshold at PA DMVA before applying.",
+          "savings_basis": "Philadelphia County median home $280,000 × 1.40% effective rate",
+          "note": "Full exemption under PA Act 77 (2021). Apply through Philadelphia OPA. Income-tested: presumptive need level $114,637 for 2025 — verify current threshold at PA DMVA before applying.",
           "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
         }
       },
@@ -57,7 +57,7 @@
         "program": "Pennsylvania Property Tax/Rent Rebate",
         "max_rebate": 1000,
         "income_limit": 45000,
-        "note": "Age 65+ or disabled; income \u2264$45,000"
+        "note": "Age 65+ or disabled; income ≤$45,000"
       },
       "application": {
         "office": "Philadelphia Office of Property Assessment",
@@ -94,12 +94,12 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "eligibility": "100% P&T service-connected disability; financial need (income ≤$114,637 presumptive threshold, 2025); PA resident",
           "applies_to": "Primary residence",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "estimated_annual_savings": 3058,
-          "savings_basis": "Allegheny County median home $220,000 \u00d7 1.39% effective rate",
+          "savings_basis": "Allegheny County median home $220,000 × 1.39% effective rate",
           "note": "Full exemption under PA Act 77 (2021). Income-tested at county assessment office.",
           "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
         }
@@ -139,12 +139,12 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "eligibility": "100% P&T service-connected disability; financial need (income ≤$114,637 presumptive threshold, 2025); PA resident",
           "applies_to": "Primary residence",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "estimated_annual_savings": 3393,
-          "savings_basis": "Cumberland County median home $295,000 \u00d7 1.15% effective rate",
+          "savings_basis": "Cumberland County median home $295,000 × 1.15% effective rate",
           "note": "Full exemption under PA Act 77 (2021). Carlisle Barracks retiree community makes this a high-priority county.",
           "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
         }
@@ -183,12 +183,12 @@
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
           "type": "full_exemption",
-          "eligibility": "100% P&T service-connected disability; financial need (income \u2264$114,637 presumptive threshold, 2025); PA resident",
+          "eligibility": "100% P&T service-connected disability; financial need (income ≤$114,637 presumptive threshold, 2025); PA resident",
           "applies_to": "Primary residence",
           "surviving_spouse": true,
           "surviving_spouse_remarriage_disqualifies": false,
           "estimated_annual_savings": 3250,
-          "savings_basis": "York County median home $250,000 \u00d7 1.30% effective rate",
+          "savings_basis": "York County median home $250,000 × 1.30% effective rate",
           "note": "Full exemption under PA Act 77 (2021). Apply through York County Assessment Office.",
           "source": "https://www.dmva.pa.gov/veteransbenefits/Pages/Benefits-and-Services/Real-Estate-Tax-Exemption.aspx"
         }
@@ -203,6 +203,118 @@
         ]
       },
       "source": "https://www.yorkcountypa.gov/government/departments-a-m/assessment.html"
+    },
+    {
+      "county": "Erie County",
+      "state_code": "PA",
+      "_computed": {
+        "effective_rate": 0.016,
+        "median_home_value": 177000
+      },
+      "fips": "42049",
+      "military_installations": [],
+      "va_facilities": [
+        "Erie VA Medical Center"
+      ],
+      "estimated_veteran_population": 16000,
+      "tax_year": 2025,
+      "property_tax": {
+        "assessment_ratio": 1.0,
+        "assessment_ratio_note": "Erie County assesses at 100% of current market value",
+        "effective_rate_on_market_per_100": 1.6,
+        "median_home_value": 177000,
+        "notes": "Erie County. PA assessment ratios vary by county; Erie uses 100% of market value. Effective rate of 1.60% (Census ACS-based). Rates vary by municipality and school district."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_property_tax": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; PA resident; primary residence; wartime veteran or receiving 100% disability compensation",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": false,
+          "surviving_spouse_note": "Unremarried surviving spouse or surviving spouse who remarried after age 55 retains exemption",
+          "income_limit": null,
+          "estimated_annual_savings": 2832,
+          "savings_basis": "Erie County median home $177,000 × 1.60% effective rate",
+          "note": "Full real property tax exemption under 51 Pa.C.S. § 8902. No income limit. Apply with county Board of Assessment.",
+          "source": "https://www.dmva.pa.gov/"
+        }
+      },
+      "senior_disability_relief": {
+        "property_tax_rent_rebate": {
+          "type": "rebate",
+          "eligibility": "Age 65+, widows/widowers 50+, disabled 18+; income ≤$45,000",
+          "max_rebate": 1000,
+          "note": "PA Property Tax/Rent Rebate Program"
+        }
+      },
+      "application": {
+        "office": "Erie County Office of Property Assessment",
+        "url": "https://eriecountypa.gov/",
+        "deadline": "Applications accepted year-round; exemption applies to next tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter (100% P&T)",
+          "DD-214",
+          "Government-issued ID"
+        ]
+      },
+      "source": "https://eriecountypa.gov/"
+    },
+    {
+      "county": "Lebanon County",
+      "state_code": "PA",
+      "_computed": {
+        "effective_rate": 0.0135,
+        "median_home_value": 195000
+      },
+      "fips": "42075",
+      "military_installations": [],
+      "va_facilities": [
+        "Lebanon VA Medical Center"
+      ],
+      "estimated_veteran_population": 10000,
+      "tax_year": 2025,
+      "property_tax": {
+        "assessment_ratio_note": "Lebanon County uses a common level ratio (CLR) that varies; effective rate derived from Census ACS median tax/median home value",
+        "effective_rate_on_market_per_100": 1.35,
+        "median_home_value": 195000,
+        "millage_note": "Combined county, municipality, and school district millage rates range from approximately 15-20 mills depending on location",
+        "notes": "Lebanon County. Home to the Lebanon VAMC, a full-service VA medical center. Effective rate of ~1.35% based on Census ACS data. Rates vary by municipality and school district."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_property_tax": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability; PA resident; primary residence; wartime veteran or receiving 100% disability compensation",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": false,
+          "surviving_spouse_note": "Unremarried surviving spouse or surviving spouse who remarried after age 55 retains exemption",
+          "income_limit": null,
+          "estimated_annual_savings": 2633,
+          "savings_basis": "Lebanon County median home $195,000 × 1.35% effective rate",
+          "note": "Full real property tax exemption under 51 Pa.C.S. § 8902. No income limit. Apply with county Board of Assessment.",
+          "source": "https://www.dmva.pa.gov/"
+        }
+      },
+      "senior_disability_relief": {
+        "property_tax_rent_rebate": {
+          "type": "rebate",
+          "eligibility": "Age 65+, widows/widowers 50+, disabled 18+; income ≤$45,000",
+          "max_rebate": 1000,
+          "note": "PA Property Tax/Rent Rebate Program"
+        }
+      },
+      "application": {
+        "office": "Lebanon County Assessment Office",
+        "url": "https://www.lebcounty.org/",
+        "deadline": "Applications accepted year-round; exemption applies to next tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter (100% P&T)",
+          "DD-214",
+          "Government-issued ID"
+        ]
+      },
+      "source": "https://www.lebcounty.org/"
     }
   ]
 }

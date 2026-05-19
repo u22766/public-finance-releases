@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions \u2014 OH",
+    "title": "County Property Tax Rates and Veteran Exemptions — OH",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in Ohio.",
     "state_code": "OH",
     "version": "2026.1",
@@ -13,7 +13,7 @@
     ],
     "notes": {
       "tax_rate_format": "Effective rate per $100 of assessed value (applied to market value).",
-      "assessment_note": "Ohio assesses residential property at 35% of market value. Effective rates shown are market-value-based (millage \u00d7 35%).",
+      "assessment_note": "Ohio assesses residential property at 35% of market value. Effective rates shown are market-value-based (millage × 35%).",
       "veteran_exemption_note": "Ohio ORC Sec. 323.152: Full property tax exemption on primary residence for 100% P&T disabled veterans. No income limit. Apply through county auditor.",
       "update_cycle": "Tax rates set annually by county auditors."
     }
@@ -49,7 +49,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 3510,
-          "savings_basis": "Cuyahoga County median home $195,000 \u00d7 1.80% effective rate",
+          "savings_basis": "Cuyahoga County median home $195,000 × 1.80% effective rate",
           "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with county auditor's office. Surviving unremarried spouse retains the exemption.",
           "source": "https://www.tax.ohio.gov/"
         }
@@ -95,7 +95,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 3500,
-          "savings_basis": "Franklin County median home $250,000 \u00d7 1.40% effective rate",
+          "savings_basis": "Franklin County median home $250,000 × 1.40% effective rate",
           "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with Franklin County Auditor.",
           "source": "https://www.tax.ohio.gov/"
         }
@@ -141,7 +141,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 3528,
-          "savings_basis": "Hamilton County median home $245,000 \u00d7 1.44% effective rate",
+          "savings_basis": "Hamilton County median home $245,000 × 1.44% effective rate",
           "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with Hamilton County Auditor.",
           "source": "https://www.tax.ohio.gov/"
         }
@@ -175,7 +175,7 @@
         "total_effective_rate_per_100": 1.55,
         "median_home_value": 175000,
         "assessment_ratio": 0.35,
-        "notes": "Montgomery County (Dayton area). Home of Wright-Patterson AFB \u2014 very high veteran and active-duty population."
+        "notes": "Montgomery County (Dayton area). Home of Wright-Patterson AFB — very high veteran and active-duty population."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -186,7 +186,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 2713,
-          "savings_basis": "Montgomery County median home $175,000 \u00d7 1.55% effective rate",
+          "savings_basis": "Montgomery County median home $175,000 × 1.55% effective rate",
           "note": "Full exemption under ORC Sec. 323.152. Wright-Patterson AFB retirees: this exemption is particularly valuable in this county. Apply with Montgomery County Auditor.",
           "source": "https://www.tax.ohio.gov/"
         }
@@ -201,6 +201,54 @@
         ]
       },
       "source": "https://www.mcauditor.org/"
+    },
+    {
+      "county": "Summit County",
+      "state_code": "OH",
+      "_computed": {
+        "effective_rate": 0.0145,
+        "median_home_value": 229000
+      },
+      "fips": "39153",
+      "military_installations": [],
+      "va_facilities": [
+        "Akron VA Clinic (CBOC)",
+        "Parma Community-Based Outpatient Clinic (nearby)"
+      ],
+      "estimated_veteran_population": 28000,
+      "tax_year": 2025,
+      "property_tax": {
+        "rate_per_100_assessed": 4.14,
+        "assessment_ratio": 0.35,
+        "effective_rate_on_market_per_100": 1.45,
+        "median_home_value": 229000,
+        "notes": "Summit County (Akron metro). Ohio assesses at 35% of market value. 74 taxing authorities; rates vary significantly by district. Recent reappraisal showed avg 30.8% increase in property values."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_100_pct": {
+          "type": "full_exemption",
+          "eligibility": "100% P&T service-connected disability or IU at 100%; OH resident",
+          "applies_to": "Primary residence",
+          "surviving_spouse": true,
+          "surviving_spouse_remarriage_disqualifies": true,
+          "income_limit": null,
+          "estimated_annual_savings": 3321,
+          "savings_basis": "Summit County median home $229,000 × 1.45% effective rate",
+          "note": "Full exemption under ORC Sec. 323.152. No income limit. Apply with county auditor's office.",
+          "source": "https://www.tax.ohio.gov/"
+        }
+      },
+      "application": {
+        "office": "Summit County Fiscal Office (County Auditor)",
+        "url": "https://fiscaloffice.summitoh.net/",
+        "deadline": "December 31 for following tax year",
+        "documentation": [
+          "VA Summary of Benefits Letter or Rating Decision",
+          "DD-214",
+          "Government-issued ID"
+        ]
+      },
+      "source": "https://fiscaloffice.summitoh.net/index.php/property-tax-rates"
     }
   ]
 }

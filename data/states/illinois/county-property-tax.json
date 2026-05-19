@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "County Property Tax Rates and Veteran Exemptions \u2014 IL",
+    "title": "County Property Tax Rates and Veteran Exemptions — IL",
     "description": "County-level property tax rates, veteran exemption implementation details, and application information for high-veteran-population counties in Illinois.",
     "state_code": "IL",
     "version": "2026.1",
@@ -14,7 +14,7 @@
     "notes": {
       "tax_rate_format": "Effective rate per $100 of assessed value (applied to market value).",
       "assessment_note": "Illinois assesses residential property at 33.33% of market value (EAV). Effective rates shown are market-value-based.",
-      "veteran_exemption_note": "Illinois 35 ILCS 200/15-165: Exemption on up to $100,000 of equalized assessed value (EAV) for 100% disabled veterans. EAV = ~33% of market value. Effectively full exemption for homes with market value \u2264~$300,000. Partial benefit for higher-value properties.",
+      "veteran_exemption_note": "Illinois 35 ILCS 200/15-165: Exemption on up to $100,000 of equalized assessed value (EAV) for 100% disabled veterans. EAV = ~33% of market value. Effectively full exemption for homes with market value ≤~$300,000. Partial benefit for higher-value properties.",
       "update_cycle": "Tax rates set annually by county and municipal authorities."
     }
   },
@@ -52,8 +52,8 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 2080,
-          "savings_basis": "$100,000 EAV exemption \u00d7 2.08% Cook County effective rate. For homes \u2264~$300K market value, full exemption. For $320K median home: ~$2,080 savings.",
-          "note": "Exemption on up to $100,000 of EAV (35 ILCS 200/15-165). Cook County EAV \u2248 10% of market value (not 33%) due to local assessment rules. A $320K home has ~$32,000 EAV \u2014 fully exempted. Savings = full tax bill for most Cook County homes.",
+          "savings_basis": "$100,000 EAV exemption × 2.08% Cook County effective rate. For homes ≤~$300K market value, full exemption. For $320K median home: ~$2,080 savings.",
+          "note": "Exemption on up to $100,000 of EAV (35 ILCS 200/15-165). Cook County EAV ≈ 10% of market value (not 33%) due to local assessment rules. A $320K home has ~$32,000 EAV — fully exempted. Savings = full tax bill for most Cook County homes.",
           "source": "https://www.cookcountyassessor.com/exemptions"
         }
       },
@@ -100,7 +100,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 2650,
-          "savings_basis": "$100,000 EAV exemption \u00d7 2.65% effective rate. Homes \u2264~$300K market value receive full exemption.",
+          "savings_basis": "$100,000 EAV exemption × 2.65% effective rate. Homes ≤~$300K market value receive full exemption.",
           "note": "Naval Station Great Lakes retirees: Lake County has one of the highest rates in IL. $100,000 EAV exemption (35 ILCS 200/15-165) covers full EAV for most local homes. Apply with Lake County Assessor.",
           "source": "https://tax.illinois.gov/"
         }
@@ -134,7 +134,7 @@
         "total_effective_rate_per_100": 2.15,
         "median_home_value": 170000,
         "assessment_ratio": 0.3333,
-        "notes": "St. Clair County (Metro East, IL). Home of Scott AFB \u2014 very high veteran population relative to county size."
+        "notes": "St. Clair County (Metro East, IL). Home of Scott AFB — very high veteran population relative to county size."
       },
       "veteran_exemptions": {
         "disabled_veteran_100_pct": {
@@ -147,7 +147,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 3655,
-          "savings_basis": "Median home $170,000 \u00d7 2.15% = $3,655. Full exemption as EAV (~$56,700) is well below $100,000 EAV cap.",
+          "savings_basis": "Median home $170,000 × 2.15% = $3,655. Full exemption as EAV (~$56,700) is well below $100,000 EAV cap.",
           "note": "Scott AFB area: Most homes are below the $300K threshold where the $100,000 EAV exemption provides full relief. Effectively a full exemption for the majority of Scott AFB veterans and retirees in this county.",
           "source": "https://tax.illinois.gov/"
         }
@@ -194,7 +194,7 @@
           "surviving_spouse_remarriage_disqualifies": true,
           "income_limit": null,
           "estimated_annual_savings": 3325,
-          "savings_basis": "Median home $175,000 \u00d7 1.90% = $3,325. Full exemption as EAV (~$58,300) is well below $100,000 EAV cap.",
+          "savings_basis": "Median home $175,000 × 1.90% = $3,325. Full exemption as EAV (~$58,300) is well below $100,000 EAV cap.",
           "note": "Effectively a full exemption for most Sangamon County homes (EAV well below $100,000 cap). Apply with Sangamon County Assessor.",
           "source": "https://tax.illinois.gov/"
         }
@@ -208,6 +208,54 @@
         ]
       },
       "source": "https://www.co.sangamon.il.us/departments/a-through-e/assessments"
+    },
+    {
+      "county": "Vermilion County",
+      "state_code": "IL",
+      "_computed": {
+        "effective_rate": 0.0172,
+        "median_home_value": 95000
+      },
+      "fips": "17183",
+      "military_installations": [],
+      "va_facilities": [
+        "Danville VA Medical Center (VA Illiana Health Care System)"
+      ],
+      "estimated_veteran_population": 5500,
+      "tax_year": 2025,
+      "property_tax": {
+        "rate_per_100_assessed": 5.16,
+        "assessment_ratio": 0.3333,
+        "effective_rate_on_market_per_100": 1.72,
+        "median_home_value": 95000,
+        "equalization_factor": "State equalization factor applies (varies annually)",
+        "notes": "Vermilion County (Danville). Illinois assesses at 33.33% of market value with state equalization factor. Home to the Danville VAMC, a major regional VA health care facility."
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_standard": {
+          "type": "assessed_value_exemption",
+          "exemption_schedule": {
+            "70_pct_or_more": "Up to $250,000 reduction in EAV",
+            "50_to_69_pct": "Up to $5,000 reduction in EAV",
+            "30_to_49_pct": "Up to $2,500 reduction in EAV"
+          },
+          "eligibility": "VA service-connected disability; IL resident; primary residence",
+          "surviving_spouse": true,
+          "note": "Illinois Disabled Veterans' Standard Homestead Exemption (35 ILCS 200/15-169). Veterans 70%+ effectively receive full exemption on most homes.",
+          "source": "https://tax.illinois.gov/localgovernments/property/taxrelief.html"
+        }
+      },
+      "application": {
+        "office": "Vermilion County Supervisor of Assessments",
+        "deadline": "Annually, typically by July 1",
+        "documentation": [
+          "VA Summary of Benefits Letter",
+          "DD-214",
+          "Government-issued ID"
+        ],
+        "url": "https://www.vercounty.org/"
+      },
+      "source": "https://tax.illinois.gov/"
     }
   ]
 }

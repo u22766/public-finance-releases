@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.17",
-  "generated": "2026-05-11T21:12:15Z",
+  "data_version": "v2026.18",
+  "generated": "2026-05-19T05:45:34Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.17.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.18.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -49,7 +49,7 @@
       "update_frequency": "as needed",
       "url": "states/state-benefits.json",
       "description": "State and territory income tax treatment, veteran property tax benefits, and vehicle personal property tax exemptions for 56 jurisdictions (50 states + DC + 5 US territories: AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY)",
-      "last_updated": "2026-03-31",
+      "last_updated": "2026-05-19",
       "changelog": [
         "v2.1: Added 5 US territories (AS, GU, MP, PR, VI) \u2014 territory expansion with income tax, real estate, and vehicle property tax separation"
       ],
@@ -475,12 +475,12 @@
       "update_frequency": "as_needed"
     },
     "county_property_tax_il": {
-      "version": "2026.1",
+      "version": "2026.2",
       "effective_date": "2026-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/illinois/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Cook, Lake, St. Clair, Sangamon Counties (IL).",
-      "last_updated": "2026-03-31"
+      "last_updated": "2026-05-19"
     },
     "county_property_tax_in": {
       "version": "2026.1",
@@ -567,12 +567,12 @@
       "last_updated": "2026-04-09"
     },
     "county_property_tax_oh": {
-      "version": "2026.1",
+      "version": "2026.2",
       "effective_date": "2026-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/ohio/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Cuyahoga, Franklin, Hamilton, Montgomery Counties (OH).",
-      "last_updated": "2026-03-31"
+      "last_updated": "2026-05-19"
     },
     "county_property_tax_ok": {
       "version": "2026.1",
@@ -587,12 +587,12 @@
       "update_frequency": "as_needed"
     },
     "county_property_tax_pa": {
-      "version": "2026.1",
+      "version": "2026.2",
       "effective_date": "2026-01-01",
       "update_frequency": "annual (after county rate-setting)",
       "url": "states/pennsylvania/county-property-tax.json",
       "description": "County-level property tax rates and veteran exemption details: Philadelphia, Allegheny, Cumberland, York Counties (PA).",
-      "last_updated": "2026-03-31"
+      "last_updated": "2026-05-19"
     },
     "county_property_tax_sc": {
       "url": "states/south-carolina/county-property-tax.json",
