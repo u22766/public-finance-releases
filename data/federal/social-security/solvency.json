@@ -1,0 +1,23 @@
+{
+  "_comment": "Social Security OASI trust fund solvency projections. Field names under _computed are frozen — see schema contract.",
+  "_version": "2025.6",
+  "_source_documents": [
+    "2025 OASDI Trustees Report (SSA Board of Trustees, June 18, 2025)",
+    "CBO February 2026 Budget and Economic Outlook"
+  ],
+  "_computed": {
+    "trustees": {
+      "report_year": 2025,
+      "report_release_date": "2025-06-18",
+      "oasi_depletion_year": 2033,
+      "payable_pct_at_depletion": 0.77,
+      "payable_pct_2099": 0.71
+    },
+    "cbo": {
+      "baseline_publication": "2026-02",
+      "oasi_depletion_fiscal_year": 2032,
+      "avg_payable_pct_post_depletion": 0.72,
+      "avg_cut_pct_post_depletion": 0.28
+    }
+  }
+}
