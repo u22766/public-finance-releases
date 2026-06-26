@@ -401,10 +401,12 @@
       "state_code": "AZ",
       "_computed": {
         "veteran_property_tax": {
-          "full_exemption_100pct_pt": false,
-          "partial_exemption_available": true,
-          "partial_exemption_amount": 4188,
-          "surviving_spouse_transfer": true
+          "full_exemption_100pct_pt": true,
+          "partial_exemption_available": false,
+          "partial_exemption_amount": null,
+          "surviving_spouse_transfer": true,
+          "application_deadline_month": 3,
+          "application_deadline_day": 1
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,

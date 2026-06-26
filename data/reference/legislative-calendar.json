@@ -1,8 +1,37 @@
 {
-  "_comment": "Upcoming legislative changes affecting veteran benefits. App filters by state and displays as alert cards.",
-  "version": "2026.1",
+  "_comment": "Upcoming and recently enacted legislative changes affecting veteran benefits. App filters by state and displays as alert cards.",
+  "version": "2026.2",
   "last_updated": "2026-06-26",
   "entries": [
+    {
+      "id": "AZ-2026-property-tax-full-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "AZ",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "Arizona grants full property tax exemption to 100% service-connected disabled veterans.",
+      "detail": "HB 2792 exempts the full value of the primary residence from property tax for veterans with a 100% service-connected VA disability rating. The exemption extends to unremarried surviving spouses. Existing partial exemptions remain for veterans rated below 100%. Veterans already receiving partial exemptions are automatically upgraded. Income limits still apply across the exemption program.",
+      "veteran_action": {
+        "required": true,
+        "description": "New applicants must file with the county assessor during the annual window (first Monday in January through March 1). Veterans already receiving a disability exemption are automatically upgraded.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
+        "current_value": true,
+        "future_value": true,
+        "note": "Corrected from false to true in Session 82. HB 2792 enacted and effective TY 2026."
+      },
+      "source": {
+        "legislation": "Arizona HB 2792",
+        "url": null
+      },
+      "resolved": true,
+      "resolved_date": "2026-06-26"
+    },
     {
       "id": "IN-2027-property-tax-full-exemption",
       "jurisdiction": {
@@ -13,7 +42,7 @@
       "category": "property_tax",
       "effective_date": "2027-01-01",
       "summary": "Indiana extends full property tax exemption to 100% P&T disabled veterans.",
-      "detail": "Effective for the 2027 tax year, veterans with a 100% Permanent and Total VA disability rating are exempt from property tax on their primary residence. Previously, Indiana offered a partial exemption. The new law also replaces the old deduction system ($24,960/$14,000) with a credit system ($350/$250/$600) for veterans rated 10%-90%. Vehicle excise tax carryover is eliminated under the new credit structure.",
+      "detail": "Effective for the 2027 tax year, veterans with a 100% Permanent and Total VA disability rating are exempt from property tax on their primary residence. The new law also replaces the old deduction system ($24,960/$14,000) with a credit system ($350/$250/$600) for veterans rated 10%-90%. Vehicle excise tax carryover is eliminated under the new credit structure.",
       "veteran_action": {
         "required": true,
         "description": "File exemption application (State Form 51186) with your county auditor's office. Bring your VA disability rating letter. Applications accepted starting July 1, 2026.",
@@ -23,10 +52,289 @@
         "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
         "current_value": false,
         "future_value": true,
-        "note": "Will be promoted to public repo on or after effective date. IN partial exemption structure will also change from deductions to credits."
+        "note": "Will be promoted to public repo on or after effective date."
       },
       "source": {
         "legislation": "Indiana HEA 1210",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "NM-2026-property-tax-disabled-veteran-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "NM",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "New Mexico creates a new Disabled Veterans Exemption proportional to VA disability rating.",
+      "detail": "A new Disabled Veterans Exemption provides property tax relief proportional to the veteran's VA disability percentage, effective 2026. This is in addition to the $10,000 standard veteran property tax exemption enacted in 2025. The military retirement income subtraction also increased to $40,000 for TY 2025 and beyond.",
+      "veteran_action": {
+        "required": true,
+        "description": "Apply through your county assessor for the new disability-proportional exemption.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.partial_exemption_available",
+        "current_value": true,
+        "future_value": true,
+        "note": "Exemption structure changed. partial_exemption_amount may need recalculation."
+      },
+      "source": {
+        "legislation": "New Mexico veteran property tax legislation 2025-2026",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "CA-2026-property-tax-full-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "CA",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "California SB 296 would create full property tax exemption for 100% disabled veterans.",
+      "detail": "SB 296 would exempt the full value of a disabled veteran's primary residence from property tax if the veteran is 100% disabled, blind in both eyes, or has lost use of two or more limbs due to military service. The exemption would apply from January 1, 2026 through January 1, 2036. The bill passed the Senate 38-0 but was retained in the Assembly Revenue & Taxation suspense file as of July 2025. Not yet enacted.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is pending in the California legislature.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
+        "current_value": false,
+        "future_value": true,
+        "note": "If enacted, CA would change from partial to full exemption for 100% disabled veterans."
+      },
+      "source": {
+        "legislation": "California SB 296",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "CA-2026-property-tax-income-exclusion",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "CA",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "California SB 56 would exclude VA disability pay from income limits for property tax exemption.",
+      "detail": "SB 56 would exclude service-connected disability payments from the household income calculation used to determine eligibility for the low-income disabled veterans' property tax exemption ($271,009 vs $180,671). Held in committee and under submission as of July 2025. Not yet enacted.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is pending in the California legislature.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "California SB 56",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "MA-2026-property-tax-proportional-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "MA",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "Massachusetts S.2046 would grant property tax exemption proportional to VA disability rating.",
+      "detail": "S.2046 would create a new property tax exemption for disabled veterans equal to the percentage of the veteran's permanent, service-connected disability rating. The bill was reported favorably by committee and referred to Senate Ways and Means in December 2025. The Commonwealth would reimburse municipalities for lost revenue. Not yet enacted.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is in Senate Ways and Means committee.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.partial_exemption_available",
+        "current_value": true,
+        "future_value": true,
+        "note": "Would expand partial exemption to be proportional to disability rating."
+      },
+      "source": {
+        "legislation": "Massachusetts S.2046",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "CA-2025-income-tax-retirement-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "CA",
+        "county": null
+      },
+      "category": "income_tax",
+      "effective_date": "2025-01-01",
+      "summary": "California exempts up to $20,000 of military retirement pay from state income tax.",
+      "detail": "For the first time, California allows veterans receiving military retirement pay and Survivor Benefit Plan payments to exclude up to $20,000 from state income tax. Applies to taxpayers with AGI up to $125,000 (single) or $250,000 (joint). Enacted June 27, 2025. Effective TY 2025 through TY 2030 unless renewed.",
+      "veteran_action": {
+        "required": true,
+        "description": "Claim the subtraction when filing your California state income tax return.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "California military retirement income tax exemption (2025)",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "GA-2026-income-tax-retirement-expansion",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "GA",
+        "county": null
+      },
+      "category": "income_tax",
+      "effective_date": "2026-01-01",
+      "summary": "Georgia expands military retirement pay exemption to $65,000 for retirees of any age.",
+      "detail": "Act 71 expands the military retirement income exemption to $65,000 for retirees of any age, effective TY 2026. Previously, the $65,000 exemption was only available to retirees 65 and older, with lower limits for younger retirees. Also provides full exemption of military retirement and survivor benefit income for taxpayers with AGI of $125,000 or less.",
+      "veteran_action": {
+        "required": true,
+        "description": "Claim the expanded exemption when filing your Georgia state income tax return for TY 2026.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Georgia Act 71",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "VT-2025-income-tax-retirement-expansion",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "VT",
+        "county": null
+      },
+      "category": "income_tax",
+      "effective_date": "2025-01-01",
+      "summary": "Vermont expands military retirement pay exemption to full for qualifying retirees.",
+      "detail": "Vermont expanded to a full exemption for military retirees and survivors with federal AGI less than $125,000. Partial exemption for AGI between $125,000 and $175,000. No exemption above $175,000. Replaces the previous $10,000 limitation for AGI under $60,000/$75,000. Also applies to USPHS and NOAA. Retroactive to TY 2025.",
+      "veteran_action": {
+        "required": true,
+        "description": "Claim the expanded exemption when filing your Vermont state income tax return.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Vermont military retirement income tax expansion (2025)",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "MD-2026-income-tax-retirement-increase",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "MD",
+        "county": null
+      },
+      "category": "income_tax",
+      "effective_date": "2026-01-01",
+      "summary": "Maryland HB 857 would increase military retirement income subtraction for under-55 retirees.",
+      "detail": "HB 857 would increase the military retirement income subtraction modification from $12,500 to $20,000 for individuals under age 55. Applies to taxable years beginning after December 31, 2025. Introduced in the 2026 Regular Session. Status pending.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is pending in the Maryland legislature.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Maryland HB 857",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "ME-2026-income-tax-space-force-expansion",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "ME",
+        "county": null
+      },
+      "category": "benefit_expansion",
+      "effective_date": "2026-01-01",
+      "summary": "Maine expands military retirement pay exemption to Space Force, USPHS, and NOAA Corps.",
+      "detail": "Maine's existing military retirement pay tax exemption has been expanded to include Space Force members, USPHS commissioned officers, and NOAA Corps officers. Effective with the 2026 tax year.",
+      "veteran_action": {
+        "required": true,
+        "description": "Space Force, USPHS, and NOAA Corps retirees can now claim the Maine retirement pay exemption when filing state taxes.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Maine military retirement pay exemption expansion (2026)",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "KS-2026-sales-tax-disabled-veteran-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "KS",
+        "county": null
+      },
+      "category": "other",
+      "effective_date": "2026-07-01",
+      "summary": "Kansas exempts 100% disabled veterans from sales tax on up to $24,000 in annual purchases.",
+      "detail": "Starting July 1, 2026, veterans with a 100% service-connected disability avoid sales tax on up to $24,000 in annual purchases. Excludes tobacco, alcohol, and vehicles.",
+      "veteran_action": {
+        "required": true,
+        "description": "Contact the Kansas Department of Revenue for the exemption certificate process.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Kansas disabled veteran sales tax exemption (2026)",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "MD-2025-service-member-tax-equality",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "MD",
+        "county": null
+      },
+      "category": "benefit_expansion",
+      "effective_date": "2025-05-06",
+      "summary": "Maryland expands service member tax benefits to include NOAA and Public Health Service.",
+      "detail": "SB 278 broadens definitions of active service member, uniformed services, and reserve component to include NOAA and Public Health Service. Expands income tax abatement for deceased service members, and aligns sales tax exemptions for all nationally recognized veteran organizations. Signed May 6, 2025.",
+      "veteran_action": {
+        "required": false,
+        "description": "NOAA and PHS members now qualify for Maryland service member tax benefits automatically.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Maryland SB 278",
         "url": null
       },
       "resolved": false,
