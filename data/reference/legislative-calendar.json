@@ -1,0 +1,36 @@
+{
+  "_comment": "Upcoming legislative changes affecting veteran benefits. App filters by state and displays as alert cards.",
+  "version": "2026.1",
+  "last_updated": "2026-06-26",
+  "entries": [
+    {
+      "id": "IN-2027-property-tax-full-exemption",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "IN",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2027-01-01",
+      "summary": "Indiana extends full property tax exemption to 100% P&T disabled veterans.",
+      "detail": "Effective for the 2027 tax year, veterans with a 100% Permanent and Total VA disability rating are exempt from property tax on their primary residence. Previously, Indiana offered a partial exemption. The new law also replaces the old deduction system ($24,960/$14,000) with a credit system ($350/$250/$600) for veterans rated 10%-90%. Vehicle excise tax carryover is eliminated under the new credit structure.",
+      "veteran_action": {
+        "required": true,
+        "description": "File exemption application (State Form 51186) with your county auditor's office. Bring your VA disability rating letter. Applications accepted starting July 1, 2026.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
+        "current_value": false,
+        "future_value": true,
+        "note": "Will be promoted to public repo on or after effective date. IN partial exemption structure will also change from deductions to credits."
+      },
+      "source": {
+        "legislation": "Indiana HEA 1210",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    }
+  ]
+}

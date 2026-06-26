@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.19",
-  "generated": "2026-05-22T02:28:42Z",
+  "data_version": "v2026.21",
+  "generated": "2026-06-26T20:23:28Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.19.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.21.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -413,6 +413,12 @@
       "description": "ERFC supplemental pension parameters: Legacy, 2001 Tier 1, 2001 Tier 2. Fairfax County (FCPS) only. County-level plan under states/virginia/fairfax-county/.",
       "changelog_2_0_0": "Split from plan-library.json during schema 2.0 restructure. ERFC plans only. Added jurisdiction metadata. All values unchanged.",
       "last_updated": "2026-03-25"
+    },
+    "legislative_calendar": {
+      "url": "reference/legislative-calendar.json",
+      "version": "2026.1",
+      "update_frequency": "as_needed",
+      "description": "Upcoming state-level legislative changes affecting veteran benefits"
     },
     "data_vintage": {
       "description": "Data vintage labels for all files in finance-data. Maps each manifest key to the year/date of rates or rules it reflects (e.g., TY2026, FY2025-26, CY2026). Distinguishes 'data vintage' (what year the data represents) from 'last_updated' (when the file was last edited).",

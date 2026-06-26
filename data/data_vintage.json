@@ -329,6 +329,10 @@
     "va_smc": {
       "reflects": "FY2026",
       "rates_effective": "2025-12-01"
+    },
+    "legislative_calendar": {
+      "reflects": "CY2026",
+      "rates_effective": "2026-06-26"
     }
   }
 }
