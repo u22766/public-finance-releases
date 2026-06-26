@@ -1,6 +1,6 @@
 {
   "_comment": "Upcoming and recently enacted legislative changes affecting veteran benefits. App filters by state and displays as alert cards.",
-  "version": "2026.2",
+  "version": "2026.3",
   "last_updated": "2026-06-26",
   "entries": [
     {
@@ -339,6 +339,112 @@
       },
       "resolved": false,
       "resolved_date": null
+    },
+    {
+      "id": "NC-2025-property-tax-phased-increase",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "NC",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2025-07-01",
+      "summary": "North Carolina S660 would phase the disabled veteran property tax exclusion from $45,000 to $500,000 over three years.",
+      "detail": "The 'Honoring Sacrifice: NC Veterans Relief Act' (S660/H728) would increase the disabled veteran homestead exclusion in three phases: $75,000 (July 2025), $125,000 (July 2026), and the lesser of $500,000 or 100% of appraised value (July 2027). Also exempts primary motor vehicle for 100% disabled veterans from property tax and creates a prequalification process. State reimburses local governments 50% of revenue loss. Still in Senate Rules and Operations Committee as of early 2026.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is pending in the North Carolina General Assembly.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.partial_exemption_amount",
+        "current_value": 45000,
+        "future_value": 500000,
+        "note": "Phased increase. If enacted, amount would need updating at each effective date."
+      },
+      "source": {
+        "legislation": "North Carolina S660 / H728",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "MN-2026-property-tax-exclusion-increase",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "MN",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "Minnesota HF194 would increase disabled veteran property tax market value exclusion amounts.",
+      "detail": "HF194 would increase the market value exclusion from $150,000 to $200,000 for veterans with 70%+ disability, and from $300,000 to $400,000 for veterans with total and permanent disability. Passed Veterans and Military Affairs Division unanimously, referred to House Taxes Committee. First increase since 2008.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is in the Minnesota House Taxes Committee.",
+        "deadline": null
+      },
+      "data_impact": {
+        "field": "_computed.veteran_property_tax.partial_exemption_amount",
+        "current_value": 300000,
+        "future_value": 400000,
+        "note": "Would update amount from $300,000 to $400,000 for 100% P&T."
+      },
+      "source": {
+        "legislation": "Minnesota HF194",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "NY-2026-property-tax-disability-expansion",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "NY",
+        "county": null
+      },
+      "category": "property_tax",
+      "effective_date": "2026-01-01",
+      "summary": "New York S8958A would expand property tax exemption to any service-connected disabled veteran.",
+      "detail": "S8958A would amend RPTL \u00a7458-a to allow veterans with any service-connected disability (not just specific categories like blindness or limb loss) to claim a real property tax exemption. Introduced January 21, 2026. In Senate Committee on Veterans, Homeland Security and Military Affairs.",
+      "veteran_action": {
+        "required": false,
+        "description": "No action needed yet. Bill is in the New York Senate Veterans committee.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "New York S8958A",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
+      "id": "AZ-2026-pension-income-exclusion",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "AZ",
+        "county": null
+      },
+      "category": "benefit_expansion",
+      "effective_date": "2026-01-01",
+      "summary": "Arizona excludes all veteran pension income from property tax exemption income cap calculation.",
+      "detail": "SB1749 (budget bill) expands the income exclusion for the property tax exemption income cap to include all veteran pension payments, not just disability pensions. Also removes the requirement that property be valued below the statutory assessment limit to qualify for the exemption. Complements HB 2792 (full exemption for 100% disabled veterans).",
+      "veteran_action": {
+        "required": false,
+        "description": "Benefit applies automatically when filing for property tax exemption.",
+        "deadline": null
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Arizona SB 1749",
+        "url": null
+      },
+      "resolved": true,
+      "resolved_date": "2026-06-26"
     }
   ]
 }
