@@ -47,8 +47,8 @@
       "rates_effective": "2026-01-01"
     },
     "social_security_solvency": {
-      "reflects": "2025",
-      "rates_effective": "2025-06-18"
+      "reflects": "CY2026",
+      "rates_effective": "2026-06-09"
     },
     "_comment_contribution": "Contribution limits \u2014 Calendar Year (CY) convention",
     "tsp_limits": {

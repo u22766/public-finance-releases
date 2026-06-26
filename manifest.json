@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.23",
-  "generated": "2026-06-26T20:51:35Z",
+  "data_version": "v2026.24",
+  "generated": "2026-06-26T23:44:02Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.23.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.24.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -230,7 +230,7 @@
     },
     "social_security_solvency": {
       "url": "federal/social-security/solvency.json",
-      "version": "2025.6",
+      "version": "2026.1",
       "update_frequency": "annual",
       "description": "OASI trust fund solvency projections from SSA Trustees Report and CBO baseline \u2014 depletion year, payable benefit percentages",
       "last_updated": "2026-05-21"
