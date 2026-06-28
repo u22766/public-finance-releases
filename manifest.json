@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.25",
-  "generated": "2026-06-28T21:55:52Z",
+  "data_version": "v2026.26",
+  "generated": "2026-06-28T22:08:50Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.25.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.26.",
   "files": {
     "rates_annual": {
       "version": "2026.4",

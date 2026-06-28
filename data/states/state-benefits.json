@@ -6920,7 +6920,9 @@
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
           "partial_exemption_amount": 3000,
-          "surviving_spouse_transfer": true
+          "surviving_spouse_transfer": true,
+          "application_deadline_month": 5,
+          "application_deadline_day": 22
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
@@ -7078,5 +7080,66 @@
       ]
     }
   },
-  "last_updated": "2026-04-03"
+  "last_updated": "2026-04-03",
+  "_note_application_deadlines": {
+    "description": "application_deadline_month and application_deadline_day in _computed.veteran_property_tax provide fixed statewide filing deadlines for veteran property tax exemption applications. 24 states populated; 32 jurisdictions skipped as documented below.",
+    "wy_note": "WY deadline is 'Fourth Monday in May' which shifts yearly (May 22-28). Set to May 22 (earliest possible date) for safe notification timing.",
+    "skipped_municipality_level_variability": {
+      "description": "Deadlines set at the municipality level, below the county granularity the app can map to. No fixed statewide or county-level date exists.",
+      "states": {
+        "MA": "Within 90 days of third-quarter actual tax bill \u2014 varies by municipality and by billing date each year. 351 municipalities.",
+        "NH": "Contact local assessor for municipal deadlines. 234 municipalities with independent schedules."
+      }
+    },
+    "skipped_county_level_variability": {
+      "description": "Deadlines vary by county or parish. Mappable to county-level data in county-property-tax.json. Queued for future county-level deadline fields.",
+      "states": {
+        "AK": "Varies by borough/municipality. Only some boroughs levy property tax. No county file exists.",
+        "HI": "Varies by county. 4 counties with known dates (Honolulu: Aug 19, Hawaii County: Jun 30, Kauai/Maui: contact assessor). No county file exists.",
+        "LA": "Varies by parish assessor. County file exists (3 parishes). 64 total parishes.",
+        "NJ": "Varies by local assessor. Appeals deadline April 1 but initial filing varies. County file exists (4 counties). 21 total counties.",
+        "NM": "Contact county assessor. No county file exists. 33 counties."
+      }
+    },
+    "skipped_no_fixed_annual_deadline": {
+      "description": "No fixed annual filing deadline. Either one-time filing, continuous acceptance, or tied to income tax filing.",
+      "states": {
+        "AL": "No statewide deadline documented. File with county tax assessor.",
+        "AR": "No statewide deadline documented. File with county assessor.",
+        "IL": "Annual reapplication via form PTAX-342 but no fixed statewide date. 100% P&T veterans auto-renew per recent legislation.",
+        "IN": "No fixed statewide deadline. HEA 1210 restructures exemptions effective 2027 tax year.",
+        "KY": "100% P&T veterans file once and do not reapply. No annual deadline.",
+        "MI": "Filing window is January 1 through December 31 \u2014 effectively no deadline. No reapplication required starting 2025.",
+        "WV": "Filed with annual income tax return. Not a standalone property tax filing deadline."
+      }
+    },
+    "skipped_no_data_available": {
+      "description": "No deadline data in the raw veteran_benefits record. Research needed to determine if a fixed statewide deadline exists.",
+      "states": [
+        "MD",
+        "MO",
+        "MS",
+        "NE",
+        "OH",
+        "PA",
+        "RI",
+        "SC",
+        "TN",
+        "VA",
+        "VT",
+        "WA",
+        "WI"
+      ]
+    },
+    "skipped_territories": {
+      "description": "U.S. territories with limited or undocumented veteran property tax exemption programs.",
+      "states": [
+        "AS",
+        "GU",
+        "MP",
+        "PR",
+        "VI"
+      ]
+    }
+  }
 }
