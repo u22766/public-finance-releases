@@ -11,7 +11,8 @@
       "report_release_date": "2026-06-09",
       "oasi_depletion_year": 2032,
       "payable_pct_at_depletion": 0.78,
-      "payable_pct_2099": 0.62
+      "payable_pct_2099": 0.62,
+      "payable_pct_long_run": 0.62
     },
     "cbo": {
       "baseline_publication": "2026-02",
