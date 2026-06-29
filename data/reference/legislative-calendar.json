@@ -1,6 +1,6 @@
 {
   "_comment": "Upcoming and recently enacted legislative changes affecting veteran benefits. App filters by state and displays as alert cards.",
-  "version": "2026.4",
+  "version": "2026.5",
   "last_updated": "2026-06-28",
   "_schema_note": {
     "status": "Legal posture of the entry. 'proposed' = introduced / in committee, not yet law. 'enacted' = signed into law. Upcoming-vs-in-effect is derived from effective_date (enacted + future effective_date = upcoming; enacted + today-or-past = in effect). Orthogonal to 'resolved'.",
@@ -56,7 +56,7 @@
       "detail": "HEA 1210, signed by Governor Braun on March 12, 2026, exempts the full assessed value of the primary residence from property tax for veterans with a 100% Permanent and Total VA disability rating (or Individual Unemployability), with no home-value cap \u2014 the prior $240,000 assessed-value limit is removed. Effective for the 2026 assessment year (taxes payable in 2027). Unremarried surviving spouses also qualify.",
       "veteran_action": {
         "required": true,
-        "description": "File exemption application (State Form 51186) with your county auditor's office. Bring your VA disability rating letter. Applications accepted starting July 1, 2026.",
+        "description": "File exemption application (State Form 51186) with your county auditor's office between July 1 and December 30, 2026; bring your VA disability rating letter. You must register under the new structure even if you were previously enrolled under the old deduction system \u2014 the old filing does not carry over automatically.",
         "deadline": null
       },
       "applicability": {
@@ -89,7 +89,7 @@
       "detail": "Under HEA 1210 (signed March 12, 2026), the prior $24,960 wartime assessed-value deduction is replaced by a $350 direct property tax credit, and the prior $14,000 deduction (totally disabled, or age 62+ with a 10%+ rating) is replaced by a $250 direct credit; the two credits stack to a $600 maximum. Effective for the 2026 assessment year (taxes payable in 2027). Because the new benefit is a flat dollar credit rather than an assessed-value deduction, some veterans rated 10\u201390% may receive less relief than under the prior deduction, depending on local tax rates. The option to apply unused deduction toward Indiana BMV vehicle excise fees is eliminated under the credit structure. Eligibility expands: non-wartime veterans rated 10%+ become eligible for the $250 credit at age 62.",
       "veteran_action": {
         "required": true,
-        "description": "Register with your county auditor between July 1 and December 30, 2026 using State Form 51186 to receive the new credit; bring your VA disability rating documentation. Confirm the credit appears on your 2026 (payable 2027) tax bill.",
+        "description": "Register with your county auditor between July 1 and December 30, 2026 using State Form 51186 to receive the new credit; bring your VA disability rating documentation. You must register under the new structure even if you were previously enrolled under the old deduction system \u2014 the old filing does not carry over automatically. Confirm the credit appears on your 2026 (payable 2027) tax bill.",
         "deadline": null
       },
       "applicability": {
