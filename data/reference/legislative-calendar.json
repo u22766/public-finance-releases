@@ -1,7 +1,13 @@
 {
   "_comment": "Upcoming and recently enacted legislative changes affecting veteran benefits. App filters by state and displays as alert cards.",
-  "version": "2026.3",
-  "last_updated": "2026-06-26",
+  "version": "2026.4",
+  "last_updated": "2026-06-28",
+  "_schema_note": {
+    "status": "Legal posture of the entry. 'proposed' = introduced / in committee, not yet law. 'enacted' = signed into law. Upcoming-vs-in-effect is derived from effective_date (enacted + future effective_date = upcoming; enacted + today-or-past = in effect). Orthogonal to 'resolved'.",
+    "resolved": "Whether the underlying _computed data for this change has been promoted to the bundle. A 'proposed' entry is never resolved; an 'enacted' change is not resolved until its effective_date arrives and the value is promoted (never publish a benefit before its effective date).",
+    "applicability": "Optional. min_disability_rating = lowest VA rating at which the entry's stated benefit applies; consumers suppress below it. Omitted = applies at any rating, or rating is not the eligibility axis. requires_property_ownership is not carried \u2014 inferred from category == 'property_tax'.",
+    "authoring": "Dead bills are removed during legislation-watch (logged in schema-changelog) \u2014 there is no 'failed' status. Laws with rating-tiered sub-benefits are split into separate entries, each with its own summary and floor (e.g., Indiana HEA 1210: a 100% full-exemption entry and a 10\u201390% credit entry)."
+  },
   "entries": [
     {
       "id": "AZ-2026-property-tax-full-exemption",
@@ -11,6 +17,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "enacted",
       "effective_date": "2026-01-01",
       "summary": "Arizona grants full property tax exemption to 100% service-connected disabled veterans.",
       "detail": "HB 2792 exempts the full value of the primary residence from property tax for veterans with a 100% service-connected VA disability rating. The exemption extends to unremarried surviving spouses. Existing partial exemptions remain for veterans rated below 100%. Veterans already receiving partial exemptions are automatically upgraded. Income limits still apply across the exemption program.",
@@ -18,6 +25,9 @@
         "required": true,
         "description": "New applicants must file with the county assessor during the annual window (first Monday in January through March 1). Veterans already receiving a disability exemption are automatically upgraded.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 100
       },
       "data_impact": {
         "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
@@ -40,13 +50,17 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "enacted",
       "effective_date": "2027-01-01",
       "summary": "Indiana extends full property tax exemption to 100% P&T disabled veterans.",
-      "detail": "Effective for the 2027 tax year, veterans with a 100% Permanent and Total VA disability rating are exempt from property tax on their primary residence. The new law also replaces the old deduction system ($24,960/$14,000) with a credit system ($350/$250/$600) for veterans rated 10%-90%. Vehicle excise tax carryover is eliminated under the new credit structure.",
+      "detail": "HEA 1210, signed by Governor Braun on March 12, 2026, exempts the full assessed value of the primary residence from property tax for veterans with a 100% Permanent and Total VA disability rating (or Individual Unemployability), with no home-value cap \u2014 the prior $240,000 assessed-value limit is removed. Effective for the 2026 assessment year (taxes payable in 2027). Unremarried surviving spouses also qualify.",
       "veteran_action": {
         "required": true,
         "description": "File exemption application (State Form 51186) with your county auditor's office. Bring your VA disability rating letter. Applications accepted starting July 1, 2026.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 100
       },
       "data_impact": {
         "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
@@ -62,6 +76,34 @@
       "resolved_date": null
     },
     {
+      "id": "IN-2027-property-tax-disabled-veteran-credit",
+      "jurisdiction": {
+        "scope": "state",
+        "state": "IN",
+        "county": null
+      },
+      "category": "property_tax",
+      "status": "enacted",
+      "effective_date": "2027-01-01",
+      "summary": "Indiana replaces the disabled-veteran assessed-value deductions with flat property tax credits (up to $600) for veterans rated 10\u201390%, effective taxes payable in 2027.",
+      "detail": "Under HEA 1210 (signed March 12, 2026), the prior $24,960 wartime assessed-value deduction is replaced by a $350 direct property tax credit, and the prior $14,000 deduction (totally disabled, or age 62+ with a 10%+ rating) is replaced by a $250 direct credit; the two credits stack to a $600 maximum. Effective for the 2026 assessment year (taxes payable in 2027). Because the new benefit is a flat dollar credit rather than an assessed-value deduction, some veterans rated 10\u201390% may receive less relief than under the prior deduction, depending on local tax rates. The option to apply unused deduction toward Indiana BMV vehicle excise fees is eliminated under the credit structure. Eligibility expands: non-wartime veterans rated 10%+ become eligible for the $250 credit at age 62.",
+      "veteran_action": {
+        "required": true,
+        "description": "Register with your county auditor between July 1 and December 30, 2026 using State Form 51186 to receive the new credit; bring your VA disability rating documentation. Confirm the credit appears on your 2026 (payable 2027) tax bill.",
+        "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 10
+      },
+      "data_impact": null,
+      "source": {
+        "legislation": "Indiana HEA 1210",
+        "url": null
+      },
+      "resolved": false,
+      "resolved_date": null
+    },
+    {
       "id": "NM-2026-property-tax-disabled-veteran-exemption",
       "jurisdiction": {
         "scope": "state",
@@ -69,6 +111,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "enacted",
       "effective_date": "2026-01-01",
       "summary": "New Mexico creates a new Disabled Veterans Exemption proportional to VA disability rating.",
       "detail": "A new Disabled Veterans Exemption provides property tax relief proportional to the veteran's VA disability percentage, effective 2026. This is in addition to the $10,000 standard veteran property tax exemption enacted in 2025. The military retirement income subtraction also increased to $40,000 for TY 2025 and beyond.",
@@ -98,6 +141,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "proposed",
       "effective_date": "2026-01-01",
       "summary": "California SB 296 would create full property tax exemption for 100% disabled veterans.",
       "detail": "SB 296 would exempt the full value of a disabled veteran's primary residence from property tax if the veteran is 100% disabled, blind in both eyes, or has lost use of two or more limbs due to military service. The exemption would apply from January 1, 2026 through January 1, 2036. The bill passed the Senate 38-0 but was retained in the Assembly Revenue & Taxation suspense file as of July 2025. Not yet enacted.",
@@ -105,6 +149,9 @@
         "required": false,
         "description": "No action needed yet. Bill is pending in the California legislature.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 100
       },
       "data_impact": {
         "field": "_computed.veteran_property_tax.full_exemption_100pct_pt",
@@ -127,6 +174,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "proposed",
       "effective_date": "2026-01-01",
       "summary": "California SB 56 would exclude VA disability pay from income limits for property tax exemption.",
       "detail": "SB 56 would exclude service-connected disability payments from the household income calculation used to determine eligibility for the low-income disabled veterans' property tax exemption ($271,009 vs $180,671). Held in committee and under submission as of July 2025. Not yet enacted.",
@@ -134,6 +182,9 @@
         "required": false,
         "description": "No action needed yet. Bill is pending in the California legislature.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 100
       },
       "data_impact": null,
       "source": {
@@ -151,6 +202,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "proposed",
       "effective_date": "2026-01-01",
       "summary": "Massachusetts S.2046 would grant property tax exemption proportional to VA disability rating.",
       "detail": "S.2046 would create a new property tax exemption for disabled veterans equal to the percentage of the veteran's permanent, service-connected disability rating. The bill was reported favorably by committee and referred to Senate Ways and Means in December 2025. The Commonwealth would reimburse municipalities for lost revenue. Not yet enacted.",
@@ -180,6 +232,7 @@
         "county": null
       },
       "category": "income_tax",
+      "status": "enacted",
       "effective_date": "2025-01-01",
       "summary": "California exempts up to $20,000 of military retirement pay from state income tax.",
       "detail": "For the first time, California allows veterans receiving military retirement pay and Survivor Benefit Plan payments to exclude up to $20,000 from state income tax. Applies to taxpayers with AGI up to $125,000 (single) or $250,000 (joint). Enacted June 27, 2025. Effective TY 2025 through TY 2030 unless renewed.",
@@ -204,6 +257,7 @@
         "county": null
       },
       "category": "income_tax",
+      "status": "enacted",
       "effective_date": "2026-01-01",
       "summary": "Georgia expands military retirement pay exemption to $65,000 for retirees of any age.",
       "detail": "Act 71 expands the military retirement income exemption to $65,000 for retirees of any age, effective TY 2026. Previously, the $65,000 exemption was only available to retirees 65 and older, with lower limits for younger retirees. Also provides full exemption of military retirement and survivor benefit income for taxpayers with AGI of $125,000 or less.",
@@ -228,6 +282,7 @@
         "county": null
       },
       "category": "income_tax",
+      "status": "enacted",
       "effective_date": "2025-01-01",
       "summary": "Vermont expands military retirement pay exemption to full for qualifying retirees.",
       "detail": "Vermont expanded to a full exemption for military retirees and survivors with federal AGI less than $125,000. Partial exemption for AGI between $125,000 and $175,000. No exemption above $175,000. Replaces the previous $10,000 limitation for AGI under $60,000/$75,000. Also applies to USPHS and NOAA. Retroactive to TY 2025.",
@@ -252,6 +307,7 @@
         "county": null
       },
       "category": "income_tax",
+      "status": "proposed",
       "effective_date": "2026-01-01",
       "summary": "Maryland HB 857 would increase military retirement income subtraction for under-55 retirees.",
       "detail": "HB 857 would increase the military retirement income subtraction modification from $12,500 to $20,000 for individuals under age 55. Applies to taxable years beginning after December 31, 2025. Introduced in the 2026 Regular Session. Status pending.",
@@ -276,6 +332,7 @@
         "county": null
       },
       "category": "benefit_expansion",
+      "status": "enacted",
       "effective_date": "2026-01-01",
       "summary": "Maine expands military retirement pay exemption to Space Force, USPHS, and NOAA Corps.",
       "detail": "Maine's existing military retirement pay tax exemption has been expanded to include Space Force members, USPHS commissioned officers, and NOAA Corps officers. Effective with the 2026 tax year.",
@@ -300,6 +357,7 @@
         "county": null
       },
       "category": "other",
+      "status": "enacted",
       "effective_date": "2026-07-01",
       "summary": "Kansas exempts 100% disabled veterans from sales tax on up to $24,000 in annual purchases.",
       "detail": "Starting July 1, 2026, veterans with a 100% service-connected disability avoid sales tax on up to $24,000 in annual purchases. Excludes tobacco, alcohol, and vehicles.",
@@ -307,6 +365,9 @@
         "required": true,
         "description": "Contact the Kansas Department of Revenue for the exemption certificate process.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 100
       },
       "data_impact": null,
       "source": {
@@ -324,6 +385,7 @@
         "county": null
       },
       "category": "benefit_expansion",
+      "status": "enacted",
       "effective_date": "2025-05-06",
       "summary": "Maryland expands service member tax benefits to include NOAA and Public Health Service.",
       "detail": "SB 278 broadens definitions of active service member, uniformed services, and reserve component to include NOAA and Public Health Service. Expands income tax abatement for deceased service members, and aligns sales tax exemptions for all nationally recognized veteran organizations. Signed May 6, 2025.",
@@ -348,6 +410,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "proposed",
       "effective_date": "2025-07-01",
       "summary": "North Carolina S660 would phase the disabled veteran property tax exclusion from $45,000 to $500,000 over three years.",
       "detail": "The 'Honoring Sacrifice: NC Veterans Relief Act' (S660/H728) would increase the disabled veteran homestead exclusion in three phases: $75,000 (July 2025), $125,000 (July 2026), and the lesser of $500,000 or 100% of appraised value (July 2027). Also exempts primary motor vehicle for 100% disabled veterans from property tax and creates a prequalification process. State reimburses local governments 50% of revenue loss. Still in Senate Rules and Operations Committee as of early 2026.",
@@ -355,6 +418,9 @@
         "required": false,
         "description": "No action needed yet. Bill is pending in the North Carolina General Assembly.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 100
       },
       "data_impact": {
         "field": "_computed.veteran_property_tax.partial_exemption_amount",
@@ -377,6 +443,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "proposed",
       "effective_date": "2026-01-01",
       "summary": "Minnesota HF194 would increase disabled veteran property tax market value exclusion amounts.",
       "detail": "HF194 would increase the market value exclusion from $150,000 to $200,000 for veterans with 70%+ disability, and from $300,000 to $400,000 for veterans with total and permanent disability. Passed Veterans and Military Affairs Division unanimously, referred to House Taxes Committee. First increase since 2008.",
@@ -384,6 +451,9 @@
         "required": false,
         "description": "No action needed yet. Bill is in the Minnesota House Taxes Committee.",
         "deadline": null
+      },
+      "applicability": {
+        "min_disability_rating": 70
       },
       "data_impact": {
         "field": "_computed.veteran_property_tax.partial_exemption_amount",
@@ -406,6 +476,7 @@
         "county": null
       },
       "category": "property_tax",
+      "status": "proposed",
       "effective_date": "2026-01-01",
       "summary": "New York S8958A would expand property tax exemption to any service-connected disabled veteran.",
       "detail": "S8958A would amend RPTL \u00a7458-a to allow veterans with any service-connected disability (not just specific categories like blindness or limb loss) to claim a real property tax exemption. Introduced January 21, 2026. In Senate Committee on Veterans, Homeland Security and Military Affairs.",
@@ -430,6 +501,7 @@
         "county": null
       },
       "category": "benefit_expansion",
+      "status": "enacted",
       "effective_date": "2026-01-01",
       "summary": "Arizona excludes all veteran pension income from property tax exemption income cap calculation.",
       "detail": "SB1749 (budget bill) expands the income exclusion for the property tax exemption income cap to include all veteran pension payments, not just disability pensions. Also removes the requirement that property be valued below the statutory assessment limit to qualify for the exemption. Complements HB 2792 (full exemption for 100% disabled veterans).",
