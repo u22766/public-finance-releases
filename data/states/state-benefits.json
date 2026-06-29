@@ -1,6 +1,6 @@
 {
   "_comment": "State Tax Treatment of Retirement Income \u2014 State income tax treatment of federal retirement income, property tax exemptions, and veteran-specific benefits by state. Version 2.1. Expand with additional states as needed. Data is general guidance \u2014 user should verify current state law.",
-  "version": "2.14",
+  "version": "2.15",
   "effective_date": "2026-01-01",
   "_disclaimer": "State tax law changes frequently. This file provides general guidance for planning purposes only. Users should verify current rules with their state tax authority or a qualified tax advisor.",
   "_retiree_guidance": "Military retirees should reference both 'income_tax' (retirement pay treatment, Social Security, tax brackets) and 'veteran_benefits' (property tax exemptions, disability-based benefits) for a complete state-level picture. The two sections are complementary \u2014 'income_tax' covers all retirement income regardless of VA status, while 'veteran_benefits' covers VA disability-related property and housing exemptions.",
@@ -710,6 +710,10 @@
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
+          "partial_exemption_basis": "percentage",
+          "partial_exemption_percentage": 0.5,
+          "partial_min_disability_rating": 100,
+          "partial_requires_pt": true,
           "surviving_spouse_transfer": true,
           "application_deadline_month": 7,
           "application_deadline_day": 1
@@ -1188,6 +1192,9 @@
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
+          "partial_exemption_basis": "varies",
+          "partial_min_disability_rating": 100,
+          "partial_requires_pt": true,
           "surviving_spouse_transfer": false,
           "application_deadline_month": 4,
           "application_deadline_day": 30
@@ -2039,7 +2046,10 @@
         "veteran_property_tax": {
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
-          "partial_exemption_amount": null,
+          "partial_exemption_amount": 1500,
+          "partial_exemption_basis": "fixed_amount",
+          "partial_min_disability_rating": 100,
+          "partial_requires_pt": false,
           "surviving_spouse_transfer": true,
           "application_deadline_month": 4,
           "application_deadline_day": 15
@@ -2144,6 +2154,9 @@
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
+          "partial_exemption_basis": "varies",
+          "partial_min_disability_rating": 30,
+          "partial_requires_pt": false,
           "surviving_spouse_transfer": true
         },
         "veteran_vehicle_tax": {
@@ -3340,6 +3353,9 @@
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
+          "partial_exemption_basis": "varies",
+          "partial_min_disability_rating": 100,
+          "partial_requires_pt": false,
           "surviving_spouse_transfer": false
         },
         "veteran_vehicle_tax": {
@@ -3633,6 +3649,9 @@
           "full_exemption_100pct_pt": false,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
+          "partial_exemption_basis": "varies",
+          "partial_min_disability_rating": 100,
+          "partial_requires_pt": false,
           "surviving_spouse_transfer": false,
           "application_deadline_month": 4,
           "application_deadline_day": 15
