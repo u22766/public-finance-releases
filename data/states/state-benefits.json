@@ -1,6 +1,6 @@
 {
   "_comment": "State Tax Treatment of Retirement Income \u2014 State income tax treatment of federal retirement income, property tax exemptions, and veteran-specific benefits by state. Version 2.1. Expand with additional states as needed. Data is general guidance \u2014 user should verify current state law.",
-  "version": "2.21",
+  "version": "2.22",
   "effective_date": "2026-01-01",
   "_disclaimer": "State tax law changes frequently. This file provides general guidance for planning purposes only. Users should verify current rules with their state tax authority or a qualified tax advisor.",
   "_retiree_guidance": "Military retirees should reference both 'income_tax' (retirement pay treatment, Social Security, tax brackets) and 'veteran_benefits' (property tax exemptions, disability-based benefits) for a complete state-level picture. The two sections are complementary \u2014 'income_tax' covers all retirement income regardless of VA status, while 'veteran_benefits' covers VA disability-related property and housing exemptions.",
@@ -2290,10 +2290,15 @@
       "state_code": "IN",
       "_computed": {
         "veteran_property_tax": {
-          "full_exemption_100pct_pt": false,
+          "full_exemption_100pct_pt": true,
           "partial_exemption_available": true,
-          "partial_exemption_amount": 14000,
-          "surviving_spouse_transfer": true
+          "partial_exemption_amount": null,
+          "partial_exemption_basis": "credit",
+          "partial_min_disability_rating": 10,
+          "partial_requires_pt": false,
+          "surviving_spouse_transfer": true,
+          "application_deadline_month": 12,
+          "application_deadline_day": 30
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
@@ -2335,17 +2340,37 @@
         ]
       },
       "sources": [
-        "https://myarmybenefits.us.army.mil/Benefit-Library/State/Territory-Benefits/Indiana",
-        "https://www.in.gov/dva/state-of-indiana-benefits-and-services/property-tax-deductions/",
-        "https://www.in.gov/dva/divisions/training-and-services/disabled-veteran-property-tax-deduction/"
+        "https://iga.in.gov/legislative/2026/bills/house/1210",
+        "https://www.in.gov/dva/benefits-and-resources/property-tax-deductions/",
+        "https://myarmybenefits.us.army.mil/Benefit-Library/State/Territory-Benefits/Indiana"
       ],
       "veteran_benefits": {
-        "_schema_note": "Veteran-specific property tax deductions for Indiana. Two deduction types can be combined for eligible wartime veterans. Homes donated by nonprofits may receive 100% deduction. Federal benefits (funding fee) are in the federal_veteran_benefits root section.",
-        "wartime_disabled_veteran_deduction": {
+        "_schema_note": "HEA 1210 (signed March 12, 2026) replaced the prior assessed-value deduction system with a credit-based structure for partially disabled veterans and a full exemption for totally disabled veterans. Effective 2026 assessment year, taxes payable 2027. Registration July 1 - December 30, 2026 via State Form 51186.",
+        "totally_disabled_veteran_exemption": {
           "available": true,
-          "exemption_type": "deduction",
-          "deduction_amount": 24960,
-          "description": "Deduction of $24,960 from assessed value for wartime disabled veterans with at least 10% VA service-connected disability",
+          "exemption_type": "full",
+          "description": "100% property tax exemption on primary residence for totally disabled veterans. No home value cap.",
+          "eligibility": {
+            "criteria": [
+              "100% service-connected disability rating",
+              "Individual Unemployability (IU/TDIU) status"
+            ],
+            "service_required": "Service in U.S. Armed Forces",
+            "honorable_discharge_required": true
+          },
+          "authority": "HEA 1210 (2026), amending IC 6-1.1-12-14",
+          "effective": "2026 assessment year (taxes payable 2027)",
+          "survivor_transfer": true,
+          "survivor_conditions": {
+            "unremarried_spouse": true,
+            "note": "Surviving spouse who does not remarry retains full exemption"
+          }
+        },
+        "wartime_disabled_veteran_credit": {
+          "available": true,
+          "exemption_type": "credit",
+          "credit_amount": 350,
+          "description": "$350 local property tax credit for wartime veterans with at least 10% service-connected disability",
           "eligibility": {
             "wartime_service_required": true,
             "qualifying_periods": [
@@ -2357,63 +2382,41 @@
             "rating_required": 10,
             "honorable_discharge_required": true
           },
-          "authority": "IC 6-1.1-12-13",
-          "survivor_transfer": true,
-          "survivor_conditions": {
-            "unremarried_spouse": true,
-            "note": "Surviving spouses of eligible veterans may qualify for the deductions"
-          }
+          "authority": "HEA 1210 (2026)",
+          "effective": "2026 assessment year (taxes payable 2027)",
+          "stackable": true,
+          "stacks_with": "age_62_disabled_veteran_credit"
         },
-        "totally_disabled_veteran_deduction": {
+        "age_62_disabled_veteran_credit": {
           "available": true,
-          "exemption_type": "deduction",
-          "deduction_amount": 14000,
-          "description": "Deduction of $14,000 from assessed value for totally disabled veterans or partially disabled veterans age 62+",
-          "assessed_value_cap": 240000,
-          "assessed_value_note": "Property assessed value must not exceed $240,000",
+          "exemption_type": "credit",
+          "credit_amount": 250,
+          "description": "$250 local property tax credit for veterans age 62+ with at least 10% service-connected disability",
           "eligibility": {
-            "criteria": [
-              "Totally disabled (any service-connected disability) at any age",
-              "At least 62 years old with 10%+ service-connected disability"
-            ],
-            "service_required": "At least 90 days in U.S. Armed Forces",
-            "honorable_discharge_required": true
+            "minimum_age": 62,
+            "rating_required": 10,
+            "wartime_service_required": false,
+            "note": "Expands eligibility to non-wartime disabled veterans age 62+"
           },
-          "authority": "IC 6-1.1-12-14",
-          "survivor_transfer": true,
-          "survivor_conditions": {
-            "unremarried_spouse": true,
-            "note": "Surviving spouses of eligible veterans may qualify for the deductions"
-          }
+          "authority": "HEA 1210 (2026)",
+          "effective": "2026 assessment year (taxes payable 2027)",
+          "stackable": true,
+          "stacks_with": "wartime_disabled_veteran_credit"
         },
         "nonprofit_donated_home_deduction": {
           "available": true,
           "exemption_type": "deduction",
           "description": "100% deduction of assessed value for homes conveyed at no cost to a disabled veteran by a tax-exempt nonprofit organization",
-          "note": "If this deduction is used, veteran cannot claim deductions under IC 6-1.1-12-13 or IC 6-1.1-12-14",
+          "note": "If this deduction is used, veteran cannot claim other veteran property tax benefits",
           "authority": "IC 6-1.1-12-14.5",
           "survivor_transfer": true,
           "survivor_conditions": {
-            "unremarried_spouse": true,
-            "note": "Surviving spouses of eligible veterans may qualify for the deductions"
+            "unremarried_spouse": true
           }
         },
-        "_combined_deductions_note": "Eligible wartime veterans who are totally disabled or age 62+ with 10%+ disability may claim both deductions (IC 6-1.1-12-13 + IC 6-1.1-12-14) for a combined $38960 reduction in assessed value.",
-        "disabled_veteran_100pct_property_tax": {
-          "available": true,
-          "exemption_type": "partial_assessed_value",
-          "rating_required": 100,
-          "pt_required": false,
-          "iu_eligible": false,
-          "exemption_assessed_value_basic": 14000,
-          "assessed_value_cap": 240000,
-          "income_limit": null,
-          "survivor_eligible": true,
-          "survivor_must_not_remarry": true,
-          "note": "Deduction of $14,000 from assessed value for totally disabled veterans on primary residence (assessed value <=240,000). Separate wartime disability deduction of $24,960 also available for qualifying wartime veterans with 10%+ rating.",
-          "source": "https://www.in.gov/dva/benefits-and-resources/property-tax-deductions/",
-          "description": "$14,000 assessed value deduction for totally disabled veterans on primary residence (assessed value \u2264$240,000)."
-        }
+        "_stacking_note": "Wartime credit ($350) and age 62+ credit ($250) are stackable for eligible veterans, total potential credit of $600. Totally disabled veterans receive full exemption and do not need credits.",
+        "_transition_note": "HEA 1210 replaced the prior $14,000/$24,960 assessed-value deduction system (IC 6-1.1-12-13, IC 6-1.1-12-14 old). Old $240,000 assessed value cap eliminated. Vehicle excise fee credit from unused deduction no longer available under new credit system.",
+        "_registration_note": "Veterans must complete State Form 51186 and submit to County Auditor between July 1 and December 30, 2026 to receive benefits for 2027 tax year."
       }
     },
     {
