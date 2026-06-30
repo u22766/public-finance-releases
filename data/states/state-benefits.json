@@ -1,6 +1,6 @@
 {
   "_comment": "State Tax Treatment of Retirement Income \u2014 State income tax treatment of federal retirement income, property tax exemptions, and veteran-specific benefits by state. Version 2.1. Expand with additional states as needed. Data is general guidance \u2014 user should verify current state law.",
-  "version": "2.18",
+  "version": "2.19",
   "effective_date": "2026-01-01",
   "_disclaimer": "State tax law changes frequently. This file provides general guidance for planning purposes only. Users should verify current rules with their state tax authority or a qualified tax advisor.",
   "_retiree_guidance": "Military retirees should reference both 'income_tax' (retirement pay treatment, Social Security, tax brackets) and 'veteran_benefits' (property tax exemptions, disability-based benefits) for a complete state-level picture. The two sections are complementary \u2014 'income_tax' covers all retirement income regardless of VA status, while 'veteran_benefits' covers VA disability-related property and housing exemptions.",
@@ -121,7 +121,9 @@
           "full_exemption_100pct_pt": true,
           "partial_exemption_available": false,
           "partial_exemption_amount": null,
-          "surviving_spouse_transfer": true
+          "surviving_spouse_transfer": true,
+          "application_deadline_month": 12,
+          "application_deadline_day": 31
         },
         "veteran_vehicle_tax": {
           "exemption_available": true,
@@ -3121,7 +3123,9 @@
           "full_exemption_100pct_pt": true,
           "partial_exemption_available": false,
           "partial_exemption_amount": null,
-          "surviving_spouse_transfer": true
+          "surviving_spouse_transfer": true,
+          "application_deadline_month": 12,
+          "application_deadline_day": 31
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
@@ -6837,7 +6841,9 @@
           "full_exemption_100pct_pt": true,
           "partial_exemption_available": false,
           "partial_exemption_amount": null,
-          "surviving_spouse_transfer": true
+          "surviving_spouse_transfer": true,
+          "application_deadline_month": 12,
+          "application_deadline_day": 1
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
