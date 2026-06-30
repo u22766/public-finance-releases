@@ -333,6 +333,10 @@
     "legislative_calendar": {
       "reflects": "CY2026",
       "rates_effective": "2026-06-28"
+    },
+    "county_property_tax_ia": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
     }
   }
 }

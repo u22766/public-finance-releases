@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 IA",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for Iowa metro area counties.",
+    "state": "Iowa",
+    "state_code": "IA",
+    "version": "2026.1",
+    "last_updated": "2026-06-29",
+    "sources": [
+      "County assessor offices",
+      "Iowa Department of Revenue \u2014 Property Tax Division",
+      "U.S. Census Bureau, American Community Survey"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate as decimal fraction of market value (e.g. 0.0151 = 1.51%).",
+      "scope": "Des Moines, Cedar Rapids, Iowa City metro \u2014 Polk, Linn, Johnson counties.",
+      "update_cycle": "Assessed values set biennially (odd years). Levies set annually by counties, cities, school districts.",
+      "assessment_method": "Iowa assesses residential property at market value, then applies a statewide rollback (47.43% for 2026) to determine taxable value. Levy rates are per $1,000 of taxable value. The _computed effective_rate is expressed on market value (median taxes paid / median home value), netting out the rollback.",
+      "veteran_credit": "Disabled Veteran's Homestead Tax Credit (Iowa Code Ch. 425) \u2014 100% property tax credit for 100% P&T or IU disabled veterans. Military Service Tax Exemption (Iowa Code \u00a7426A) \u2014 $1,852 taxable value reduction for eligible veterans."
+    },
+    "_comment": "Iowa county property tax data. Iowa uses a rollback system that reduces taxable value to ~47% of market value, but _computed fields are expressed on market value for consumer consistency.",
+    "veteran_exemption_state_law": {
+      "statute": "Iowa Code Ch. 425 (Disabled Veteran's Homestead Tax Credit), \u00a7426A (Military Service Tax Exemption)",
+      "type": "full_credit_100pct",
+      "description": "100% property tax credit for veterans with 100% permanent and total service-connected disability or individual unemployability. Effectively a full exemption \u2014 the entire tax bill is credited. Separate Military Service Tax Exemption reduces taxable value by $1,852 for any eligible veteran.",
+      "credit_amount": "100% of property tax",
+      "min_disability_rating": 100,
+      "surviving_spouse": true,
+      "surviving_spouse_conditions": "Unremarried surviving spouse retains the credit"
+    }
+  },
+  "counties": [
+    {
+      "county": "Polk County",
+      "state_code": "IA",
+      "_computed": {
+        "effective_rate": 0.0151,
+        "median_home_value": 281500
+      },
+      "fips": "19153",
+      "military_installations": [],
+      "estimated_veteran_population": 28000,
+      "major_cities": [
+        "Des Moines",
+        "West Des Moines",
+        "Ankeny"
+      ],
+      "property_tax": {
+        "assessment_method": "Market value with statewide residential rollback (47.43% for 2026)",
+        "median_annual_tax": 4251,
+        "payment_schedule": "Semi-annual: September 1 and March 1",
+        "homestead_credit": true,
+        "homestead_credit_note": "Iowa Homestead Tax Credit reduces tax by up to $4,850 of taxable value for owner-occupied primary residences",
+        "effective_rate_per_100": 1.51
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_homestead_tax_credit": {
+          "eligibility": "100% permanent and total service-connected disability or IU determination",
+          "benefit": "100% property tax credit (full tax bill credited)",
+          "application": "File with county assessor; attach VA award letter and DD214",
+          "form": "Iowa Code Ch. 425",
+          "type": "full_credit"
+        },
+        "military_service_tax_exemption": {
+          "eligibility": "Any veteran who served on active duty during a recognized conflict or 20+ years reserve/guard service",
+          "benefit": "$1,852 reduction in taxable value",
+          "application": "File with county assessor; one-time application",
+          "form": "Iowa Code \u00a7426A",
+          "type": "fixed_amount"
+        }
+      },
+      "_sources": [
+        "Polk County Auditor \u2014 polkcountyiowa.gov",
+        "SmartAsset (ACS-derived median tax/home value)"
+      ],
+      "tax_year": 2025,
+      "application": {
+        "office": "Polk County Assessor",
+        "url": "https://www.polkcountyiowa.gov/county-assessor/",
+        "deadline": "File with county assessor by December 31 of the tax year"
+      }
+    },
+    {
+      "county": "Linn County",
+      "state_code": "IA",
+      "_computed": {
+        "effective_rate": 0.0156,
+        "median_home_value": 229000
+      },
+      "fips": "19113",
+      "military_installations": [],
+      "estimated_veteran_population": 14000,
+      "major_cities": [
+        "Cedar Rapids",
+        "Marion",
+        "Hiawatha"
+      ],
+      "property_tax": {
+        "assessment_method": "Market value with statewide residential rollback (47.43% for 2026)",
+        "median_annual_tax": 3573,
+        "payment_schedule": "Semi-annual: September 1 and March 1",
+        "homestead_credit": true,
+        "homestead_credit_note": "Iowa Homestead Tax Credit reduces tax by up to $4,850 of taxable value for owner-occupied primary residences",
+        "effective_rate_per_100": 1.56
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_homestead_tax_credit": {
+          "eligibility": "100% permanent and total service-connected disability or IU determination",
+          "benefit": "100% property tax credit (full tax bill credited)",
+          "application": "File with county assessor; attach VA award letter and DD214",
+          "form": "Iowa Code Ch. 425",
+          "type": "full_credit"
+        },
+        "military_service_tax_exemption": {
+          "eligibility": "Any veteran who served on active duty during a recognized conflict or 20+ years reserve/guard service",
+          "benefit": "$1,852 reduction in taxable value",
+          "application": "File with county assessor; one-time application",
+          "form": "Iowa Code \u00a7426A",
+          "type": "fixed_amount"
+        }
+      },
+      "_sources": [
+        "Linn County Assessor \u2014 linncountyiowa.gov",
+        "SmartAsset (ACS-derived median tax/home value)"
+      ],
+      "tax_year": 2025,
+      "application": {
+        "office": "Linn County Assessor",
+        "url": "https://www.linncountyiowa.gov/126/Assessor",
+        "deadline": "File with county assessor by December 31 of the tax year"
+      }
+    },
+    {
+      "county": "Johnson County",
+      "state_code": "IA",
+      "_computed": {
+        "effective_rate": 0.015,
+        "median_home_value": 329500
+      },
+      "fips": "19103",
+      "military_installations": [],
+      "estimated_veteran_population": 8500,
+      "major_cities": [
+        "Iowa City",
+        "Coralville",
+        "North Liberty"
+      ],
+      "property_tax": {
+        "assessment_method": "Market value with statewide residential rollback (47.43% for 2026)",
+        "median_annual_tax": 4948,
+        "payment_schedule": "Semi-annual: September 1 and March 1",
+        "homestead_credit": true,
+        "homestead_credit_note": "Iowa Homestead Tax Credit reduces tax by up to $4,850 of taxable value for owner-occupied primary residences",
+        "effective_rate_per_100": 1.5
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_homestead_tax_credit": {
+          "eligibility": "100% permanent and total service-connected disability or IU determination",
+          "benefit": "100% property tax credit (full tax bill credited)",
+          "application": "File with county assessor; attach VA award letter and DD214",
+          "form": "Iowa Code Ch. 425",
+          "type": "full_credit"
+        },
+        "military_service_tax_exemption": {
+          "eligibility": "Any veteran who served on active duty during a recognized conflict or 20+ years reserve/guard service",
+          "benefit": "$1,852 reduction in taxable value",
+          "application": "File with county assessor; one-time application",
+          "form": "Iowa Code \u00a7426A",
+          "type": "fixed_amount"
+        }
+      },
+      "_sources": [
+        "Johnson County Assessor \u2014 johnsoncountyiowa.gov",
+        "SmartAsset (ACS-derived median tax/home value)"
+      ],
+      "tax_year": 2025,
+      "application": {
+        "office": "Johnson County Assessor",
+        "url": "https://www.johnsoncountyiowa.gov/county-assessor",
+        "deadline": "File with county assessor by December 31 of the tax year"
+      }
+    }
+  ]
+}

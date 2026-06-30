@@ -1,11 +1,11 @@
 {
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
-  "data_version": "v2026.32",
-  "generated": "2026-06-30T00:07:37Z",
+  "data_version": "v2026.33",
+  "generated": "2026-06-30T03:38:37Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
-  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.32.",
+  "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.33.",
   "files": {
     "rates_annual": {
       "version": "2026.4",
@@ -487,6 +487,14 @@
       "last_updated": "2026-04-09",
       "update_cycle": "annual",
       "update_frequency": "as_needed"
+    },
+    "county_property_tax_ia": {
+      "version": "2026.1",
+      "effective_date": "2026-01-01",
+      "update_frequency": "as needed",
+      "url": "states/iowa/county-property-tax.json",
+      "description": "County-level property tax rates and veteran exemptions for Iowa (Polk, Linn, Johnson counties)",
+      "last_updated": "2026-06-29"
     },
     "county_property_tax_il": {
       "version": "2026.2",
