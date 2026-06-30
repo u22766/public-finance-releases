@@ -2,7 +2,7 @@
   "schema_version": "2.2",
   "schema_min_compatible": "2.2",
   "data_version": "v2026.36",
-  "generated": "2026-06-30T05:49:03Z",
+  "generated": "2026-06-30T06:03:35Z",
   "maintained_by": "finance-data repo owner",
   "data_base_url": "https://u22766.github.io/public-finance-releases/data/",
   "description": "Consumer-agnostic public reference data for U.S. retirement and public finance systems. Release v2026.36.",
@@ -44,7 +44,7 @@
       "changelog_1_2": "v1.2: Added cross-reference to filing-status-thresholds.json. Updated 2026 notes for OBBBA."
     },
     "state_benefits": {
-      "version": "2.20",
+      "version": "2.21",
       "effective_date": "2026-01-01",
       "update_frequency": "as needed",
       "url": "states/state-benefits.json",
