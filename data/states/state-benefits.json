@@ -1,6 +1,6 @@
 {
   "_comment": "State Tax Treatment of Retirement Income \u2014 State income tax treatment of federal retirement income, property tax exemptions, and veteran-specific benefits by state. Version 2.1. Expand with additional states as needed. Data is general guidance \u2014 user should verify current state law.",
-  "version": "2.19",
+  "version": "2.20",
   "effective_date": "2026-01-01",
   "_disclaimer": "State tax law changes frequently. This file provides general guidance for planning purposes only. Users should verify current rules with their state tax authority or a qualified tax advisor.",
   "_retiree_guidance": "Military retirees should reference both 'income_tax' (retirement pay treatment, Social Security, tax brackets) and 'veteran_benefits' (property tax exemptions, disability-based benefits) for a complete state-level picture. The two sections are complementary \u2014 'income_tax' covers all retirement income regardless of VA status, while 'veteran_benefits' covers VA disability-related property and housing exemptions.",
@@ -2153,13 +2153,26 @@
       "state_code": "IL",
       "_computed": {
         "veteran_property_tax": {
-          "full_exemption_100pct_pt": false,
+          "full_exemption_100pct_pt": true,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
-          "partial_exemption_basis": "varies",
+          "partial_exemption_basis": "tiered",
           "partial_min_disability_rating": 30,
           "partial_requires_pt": false,
-          "surviving_spouse_transfer": true
+          "surviving_spouse_transfer": true,
+          "full_exemption_min_rating": 70,
+          "partial_exemption_tiers": [
+            {
+              "min_rating": 30,
+              "max_rating": 49,
+              "exemption_amount": 2500
+            },
+            {
+              "min_rating": 50,
+              "max_rating": 69,
+              "exemption_amount": 5000
+            }
+          ]
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
@@ -5867,12 +5880,34 @@
           "full_exemption_100pct_pt": true,
           "partial_exemption_available": true,
           "partial_exemption_amount": null,
-          "partial_exemption_basis": "varies",
+          "partial_exemption_basis": "tiered",
           "partial_min_disability_rating": 10,
           "partial_requires_pt": false,
           "surviving_spouse_transfer": true,
           "application_deadline_month": 4,
-          "application_deadline_day": 30
+          "application_deadline_day": 30,
+          "partial_exemption_tiers": [
+            {
+              "min_rating": 10,
+              "max_rating": 29,
+              "exemption_amount": 5000
+            },
+            {
+              "min_rating": 30,
+              "max_rating": 49,
+              "exemption_amount": 7500
+            },
+            {
+              "min_rating": 50,
+              "max_rating": 69,
+              "exemption_amount": 10000
+            },
+            {
+              "min_rating": 70,
+              "max_rating": 100,
+              "exemption_amount": 12000
+            }
+          ]
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
@@ -6620,10 +6655,13 @@
       "state_code": "WA",
       "_computed": {
         "veteran_property_tax": {
-          "full_exemption_100pct_pt": true,
-          "partial_exemption_available": false,
+          "full_exemption_100pct_pt": false,
+          "partial_exemption_available": true,
           "partial_exemption_amount": null,
-          "surviving_spouse_transfer": true
+          "surviving_spouse_transfer": true,
+          "partial_exemption_basis": "income_tiered",
+          "partial_min_disability_rating": 80,
+          "partial_requires_pt": false
         },
         "veteran_vehicle_tax": {
           "exemption_available": false,
@@ -7113,7 +7151,7 @@
       ]
     }
   },
-  "last_updated": "2026-04-03",
+  "last_updated": "2026-06-30",
   "_note_application_deadlines": {
     "description": "application_deadline_month and application_deadline_day in _computed.veteran_property_tax provide fixed statewide filing deadlines for veteran property tax exemption applications. 24 states populated; 32 jurisdictions skipped as documented below.",
     "wy_note": "WY deadline is 'Fourth Monday in May' which shifts yearly (May 22-28). Set to May 22 (earliest possible date) for safe notification timing.",
