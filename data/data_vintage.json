@@ -337,6 +337,10 @@
     "county_property_tax_ia": {
       "reflects": "TY2025",
       "rates_effective": "2025-01-01"
+    },
+    "county_property_tax_wv": {
+      "reflects": "TY2025",
+      "rates_effective": "2025-01-01"
     }
   }
 }

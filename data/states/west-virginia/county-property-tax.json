@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "title": "County Property Tax Rates and Veteran Exemptions \u2014 WV",
+    "description": "County-level property tax rates, veteran exemption implementation details, and application information for West Virginia metro area counties.",
+    "state": "West Virginia",
+    "state_code": "WV",
+    "version": "2026.1",
+    "last_updated": "2026-06-29",
+    "sources": [
+      "County assessor offices",
+      "West Virginia State Tax Division",
+      "U.S. Census Bureau, American Community Survey"
+    ],
+    "notes": {
+      "tax_rate_format": "Effective rate as decimal fraction of market value (e.g. 0.0065 = 0.65%).",
+      "scope": "Martinsburg, Huntington, Charleston metro \u2014 Berkeley, Cabell, Kanawha counties.",
+      "update_cycle": "Assessed values set by county assessors. Levies set annually by counties, municipalities, school districts.",
+      "assessment_method": "WV Class II owner-occupied residential assessed at 60% of appraised (market) value. Levy rates per $100 of assessed value. The _computed effective_rate is expressed on market value (median taxes paid / median home value), netting out the 60% assessment ratio.",
+      "veteran_credit": "Disabled Veteran Real Property Tax Credit (WV Code \u00a711-13MM-4) \u2014 refundable income tax credit equal to 100% of property taxes timely paid on homestead for veterans rated 90%+ P&T. Also general Homestead Exemption ($20,000 assessed value for 65+/permanently disabled, \u00a711-6B)."
+    },
+    "_comment": "West Virginia county property tax data. WV assesses Class II residential at 60% of market value, but _computed fields are expressed on market value for consumer consistency.",
+    "veteran_exemption_state_law": {
+      "statute": "WV Code \u00a711-13MM-4 (Disabled Veteran Real Property Tax Credit), \u00a711-6B (Homestead Exemption)",
+      "type": "refundable_income_tax_credit",
+      "description": "Refundable income tax credit equal to 100% of ad valorem property taxes timely paid on homestead for veterans with 90%+ combined VA disability rating (permanent and total). Filed on WV income tax return (form DV-1). Replaces the previous $20,000 assessed-value exemption for 100% P&T veterans. Separate general Homestead Exemption ($20,000 assessed value) available for 65+ or permanently/totally disabled homeowners.",
+      "credit_amount": "100% of property taxes timely paid",
+      "min_disability_rating": 90,
+      "surviving_spouse": true,
+      "surviving_spouse_conditions": "Eligible widowed spouse of a veteran who claimed the credit in a prior year"
+    }
+  },
+  "counties": [
+    {
+      "county": "Berkeley County",
+      "state_code": "WV",
+      "_computed": {
+        "effective_rate": 0.0052,
+        "median_home_value": 266300
+      },
+      "fips": "54003",
+      "tax_year": 2025,
+      "military_installations": [],
+      "estimated_veteran_population": 12000,
+      "major_cities": [
+        "Martinsburg",
+        "Inwood",
+        "Hedgesville"
+      ],
+      "application": {
+        "office": "Berkeley County Assessor",
+        "url": "https://www.berkeleywv.org/706/Exemptions",
+        "deadline": "Applications for exemption filed July 1 through December 1"
+      },
+      "property_tax": {
+        "assessment_method": "60% of appraised market value (Class II residential)",
+        "effective_rate_per_100": 0.52,
+        "median_annual_tax": 1398,
+        "payment_schedule": "Semi-annual: September 1 and March 1 (2.5% discount for early payment)",
+        "homestead_exemption": true,
+        "homestead_exemption_note": "$20,000 of assessed value for 65+ or permanently/totally disabled owner-occupants"
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_real_property_tax_credit": {
+          "type": "refundable_credit",
+          "eligibility": "90%+ combined VA disability rating, permanent and total",
+          "benefit": "Refundable income tax credit equal to 100% of property taxes timely paid on homestead",
+          "application": "File WV income tax return with form DV-1; attach VA award letter",
+          "form": "WV Code \u00a711-13MM-4"
+        },
+        "homestead_exemption": {
+          "type": "assessed_value_reduction",
+          "eligibility": "65+ or permanently/totally disabled (any cause, including VA disability)",
+          "benefit": "$20,000 reduction in assessed value",
+          "application": "File with county assessor; one-time application (auto-renews)",
+          "form": "WV Code \u00a711-6B"
+        }
+      },
+      "_sources": [
+        "Berkeley County Assessor \u2014 berkeleywv.org",
+        "propertytaxbystate.com (ACS 2024 5-Year Estimates)"
+      ]
+    },
+    {
+      "county": "Cabell County",
+      "state_code": "WV",
+      "_computed": {
+        "effective_rate": 0.0065,
+        "median_home_value": 144200
+      },
+      "fips": "54011",
+      "tax_year": 2025,
+      "military_installations": [],
+      "estimated_veteran_population": 8000,
+      "major_cities": [
+        "Huntington",
+        "Barboursville",
+        "Milton"
+      ],
+      "application": {
+        "office": "Cabell County Assessor",
+        "url": "https://cabell.wvassessor.com/",
+        "deadline": "Applications for exemption filed July 1 through December 1"
+      },
+      "property_tax": {
+        "assessment_method": "60% of appraised market value (Class II residential)",
+        "effective_rate_per_100": 0.65,
+        "median_annual_tax": 937,
+        "payment_schedule": "Semi-annual: September 1 and March 1 (2.5% discount for early payment)",
+        "homestead_exemption": true,
+        "homestead_exemption_note": "$20,000 of assessed value for 65+ or permanently/totally disabled owner-occupants"
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_real_property_tax_credit": {
+          "type": "refundable_credit",
+          "eligibility": "90%+ combined VA disability rating, permanent and total",
+          "benefit": "Refundable income tax credit equal to 100% of property taxes timely paid on homestead",
+          "application": "File WV income tax return with form DV-1; attach VA award letter",
+          "form": "WV Code \u00a711-13MM-4"
+        },
+        "homestead_exemption": {
+          "type": "assessed_value_reduction",
+          "eligibility": "65+ or permanently/totally disabled (any cause, including VA disability)",
+          "benefit": "$20,000 reduction in assessed value",
+          "application": "File with county assessor; one-time application (auto-renews)",
+          "form": "WV Code \u00a711-6B"
+        }
+      },
+      "_sources": [
+        "Cabell County Assessor \u2014 cabell.wvassessor.com",
+        "Abode Money / propertytaxescalculator (ACS-derived)"
+      ]
+    },
+    {
+      "county": "Kanawha County",
+      "state_code": "WV",
+      "_computed": {
+        "effective_rate": 0.0065,
+        "median_home_value": 151800
+      },
+      "fips": "54039",
+      "tax_year": 2025,
+      "military_installations": [],
+      "estimated_veteran_population": 14000,
+      "major_cities": [
+        "Charleston",
+        "South Charleston",
+        "Dunbar"
+      ],
+      "application": {
+        "office": "Kanawha County Assessor",
+        "url": "https://kanawha.wvassessor.com/",
+        "deadline": "Applications for exemption filed July 1 through December 1"
+      },
+      "property_tax": {
+        "assessment_method": "60% of appraised market value (Class II residential)",
+        "effective_rate_per_100": 0.65,
+        "median_annual_tax": 987,
+        "payment_schedule": "Semi-annual: September 1 and March 1 (2.5% discount for early payment)",
+        "homestead_exemption": true,
+        "homestead_exemption_note": "$20,000 of assessed value for 65+ or permanently/totally disabled owner-occupants"
+      },
+      "veteran_exemptions": {
+        "disabled_veteran_real_property_tax_credit": {
+          "type": "refundable_credit",
+          "eligibility": "90%+ combined VA disability rating, permanent and total",
+          "benefit": "Refundable income tax credit equal to 100% of property taxes timely paid on homestead",
+          "application": "File WV income tax return with form DV-1; attach VA award letter",
+          "form": "WV Code \u00a711-13MM-4"
+        },
+        "homestead_exemption": {
+          "type": "assessed_value_reduction",
+          "eligibility": "65+ or permanently/totally disabled (any cause, including VA disability)",
+          "benefit": "$20,000 reduction in assessed value",
+          "application": "File with county assessor; one-time application (auto-renews)",
+          "form": "WV Code \u00a711-6B"
+        }
+      },
+      "_sources": [
+        "Kanawha County Assessor",
+        "SmartAsset (ACS-derived median tax/home value)"
+      ]
+    }
+  ]
+}
